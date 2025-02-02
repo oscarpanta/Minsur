@@ -1,0 +1,4 @@
+<button class="btn-animate" (mouseenter)="isHovered = true" (mouseleave)="isHovered = false" style="color: white;">
+  <span class="arrow" [@expandArrow]="isHovered ? 'expanded' : 'normal'"></span>
+  Ver más
+</button>

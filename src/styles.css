@@ -1,1 +1,1487 @@
-/* You can add global styles to this file, and also import other style files */
+
+
+:root {
+  /* Colors: */
+  --unnamed-color-004891: #004891;
+  --unnamed-color-36404e: #36404e;
+  --unnamed-color-0063f9: #0063f9;
+  --unnamed-color-5A9CFF: #5a9cff;
+  --unnamed-color-ffffff: #ffffff;
+  --unnamed-color-9FB5C9: #9fb5c9;
+  --unnamed-color-CCE7FF: #cce7ff;
+  --unnamed-color-7DF900: #7df900;
+  --unnamed-color-E9EEF4: #e9eef4;
+  --unnamed-color-F98600: #f98600;
+  /* Font/text values */
+  --unnamed-font-family-merriweather: Merriweather;
+  --unnamed-font-family-raleway: Raleway, sans-serif;
+  --unnamed-font-style-normal: normal;
+  --unnamed-font-weight-300: 300;
+  --unnamed-font-weight-500: 500;
+  --unnamed-font-weight-bold: bold;
+  --unnamed-font-weight-normal: normal;
+  --unnamed-font-size-14: 14px;
+  --unnamed-font-size-15: 15px;
+  --unnamed-font-size-16: 16px;
+  --unnamed-font-size-18: 18px;
+  --unnamed-font-size-21: 21px;
+  --unnamed-font-size-20: 20px;
+  --unnamed-font-size-22: 22px;
+  --unnamed-font-size-24: 24px;
+  --unnamed-font-size-26: 26px;
+  --unnamed-font-size-28: 28px;
+  --unnamed-font-size-30: 30px;
+  --unnamed-font-size-32: 32px;
+  --unnamed-font-size-34: 34px;
+  --unnamed-font-size-36: 36px;
+  --unnamed-font-size-38: 38px;
+  --unnamed-font-size-42: 42px;
+  --unnamed-font-size-142: 142px;
+  --unnamed-character-spacing--0-6: -0.2px;
+  --unnamed-character-spacing--0-6: -0.6px;
+  --unnamed-character-spacing--0-8: -0.8px;
+  --unnamed-character-spacing--0-97: -0.97px;
+  --unnamed-character-spacing--1-05: -1.05px;
+  --unnamed-character-spacing--0-7: -0.7px;
+  --unnamed-character-spacing--0-21: -0.21px;
+  --unnamed-character-spacing--0-24: -0.24px;
+  --unnamed-character-spacing--0-35: -0.35px;
+  --unnamed-character-spacing--3-55: -3.55px;
+  --unnamed-line-spacing-14: 14px;
+  --unnamed-line-spacing-15: 15px;
+  --unnamed-line-spacing-22: 22px;
+  --unnamed-line-spacing-26: 26px;
+  --unnamed-line-spacing-30: 30px;
+  --unnamed-line-spacing-32: 32px;
+  --unnamed-line-spacing-34: 34px;
+  --unnamed-line-spacing-36: 36px;
+  --unnamed-line-spacing-38: 38px;
+  --unnamed-line-spacing-42: 42px;
+  --unnamed-line-spacing-58: 58px;
+}
+
+
+
+
+/* --- Contenedor principal --- */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* --- Contenedor de la cabecera --- */
+.header-content {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  max-width: 1300px;
+  margin: auto;
+}
+header .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+/* --- Logo alineado a la izquierda y centrado verticalmente --- */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 60px;
+  transition: all 0.3s ease;
+}
+
+/* --- Contenedor derecho (fila superior + menú) --- */
+.right-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* flex-grow: 1; */
+}
+
+/* --- Fila superior (top-bar) --- */
+.top-bar {
+  padding-bottom: 5px;
+}
+
+.top-link,
+.top-link_idioma {
+  margin-left: 15px;
+  text-decoration: none;
+  font-family: var(--unnamed-font-family-raleway);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-bold);
+  font-size: 12px;
+  letter-spacing: 0px;
+  color: var(--unnamed-color-ffffff);
+}
+
+.top-link:hover {
+  text-decoration: underline;
+  color: #7df900;
+  opacity: 1;
+}
+.top-link_idioma a:hover {
+  text-decoration: underline;
+  color: #7df900;
+}
+
+/* --- Navbar --- */
+.navbar {
+  padding-top: 0;
+}
+
+.nav-item .nav-link {
+  transition: color 0.3s ease;
+
+  font-family: var(--unnamed-font-family-merriweather);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-22);
+  color: var(--unnamed-color-ffffff);
+  text-align: center;
+  letter-spacing: -0.55px;
+}
+
+.nav-item .nav-link:hover {
+  font-family: var(--unnamed-font-family-merriweather);
+  /* font-weight: var(--unnamed-font-weight-bold); */
+  color: #7df900;
+  opacity: 1;
+  text-decoration: underline;
+}
+
+/* --- Cuando se hace scroll --- */
+header.menu-open {
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro semitransparente */
+  transition: background-color 0.3s ease-in-out;
+}
+header.scrolled {
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+header.scrolled .nav-link {
+  /* color: blue; */
+  color: var(--unnamed-color-004891);
+}
+
+header.scrolled .nav-item .nav-link:hover {
+  /* color: blue; */
+  color: var(--unnamed-color-004891);
+}
+
+header.scrolled .top-link,
+header.scrolled .top-link_idioma {
+  color: var(--unnamed-color-004891);
+}
+
+header.scrolled .top-link:hover {
+  color: var(--unnamed-color-004891);
+}
+
+header.scrolled .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='black' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* COMUNICADO HEADER */
+.p-cinta {
+  width: 100%;
+  background: #0063f9;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+
+  font-family: var(--unnamed-font-family-merriweather);
+}
+.p-cinta div {
+  max-width: 1300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.p-cinta span,
+.p-cinta button {
+  font-family: var(--unnamed-font-family-raleway);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-300);
+  font-size: var(--unnamed-font-size-24);
+  line-height: var(--unnamed-line-spacing-38);
+  letter-spacing: 0px;
+  color: var(--unnamed-color-ffffff);
+}
+
+.p-cinta span span {
+  font-weight: bolder;
+}
+.p-cinta a {
+  text-decoration: underline;
+  color: #fff;
+  font-size: 18px;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.p-cinta-body a {
+  text-decoration: none;
+}
+.p-cinta-close {
+  width: 5%;
+  padding: 5px;
+  border: 1px solid #cbcbce;
+  border-radius: 50px;
+}
+.p-cinta-close i {
+  font-size: 20px;
+}
+
+/* estilos slider */
+.carousel-inner .carousel-caption {
+  text-align: left;
+  width: 45%;
+  left: 5%;
+  /* bottom: 25%; */
+  bottom: auto;
+}
+.carousel-inner .carousel-indicators-container {
+  text-align: center;
+}
+.indicator-title {
+  font-family: var(--unnamed-font-family-raleway);
+  font-weight: var(--unnamed-font-weight-bold);
+  font-size: var(--unnamed-font-size-18);
+  color: var(--unnamed-color-ffffff);
+  opacity: 0.5;
+}
+.carousel-indicators-container .carousel-indicators {
+  /* width: 100%; */
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+.carousel-indicators-container .carousel-indicator-group {
+  display: flex;
+  width: 100%;
+}
+.carousel-indicators-container .carousel-indicators button {
+  width: 100%;
+  border-radius: 0;
+}
+
+.slide_index {
+  cursor: pointer;
+}
+.slide_index .indicator-title:hover,
+.slide_index button {
+  color: #7df900;
+}
+.carousel-indicators-container .carousel-indicators .active {
+  opacity: 1;
+  background-color: #7df900;
+}
+
+.carousel-indicator-group button.active ~ .indicator-title {
+  color: #7df900;
+  opacity: 1;
+}
+
+.carousel-caption h1 {
+  font-family: var(--unnamed-font-family-raleway);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-24);
+  color: #cce7ff;
+  opacity: 1;
+  letter-spacing: 0.22px;
+  text-align: left;
+}
+
+.carousel-caption h3 {
+  font-family: var(--unnamed-font-family-merriweather);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: 68px;
+  color: var(--unnamed-color-ffffff);
+  opacity: 1;
+  line-height: 0.8;
+}
+
+.carousel-caption p {
+  font-family: var(--unnamed-font-family-raleway);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-32);
+  color: var(--unnamed-color-ffffff);
+  opacity: 1;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+
+/* Character Styles */
+.tit-pequeño {
+  font-family: var(--unnamed-font-family-merriweather);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-bold);
+  font-size: var(--unnamed-font-size-32);
+  line-height: var(--unnamed-line-spacing-42);
+  letter-spacing: var(--unnamed-character-spacing--0-8);
+  color: var(--unnamed-color-36404e);
+}
+.numero-grande {
+  font-family: var(--unnamed-font-family-raleway);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-300);
+  font-size: var(--unnamed-font-size-142);
+  line-height: var(--unnamed-line-spacing-58);
+  letter-spacing: var(--unnamed-character-spacing--3-55);
+  color: var(--unnamed-color-0063f9);
+}
+.listado {
+  font-family: var(--unnamed-font-family-merriweather);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-28);
+  line-height: var(--unnamed-line-spacing-34);
+  letter-spacing: var(--unnamed-character-spacing--0-7);
+  color: var(--unnamed-color-36404e);
+}
+.tit-interno {
+  font-family: var(--unnamed-font-family-merriweather);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-bold);
+  font-size: var(--unnamed-font-size-42);
+  line-height: var(--unnamed-line-spacing-58);
+  letter-spacing: var(--unnamed-character-spacing--1-05);
+  color: var(--unnamed-color-004891);
+}
+.texto-base {
+  font-family: var(--unnamed-font-family-raleway);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-24);
+  line-height: var(--unnamed-line-spacing-38);
+  letter-spacing: var(--unnamed-character-spacing--0-24);
+  color: var(--unnamed-color-36404e);
+}
+.texto-base-blanco {
+  font-family: var(--unnamed-font-family-raleway);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-24);
+  line-height: var(--unnamed-line-spacing-38);
+  letter-spacing: var(--unnamed-character-spacing--0-24);
+  color: var(--unnamed-color-ffffff);
+}
+.titulo-sustinable {
+  font-family: var(--unnamed-font-family-merriweather);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-bold);
+  font-size: var(--unnamed-font-size-28);
+  line-height: var(--unnamed-line-spacing-42);
+  color: var(--unnamed-color-ffffff);
+}
+.texto-sustinable {
+  font-family: var(--unnamed-font-family-raleway);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-300);
+  font-size: var(--unnamed-font-size-21);
+  line-height: var(--unnamed-line-spacing-38);
+  letter-spacing: var(--unnamed-character-spacing--0-21);
+  color: var(--unnamed-color-ffffff);
+}
+.texto-minimo {
+  font-family: var(--unnamed-font-family-raleway);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-300);
+  font-size: var(--unnamed-font-size-19);
+  line-height: var(--unnamed-line-spacing-34);
+  color: var(--unnamed-color-ffffff);
+}
+.titulo-grande {
+  font-family: var(--unnamed-font-family-merriweather);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-42);
+  line-height: var(--unnamed-line-spacing-58);
+  letter-spacing: var(--unnamed-character-spacing--1-05);
+  color: var(--unnamed-color-ffffff);
+}
+.footer-minimo {
+  font-family: var(--unnamed-font-family-merriweather);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-bold);
+  font-size: var(--unnamed-font-size-21);
+  line-height: var(--unnamed-line-spacing-42);
+  letter-spacing: var(--unnamed-character-spacing--0-6);
+  color: var(--unnamed-color-ffffff);
+}
+.titulo-grande-verde {
+  font-family: var(--unnamed-font-family-merriweather);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-bold);
+  font-size: var(--unnamed-font-size-38);
+  line-height: var(--unnamed-line-spacing-58);
+  letter-spacing: var(--unnamed-character-spacing--0-97);
+  color: var(--unnamed-color-7DF900);
+}
+footer {
+  background: var(--unnamed-color-004891);
+  font-size: var(--unnamed-font-size-24);
+  letter-spacing: var(--unnamed-character-spacing--0-6);
+  line-height: var(--unnamed-line-spacing-34);
+  color: var(--unnamed-color-CCE7FF);
+  font-family: var(--unnamed-font-family-merriweather);
+  padding: 5rem 0; /* Padding para un espaciado adecuado */
+}
+.container-fluid {
+  width: 85%;
+}
+/* Estilos footer */
+
+.section-background-1 {
+  background-color: var(--unnamed-color-E9EEF4);
+}
+.section-background-2 {
+  background-color: var(--unnamed-color-ffffff);
+}
+.section-background-3 {
+  background: linear-gradient(to bottom, #e9eef4 45%, #fff 45%),
+    linear-gradient(to bottom, #fff 50%, #fff 50%);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.contenedor-section {
+  margin: 0;
+  padding: 3rem 0;
+}
+.section-background-4 {
+  background-color: black;
+  padding: 0;
+}
+.section-background-5 {
+  background-color: var(--unnamed-color-004891);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  /* background: linear-gradient(120deg, #004891 30%, #004285 100%); */
+}
+.mapa .img-fluid {
+  object-fit: cover;
+  height: 100%;
+  /* max-width: 1139px;
+  max-height: 1161px; */
+}
+.parte1-mapa {
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+/* Para el logo, establecer el ancho al 40% */
+footer .img-fluid {
+  max-width: 400px;
+}
+footer li {
+  margin-bottom: 1rem;
+}
+footer .footer-auxiliar {
+  /* font-size: var(--unnamed-font-size-20); */
+  font-size: var(--unnamed-font-size-20);
+  line-height: var(--unnamed-line-spacing-34);
+  color: var(--unnamed-color-5A9CFF);
+}
+/* Cambiar color de los íconos al hacer hover */
+.list-unstyled a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+  color: var(--unnamed-color-CCE7FF);
+}
+.footer-iconos li {
+  font-size: calc(1rem + 1vw);
+  margin: 1rem;
+}
+.linea-footer {
+  border-bottom: 2px solid #36404e;
+}
+.list-unstyled a:hover {
+  color: var(--unnamed-color-7DF900); /* Color verde al hacer hover */
+}
+.flecha-circular-footer {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px; /* Tamaño inicial del círculo */
+  height: 30px; /* Tamaño inicial del círculo */
+  background-color: var(--unnamed-color-004891);
+  border: 2px solid; /* Borde del círculo */
+  border-radius: 50%; /* Asegura que el contenedor sea un círculo */
+  transition: all 0.3s ease; /* Animación para agrandar el círculo */
+  margin-left: 0.5rem;
+  font-size: var(--unnamed-font-size-18);
+}
+.responsive-line {
+  border: 0;
+  border-top: 2px solid #ffffff; /* Color de la línea */
+  width: 100%; /* Abarca todo el ancho del contenedor */
+  margin: 20px 0; /* Espaciado superior e inferior */
+  box-sizing: border-box;
+}
+/* Estilos para hacer el diseño responsivo */
+/* @media (max-width: 768px) {
+  .col-md-4 {
+    text-align: center;
+  }
+  .img-fluid {
+    width: 50%;
+  }
+  .list-unstyled {
+    padding-left: 0;
+  }
+  .list-unstyled d-flex {
+    justify-content: center;
+    padding-left: 0;
+  }
+  .list-unstyled d-flex li {
+    margin-right: 10px;
+  }
+} */
+
+/* fin de estilos footer */
+
+/* Tarjeta */
+.card-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* Estilo de la tarjeta 1 */
+.card {
+  position: relative;
+  width: 100%;
+  max-width: 830px;
+  max-height: 675px;
+  border: 1px solid #fff;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+}
+.texto-titulo-blanco {
+  font-size: var(--unnamed-font-size-38); /* Tamaño ligeramente menor */
+  line-height: var(--unnamed-line-spacing-42); /* Ajuste en línea */
+  letter-spacing: var(--unnamed-character-spacing--0-97);
+}
+.card-content {
+  color: white;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #36404e;
+  color: #ffff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 5px;
+  transition: height 0.4s ease;
+}
+
+.descripcion {
+  opacity: 0;
+  margin-left: 3.5rem;
+  margin-right: 2rem;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .overlay {
+  height: 70%;
+}
+
+.card:hover .descripcion {
+  opacity: 1;
+}
+
+/* Estilo tarjeta 2 */
+.card-2 {
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  max-width: 373px;
+}
+.card-img-top {
+  max-height: 250px;
+  object-fit: cover;
+}
+
+.card2-title {
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold)
+    var(--unnamed-font-size-32) / var(--unnamed-line-spacing-42)
+    var(--unnamed-font-family-merriweather);
+  letter-spacing: var(--unnamed-character-spacing--0-8);
+  color: var(--unnamed-color-36404e);
+  max-height: 205px;
+  margin: 0;
+}
+/* Esto es para el hover del titulo */
+.hover-card-underline {
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none; /* Asegura que no haya subrayado por defecto */
+  position: relative;
+  transition: line-height 0.5s ease, text-decoration-color 0.5s ease,
+    text-decoration-thickness 0.5s ease;
+}
+
+.hover-card-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  /* background-color: currentColor; */
+  transition: height 0.3s ease; /* Hace que el subrayado aparezca de forma suave */
+}
+
+.hover-card-underline:hover {
+  text-decoration: underline;
+  text-decoration-color: currentColor; /* Establece el color del subrayado */
+  text-decoration-thickness: 2px; /* Hace que el subrayado sea más grueso */
+  line-height: calc(1.4em + 2px); /* Aumenta el line-height en 2px con efecto */
+}
+/* Estilos para card con texto sin efecto
+ */
+.hover-card-reporte-underline {
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none; /* Asegura que no haya subrayado por defecto */
+  position: relative;
+}
+
+.hover-card-reporte-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  /* background-color: currentColor; */
+}
+
+.hover-card-reporte-underline:hover {
+  text-decoration: underline;
+  text-decoration-color: currentColor; /* Establece el color del subrayado */
+  text-decoration-thickness: 2px; /* Hace que el subrayado sea más grueso */
+}
+/* Fin Estilos para card con texto sin efecto
+ */
+.card-text {
+  min-height: 187px;
+
+  font-family: var(--unnamed-font-family-raleway);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-21);
+  line-height: var(--unnamed-line-spacing-38);
+  letter-spacing: var(--unnamed-character-spacing--0-21);
+  color: var(--unnamed-color-36404e);
+}
+
+/* Estilo tarjeta 3 */
+.card3 {
+  max-width: 550px;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  min-height: 750px;
+  box-shadow: 6px 6px 10px #00000029;
+  transition: box-shadow 0.3s ease-in-out;
+  background: #fff;
+}
+.card3 .card-img-top {
+  max-height: 304px;
+
+  object-fit: cover;
+}
+.text-fecha {
+  font-family: var(--unnamed-font-family-raleway);
+  font-size: var(--unnamed-font-size-15);
+  font-weight: var(--unnamed-font-weight-bold);
+  color: var(--unnamed-color-0063f9) !important;
+}
+/* FIn Estilos tarjeta 3 */
+
+/* Estilos para ver mas con flecha */
+.btn-vermas {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 0px;
+  background-color: inherit;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-size: var(--unnamed-font-size-20);
+  font-weight: var(--unnamed-font-weight-500);
+}
+
+.flecha-circular {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px; /* Tamaño inicial del círculo */
+  height: 30px; /* Tamaño inicial del círculo */
+  background-color: inherit;
+  border: 2px solid #0063f9; /* Borde del círculo */
+  border-radius: 50%; /* Asegura que el contenedor sea un círculo */
+  transition: all 0.3s ease; /* Animación para agrandar el círculo */
+  margin-right: 0.5rem;
+}
+.flecha-circular-verde {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px; /* Tamaño inicial del círculo */
+  height: 30px; /* Tamaño inicial del círculo */
+  background-color: inherit;
+  border: 2px solid #7df900; /* Borde del círculo */
+  border-radius: 50%; /* Asegura que el contenedor sea un círculo */
+  transition: all 0.3s ease; /* Animación para agrandar el círculo */
+  margin-right: 0.5rem;
+}
+/* Flecha de Font Awesome */
+.flecha-ver-mas {
+  font-size: 18px; /* Tamaño inicial de la flecha */
+  /* transition: all 0.3s ease; */
+}
+
+/* Al hacer hover sobre el botón */
+.btn-vermas:hover .flecha-ver-mas {
+  font-size: var(--unnamed-font-size-14);
+  transition: transform 0.3s ease; /* Animación de alargado */
+}
+
+/* Cuando el botón es hover, el círculo se agranda para ajustarse */
+.btn-vermas:hover .flecha-circular {
+  width: 100px; /* El círculo se agranda para seguir la flecha */
+  height: 30px; /* El círculo mantiene la misma altura */
+  border-radius: 250px;
+  background-color: #0063f9;
+  color: #fff;
+}
+.btn-vermas:hover .flecha-circular-verde {
+  width: 100px; /* El círculo se agranda para seguir la flecha */
+  height: 30px; /* El círculo mantiene la misma altura */
+  border-radius: 250px;
+  background-color: #7df900;
+  color: #36404e;
+}
+
+.flecha-circular-no-hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px; /* Ajuste del tamaño del círculo */
+  height: 30px; /* Igual que el ancho para hacerlo circular */
+  border-radius: 250px; /* Asegura que sea un círculo perfecto */
+  background-color: #0063f9;
+  color: #fff;
+  margin-right: 10px; /* Espacio entre el ícono y el texto */
+}
+
+.flecha-ver-mas-no-hover {
+  font-size: 22px; /* Tamaño más grande para la flecha */
+  color: #fff;
+}
+/* Estilos para flecha descargar */
+.btn-descargar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 0px;
+  background-color: inherit;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-family: var(--unnamed-font-family-raleway);
+  font-size: var(--unnamed-font-size-16);
+  font-weight: var(--unnamed-font-weight-bold);
+}
+.btn-descargar .flecha-circular {
+  width: 25px; /* Tamaño inicial del círculo */
+  height: 25px; /* Tamaño inicial del círculo */
+  margin-left: 0.5rem;
+}
+/* Cuando el botón es hover, el círculo se agranda para ajustarse */
+.btn-descargar:hover .flecha-circular {
+  background-color: var(--unnamed-color-0063f9);
+  color: #fff;
+  transform: scaleY(1.08); /* Aumenta la longitud de la flecha */
+  transition: transform 0.3s ease; /* Animación de alargado */
+  font-size: var(--unnamed-font-size-20);
+  /* transform: matrix(0, 1, -1, 0, 0, 0); */
+}
+
+/* Fin Estilos para flecha descargar */
+/* Estilos para a hred subrayado */
+.hover-underline {
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  display: inline-block;
+}
+
+.hover-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background: currentColor;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.3s ease-in-out;
+}
+
+.hover-underline:hover::after {
+  transform: scaleY(1);
+}
+/* Fin Estilos para a hred subrayado */
+
+/* Estilo de las fuentes */
+.title-section {
+  color: #004891;
+}
+.margin-titles {
+  margin-left: 1rem;
+}
+.title-interna-index {
+  font-family: var(--unnamed-font-family-merriweather);
+  font-weight: var(--unnamed-font-weight-bold);
+  font-size: 39px; /* Establece el tamaño de la fuente a 48 pt */
+  line-height: 58pt; /* Establece el interlineado a 58 pt */
+  color: #004891; /* Establece el color del texto a #004891 */
+}
+/* Estilo de las flechas */
+.flecha {
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+  color: #7df900; /* Cambia el color de la flecha a verde */
+}
+.flecha-blue {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+  color: #0063f9; /* Cambia el color de la flecha a verde */
+}
+/* Estilos para los contenedores de las seccion */
+/* .container-fluid {
+  width: 100%;
+}
+ */
+.contenido {
+  width: 90%; /* El contenido ocupa el 90% del contenedor */
+  margin: 0 auto; /* Centra el contenido dentro del contenedor */
+}
+/* .contenido .row {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+} */
+
+/* Estilos para card4 reportes */
+.card4 {
+  width: 100%; /* Ancho de la tarjeta */
+  max-width: 235px;
+  height: auto;
+  max-height: 750px;
+  overflow: hidden; /* Para evitar que la imagen se salga del contenedor */
+  font-family: var(--unnamed-font-family-merriweather);
+  color: var(--unnamed-color-004891);
+  font-size: var(--unnamed-font-size-24);
+  line-height: var(--unnamed-line-spacing-32);
+  letter-spacing: var(--unnamed-character-spacing--0-6);
+  font-weight: var(--unnamed-font-weight-bold);
+}
+
+.card-img-container {
+  overflow: hidden; /* Evita que la imagen se desborde fuera de la tarjeta */
+  height: 100%; /* Ajusta el tamaño de la imagen dentro de la tarjeta */
+  max-height: 300px;
+  box-shadow: 5px 5px 10px #00000029;
+  max-width: 235px;
+}
+
+.card4 .card-img-top {
+  max-height: 300px;
+  object-fit: cover;
+}
+
+/* .card4 .card-title{
+  min-height: 150px;
+} */
+.card-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Mantiene la proporción de la imagen al redimensionarse */
+  transition: transform 0.3s ease; /* La imagen tiene una transición suave */
+}
+.card4 .card4-title {
+  min-height: 150px;
+  display: inline-block;
+}
+
+.card-img-container img {
+  transition: transform 0.3s ease;
+}
+
+.card4:hover .card-img-container img {
+  transform: scale(1.05);
+}
+
+.card4-title:hover .hover-card-reporte-underline {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.card4-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  flex-wrap: wrap;
+  font-weight: 500;
+  font-family: var(--unnamed-font-family-raleway);
+  color: var(--unnamed-color-9FB5C9);
+  font-size: var(--unnamed-font-size-14);
+  line-height: var(--unnamed-line-spacing-38);
+  letter-spacing: var(--unnamed-character-spacing--0-35);
+}
+
+.card-footer a {
+  font-size: var(--unnamed-font-size-16);
+  line-height: var(--unnamed-line-spacing-38);
+  font-family: var(--unnamed-font-family-raleway);
+  font-weight: var(--unnamed-font-weight-bold);
+}
+
+/* Fin de card para reportes */
+/* card para comunicados */
+.card5 {
+  width: 100%; /* Ancho de la tarjeta */
+  /* max-width: 372px; */
+  /* height: auto; */
+  max-height: 700px;
+  overflow: hidden; /* Para evitar que la imagen se salga del contenedor */
+}
+.card5 .card-img-top {
+  max-height: 300px;
+  object-fit: cover;
+}
+.card5 .card-body {
+  min-height: 250px;
+}
+.card5 .card2-title {
+  min-height: 228px;
+}
+.card5 .hover-card-underline:hover {
+  color: var(--unnamed-color-004891);
+}
+/* fin de card para comunicados */
+
+/* Estilos para card6 trabaja con nosotros */
+.card6 {
+  width: 100%; /* Ancho de la tarjeta */
+  max-width: 725px;
+  height: auto;
+  max-height: 700px;
+  overflow: hidden; /* Para evitar que la imagen se salga del contenedor */
+  font-family: var(--unnamed-font-family-merriweather);
+  color: var(--unnamed-color-004891);
+  font-size: var(--unnamed-font-size-24);
+  line-height: var(--unnamed-line-spacing-58);
+  letter-spacing: var(--unnamed-character-spacing--0-97);
+  font-weight: var(--unnamed-font-weight-bold);
+}
+.card6 .card-img-top {
+  max-height: 360px;
+  object-fit: cover;
+}
+.card6 .card-footer a {
+  font-size: var(--unnamed-font-size-20);
+  line-height: var(--unnamed-line-spacing-38);
+  font-weight: var(--unnamed-font-weight-500);
+}
+.card6 .card-text {
+  min-height: 140px;
+}
+/* Fin Estilos para card6 trabaja con nosotros */
+
+/* Inicio estilos card sustinable */
+.card8 {
+  padding: 2rem;
+}
+.card8 .img-fluid {
+  max-width: 510px;
+  max-height: 320px;
+}
+.card8 .card-content {
+  max-width: 520px;
+}
+
+.logo-sustinable p {
+  font-size: 5rem; /* Tamaño de fuente */
+  color: #fff; /* Verde para "SUS" y "ABLE" */
+  font-weight: var(--unnamed-font-weight-bold);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombras sutiles para darle un efecto de profundidad */
+}
+section .container-fluid {
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+section .row {
+  position: relative;
+}
+
+section .col-lg-4 {
+  z-index: 1; /* Mantén la columna de texto encima de la imagen */
+}
+
+section .col-lg-7 {
+  padding: 0;
+  position: absolute; /* Hace que la imagen se salga de los límites del contenedor */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  /* left: 50%; */
+  /* Esto lo coloca en la mitad de la pantalla */
+  z-index: 0; /* Mantiene la imagen detrás de los otros elementos */
+}
+
+section .col-lg-7 img {
+  width: 100%; /* Hace que la imagen ocupe todo el contenedor */
+  height: 100%;
+  object-fit: cover; /* Hace que la imagen cubra todo el espacio sin distorsionarse */
+}
+
+/* Estilo específico para la palabra "TIN" en un cuadro blanco con letras negras */
+.tin-logo {
+  background-color: white;
+  color: black; /* Letras negras */
+  padding: 20px 5px 0px 5px;
+  font-weight: bold;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1); /* Sombra para resaltar */
+}
+
+/* Estilo de las otras letras "SUS" y "ABLE" */
+.sust-logo {
+  color: #fff; /* Color verde */
+}
+
+/* Fin estilos card sustinable */
+
+/* Estilos para el mapa */
+.card9 .img-fluid {
+  max-width: 810px;
+  max-height: 530px;
+}
+.icono-imagen {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.titulo-item {
+  margin-bottom: 0.5rem;
+}
+.listado-operaciones {
+  list-style: none;
+  padding-left: 3rem;
+}
+
+.listado-operaciones li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.3rem;
+}
+
+ul.font-color-blue li i {
+  margin-right: 1rem;
+  color: var(--unnamed-color-5A9CFF);
+}
+ul.font-color-green li i {
+  margin-right: 1rem;
+  color: var(--unnamed-color-7DF900);
+}
+ul.font-color-orange li i {
+  margin-right: 1rem;
+  color: var(--unnamed-color-F98600);
+}
+.mapa .img-fluid {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  display: block;
+}
+/* fIN DE ESTILOS para el mapa */
+
+/* Responsividad para pantallas grandes (mayores a 1400px) */
+@media (max-width: 1700px) {
+  .container-fluid {
+    width: 90%;
+  }
+}
+@media (max-width: 1400px) {
+  .card {
+    max-height: 450px;
+  }
+  .card-img {
+    min-height: 500px;
+  }
+  .card:hover .overlay {
+    height: 100%; /* Aumenta el tamaño de la capa al 100% en hover */
+  }
+
+  .texto-base-blanco {
+    font-size: var(--unnamed-font-size-22); /* Tamaño ligeramente menor */
+    line-height: var(--unnamed-line-spacing-32); /* Ajuste para línea */
+  }
+  .texto-titulo-blanco {
+    font-size: var(--unnamed-font-size-36); /* Tamaño ligeramente menor */
+    line-height: var(--unnamed-line-spacing-36); /* Ajuste en línea */
+  }
+
+  .card2-title {
+    font-size: var(--unnamed-font-size-32);
+    line-height: 1.4;
+  }
+  .card-text {
+    font-size: var(--unnamed-font-size-21);
+    line-height: var(--unnamed-line-spacing-38);
+  }
+  .card4 {
+    font-size: 1.5rem; /* Tamaño para pantallas grandes */
+  }
+  .logo-sustinable p {
+    font-size: 3.5rem;
+  }
+
+  .carousel-caption h1 {
+    font-size: var(--unnamed-font-size-22);
+  }
+
+  .carousel-caption h3 {
+    font-size: 62px;
+  }
+
+  .carousel-caption p {
+    font-size: var(--unnamed-font-size-30);
+  }
+}
+
+/* Responsividad para pantallas medianas (mayores a 1024px) */
+@media (max-width: 1024px) {
+  .title-interna-index {
+    font-size: 34px;
+    line-height: 52px;
+  }
+  .card {
+    max-height: 450px;
+  }
+  .card-img {
+    min-height: 500px;
+  }
+  .card:hover .overlay {
+    height: 100%; /* Overlay al 100% en hover */
+  }
+
+  .texto-base-blanco {
+    font-size: var(
+      --unnamed-font-size-20
+    ); /* Tamaño de texto ajustado para pantallas medianas */
+    line-height: var(--unnamed-line-spacing-30); /* Línea ajustada */
+  }
+  .texto-titulo-blanco {
+    font-size: var(--unnamed-font-size-32); /* Ajuste de tamaño de fuente */
+    line-height: var(--unnamed-line-spacing-32); /* Línea ajustada */
+  }
+  .card2-title {
+    font-size: var(--unnamed-font-size-28);
+    line-height: 1.3;
+  }
+  .card-text {
+    font-size: var(--unnamed-font-size-20);
+    line-height: 1.5;
+  }
+  .card3 {
+    min-height: 600px; /* Ajuste de altura para tablets */
+  }
+  .card4 {
+    font-size: 1.25rem; /* Tamaño para pantallas medianas */
+  }
+  .logo-sustinable p {
+    font-size: 3rem;
+  }
+
+  .carousel-caption h1 {
+    font-size: var(--unnamed-font-size-20);
+  }
+
+  .carousel-caption h3 {
+    font-size: 56px;
+  }
+
+  .carousel-caption p {
+    font-size: var(--unnamed-font-size-28);
+  }
+  .p-cinta span,
+  .p-cinta button {
+
+    font-size: var(--unnamed-font-size-22);
+    line-height: var(--unnamed-line-spacing-36);
+  }
+}
+@media (max-width: 992px) {
+  /* header{
+    background-color: var(--unnamed-color-004891);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  } */
+}
+
+/* Responsividad para pantallas más pequeñas (mayores a 768px) */
+@media (max-width: 768px) {
+  .container-fluid {
+    max-width: 100%;
+    padding: 0;
+  }
+  .title-interna-index {
+    font-size: 28px;
+    line-height: 46px;
+  }
+
+  .card:hover .overlay {
+    height: 100%; /* Overlay al 100% en hover */
+  }
+
+  .texto-base-blanco {
+    font-size: var(
+      --unnamed-font-size-18
+    ); /* Tamaño de fuente pequeño para pantallas pequeñas */
+    line-height: var(--unnamed-line-spacing-28); /* Ajuste en línea */
+  }
+  .texto-titulo-blanco {
+    font-size: var(--unnamed-font-size-28); /* Tamaño de fuente más pequeño */
+    line-height: var(--unnamed-line-spacing-30); /* Ajuste de línea */
+  }
+  .card2-title {
+    font-size: var(--unnamed-font-size-24);
+    line-height: 1.2;
+  }
+  .card-text {
+    font-size: var(--unnamed-font-size-18);
+    line-height: 1.4;
+  }
+  .card4 {
+    font-size: 1.1rem; /* Tamaño para pantallas más pequeñas */
+  }
+  .margin-titles {
+    margin-left: 0rem;
+  }
+  .responsive-line {
+    border-top: 1px solid #ffffff; /* Línea más fina en pantallas pequeñas */
+  }
+
+  /* responsivo del footer */
+  footer {
+    font-size: var(--unnamed-font-size-18);
+  }
+  footer li {
+    margin: 0;
+  }
+  footer .img-fluid {
+    max-width: 250px;
+  }
+  /* Estilo para los iconos */
+  .footer-iconos i {
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+  footer .footer-auxiliar {
+    font-size: var(--unnamed-font-size-16);
+  }
+  /* Efecto de hover sobre los iconos */
+  .footer-iconos i:hover {
+    color: #27ae60; /* Verde */
+  }
+  footer .row {
+    text-align: center;
+  }
+
+  footer .col-md-3,
+  footer .col-md-5,
+  footer .col-md-7 {
+    margin-bottom: 20px;
+  }
+  footer .footer-iconos {
+    justify-content: center;
+  }
+  /* fint del responsivo del footer */
+  .section-background-3 {
+    background: linear-gradient(to bottom, #e9eef4 36%, #fff 36%),
+      linear-gradient(to bottom, #fff 50%, #fff 50%);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  .logo-sustinable p {
+    font-size: 3rem;
+  }
+  .texto-sustinable {
+    font-size: var(--unnamed-font-size-16);
+  }
+  .titulo-sustinable {
+    font-size: var(--unnamed-font-size-24);
+  }
+  .titulo-grande {
+    font-size: var(--unnamed-font-size-24);
+  }
+  .footer-minimo {
+    font-size: var(--unnamed-font-size-16);
+  }
+  /* La imagen no debe salirse de la fila y debe ir debajo del texto */
+  section .card-sustinable .col-lg-7 {
+    position: relative; /* Vuelve a un comportamiento normal */
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho disponible */
+    top: auto; /* Restablece la posición vertical */
+    left: 0; /* Restablece el desplazamiento */
+  }
+
+  section .card-sustinable.col-lg-7 img {
+    height: auto; /* La imagen se ajusta a su tamaño original sin forzarla a ocupar toda la altura */
+  }
+
+  section .card-sustinable .row {
+    display: flex;
+    flex-direction: column-reverse; /* Esto asegura que la imagen se mueva debajo del contenido en pantallas pequeñas */
+  }
+.carousel-caption{
+  align-items: center;
+}
+  .carousel-caption h1 {
+    font-size: var(--unnamed-font-size-18);
+    text-align: center;
+  }
+
+  .carousel-caption h3 {
+    font-size: 50px;
+  }
+
+  .carousel-caption p {
+    font-size: var(--unnamed-font-size-26);
+    text-align: center;
+  }
+  .carousel-inner .carousel-caption {
+    text-align: center;
+    width: 100%;
+    left: 0%;
+  }
+
+  .p-cinta span,
+  .p-cinta button {
+
+    font-size: var(--unnamed-font-size-20);
+    line-height: var(--unnamed-line-spacing-34);
+  }
+}
+
+/* Responsividad para móviles pequeños (menos de 480px) */
+@media (max-width: 480px) {
+  .title-interna-index {
+    font-size: 24px;
+    line-height: 40px;
+  }
+  .card {
+    max-height: 300px; /* Ajuste para pantallas móviles */
+  }
+  .overlay {
+    height: 70px;
+  }
+  .card:hover .overlay {
+    height: 100%; /* Overlay al 100% en hover */
+  }
+
+  .texto-base-blanco {
+    font-size: var(--unnamed-font-size-16); /* Tamaño aún más pequeño */
+    line-height: var(--unnamed-line-spacing-26); /* Ajuste de altura de línea */
+  }
+  .texto-titulo-blanco {
+    font-size: var(
+      --unnamed-font-size-24
+    ); /* Tamaño más pequeño para móviles */
+    line-height: var(--unnamed-line-spacing-26); /* Ajuste en altura de línea */
+  }
+  .descripcion {
+    margin-left: 2rem;
+    margin-right: 1rem;
+  }
+  .card2-title {
+    font-size: var(--unnamed-font-size-20);
+    line-height: 1.2;
+  }
+  .card-text {
+    font-size: var(--unnamed-font-size-16);
+    line-height: 1.4;
+    min-height: auto;
+  }
+  /* .card-2 {
+      max-height: 500px;
+  } */
+  .card3 {
+    min-height: 450px;
+  }
+  .card4 {
+    font-size: 1rem; /* Tamaño para pantallas pequeñas */
+  }
+  .card4 .card4-title {
+    min-height: 80px;
+  }
+  .card5 .card-body {
+    min-height: 150px;
+  }
+  .card5 .card2-title {
+    min-height: 110px;
+  }
+  .logo-sustinable p {
+    font-size: 2rem; /* Reducir aún más el tamaño de la fuente */
+  }
+  .carousel-caption h1 {
+    font-size: var(--unnamed-font-size-16);
+  }
+
+  .carousel-caption h3 {
+    font-size: 44px;
+  }
+
+  .carousel-caption p {
+    font-size: var(--unnamed-font-size-24);
+  }
+
+  .p-cinta span,
+  .p-cinta button {
+
+    font-size: var(--unnamed-font-size-18);
+    line-height: var(--unnamed-line-spacing-32);
+  }
+}

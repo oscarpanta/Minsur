@@ -1,0 +1,105 @@
+<header [class.scrolled]="isScrolled || forceWhiteBackground" [class.menu-open]="isMenuOpen">
+  <div class="p-cinta py-2">
+    <div class="d-flex justify-content-between align-items-center">
+      <span class="">
+        <span>COMUNICADO:</span> Minsur es la primera empresa peruana en ser
+        reconocida por.Minsur es la primera empresa peruana en ser reconocida
+        por Minsur es la primera empresa peruana en ser reconocida.</span
+      >
+      <button
+        (click)="eliminarCinta()"
+        class="btn rounded-circle d-flex align-items-center justify-content-center border-light"
+        style="width: 29px; height: 30px"
+      >
+        &times;
+      </button>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div
+      class="header-content d-lg-flex d-block justify-content-between align-items-center"
+    >
+      <!-- Logo alineado a la izquierda y centrado verticalmente -->
+      <a class="navbar-brand logo-container d-lg-block d-none" routerLink="/">
+        <img src="assets/images/Logo/LogoMinsur.png" alt="Logo" class="logo" />
+      </a>
+
+      <div class="right-content d-flex flex-column">
+        <!-- Fila superior con enlaces a la derecha -->
+        <div class="top-bar d-none d-lg-flex justify-content-end">
+          <a routerLink="home/contactanos" class="top-link">CONTÁCTANOS</a>
+          <a routerLink="home/trabaja-con-nosotros" class="top-link"
+            >TRABAJA CON NOSOTROS</a
+          >
+          <span class="top-link_idioma"
+            ><a class="me-1 top-link" routerLink="/">ESPAÑOL</a>|<a
+              class="ms-1 top-link"
+              routerLink="/"
+              >ENGLISH</a
+            >
+          </span>
+        </div>
+
+        <!-- Menú de navegación -->
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand d-block d-lg-none" routerLink="/">
+            <img
+              src="assets/images/Logo/LogoMinsur.png"
+              alt="Logo"
+              class="logo"
+            />
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"   (click)="toggleMenu()"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item mx-2">
+                <a class="nav-link" routerLink="/quienes-somos"
+                  >Quiénes Somos</a
+                >
+              </li>
+              <li class="nav-item  mx-2">
+                <a class="nav-link" routerLink="/quienes-somos">Que hacemos</a>
+              </li>
+              <li class="nav-item  mx-2">
+                <a class="nav-link" routerLink="/sostenibilidad"
+                  >Sostenibilidad</a
+                >
+              </li>
+              <li class="nav-item  mx-2">
+                <a class="nav-link" routerLink="/inversiones-reportes"
+                  >Inversionistas y Reportes</a
+                >
+              </li>
+              <li class="nav-item  mx-2">
+                <a class="nav-link" routerLink="/proveedores">Proveedores</a>
+              </li>
+
+              <li class="nav-item  mx-2">
+                <a class="nav-link" routerLink="/noticias">Noticias</a>
+              </li>
+              <li class="nav-item  mx-2 d-lg-none">
+                <a class="nav-link" href="#">Trabaja con Nosotros</a>
+              </li>
+
+              <!-- <li class="nav-item d-lg-none">
+                <a class="nav-link" href="#">Español | Inglés</a>
+              </li> -->
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
