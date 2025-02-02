@@ -60,8 +60,18 @@
   --unnamed-line-spacing-58: 58px;
 }
 
-
-
+section .container-fluid {
+  width: 85%;
+  max-width: 1900px;
+}
+header .container-fluid {
+  width: 85%;
+  max-width: 1900px;
+}
+footer .container-fluid {
+  width: 85%;
+  max-width: 1900px;
+}
 
 /* --- Contenedor principal --- */
 header {
@@ -436,9 +446,7 @@ footer {
   font-family: var(--unnamed-font-family-merriweather);
   padding: 5rem 0; /* Padding para un espaciado adecuado */
 }
-.container-fluid {
-  width: 85%;
-}
+
 /* Estilos footer */
 
 .section-background-1 {
@@ -499,11 +507,13 @@ footer .footer-auxiliar {
 }
 .footer-iconos li {
   font-size: calc(1rem + 1vw);
-  margin: 1rem;
+  margin: 0.2rem;
+  max-width : 300px
 }
-.linea-footer {
-  border-bottom: 2px solid #36404e;
-}
+/* .linea-footer {
+  border-bottom: 1px solid #ffffff;
+  max-width: 300px;
+} */
 .list-unstyled a:hover {
   color: var(--unnamed-color-7DF900); /* Color verde al hacer hover */
 }
@@ -885,10 +895,7 @@ footer .footer-auxiliar {
   color: #0063f9; /* Cambia el color de la flecha a verde */
 }
 /* Estilos para los contenedores de las seccion */
-/* .container-fluid {
-  width: 100%;
-}
- */
+
 .contenido {
   width: 90%; /* El contenido ocupa el 90% del contenedor */
   margin: 0 auto; /* Centra el contenido dentro del contenedor */
@@ -1046,21 +1053,21 @@ footer .footer-auxiliar {
   letter-spacing: 5px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombras sutiles para darle un efecto de profundidad */
 }
-section .container-fluid {
+section  .container-fluid .card-sustinable{
   position: relative;
   padding-left: 0;
   padding-right: 0;
 }
 
-section .row {
+section .row .card-sustinable{
   position: relative;
 }
 
-section .col-lg-4 {
+section .card-sustinable .col-lg-4 {
   z-index: 1; /* Mantén la columna de texto encima de la imagen */
 }
 
-section .col-lg-7 {
+section  .card-sustinable  .col-lg-7 {
   padding: 0;
   position: absolute; /* Hace que la imagen se salga de los límites del contenedor */
   top: 0;
@@ -1071,7 +1078,7 @@ section .col-lg-7 {
   z-index: 0; /* Mantiene la imagen detrás de los otros elementos */
 }
 
-section .col-lg-7 img {
+section .card-sustinable  .col-lg-7 img {
   width: 100%; /* Hace que la imagen ocupe todo el contenedor */
   height: 100%;
   object-fit: cover; /* Hace que la imagen cubra todo el espacio sin distorsionarse */
@@ -1140,7 +1147,13 @@ ul.font-color-orange li i {
 
 /* Responsividad para pantallas grandes (mayores a 1400px) */
 @media (max-width: 1700px) {
-  .container-fluid {
+  section .container-fluid {
+    width: 90%;
+  }
+  footer .container-fluid {
+    width: 90%;
+  }
+  header .container-fluid {
     width: 90%;
   }
 }
@@ -1263,7 +1276,15 @@ ul.font-color-orange li i {
 
 /* Responsividad para pantallas más pequeñas (mayores a 768px) */
 @media (max-width: 768px) {
-  .container-fluid {
+  section .container-fluid {
+    max-width: 100%;
+    padding: 0;
+  }
+  footer .container-fluid {
+    max-width: 100%;
+    padding: 0;
+  }
+  header .container-fluid {
     max-width: 100%;
     padding: 0;
   }
