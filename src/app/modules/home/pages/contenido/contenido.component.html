@@ -1,4 +1,4 @@
-<div class="container-fluid px-0">
+<div class="px-0">
   <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div
@@ -8,28 +8,37 @@
           height: 120vh;
         "
       >
-        <div
-          class="carousel-caption gap-lg-3 gap-1"
-          style="
-            height: 120vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-          "
-        >
-          <h1>QUIÉNES SOMOS</h1>
-          <h3>Minería Peruana de clase mundial</h3>
-          <p>
-            Nuestro propósito: Mejoramos la vida transformando minerales en
-            bienestar.
-          </p>
-          <!-- <a routerLink="/" class="btn btn-primary">Ver más</a> -->
-          <a routerLink="/" class="btn-vermas" style="color: #7DF900; max-width: max-content;">
-            <span class="flecha-circular-verde"><i class="fas fa-arrow-right flecha-ver-mas"></i></span>
-            Ver más
-        </a>
-        </div>
-
+        <section>
+          <div
+            class="carousel-caption gap-lg-3 gap-1 container-fluid mx-auto"
+            style="
+              height: 120vh;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+            "
+          >
+            <div>
+              <h1>QUIÉNES SOMOS</h1>
+              <h3>Minería Peruana de clase mundial</h3>
+              <p>
+                Nuestro propósito: Mejoramos la vida transformando minerales en
+                bienestar.
+              </p>
+              <!-- <a routerLink="/" class="btn btn-primary">Ver más</a> -->
+              <a
+                routerLink="/"
+                class="btn-vermas"
+                style="color: #7df900; max-width: max-content"
+              >
+                <span class="flecha-circular-verde"
+                  ><i class="fas fa-arrow-right flecha-ver-mas"></i
+                ></span>
+                Ver más
+              </a>
+            </div>
+          </div>
+        </section>
       </div>
       <div
         class="carousel-item"
@@ -38,26 +47,36 @@
           height: 120vh;
         "
       >
-      <div
-      class="carousel-caption"
-      style="
-        height: 120vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      "
-    >
-          <h1>QUÉ PRODUCIMOS</h1>
-          <h3>Somos el segundo productor de estaño en el mundo</h3>
-          <p>
-            Diversificamos nuestra cartera para responder a nuestra estrategia
-            de crecimiento y las demandas del mercado .
-          </p>
-          <a routerLink="/" class="btn-vermas" style="color: #7DF900; max-width: max-content;">
-            <span class="flecha-circular-verde"><i class="fas fa-arrow-right flecha-ver-mas"></i></span>
-            Ver más
-        </a>
-        </div>
+        <section>
+          <div
+            class="carousel-caption gap-lg-3 gap-1 container-fluid mx-auto"
+            style="
+              height: 120vh;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+            "
+          >
+            <div>
+              <h1>QUÉ PRODUCIMOS</h1>
+              <h3>Somos el segundo productor de estaño en el mundo</h3>
+              <p>
+                Diversificamos nuestra cartera para responder a nuestra
+                estrategia de crecimiento y las demandas del mercado .
+              </p>
+              <a
+                routerLink="/"
+                class="btn-vermas"
+                style="color: #7df900; max-width: max-content"
+              >
+                <span class="flecha-circular-verde"
+                  ><i class="fas fa-arrow-right flecha-ver-mas"></i
+                ></span>
+                Ver más
+              </a>
+            </div>
+          </div>
+        </section>
       </div>
       <div
         class="carousel-item"
@@ -66,29 +85,38 @@
           height: 120vh;
         "
       >
-      <div
-      class="carousel-caption"
-      style="
-        height: 120vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      "
-    >
-          <h1>VISIÓN DEL FUTURO</h1>
-          <h3>
-            Sostenibilidad, personas e innovación, palancas del crecimiento
-          </h3>
-          <p>
-            Apostamos por el desarrollo de una minería enfocada en las personas
-            y basada en la excelencia operacional.
-          </p>
-          <a routerLink="/" class="btn-vermas" style="color: #7DF900; max-width: max-content;">
-            <span class="flecha-circular-verde"><i class="fas fa-arrow-right flecha-ver-mas"></i></span>
-            Ver más
-        </a>
-
-        </div>
+        <section>
+          <div
+            class="carousel-caption gap-lg-3 gap-1 container-fluid mx-auto"
+            style="
+              height: 120vh;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+            "
+          >
+            <div>
+              <h1>VISIÓN DEL FUTURO</h1>
+              <h3>
+                Sostenibilidad, personas e innovación, palancas del crecimiento
+              </h3>
+              <p>
+                Apostamos por el desarrollo de una minería enfocada en las
+                personas y basada en la excelencia operacional.
+              </p>
+              <a
+                routerLink="/"
+                class="btn-vermas"
+                style="color: #7df900; max-width: max-content"
+              >
+                <span class="flecha-circular-verde"
+                  ><i class="fas fa-arrow-right flecha-ver-mas"></i
+                ></span>
+                Ver más
+              </a>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
     <!-- <button
@@ -107,594 +135,788 @@
     >
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
     </button> -->
-    <div class="carousel-indicators-container">
-      <div class="carousel-indicators">
-        <div class="col-4 slide_index" (click)="goToSlide(0)">
-          <div class="carousel-indicator-group d-flex flex-column pe-2">
-            <button
-              type="button"
-              data-bs-target="#carouselExample"
-              data-bs-slide-to="0"
-              class="active order-1"
-            ></button>
-            <div class="indicator-title">Quiénes Somos</div>
+    <section>
+      <div class="carousel-indicators-container d-flex mx-auto justify-content-center">
+        <div class="carousel-indicators container-fluid">
+          <div class="col-4 slide_index" (click)="goToSlide(0)">
+            <div class="carousel-indicator-group d-flex flex-column pe-2">
+              <button
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide-to="0"
+                class="active order-1"
+              ></button>
+              <div class="indicator-title">Quiénes Somos</div>
+            </div>
+          </div>
+          <div class="col-4 slide_index" (click)="goToSlide(1)">
+            <div class="carousel-indicator-group d-flex flex-column pe-2">
+              <button
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide-to="1"
+                class="order-1"
+              ></button>
+              <div class="indicator-title">Qué Producimos</div>
+            </div>
+          </div>
+          <div class="col-4 slide_index" (click)="goToSlide(2)">
+            <div class="carousel-indicator-group d-flex flex-column pe-2">
+              <button
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide-to="2"
+                class="order-1"
+              ></button>
+              <div class="indicator-title">Visión del Futuro</div>
+            </div>
           </div>
         </div>
-        <div class="col-4 slide_index" (click)="goToSlide(1)">
-          <div class="carousel-indicator-group d-flex flex-column pe-2">
-            <button
-              type="button"
-              data-bs-target="#carouselExample"
-              data-bs-slide-to="1"
-              class="order-1"
-            ></button>
-            <div class="indicator-title">Qué Producimos</div>
-          </div>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<!-- seccion mapa -->
+<section class="contenedor-section section-background-5">
+  <div class="container-fluid">
+    <div class="card9">
+      <div class="row no-gutters">
+        <!-- Primera sección: Imagen y texto -->
+        <div class="col-12 col-md-6 d-flex flex-column">
+          <img
+            src="assets/images/unidad_minera.png"
+            alt="Imagen"
+            class="img-fluid mb-3"
+          />
+          <!-- Imagen -->
+          <p class="texto-debajo-imagen texto-minimo">
+            Unidad minera Pucamarca, distrito de Palca, a 52 kilómetros de
+            Tacna.
+          </p>
         </div>
-        <div class="col-4 slide_index" (click)="goToSlide(2)">
-          <div class="carousel-indicator-group d-flex flex-column pe-2">
-            <button
-              type="button"
-              data-bs-target="#carouselExample"
-              data-bs-slide-to="2"
-              class="order-1"
-            ></button>
-            <div class="indicator-title">Visión del Futuro</div>
+
+        <!-- Segunda sección: Título, texto y nombre -->
+        <div class="col-12 col-md-6 py-lg-5 py-sm-1">
+          <p class="titulo-seccion titulo-grande">
+            Redefiniendo la minería con visión de futuro
+          </p>
+          <p class="texto-seccion texto-sustinable">
+            En Minsur tenemos un propósito trascendental orientado por la
+            sostenibilidad y que guía nuestra estrategia empresarial. Los
+            desafíos ambientales, económicos, sociales y las nuevas tecnologías
+            nos exigen generar una nueva propuesta de valor, que hoy nos conduce
+            hacia una minería más justa, humana y responsable.
+          </p>
+          <div class="d-flex justify-content-end">
+            <p class="nombre-seccion footer-minimo">Juan Luis Kruger - CEO</p>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+</section>
+<section class="contenedor-section section-background-5">
+  <div class="container-fluid">
+    <div
+      class="row no-gutters d-flex justify-content-between flex-lg-row flex-column card-sustinable"
+    >
+      <!-- Primera sección: Título, texto y más texto -->
+      <div
+        class="col-lg-4 p-3 d-flex flex-column align-self-start"
+        style="max-width: 550px"
+      >
+        <h2 class="titulo-seccion titulo-grande-verde">Dónde Operamos</h2>
+        <p class="texto-seccion texto-sustinable">
+          Contamos con una cartera minera diversificada en diferentes tipos de
+          minerales y ubicaciones geográficas, lo cual es clave para la
+          sostenibilidad y el éxito a largo plazo en la industria.
+        </p>
 
-
-  <!-- seccion mapa -->
-  <section class="contenedor-section section-background-5">
-      <div class="container-fluid">
-          <div class="card9">
-              <div class="row no-gutters">
-                  <!-- Primera sección: Imagen y texto -->
-                  <div class="col-12 col-md-6 d-flex flex-column">
-                      <img src="assets/images/unidad_minera.png" alt="Imagen" class="img-fluid mb-3"> <!-- Imagen -->
-                      <p class="texto-debajo-imagen texto-minimo">Unidad minera Pucamarca, distrito de Palca, a 52 kilómetros de Tacna.</p>
-                  </div>
-
-                  <!-- Segunda sección: Título, texto y nombre -->
-                  <div class="col-12 col-md-6 py-lg-5 py-sm-1">
-                      <p class="titulo-seccion titulo-grande">Redefiniendo la minería con visión de futuro</p>
-                      <p class="texto-seccion texto-sustinable">
-                          En Minsur tenemos un propósito trascendental orientado por la sostenibilidad y que guía nuestra estrategia empresarial.
-                          Los desafíos ambientales, económicos, sociales y las nuevas tecnologías nos exigen generar una nueva propuesta de valor,
-                          que hoy nos conduce hacia una minería más justa, humana y responsable.
-                      </p>
-                      <div class="d-flex justify-content-end">
-                          <p class="nombre-seccion footer-minimo">Juan Luis Kruger - CEO</p>
-                      </div>
-                  </div>
-              </div>
-
+        <!-- Bloque 1 -->
+        <div class="mb-3 d-flex flex-column my-5">
+          <div class="d-flex align-items-center">
+            <img
+              src="assets/images/circulo_azul.png"
+              alt="Icono 1"
+              class="icono-imagen me-2"
+            />
+            <h4 class="titulo-item footer-minimo">Operaciones Minsur</h4>
           </div>
+          <ul class="listado-operaciones texto-sustinable font-color-blue">
+            <li><i class="fas fa-arrow-right"></i> San Rafael (Sn)</li>
+            <li><i class="fas fa-arrow-right"></i> Pucamarca (Au)</li>
+            <li><i class="fas fa-arrow-right"></i> F&R Pisco (Sn)</li>
+          </ul>
+        </div>
+
+        <!-- Bloque 2 -->
+        <div class="mb-3 d-flex flex-column">
+          <div class="d-flex align-items-center">
+            <img
+              src="assets/images/circulo_naranja.png"
+              alt="Icono 2"
+              class="icono-imagen me-2"
+            />
+            <h4 class="titulo-item footer-minimo">Proyectos</h4>
+          </div>
+          <ul class="listado-operaciones texto-sustinable font-color-orange">
+            <li><i class="fas fa-arrow-right"></i> Santo Domingo (Sn)</li>
+            <li><i class="fas fa-arrow-right"></i> La Colorada (Au)</li>
+            <li><i class="fas fa-arrow-right"></i> Sumac Wayra (Cu)</li>
+            <li><i class="fas fa-arrow-right"></i> Quimsachata (Cu)</li>
+          </ul>
+        </div>
+
+        <!-- Bloque 3 -->
+        <div class="mb-3 d-flex flex-column">
+          <div class="d-flex align-items-center">
+            <img
+              src="assets/images/circulo_verde.png"
+              alt="Icono 3"
+              class="icono-imagen me-2"
+            />
+            <h4 class="titulo-item footer-minimo">Subsidiarias</h4>
+          </div>
+          <ul class="listado-operaciones texto-sustinable font-color-green">
+            <li><i class="fas fa-arrow-right"></i> Marcobre (Cu)</li>
+            <li><i class="fas fa-arrow-right"></i> Taboca (Sn)</li>
+            <li><i class="fas fa-arrow-right"></i> Cumbres del Sur</li>
+          </ul>
+        </div>
       </div>
 
-  </section>
-  <section class="contenedor-section section-background-5">
+      <!-- Segunda sección: Imagen -->
+      <div class="col-lg-7 p-0">
+        <img
+          src="assets/images/mapa1.png"
+          alt="Imagen"
+          class="img-fluid w-100 h-100 object-contain"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- fin seccion mapa -->
+<!-- <div class="container-fluid"> -->
+<!-- seccion que producimos -->
+<section class="contenedor-section section-background-2">
+  <div class="">
     <div class="container-fluid">
-      <div class="row no-gutters d-flex justify-content-between flex-lg-row flex-column card-sustinable">
-        <!-- Primera sección: Título, texto y más texto -->
-        <div class="col-lg-4 p-3 d-flex flex-column align-self-start" style="max-width: 550px;">
-          <h2 class="titulo-seccion titulo-grande-verde">Dónde Operamos</h2>
-          <p class="texto-seccion texto-sustinable">
-            Contamos con una cartera minera diversificada en diferentes tipos de minerales y ubicaciones geográficas, lo cual es clave para la sostenibilidad y el éxito a largo plazo en la industria.
-          </p>
+      <div class="row">
+        <div class="col-lg-12">
+          <p class="mb-5 title-interna-index">Qué producimos</p>
+        </div>
+      </div>
 
-          <!-- Bloque 1 -->
-          <div class="mb-3 d-flex flex-column my-5">
-            <div class="d-flex align-items-center">
-              <img src="assets/images/circulo_azul.png" alt="Icono 1" class="icono-imagen me-2">
-              <h4 class="titulo-item footer-minimo">Operaciones Minsur</h4>
+      <div class="row">
+        <!-- Card Estaño -->
+        <div class="col-md-6 col-12 mb-5 mb-md-0">
+          <div class="">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="card">
+                  <img
+                    src="assets/images/estanio.png"
+                    alt="Estanio"
+                    class="card-img img-fluid"
+                    style="border-radius: 10px"
+                  />
+                  <div class="overlay">
+                    <div class="card-content px-2 my-2 my-sm-4 p-0 m-0">
+                      <p class="titulo m-2 pl-1 texto-titulo-blanco">
+                        <i class="fas fa-arrow-right flecha"></i> Estaño
+                      </p>
+                      <p class="descripcion texto-base-blanco">
+                        El estaño es un metal altamente versátil. Su resistencia
+                        a la corrosión y su capacidad para conducir electricidad
+                        lo convierten en un componente clave en la electrónica,
+                        la industria automotriz y las energías renovables.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <ul class="listado-operaciones texto-sustinable font-color-blue">
-              <li><i class="fas fa-arrow-right"></i> San Rafael (Sn)</li>
-              <li><i class="fas fa-arrow-right"></i> Pucamarca (Au)</li>
-              <li><i class="fas fa-arrow-right"></i> F&R Pisco (Sn)</li>
-            </ul>
-          </div>
-
-          <!-- Bloque 2 -->
-          <div class="mb-3 d-flex flex-column">
-            <div class="d-flex align-items-center">
-              <img src="assets/images/circulo_naranja.png" alt="Icono 2" class="icono-imagen me-2">
-              <h4 class="titulo-item footer-minimo">Proyectos</h4>
-            </div>
-            <ul class="listado-operaciones texto-sustinable font-color-orange">
-              <li><i class="fas fa-arrow-right"></i> Santo Domingo (Sn)</li>
-              <li><i class="fas fa-arrow-right"></i> La Colorada (Au)</li>
-              <li><i class="fas fa-arrow-right"></i> Sumac Wayra (Cu)</li>
-              <li><i class="fas fa-arrow-right"></i> Quimsachata (Cu)</li>
-            </ul>
-          </div>
-
-          <!-- Bloque 3 -->
-          <div class="mb-3 d-flex flex-column">
-            <div class="d-flex align-items-center">
-              <img src="assets/images/circulo_verde.png" alt="Icono 3" class="icono-imagen me-2">
-              <h4 class="titulo-item footer-minimo">Subsidiarias</h4>
-            </div>
-            <ul class="listado-operaciones texto-sustinable font-color-green">
-              <li><i class="fas fa-arrow-right"></i> Marcobre (Cu)</li>
-              <li><i class="fas fa-arrow-right"></i> Taboca (Sn)</li>
-              <li><i class="fas fa-arrow-right"></i> Cumbres del Sur</li>
-            </ul>
           </div>
         </div>
 
-        <!-- Segunda sección: Imagen -->
-        <div class="col-lg-7 p-0">
-          <img src="assets/images/mapa1.png" alt="Imagen" class="img-fluid w-100 h-100 object-contain">
+        <!-- Card Oro -->
+        <div class="col-md-6 col-12 mb-5 mb-md-0">
+          <div class="">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="card">
+                  <img
+                    src="assets/images/oro.png"
+                    alt="Oro"
+                    class="card-img img-fluid"
+                    style="border-radius: 10px"
+                  />
+                  <div class="overlay">
+                    <div class="card-content px-2 my-2 my-sm-4 p-0 m-0">
+                      <p class="titulo m-2 pl-1 texto-titulo-blanco">
+                        <i class="fas fa-arrow-right flecha"></i> Oro
+                      </p>
+                      <p class="descripcion texto-base-blanco">
+                        Durante millones de años, el oro ha cautivado a la
+                        humanidad. Además de actuar como reserva financiera, su
+                        resistencia y conductividad lo han convertido en un
+                        elemento esencial en la tecnología moderna.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-
-   <!-- fin seccion mapa -->
-<!-- <div class="container-fluid"> -->
-  <!-- seccion que producimos -->
-  <section class="contenedor-section section-background-2 ">
-      <div class="">
-          <div class="container-fluid">
-
-                      <div class="row">
-                          <div class="col-lg-12"><p class="mb-5 title-interna-index">Qué producimos</p></div>
-
-                      </div>
-
-
-
-
-                          <div class="row">
-                              <!-- Card Estaño -->
-                              <div class="col-md-6 col-12 mb-5 mb-md-0 ">
-                                  <div class="">
-                                  <div class="row">
-                                      <div class="col-md-12">
-                                          <div class="card">
-                                              <img src="assets/images/estanio.png" alt="Estanio" class="card-img img-fluid" style="border-radius: 10px;">
-                                              <div class="overlay">
-                                              <div class="card-content px-2 my-2 my-sm-4 p-0 m-0">
-                                                  <p class="titulo m-2 pl-1 texto-titulo-blanco">
-                                                  <i class="fas fa-arrow-right flecha"></i> Estaño
-                                                  </p>
-                                                  <p class="descripcion texto-base-blanco">
-                                                  El estaño es un metal altamente versátil. Su resistencia a la corrosión y su capacidad para conducir electricidad lo convierten en un componente clave en la electrónica, la industria automotriz y las energías renovables.
-                                                  </p>
-                                              </div>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  </div>
-                              </div>
-
-                              <!-- Card Oro -->
-                              <div class="col-md-6 col-12 mb-5 mb-md-0 ">
-                                  <div class="">
-                                  <div class="row">
-                                      <div class="col-md-12 ">
-                                      <div class="card">
-                                          <img src="assets/images/oro.png" alt="Oro" class="card-img img-fluid" style="border-radius: 10px;">
-                                          <div class="overlay">
-                                          <div class="card-content px-2 my-2 my-sm-4 p-0 m-0">
-                                              <p class="titulo m-2 pl-1 texto-titulo-blanco">
-                                              <i class="fas fa-arrow-right flecha"></i> Oro
-                                              </p>
-                                              <p class="descripcion texto-base-blanco">
-                                              Durante millones de años, el oro ha cautivado a la humanidad. Además de actuar como reserva financiera, su resistencia y conductividad lo han convertido en un elemento esencial en la tecnología moderna.
-                                              </p>
-                                          </div>
-                                          </div>
-                                      </div>
-                                      </div>
-                                  </div>
-                                  </div>
-                              </div>
-                          </div>
-
-
-
+<!-- fin seccion que producimos -->
+<section class="contenedor-section section-background-4">
+  <div class="container-fluid">
+    <!-- Agregar contenedor -->
+    <div class="row no-gutters card-sustinable">
+      <!-- Primera sección: fondo negro con logo, título, descripción y botón -->
+      <div
+        class="col-12 col-md-6 col-lg-5 p-4 d-flex justify-content-center align-items-center"
+      >
+        <div class="card8 p-md-3 p-lg-5 m-md-3 m-lg-5">
+          <div class="logo-sustinable mb-5">
+            <p>
+              <span class="sust-logo">SUS</span><span class="tin-logo">TIN</span
+              ><span class="sust-logo">ABLE</span>
+            </p>
           </div>
-      </div>
-  </section>
-
-
-
-  <!-- fin seccion que producimos -->
-  <section class="contenedor-section section-background-4">
-
-          <div class="container-fluid"> <!-- Agregar contenedor -->
-              <div class=" row no-gutters card-sustinable">
-
-                  <!-- Primera sección: fondo negro con logo, título, descripción y botón -->
-                  <div class="col-12 col-md-6 col-lg-5 p-4 d-flex justify-content-center align-items-center ">
-                      <div class="card8 p-md-3 p-lg-5 m-md-3 m-lg-5">
-                          <div class="logo-sustinable mb-5">
-                              <p><span class="sust-logo">SUS</span><span class="tin-logo">TIN</span><span class="sust-logo">ABLE</span></p>
-                          </div>
-                          <div class="card-content">
-                              <div class="card-title titulo-sustinable">
-                                  <p>Estaño sostenible y de calidad para el futuro.</p>
-                              </div>
-                              <div class="card-body texto-sustinable">
-                                  <p>SusTINable no es solo un producto, es una forma de trabajar que busca generar bienestar social y éxito a largo plazo para nuestros negocios, socios y el mundo.</p>
-                              </div>
-                              <div class="card-footer">
-                                  <!-- <button class="btn btn-warning">Visita nuestra web</button> -->
-                                  <a routerLink="/" class="btn-vermas" style="color: #7DF900">
-                                      <span class="flecha-circular-verde"><i class="fas fa-arrow-right flecha-ver-mas"></i></span>
-                                      Visita nuestra web
-                                  </a>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-
-                  <!-- Segunda sección: imagen -->
-                  <div class="col-12 col-md-6 col-lg-7 p-0">
-                      <img src="assets/images/sustinable.png" alt="Imagen" class="img-fluid w-100" style="object-fit: cover; height: 100%;">
-                  </div>
-
-              </div>
-          </div> <!-- Cerrar contenedor -->
-
-  </section>
-
-
-
-  <!-- seccion  Produccion rsponsable-->
-  <section class="contenedor-section section-background-2 ">
-      <div class="">
-          <div class="container-fluid">
-              <p class="mb-5 title-interna-index">Producción responsable</p>
-              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4" style="display: flex; justify-content: space-between;">
-                  <!-- Card 1 -->
-                  <div class="col col-lg-3 col-md-6 col-sm-12">
-                      <div class="card-2">
-                          <img src="assets/images/economia_circular.png" alt="Economía circular" class="card-img-top">
-                          <div class="card-body my-5">
-                              <p class="card2-title">
-                                  <i class="fas fa-arrow-right flecha-blue"></i>
-                                  <a href="" class="hover-underline">Economía circular</a>
-                              </p>
-                              <p class="card-text mt-4 mb-5">
-                                  Tranformamos la producción y consumo de minerales fomentando la eficiencia de procesos para crear valor con menos recursos.
-                              </p>
-                              <a routerLink="/" class="btn-vermas">
-                                  <span class="flecha-circular"><i class="fas fa-arrow-right flecha-ver-mas"></i></span>
-                                  ver más
-                              </a>
-                          </div>
-                      </div>
-                  </div>
-
-                  <!-- Card 2 -->
-                  <div class="col col-lg-3 col-md-6 col-sm-12">
-                      <div class="card-2">
-                          <img src="assets/images/emisiones_netas.png" alt="Emisiones netas cero" class="card-img-top">
-                          <div class="card-body my-5">
-                              <p class="card2-title">
-                                  <i class="fas fa-arrow-right flecha-blue"></i>
-                                  <a href="" class="hover-underline">Emisiones netas cero</a>
-                              </p>
-                              <p class="card-text mt-4 mb-5">
-                                  Buscamos lograr emisiones netas cero para el 2050, tenemos una hoja de ruta orientada a mitigar emisiones y afrontar climáticos.
-                              </p>
-                              <a routerLink="/" class="btn-vermas">
-                                  <span class="flecha-circular"><i class="fas fa-arrow-right flecha-ver-mas"></i></span>
-                                  ver más
-                              </a>
-                          </div>
-                      </div>
-                  </div>
-
-                  <!-- Card 3 -->
-                  <div class="col col-lg-3 col-md-6 col-sm-12">
-                      <div class="card-2">
-                          <img src="assets/images/trazabilidad.png" alt="Producto 3" class="card-img-top">
-                          <div class="card-body my-5">
-                              <p class="card2-title">
-                                  <i class="fas fa-arrow-right flecha-blue"></i>
-                                  <a href="" class="hover-underline">Trazabilidad</a>
-                              </p>
-                              <p class="card-text mt-4 mb-5">
-                                  Primera minera en usar tecnología blockchain para verificar origen del estaño, reafirmando nuestro compromiso con la transparencia y la producción ética.
-                              </p>
-                              <a routerLink="/" class="btn-vermas">
-                                  <span class="flecha-circular"><i class="fas fa-arrow-right flecha-ver-mas"></i></span>
-                                  ver más
-                              </a>
-                          </div>
-                      </div>
-                  </div>
-
-                  <!-- Card 4 -->
-                  <div class="col col-lg-3 col-md-6 col-sm-12">
-                      <div class="card-2">
-                          <img src="assets/images/enfoque_personas.png" alt="Enfoque en personas" class="card-img-top">
-                          <div class="card-body my-5">
-                              <p class="card2-title">
-                                  <i class="fas fa-arrow-right flecha-blue"></i>
-                                  <a href="" class="hover-underline">Enfoque en personas</a>
-                              </p>
-                              <p class="card-text mt-4 mb-5">
-                                  Nuestro éxito está ligado con nuestro propósito empresarial de generar bienestar en nuestra gente y en las comunidades donde operamos.
-                              </p>
-                              <a routerLink="/" class="btn-vermas">
-                                  <span class="flecha-circular"><i class="fas fa-arrow-right flecha-ver-mas"></i></span>
-                                  ver más
-                              </a>
-                          </div>
-                      </div>
-                  </div>
-              </div>
+          <div class="card-content">
+            <div class="card-title titulo-sustinable">
+              <p>Estaño sostenible y de calidad para el futuro.</p>
+            </div>
+            <div class="card-body texto-sustinable">
+              <p>
+                SusTINable no es solo un producto, es una forma de trabajar que
+                busca generar bienestar social y éxito a largo plazo para
+                nuestros negocios, socios y el mundo.
+              </p>
+            </div>
+            <div class="card-footer">
+              <!-- <button class="btn btn-warning">Visita nuestra web</button> -->
+              <a routerLink="/" class="btn-vermas" style="color: #7df900">
+                <span class="flecha-circular-verde"
+                  ><i class="fas fa-arrow-right flecha-ver-mas"></i
+                ></span>
+                Visita nuestra web
+              </a>
+            </div>
           </div>
-      </div>
-  </section>
-
-
-
-  <!-- fin seccion que producimos -->
-   <!-- Seccion noticias     -->
-   <section class="contenedor-section section-background-3 ">
-      <div class="mb-5">
-          <div class="container-fluid">
-              <p class="mb-5 title-interna-index">Noticias</p>
-              <div class="row g-4 justify-content-center justify-content-md-between">
-              <!-- Card 1 -->
-                  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                      <div class="card3 h-100">
-                      <img src="assets/images/noticia1.png" class="card-img-top" alt="Imagen 1">
-                      <div class="card-body d-flex flex-column justify-content-between m-3 m-sm-4 m-md-5">
-                          <div>
-                          <div class="text-muted  mb-1 mb-md-2 mb-lg-3 text-fecha">Junio, 2024</div>
-                          <p class="card2-title hover-card-underline">Clínica móvil Minsur ha realizado más de 2,500 atenciones en Antauta y Ajoyani</p>
-                          </div>
-                          <div class="mt-3">
-                              <a routerLink="/" class="btn-vermas">
-
-                                  <span class="flecha-circular"><i class="fas fa-arrow-right flecha-ver-mas"></i></span>
-                                  ver más
-                              </a>
-                          </div>
-                      </div>
-                      </div>
-                  </div>
-
-                  <!-- Card 2 -->
-                  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                      <div class="card3 h-100">
-                      <img src="assets/images/noticia2.png" class="card-img-top" alt="Imagen 1">
-                      <div class="card-body d-flex flex-column justify-content-between m-3 m-sm-4 m-md-5">
-                          <div>
-                          <div class="text-muted  mb-1 mb-md-2 mb-lg-3 text-fecha">Mayo, 2024</div>
-                          <p class="card2-title hover-card-underline">Formamos parte de índice de sostenibilidad de la BVL y S&P Dow Jones</p>
-                          </div>
-                          <div class="mt-3">
-                              <a routerLink="/" class="btn-vermas">
-
-                                  <span class="flecha-circular"><i class="fas fa-arrow-right flecha-ver-mas"></i></span>
-                                  ver más
-                              </a>
-                          </div>
-                      </div>
-                      </div>
-                  </div>
-
-                  <!-- Card 3 -->
-                  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                      <div class="card3 h-100">
-                      <img src="assets/images/noticia3.png" class="card-img-top" alt="Imagen 1">
-                      <div class="card-body d-flex flex-column justify-content-between m-3 m-sm-4 m-md-5">
-                          <div>
-                          <div class="text-muted mb-1 mb-md-2 mb-lg-3 text-fecha">Abril, 2024</div>
-                          <p class="card2-title hover-card-underline">Minsur es la primera empresa peruana en ser reconocida por el prestigioso Shingo Institute</p>
-                          </div>
-                          <div class="mt-3">
-                              <a routerLink="/" class="btn-vermas">
-
-                                  <span class="flecha-circular"><i class="fas fa-arrow-right flecha-ver-mas"></i></span>
-                                  ver más
-                              </a>
-                          </div>
-                      </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="py-5 mt-5">
-          <div class="container-fluid mb--5">
-              <div class="row d-flex justify-content-center justify-content-lg-between">
-                  <div class="col-md-12 col-lg-8">
-                      <p class="mb-5 title-interna-index">Reportes</p>
-                      <div class="row d-flex justify-content-center">
-                          <!-- Tarjeta 1 -->
-                          <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-5 d-flex justify-content-center justify-content-sm-center justify-content-md-start">
-                              <div class="card4">
-                                  <div class="card-img-container">
-                                      <img src="assets/images/reporte3.png" class="card-img-top" alt="Imagen 2">
-                                  </div>
-                                  <div class="card4-body my-3 px-2">
-                                      <p class="card4-title">
-                                          <span class="hover-card-reporte-underline">Memoria Anual 2024</span>
-                                      </p>
-                                      <div class="card4-footer">
-
-                                          <span>PDF 12.5Mb</span>
-                                          <a routerLink="/" class="btn-descargar" download>
-                                              Descargar
-                                              <span class="flecha-circular"><i class="fas fa-arrow-down"></i></span>
-                                          </a>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-
-                          <!-- Tarjeta 2 -->
-                          <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-5 d-flex justify-content-center justify-content-sm-center justify-content-md-start">
-                              <div class="card4">
-                                  <div class="card-img-container">
-                                      <img src="assets/images/reporte2.png" class="card-img-top" alt="Imagen 2">
-                                  </div>
-                                  <div class="card4-body my-3 px-2">
-                                      <p class="card4-title">
-                                          <span class="hover-card-reporte-underline">Reglamento del Directorio</span>
-                                      </p>
-                                      <div class="card4-footer">
-                                          <span>PDF 12.5Mb</span>
-                                          <a routerLink="/" class="btn-descargar" download>
-                                              Descargar
-                                              <span class="flecha-circular"><i class="fas fa-arrow-down"></i></span>
-                                          </a>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-
-                          <!-- Tarjeta 3 -->
-                          <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-5 d-flex justify-content-center justify-content-sm-center justify-content-md-start">
-                              <div class="card4">
-                                  <div class="card-img-container">
-                                      <img src="assets/images/reporte1.png" class="card-img-top" alt="Imagen 2">
-                                  </div>
-                                  <div class="card4-body my-3 px-2">
-                                      <p class="card4-title">
-                                          <span class="hover-card-reporte-underline">Reporte de Sostenibilidad 2024</span>
-                                      </p>
-                                      <div class="card4-footer">
-                                          <span>PDF 12.5Mb</span>
-                                          <a routerLink="/" class="btn-descargar" download>
-                                              Descargar
-                                              <span class="flecha-circular"><i class="fas fa-arrow-down"></i></span>
-                                          </a>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-
-                          <!-- Tarjeta 4 -->
-                          <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-5 d-flex justify-content-center justify-content-sm-center justify-content-md-start">
-                              <div class="card4">
-                                  <div class="card-img-container">
-                                      <img src="assets/images/reporte1.png" class="card-img-top" alt="Imagen 2">
-                                  </div>
-                                  <div class="card4-body my-3 px-2">
-                                      <p class="card4-title">
-                                          <span class="hover-card-reporte-underline">Reporte de expectativas de desempeño ICMM 2023</span>
-                                      </p>
-                                      <div class="card4-footer">
-                                          <span>PDF 12.5Mb</span>
-                                          <a routerLink="/" class="btn-descargar" download>
-                                              Descargar
-                                              <span class="flecha-circular"><i class="fas fa-arrow-down"></i></span>
-                                          </a>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-
-                  <!-- Columna de comunicados -->
-                  <div class="col-12 col-md-12 col-lg-3">
-                      <p class="mb-5 title-interna-index">Comunicados</p>
-                      <div class="row justify-content-center">
-                          <div class="col-12 col-sm-12 col-md-12 col-lg-12 mb-4">
-                              <div class="card5">
-                                  <!-- Imagen de la card -->
-                                  <img src="assets/images/comunicado1.png" class="card-img-top" alt="Imagen de ejemplo">
-
-                                  <!-- Cuerpo de la card -->
-                                  <div class="card-body d-flex flex-column justify-content-between my-3 my-sm-4 my-md-4">
-                                      <!-- Título de la card -->
-                                      <p class="card2-title hover-card-underline my-1">Minsur convoca a asamblea general de a cuenca de regantes de Antauta y Ajoyami</p>
-
-                                      <!-- Botón Ver más -->
-                                      <div class="mt-3">
-                                      <a routerLink="/" class="btn-vermas">
-
-                                          <span class="flecha-circular"><i class="fas fa-arrow-right flecha-ver-mas"></i></span>
-                                          ver más
-                                      </a>
-                                  </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </section>
-    <!-- fin seccion noticias -->
-
-
-  <!-- seccion trabaja con nosotros -->
-  <section class="contenedor-section section-background-1 ">
-      <div class="">
-          <div class="container-fluid ">
-              <div class="row d-flex justify-content-between">
-                  <div class="col-12 col-sm-12 col-md-5 mb-4">
-                      <div class="card6">
-                          <!-- Imagen con border-radius -->
-                          <img src="assets/images/integridad1.png" class="card-img-top" alt="Imagen de ejemplo" style="border-radius: 20px;">
-                          <div class="card-body">
-                              <p class="card-title title-interna-index my-3">Canal de Integridad</p>
-                              <p class="card-text">permite comunicar inquietudes, quejas o denuncias sobre incumplimientos legales o de políticas internas.</p>
-                              <!-- Botones -->
-                              <div class="card-footer">
-                                  <a routerLink="/" class="btn-vermas">
-                                      <span class="flecha-circular-no-hover">
-                                          <i class="fas fa-long-arrow-alt-right flecha-ver-mas-no-hover"></i>
-                                      </span>
-                                      escribenos
-                                  </a>
-                                  <a routerLink="/" class="btn-descargar ml-lg-2 ml-sm-1" download>
-                                      <span class="flecha-circular"><i class="fas fa-arrow-down"></i></span>
-                                      descarga el código de ética
-                                  </a>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div class="col-12 col-sm-12 col-md-5 mb-4">
-                      <div class="card6">
-                          <!-- Imagen con border-radius -->
-                          <img src="assets/images/trabaja_nosotros1.png" class="card-img-top" alt="Imagen de ejemplo" style="border-radius: 20px;">
-                          <div class="card-body">
-                              <p class="card-title title-interna-index my-3">Trabaja con Nosotros</p>
-                              <p class="card-text">Transforma minerales en bienestar requiere de un gran equipo. únete a nosotros y sé parte de este proceso.</p>
-                              <!-- Botones -->
-                              <div class="card-footer">
-                                  <a routerLink="/" class="btn-vermas">
-                                      <span class="flecha-circular"><i class="fas fa-arrow-right flecha-ver-mas"></i></span>
-                                      postula aquí
-                                  </a>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
+        </div>
       </div>
 
-  </section>
+      <!-- Segunda sección: imagen -->
+      <div class="col-12 col-md-6 col-lg-7 p-0">
+        <img
+          src="assets/images/sustinable.png"
+          alt="Imagen"
+          class="img-fluid w-100"
+          style="object-fit: cover; height: 100%"
+        />
+      </div>
+    </div>
+  </div>
+  <!-- Cerrar contenedor -->
+</section>
 
-   <!-- fin de seccion trabaja con nosotros -->
+<!-- seccion  Produccion rsponsable-->
+<section class="contenedor-section section-background-2">
+  <div class="">
+    <div class="container-fluid">
+      <p class="mb-5 title-interna-index">Producción responsable</p>
+      <div
+        class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4"
+        style="display: flex; justify-content: space-between"
+      >
+        <!-- Card 1 -->
+        <div class="col col-lg-3 col-md-6 col-sm-12">
+          <div class="card-2">
+            <img
+              src="assets/images/economia_circular.png"
+              alt="Economía circular"
+              class="card-img-top"
+            />
+            <div class="card-body my-5">
+              <p class="card2-title">
+                <i class="fas fa-arrow-right flecha-blue"></i>
+                <a href="" class="hover-underline">Economía circular</a>
+              </p>
+              <p class="card-text mt-4 mb-5">
+                Tranformamos la producción y consumo de minerales fomentando la
+                eficiencia de procesos para crear valor con menos recursos.
+              </p>
+              <a routerLink="/" class="btn-vermas">
+                <span class="flecha-circular"
+                  ><i class="fas fa-arrow-right flecha-ver-mas"></i
+                ></span>
+                ver más
+              </a>
+            </div>
+          </div>
+        </div>
 
+        <!-- Card 2 -->
+        <div class="col col-lg-3 col-md-6 col-sm-12">
+          <div class="card-2">
+            <img
+              src="assets/images/emisiones_netas.png"
+              alt="Emisiones netas cero"
+              class="card-img-top"
+            />
+            <div class="card-body my-5">
+              <p class="card2-title">
+                <i class="fas fa-arrow-right flecha-blue"></i>
+                <a href="" class="hover-underline">Emisiones netas cero</a>
+              </p>
+              <p class="card-text mt-4 mb-5">
+                Buscamos lograr emisiones netas cero para el 2050, tenemos una
+                hoja de ruta orientada a mitigar emisiones y afrontar
+                climáticos.
+              </p>
+              <a routerLink="/" class="btn-vermas">
+                <span class="flecha-circular"
+                  ><i class="fas fa-arrow-right flecha-ver-mas"></i
+                ></span>
+                ver más
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col col-lg-3 col-md-6 col-sm-12">
+          <div class="card-2">
+            <img
+              src="assets/images/trazabilidad.png"
+              alt="Producto 3"
+              class="card-img-top"
+            />
+            <div class="card-body my-5">
+              <p class="card2-title">
+                <i class="fas fa-arrow-right flecha-blue"></i>
+                <a href="" class="hover-underline">Trazabilidad</a>
+              </p>
+              <p class="card-text mt-4 mb-5">
+                Primera minera en usar tecnología blockchain para verificar
+                origen del estaño, reafirmando nuestro compromiso con la
+                transparencia y la producción ética.
+              </p>
+              <a routerLink="/" class="btn-vermas">
+                <span class="flecha-circular"
+                  ><i class="fas fa-arrow-right flecha-ver-mas"></i
+                ></span>
+                ver más
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col col-lg-3 col-md-6 col-sm-12">
+          <div class="card-2">
+            <img
+              src="assets/images/enfoque_personas.png"
+              alt="Enfoque en personas"
+              class="card-img-top"
+            />
+            <div class="card-body my-5">
+              <p class="card2-title">
+                <i class="fas fa-arrow-right flecha-blue"></i>
+                <a href="" class="hover-underline">Enfoque en personas</a>
+              </p>
+              <p class="card-text mt-4 mb-5">
+                Nuestro éxito está ligado con nuestro propósito empresarial de
+                generar bienestar en nuestra gente y en las comunidades donde
+                operamos.
+              </p>
+              <a routerLink="/" class="btn-vermas">
+                <span class="flecha-circular"
+                  ><i class="fas fa-arrow-right flecha-ver-mas"></i
+                ></span>
+                ver más
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- fin seccion que producimos -->
+<!-- Seccion noticias     -->
+<section class="contenedor-section section-background-3">
+  <div class="mb-5">
+    <div class="container-fluid">
+      <p class="mb-5 title-interna-index">Noticias</p>
+      <div class="row g-4 justify-content-center justify-content-md-between">
+        <!-- Card 1 -->
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+          <div class="card3 h-100">
+            <img
+              src="assets/images/noticia1.png"
+              class="card-img-top"
+              alt="Imagen 1"
+            />
+            <div
+              class="card-body d-flex flex-column justify-content-between m-3 m-sm-4 m-md-5"
+            >
+              <div>
+                <div class="text-muted mb-1 mb-md-2 mb-lg-3 text-fecha">
+                  Junio, 2024
+                </div>
+                <p class="card2-title hover-card-underline">
+                  Clínica móvil Minsur ha realizado más de 2,500 atenciones en
+                  Antauta y Ajoyani
+                </p>
+              </div>
+              <div class="mt-3">
+                <a routerLink="/" class="btn-vermas">
+                  <span class="flecha-circular"
+                    ><i class="fas fa-arrow-right flecha-ver-mas"></i
+                  ></span>
+                  ver más
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+          <div class="card3 h-100">
+            <img
+              src="assets/images/noticia2.png"
+              class="card-img-top"
+              alt="Imagen 1"
+            />
+            <div
+              class="card-body d-flex flex-column justify-content-between m-3 m-sm-4 m-md-5"
+            >
+              <div>
+                <div class="text-muted mb-1 mb-md-2 mb-lg-3 text-fecha">
+                  Mayo, 2024
+                </div>
+                <p class="card2-title hover-card-underline">
+                  Formamos parte de índice de sostenibilidad de la BVL y S&P Dow
+                  Jones
+                </p>
+              </div>
+              <div class="mt-3">
+                <a routerLink="/" class="btn-vermas">
+                  <span class="flecha-circular"
+                    ><i class="fas fa-arrow-right flecha-ver-mas"></i
+                  ></span>
+                  ver más
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+          <div class="card3 h-100">
+            <img
+              src="assets/images/noticia3.png"
+              class="card-img-top"
+              alt="Imagen 1"
+            />
+            <div
+              class="card-body d-flex flex-column justify-content-between m-3 m-sm-4 m-md-5"
+            >
+              <div>
+                <div class="text-muted mb-1 mb-md-2 mb-lg-3 text-fecha">
+                  Abril, 2024
+                </div>
+                <p class="card2-title hover-card-underline">
+                  Minsur es la primera empresa peruana en ser reconocida por el
+                  prestigioso Shingo Institute
+                </p>
+              </div>
+              <div class="mt-3">
+                <a routerLink="/" class="btn-vermas">
+                  <span class="flecha-circular"
+                    ><i class="fas fa-arrow-right flecha-ver-mas"></i
+                  ></span>
+                  ver más
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5 mt-5">
+    <div class="container-fluid mb--5">
+      <div class="row d-flex justify-content-center justify-content-lg-between">
+        <div class="col-md-12 col-lg-8">
+          <p class="mb-5 title-interna-index">Reportes</p>
+          <div class="row d-flex justify-content-center">
+            <!-- Tarjeta 1 -->
+            <div
+              class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-5 d-flex justify-content-center justify-content-sm-center justify-content-md-start"
+            >
+              <div class="card4">
+                <div class="card-img-container">
+                  <img
+                    src="assets/images/reporte3.png"
+                    class="card-img-top"
+                    alt="Imagen 2"
+                  />
+                </div>
+                <div class="card4-body my-3 px-2">
+                  <p class="card4-title">
+                    <span class="hover-card-reporte-underline"
+                      >Memoria Anual 2024</span
+                    >
+                  </p>
+                  <div class="card4-footer">
+                    <span>PDF 12.5Mb</span>
+                    <a routerLink="/" class="btn-descargar" download>
+                      Descargar
+                      <span class="flecha-circular"
+                        ><i class="fas fa-arrow-down"></i
+                      ></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div
+              class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-5 d-flex justify-content-center justify-content-sm-center justify-content-md-start"
+            >
+              <div class="card4">
+                <div class="card-img-container">
+                  <img
+                    src="assets/images/reporte2.png"
+                    class="card-img-top"
+                    alt="Imagen 2"
+                  />
+                </div>
+                <div class="card4-body my-3 px-2">
+                  <p class="card4-title">
+                    <span class="hover-card-reporte-underline"
+                      >Reglamento del Directorio</span
+                    >
+                  </p>
+                  <div class="card4-footer">
+                    <span>PDF 12.5Mb</span>
+                    <a routerLink="/" class="btn-descargar" download>
+                      Descargar
+                      <span class="flecha-circular"
+                        ><i class="fas fa-arrow-down"></i
+                      ></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div
+              class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-5 d-flex justify-content-center justify-content-sm-center justify-content-md-start"
+            >
+              <div class="card4">
+                <div class="card-img-container">
+                  <img
+                    src="assets/images/reporte1.png"
+                    class="card-img-top"
+                    alt="Imagen 2"
+                  />
+                </div>
+                <div class="card4-body my-3 px-2">
+                  <p class="card4-title">
+                    <span class="hover-card-reporte-underline"
+                      >Reporte de Sostenibilidad 2024</span
+                    >
+                  </p>
+                  <div class="card4-footer">
+                    <span>PDF 12.5Mb</span>
+                    <a routerLink="/" class="btn-descargar" download>
+                      Descargar
+                      <span class="flecha-circular"
+                        ><i class="fas fa-arrow-down"></i
+                      ></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tarjeta 4 -->
+            <div
+              class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-5 d-flex justify-content-center justify-content-sm-center justify-content-md-start"
+            >
+              <div class="card4">
+                <div class="card-img-container">
+                  <img
+                    src="assets/images/reporte1.png"
+                    class="card-img-top"
+                    alt="Imagen 2"
+                  />
+                </div>
+                <div class="card4-body my-3 px-2">
+                  <p class="card4-title">
+                    <span class="hover-card-reporte-underline"
+                      >Reporte de expectativas de desempeño ICMM 2023</span
+                    >
+                  </p>
+                  <div class="card4-footer">
+                    <span>PDF 12.5Mb</span>
+                    <a routerLink="/" class="btn-descargar" download>
+                      Descargar
+                      <span class="flecha-circular"
+                        ><i class="fas fa-arrow-down"></i
+                      ></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Columna de comunicados -->
+        <div class="col-12 col-md-12 col-lg-3">
+          <p class="mb-5 title-interna-index">Comunicados</p>
+          <div class="row justify-content-center">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 mb-4">
+              <div class="card5">
+                <!-- Imagen de la card -->
+                <img
+                  src="assets/images/comunicado1.png"
+                  class="card-img-top"
+                  alt="Imagen de ejemplo"
+                />
+
+                <!-- Cuerpo de la card -->
+                <div
+                  class="card-body d-flex flex-column justify-content-between my-3 my-sm-4 my-md-4"
+                >
+                  <!-- Título de la card -->
+                  <p class="card2-title hover-card-underline my-1">
+                    Minsur convoca a asamblea general de a cuenca de regantes de
+                    Antauta y Ajoyami
+                  </p>
+
+                  <!-- Botón Ver más -->
+                  <div class="mt-3">
+                    <a routerLink="/" class="btn-vermas">
+                      <span class="flecha-circular"
+                        ><i class="fas fa-arrow-right flecha-ver-mas"></i
+                      ></span>
+                      ver más
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fin seccion noticias -->
+
+<!-- seccion trabaja con nosotros -->
+<section class="contenedor-section section-background-1">
+  <div class="">
+    <div class="container-fluid">
+      <div class="row d-flex justify-content-between">
+        <div class="col-12 col-sm-12 col-md-5 mb-4">
+          <div class="card6">
+            <!-- Imagen con border-radius -->
+            <img
+              src="assets/images/integridad1.png"
+              class="card-img-top"
+              alt="Imagen de ejemplo"
+              style="border-radius: 20px"
+            />
+            <div class="card-body">
+              <p class="card-title title-interna-index my-3">
+                Canal de Integridad
+              </p>
+              <p class="card-text">
+                permite comunicar inquietudes, quejas o denuncias sobre
+                incumplimientos legales o de políticas internas.
+              </p>
+              <!-- Botones -->
+              <div class="card-footer">
+                <a routerLink="/" class="btn-vermas">
+                  <span class="flecha-circular-no-hover">
+                    <i
+                      class="fas fa-long-arrow-alt-right flecha-ver-mas-no-hover"
+                    ></i>
+                  </span>
+                  escribenos
+                </a>
+                <a
+                  routerLink="/"
+                  class="btn-descargar ml-lg-2 ml-sm-1"
+                  download
+                >
+                  <span class="flecha-circular"
+                    ><i class="fas fa-arrow-down"></i
+                  ></span>
+                  descarga el código de ética
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-5 mb-4">
+          <div class="card6">
+            <!-- Imagen con border-radius -->
+            <img
+              src="assets/images/trabaja_nosotros1.png"
+              class="card-img-top"
+              alt="Imagen de ejemplo"
+              style="border-radius: 20px"
+            />
+            <div class="card-body">
+              <p class="card-title title-interna-index my-3">
+                Trabaja con Nosotros
+              </p>
+              <p class="card-text">
+                Transforma minerales en bienestar requiere de un gran equipo.
+                únete a nosotros y sé parte de este proceso.
+              </p>
+              <!-- Botones -->
+              <div class="card-footer">
+                <a routerLink="/" class="btn-vermas">
+                  <span class="flecha-circular"
+                    ><i class="fas fa-arrow-right flecha-ver-mas"></i
+                  ></span>
+                  postula aquí
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- fin de seccion trabaja con nosotros -->
 
 <!-- </div> -->
-
-
-
-

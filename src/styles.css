@@ -95,7 +95,7 @@ header {
   display: flex;
   align-items: center;
   padding: 10px 0;
-  max-width: 1300px;
+  /* max-width: 1300px; */
   margin: auto;
 }
 header .navbar-toggler-icon {
@@ -214,7 +214,7 @@ header.scrolled .navbar-toggler-icon {
   font-family: var(--unnamed-font-family-merriweather);
 }
 .p-cinta div {
-  max-width: 1300px;
+  /* max-width: 1300px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -257,11 +257,21 @@ header.scrolled .navbar-toggler-icon {
 /* estilos slider */
 .carousel-inner .carousel-caption {
   text-align: left;
-  width: 45%;
+  /* width: 45%;
   left: 5%;
+  bottom: auto; */
   /* bottom: 25%; */
+  position: relative;
   bottom: auto;
+  right: auto;
+  left: auto;
+
 }
+.carousel-inner .carousel-caption div{
+  width: 45%;
+
+}
+
 .carousel-inner .carousel-indicators-container {
   text-align: center;
 }
@@ -278,8 +288,12 @@ header.scrolled .navbar-toggler-icon {
   /* flex-direction: column; */
   align-items: center;
   justify-content: space-between;
-  margin-right: 5%;
-  margin-left: 5%;
+  /* margin-right: 5%;
+  margin-left: 5%; */
+  margin: auto;
+  padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+
 }
 .carousel-indicators-container .carousel-indicator-group {
   display: flex;
@@ -1471,12 +1485,17 @@ ul.font-color-orange li i {
     font-size: var(--unnamed-font-size-26);
     text-align: center;
   }
-  .carousel-inner .carousel-caption {
+  /* .carousel-inner .carousel-caption {
     text-align: center;
     width: 100%;
     left: 0%;
-  }
+  } */
+  .carousel-inner .carousel-caption div{
+    text-align: center;
+    width: 100%;
+    left: 0%;
 
+  }
   .p-cinta span,
   .p-cinta button {
 
