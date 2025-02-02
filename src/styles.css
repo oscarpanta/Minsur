@@ -1066,7 +1066,7 @@ section .col-lg-7 {
   top: 0;
   right: 0;
   bottom: 0;
-  /* left: 50%; */
+  left: 50%;
   /* Esto lo coloca en la mitad de la pantalla */
   z-index: 0; /* Mantiene la imagen detrás de los otros elementos */
 }
