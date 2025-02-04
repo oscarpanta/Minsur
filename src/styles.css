@@ -731,6 +731,16 @@ footer {
   padding-bottom: 3rem;
   /* background: linear-gradient(120deg, #004891 30%, #004285 100%); */
 }
+.section-background-6{
+      background:
+      linear-gradient(to bottom,
+        #fff 30%, /* 30% blanco */
+        #e9eef4 30% 90%, /* 60% azul, desde el 30% hasta el 90% */
+        #fff 90% 100% /* 10% blanco, desde el 90% hasta el 100% */
+      );
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+}
 .mapa .img-fluid {
   object-fit: cover;
   height: 100%;
