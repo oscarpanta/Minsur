@@ -1422,7 +1422,7 @@ ul.font-color-orange li i {
 /* Agregado Estilos para contenidos generales */
 .contenido-general{
   max-width: 100%;
-  padding: 1rem;
+  padding: 1.5rem;
   margin: 0 auto;
   text-align: center;
 }
@@ -1431,7 +1431,7 @@ ul.font-color-orange li i {
 .seccion-fondo {
     position: relative;
     width: 100%;
-    height: 70vh;
+    /* height: 70vh; */
 
   }
 
@@ -1513,7 +1513,9 @@ select.selector-listado {
    .card11:hover .tit-pequeño {
     color: var(--unnamed-color-ffffff) !important;;
   }
-
+  .container-fluid .card12{
+    background: none;
+  }
 
     /* Fin Estilos para card comite ejecutivo */
 
@@ -2360,6 +2362,9 @@ select.selector-listado {
     align-items: center;
 
   }
+  .quienes-somos-section .title {
+    font-size: 50px;
+}
 }
 
 /* Responsividad para móviles pequeños (menos de 480px) */
@@ -2531,18 +2536,22 @@ select.selector-listado {
   }
   .quienes-somos-section .video-info h5 {
 
-    font-size: 12px
-
+    font-size: 12px;
+    line-height: normal;
   }
 
   .quienes-somos-section .video-info p {
 
     font-size: var(--unnamed-font-size-14);
-
+    line-height: normal;
   }
   .quienes-somos-section .btn_seccion_imagen{
 
     font-size: 12px
 
   }
+  .quienes-somos-section .title {
+    font-size: 44px;
+    line-height: 46px;
+}
 }
