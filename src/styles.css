@@ -366,7 +366,7 @@ header.scrolled .navbar-toggler-icon {
   font-size: 68px;
   color: var(--unnamed-color-ffffff);
   opacity: 1;
-  line-height: 0.8;
+  line-height: 72px;
 }
 
 .carousel-caption p {
@@ -2146,6 +2146,7 @@ select.selector-listado {
 
   .carousel-caption h3 {
     font-size: 50px;
+    line-height: 52px;
   }
 
   .carousel-caption p {
@@ -2212,6 +2213,9 @@ select.selector-listado {
   .card10 .card-body{
     min-height:auto;
   }
+  .container-fluid .custom-img img{
+    min-height: auto;
+  }
 }
 
 /* Responsividad para móviles pequeños (menos de 480px) */
@@ -2225,7 +2229,7 @@ select.selector-listado {
     line-height: 32px;
   }
   .listado {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 20px;
   }
   .tit-interno {
@@ -2233,20 +2237,20 @@ select.selector-listado {
     line-height: 32px;
   }
   .texto-base {
-    font-size: 12px;
+    font-size: 16px;
     line-height: 22px;
   }
   .texto-base-blanco {
-    font-size: 12px;
+    font-size: 16px;
     line-height: 22px;
   }
   .titulo-sustinable {
-    font-size: 14px;
+    font-size: 18px;
     line-height: 24px;
   }
   .texto-sustinable {
-    font-size: 8px;
-    line-height: 16px;
+    font-size: 16px;
+    line-height: 20px;
   }
   .texto-minimo {
     font-size: 6px;
@@ -2257,7 +2261,7 @@ select.selector-listado {
     line-height: 32px;
   }
   .footer-minimo {
-    font-size: 8px;
+    font-size: 14px;
     line-height: 16px;
   }
   .titulo-grande-verde {
@@ -2273,7 +2277,7 @@ select.selector-listado {
     line-height: 48px;
   }
   .titulo-realeway-grande {
-    font-size: 28px;
+    font-size: 24px;
     line-height: 38px;
   }
   .til-mediano-azul {
@@ -2281,7 +2285,7 @@ select.selector-listado {
     line-height: 38px;
   }
   .til-pequenio-azul {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
   }
   .til-semipequenio-azul {
@@ -2356,6 +2360,7 @@ select.selector-listado {
 
   .carousel-caption h3 {
     font-size: 44px;
+    line-height: 46px;
   }
 
   .carousel-caption p {
