@@ -67,6 +67,34 @@
   --unnamed-line-spacing-42: 42px;
   --unnamed-line-spacing-58: 58px;
 }
+@font-face {
+  font-family: 'Merriweather';
+  src: url('./assets/fonts/Merriweather-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url('./assets/fonts/Merriweather-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('./assets/fonts/Raleway-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('./assets/fonts/Raleway-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
 
 section .container-fluid {
   width: 85%;
@@ -630,6 +658,14 @@ header.scrolled .navbar-toggler-icon {
                   line-height: var(--unnamed-line-spacing-42);
                   color: var(--unnamed-color-0063f9);
                   }
+.til-semipequenio-azul {
+                    font-family: var(--unnamed-font-family-raleway);
+                    font-style: var(--unnamed-font-style-normal);
+                    font-weight: var(--unnamed-font-weight-300);
+                    font-size: var(--unnamed-font-size-34);
+                    line-height: var(--unnamed-line-spacing-42);
+                    color: var(--unnamed-color-0063f9);
+                    }
 .til-semigrande-azul {
                       font-family: var(--unnamed-font-family-raleway);
                       font-style: var(--unnamed-font-style-normal);
@@ -827,7 +863,7 @@ footer .footer-auxiliar {
   height: 100%;
   max-width: 373px;
 }
-.card-img-top {
+.card-2 .card-img-top {
   max-height: 250px;
   object-fit: cover;
 }
@@ -1345,9 +1381,157 @@ ul.font-color-orange li i {
   display: block;
 }
 /* fIN DE ESTILOS para el mapa */
+/* Agregado Estilos para contenidos generales */
+.contenido-general{
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+/* Estilos para contenidos generales */
 
+.seccion-fondo {
+    position: relative;
+    width: 100%;
+    height: auto;
+
+  }
+
+  .contenido-flotante {
+    background: var(--unnamed-color-ffffff); /* Fondo semitransparente */
+    border-radius: 20px;
+    box-shadow: 0px 3px 6px #00000029;
+    padding: 5rem;
+  }
+  .texto-base{
+    margin-bottom: 2rem;
+  }
+  .content-directorio p{
+    border-bottom: 1px solid #9FB5C9;
+    padding-bottom: 5rem;
+  }
+  .content-listado{
+    border-bottom: 1px solid #9FB5C9;
+    padding-bottom: 1rem;
+  }
+
+
+select.selector-listado {
+  border-radius: 0;
+    color: var(--unnamed-color-004891);
+    font-size: var(--unnamed-font-size-24);
+    font-weight: var(--unnamed-font-weight-bold);
+}
+  .container-fluid .custom-img{
+    margin-left: 0; /* Ajusta este valor si el espacio sigue siendo notable */
+  }
+
+  .container-fluid .custom-card {
+
+    max-width: 900px;
+    padding: 5rem;
+    padding-bottom: 2rem;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border: 0;
+  }
+
+  /* Estilos para card comite ejecutivo */
+  .card10{
+    border: 0;
+    background: var(--unnamed-color-ffffff);
+  }
+  .card10 .card-body{
+    min-height: 250px;
+
+  }
+  .tamanio-p{
+    height: 150px;
+  }
+    /* Fin Estilos para card comite ejecutivo */
+
+    /* Estilos para listas con descargar y ver */
+
+    /* Fin Estilos para listas con descargar y ver */
 /* Responsividad para pantallas grandes (mayores a 1400px) */
 @media (max-width: 1700px) {
+  .tit-pequeño {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .numero-grande {
+    font-size: 120px;
+    line-height: 50px;
+  }
+  .listado {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  .tit-interno {
+    font-size: 38px;
+    line-height: 52px;
+  }
+  .texto-base {
+    font-size: 22px;
+    line-height: 34px;
+  }
+  .texto-base-blanco {
+    font-size: 22px;
+    line-height: 34px;
+  }
+  .titulo-sustinable {
+    font-size: 24px;
+    line-height: 38px;
+  }
+  .texto-sustinable {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .texto-minimo {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .titulo-grande {
+    font-size: 36px;
+    line-height: 52px;
+  }
+  .footer-minimo {
+    font-size: 18px;
+    line-height: 38px;
+  }
+  .titulo-grande-verde {
+    font-size: 34px;
+    line-height: 50px;
+  }
+  .til-semi-pequenio {
+    font-size: 30px;
+    line-height: 48px;
+  }
+  .til-grande-azul {
+    font-size: 70px;
+    line-height: 72px;
+  }
+  .titulo-realeway-grande {
+    font-size: 48px;
+    line-height: 60px;
+  }
+  .til-mediano-azul {
+    font-size: 38px;
+    line-height: 60px;
+  }
+  .til-pequenio-azul {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .til-semipequenio-azul {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .til-semigrande-azul {
+    font-size: 50px;
+    line-height: 60px;
+  }
   section .container-fluid {
     width: 90%;
   }
@@ -1359,6 +1543,82 @@ ul.font-color-orange li i {
   }
 }
 @media (max-width: 1400px) {
+  .tit-pequeño {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  .numero-grande {
+    font-size: 110px;
+    line-height: 48px;
+  }
+  .listado {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .tit-interno {
+    font-size: 34px;
+    line-height: 50px;
+  }
+  .texto-base {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .texto-base-blanco {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .titulo-sustinable {
+    font-size: 22px;
+    line-height: 36px;
+  }
+  .texto-sustinable {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .texto-minimo {
+    font-size: 14px;
+    line-height: 26px;
+  }
+  .titulo-grande {
+    font-size: 32px;
+    line-height: 48px;
+  }
+  .footer-minimo {
+    font-size: 16px;
+    line-height: 36px;
+  }
+  .titulo-grande-verde {
+    font-size: 30px;
+    line-height: 46px;
+  }
+  .til-semi-pequenio {
+    font-size: 28px;
+    line-height: 44px;
+  }
+  .til-grande-azul {
+    font-size: 60px;
+    line-height: 64px;
+  }
+  .titulo-realeway-grande {
+    font-size: 44px;
+    line-height: 56px;
+  }
+  .til-mediano-azul {
+    font-size: 34px;
+    line-height: 58px;
+  }
+  .til-pequenio-azul {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  .til-semipequenio-azul {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .til-semigrande-azul {
+    font-size: 48px;
+    line-height: 58px;
+  }
   .card {
     max-height: 450px;
   }
@@ -1408,6 +1668,82 @@ ul.font-color-orange li i {
 
 /* Responsividad para pantallas medianas (mayores a 1024px) */
 @media (max-width: 1024px) {
+  .tit-pequeño {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  .numero-grande {
+    font-size: 100px;
+    line-height: 45px;
+  }
+  .listado {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .tit-interno {
+    font-size: 36px;
+    line-height: 45px;
+  }
+  .texto-base {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .texto-base-blanco {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .titulo-sustinable {
+    font-size: 22px;
+    line-height: 36px;
+  }
+  .texto-sustinable {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .texto-minimo {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .titulo-grande {
+    font-size: 36px;
+    line-height: 45px;
+  }
+  .footer-minimo {
+    font-size: 18px;
+    line-height: 36px;
+  }
+  .titulo-grande-verde {
+    font-size: 32px;
+    line-height: 45px;
+  }
+  .til-semi-pequenio {
+    font-size: 26px;
+    line-height: 46px;
+  }
+  .til-grande-azul {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .titulo-realeway-grande {
+    font-size: 40px;
+    line-height: 52px;
+  }
+  .til-mediano-azul {
+    font-size: 36px;
+    line-height: 52px;
+  }
+  .til-pequenio-azul {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  .til-semipequenio-azul {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .til-semigrande-azul {
+    font-size: 48px;
+    line-height: 52px;
+  }
   .title-interna-index {
     font-size: 34px;
     line-height: 52px;
@@ -1467,8 +1803,93 @@ ul.font-color-orange li i {
     font-size: var(--unnamed-font-size-22);
     line-height: var(--unnamed-line-spacing-36);
   }
+  .contenido-flotante{
+    padding: 3rem;
+  }
+  .container-fluid .custom-card{
+    padding: 3rem;
+  }
+  .container-fluid .custom-img img{
+    min-height: 500px;
+  }
 }
 @media (max-width: 992px) {
+  .tit-pequeño {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .numero-grande {
+    font-size: 90px;
+    line-height: 40px;
+  }
+  .listado {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .tit-interno {
+    font-size: 34px;
+    line-height: 40px;
+  }
+  .texto-base {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .texto-base-blanco {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .titulo-sustinable {
+    font-size: 20px;
+    line-height: 34px;
+  }
+  .texto-sustinable {
+    font-size: 14px;
+    line-height: 28px;
+  }
+  .texto-minimo {
+    font-size: 15px;
+    line-height: 26px;
+  }
+  .titulo-grande {
+    font-size: 34px;
+    line-height: 40px;
+  }
+  .footer-minimo {
+    font-size: 17px;
+    line-height: 34px;
+  }
+  .titulo-grande-verde {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .til-semi-pequenio {
+    font-size: 24px;
+    line-height: 44px;
+  }
+  .til-grande-azul {
+    font-size: 55px;
+    line-height: 55px;
+  }
+  .titulo-realeway-grande {
+    font-size: 38px;
+    line-height: 50px;
+  }
+  .til-mediano-azul {
+    font-size: 34px;
+    line-height: 50px;
+  }
+  .til-pequenio-azul {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .til-semipequenio-azul {
+    font-size: 26px;
+    line-height: 34px;
+  }
+  .til-semigrande-azul {
+    font-size: 45px;
+    line-height: 50px;
+  }
   /* header{
     background-color: var(--unnamed-color-004891);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -1477,6 +1898,82 @@ ul.font-color-orange li i {
 
 /* Responsividad para pantallas más pequeñas (mayores a 768px) */
 @media (max-width: 768px) {
+  .tit-pequeño {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .numero-grande {
+    font-size: 80px;
+    line-height: 35px;
+  }
+  .listado {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .tit-interno {
+    font-size: 32px;
+    line-height: 35px;
+  }
+  .texto-base {
+    font-size: 14px;
+    line-height: 26px;
+  }
+  .texto-base-blanco {
+    font-size: 14px;
+    line-height: 26px;
+  }
+  .titulo-sustinable {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  .texto-sustinable {
+    font-size: 13px;
+    line-height: 26px;
+  }
+  .texto-minimo {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .titulo-grande {
+    font-size: 32px;
+    line-height: 35px;
+  }
+  .footer-minimo {
+    font-size: 16px;
+    line-height: 32px;
+  }
+  .titulo-grande-verde {
+    font-size: 28px;
+    line-height: 35px;
+  }
+  .til-semi-pequenio {
+    font-size: 22px;
+    line-height: 42px;
+  }
+  .til-grande-azul {
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .titulo-realeway-grande {
+    font-size: 34px;
+    line-height: 48px;
+  }
+  .til-mediano-azul {
+    font-size: 32px;
+    line-height: 48px;
+  }
+  .til-pequenio-azul {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .til-semipequenio-azul {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .til-semigrande-azul {
+    font-size: 42px;
+    line-height: 48px;
+  }
   section .container-fluid {
     max-width: 100%;
     padding: 0;
@@ -1631,10 +2128,123 @@ ul.font-color-orange li i {
     font-size: var(--unnamed-font-size-20);
     line-height: var(--unnamed-line-spacing-34);
   }
+   /* Agregado */
+   .container-fluid .custom-card {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 20px;
+    padding: 2rem;
+  }
+  .contenido-general{
+    max-width: 100%;
+  }
+  .contenido-flotante{
+    padding: 2rem;
+  }
+  .content-directorio p{
+    padding-bottom: 2rem;
+  }
+  .container-fluid .custom-img img{
+    margin: 0 auto;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 0;
+    border: 0;
+  }
+  .flecha-blue{
+    font-size: 1rem;
+  }
+  .btn-descargar{
+    font-size: 14px;
+  }
+  .tamanio-p{
+    height: auto;
+  }
+  .card10 .card-body{
+    min-height:auto;
+  }
 }
 
 /* Responsividad para móviles pequeños (menos de 480px) */
 @media (max-width: 480px) {
+  .tit-pequeño {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .numero-grande {
+    font-size: 80px;
+    line-height: 32px;
+  }
+  .listado {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .tit-interno {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .texto-base {
+    font-size: 12px;
+    line-height: 22px;
+  }
+  .texto-base-blanco {
+    font-size: 12px;
+    line-height: 22px;
+  }
+  .titulo-sustinable {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .texto-sustinable {
+    font-size: 8px;
+    line-height: 16px;
+  }
+  .texto-minimo {
+    font-size: 6px;
+    line-height: 14px;
+  }
+  .titulo-grande {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .footer-minimo {
+    font-size: 8px;
+    line-height: 16px;
+  }
+  .titulo-grande-verde {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .til-semi-pequenio {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .til-grande-azul {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .titulo-realeway-grande {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .til-mediano-azul {
+    font-size: 24px;
+    line-height: 38px;
+  }
+  .til-pequenio-azul {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .til-semipequenio-azul {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .til-semigrande-azul {
+    font-size: 36px;
+    line-height: 38px;
+  }
   .title-interna-index {
     font-size: 24px;
     line-height: 40px;
@@ -1710,5 +2320,8 @@ ul.font-color-orange li i {
 
     font-size: var(--unnamed-font-size-18);
     line-height: var(--unnamed-line-spacing-32);
+  }
+  .card10{
+    max-height: 450px;
   }
 }
