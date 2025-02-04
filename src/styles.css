@@ -1748,6 +1748,30 @@ select.selector-listado {
   .section-background-3{
     background: linear-gradient(to bottom, #e9eef4  40%, #fff 40%), linear-gradient(to bottom, #fff 50%, #fff 50%)
    }
+   .quienes-somos-section .title {
+
+    font-size: 76px;
+
+  }
+
+  .quienes-somos-section .description {
+
+    font-size: var(--unnamed-font-size-30);
+
+  }
+  .quienes-somos-section .video-info h5 {
+
+    font-size: var(--unnamed-font-size-16);
+
+  }
+
+  .quienes-somos-section .video-info p {
+
+    font-size: var(--unnamed-font-size-22);
+
+  }
+
+
 }
 
 /* Responsividad para pantallas medianas (mayores a 1024px) */
@@ -1900,6 +1924,23 @@ select.selector-listado {
   .section-background-3{
     background: linear-gradient(to bottom, #e9eef4  30%, #fff 30%), linear-gradient(to bottom, #fff 50%, #fff 50%)
    }
+   .quienes-somos-section .title {
+
+    font-size: 76px;
+
+  }
+
+  .quienes-somos-section .description {
+
+    font-size: var(--unnamed-font-size-28);
+
+  }
+
+  .quienes-somos-section .video-info p {
+
+    font-size: var(--unnamed-font-size-20);
+
+  }
 
 }
 @media (max-width: 992px) {
@@ -2292,6 +2333,33 @@ select.selector-listado {
   .container-fluid .custom-img img{
     min-height: auto;
   }
+
+  .quienes-somos-section .description {
+
+    font-size: var(--unnamed-font-size-26);
+
+  }
+  .quienes-somos-section .video-info h5 {
+
+    font-size: var(--unnamed-font-size-14);
+
+  }
+
+  .quienes-somos-section .video-info p {
+
+    font-size: var(--unnamed-font-size-18);
+
+  }
+  .quienes-somos-section .btn_seccion_imagen{
+
+    font-size: var(--unnamed-font-size-14);
+
+  }
+  .quienes-somos-section {
+
+    align-items: center;
+
+  }
 }
 
 /* Responsividad para móviles pequeños (menos de 480px) */
@@ -2455,5 +2523,26 @@ select.selector-listado {
   }
   .card10{
     max-height: 450px;
+  }
+  .quienes-somos-section .description {
+
+    font-size: var(--unnamed-font-size-24);
+
+  }
+  .quienes-somos-section .video-info h5 {
+
+    font-size: 12px
+
+  }
+
+  .quienes-somos-section .video-info p {
+
+    font-size: var(--unnamed-font-size-14);
+
+  }
+  .quienes-somos-section .btn_seccion_imagen{
+
+    font-size: 12px
+
   }
 }
