@@ -1,35 +1,9 @@
-<section class="quienes-somos-section" style="background:url('../../../../../assets/images/quienes-somos.png') center/cover no-repeat;">
-  <div class="container-fluid">
-    <div class="row">
-      <!-- Contenido a la izquierda -->
-      <div class="col-md-6">
-        <h2 class="title">Quiénes Somos</h2>
-        <p class="description">
-          Promovemos una gestión empresarial sostenible, que busca impactar en el bienestar de nuestros grupos de interés y en el desarrollo del Perú.
-        </p>
-      </div>
-      <!-- Espacio para la pequeña sección a la derecha -->
-    </div>
 
-    <div class="row justify-content-end">
-      <div class="col-md-6 col-lg-5">
-        <a href="https://www.youtube.com/watch?v=quh3jZbOWzQ" target="_blank" class="small-section-link">
-          <div class="small-section">
-            <div class="video-thumbnail col-5">
-              <img src="assets/images/quienes-somos.png" alt="Video" class="video-img">
-              <div class="play-icon">
-                <i class="fas fa-play"></i>
-              </div>
-            </div>
-            <div class="video-info col-6">
-              <h5>VIDEO</h5>
-              <p>Conoce más sobre nuestras operaciones mineras</p>
-            </div>
-          </div>
-
-        </a>
-
-      </div>
-    </div>
-  </div>
-</section>
+<app-imagen-view
+  [backgroundImage]="'assets/images/quienes-somos.png'"
+  [title]="'Nuestra Historia'"
+  [description]="'Promovemos una gestión empresarial sostenible, que busca impactar en el bienestar de nuestros grupos de interés y en el desarrollo del Perú.'"
+  [videoLink]="'https://www.youtube.com/watch?v=quh3jZbOWzQ'"
+  [videoThumbnail]="'assets/images/quienes-somos.png'"
+  [mode]="'video'">
+</app-imagen-view>

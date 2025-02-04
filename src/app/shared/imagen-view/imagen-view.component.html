@@ -1,0 +1,50 @@
+<section class="quienes-somos-section" [ngStyle]="{'background': 'url(' + backgroundImage + ') center/cover no-repeat'}">
+  <div class="container-fluid my-lg-5 my-md-4 my-sm-3 my-2">
+    <div class="row">
+      <!-- Contenido a la izquierda -->
+      <div class="col-md-6">
+        <h2 class="title">{{ title }}</h2>
+        <p class="description">
+          {{ description }}
+        </p>
+      </div>
+    </div>
+
+    <div class="row justify-content-end">
+      <div class="col-md-6 col-lg-5">
+        <!-- 🟢 Solo envuelve en <a> si es video -->
+        <a *ngIf="mode === 'video'" [href]="videoLink" target="_blank" class="small-section-link">
+          <div class="small-section">
+            <div class="video-thumbnail col-5">
+              <img [src]="videoThumbnail" alt="Video" class="video-img">
+              <div class="play-icon">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+            <div class="video-info col-6">
+              <h5>VIDEO</h5>
+              <p>Conoce más sobre nuestras operaciones mineras</p>
+            </div>
+          </div>
+        </a>
+
+        <!-- 🔵 Modo Memoria o Proveedores (Sin <a>) -->
+        <div *ngIf="mode !== 'video'" class="small-section">
+          <div class="video-thumbnail col-5">
+            <img [src]="videoThumbnail" alt="Memoria/Proveedores" class="video-img">
+          </div>
+          <div class="video-info col-6 text-center mt-3">
+            <h5>{{ mode === 'memoria' ? 'MEMORIA' : 'ÚNETE' }}</h5>
+            <p>{{ mode === 'memoria' ? 'MEMORIA ANUAL 2024' : 'CONVIÉRTETE EN UN PROVEEDOR LOCAL' }}</p>
+            <a *ngIf="videoLink" [href]="videoLink" target="_blank" class="btn d-flex align-items-center justify-content-end">
+              {{ buttonText }}
+              <i *ngIf="buttonText === 'Descargar'" class="fas fa-download ms-2"></i>
+              <i *ngIf="buttonText === 'Ingresa'" class="fas fa-arrow-right ms-2"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>

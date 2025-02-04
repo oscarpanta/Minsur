@@ -15,6 +15,7 @@ import { TransparenciaComponent } from './pages/transparencia/transparencia.comp
 import { ComunidadComponent } from './pages/valor-compartido/comunidad/comunidad.component';
 import { GestionProveedoresComponent } from './pages/valor-compartido/gestion-proveedores/gestion-proveedores.component';
 import { TalentoComponent } from './pages/valor-compartido/talento/talento.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { TalentoComponent } from './pages/valor-compartido/talento/talento.compo
   ],
   imports: [
     CommonModule,
-    SostenibilidadRoutingModule
+    SostenibilidadRoutingModule,
+    SharedModule
   ]
 })
 export class SostenibilidadModule { }

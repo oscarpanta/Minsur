@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { ProveedoresRoutingModule } from './proveedores-routing.module';
 import { ContenidoComponent } from './pages/contenido/contenido.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { ContenidoComponent } from './pages/contenido/contenido.component';
   ],
   imports: [
     CommonModule,
-    ProveedoresRoutingModule
+    ProveedoresRoutingModule,
+    SharedModule
   ]
 })
 export class ProveedoresModule { }

@@ -6,6 +6,7 @@ import { ContenidoComponent } from './pages/contenido/contenido.component';
 import { PiscoComponent } from './pages/unidades/pisco/pisco.component';
 import { PucamarcaComponent } from './pages/unidades/pucamarca/pucamarca.component';
 import { SanRafaelComponent } from './pages/unidades/san-rafael/san-rafael.component';
+import { SharedModule } from '../../shared/shared.module';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { SanRafaelComponent } from './pages/unidades/san-rafael/san-rafael.compo
   ],
   imports: [
     CommonModule,
-    QueHacemosRoutingModule
+    QueHacemosRoutingModule,
+    SharedModule
   ]
 })
 export class QueHacemosModule { }

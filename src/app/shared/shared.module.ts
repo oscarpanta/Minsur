@@ -1,18 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ButtonComponent } from './button/button.component';
+import { ImagenViewComponent } from './imagen-view/imagen-view.component';
 
 
 
 @NgModule({
   declarations: [
-    ButtonComponent  // ✅ Declarar el botón aquí
+    ButtonComponent,
+    ImagenViewComponent
   ],
   imports: [
-    CommonModule  // ✅ Importar CommonModule
+    CommonModule
   ],
   exports: [
-    ButtonComponent  // ✅ Exportar el botón para que otros módulos lo usen
+    ButtonComponent,
+    ImagenViewComponent
   ]
 })
 export class SharedModule { }
