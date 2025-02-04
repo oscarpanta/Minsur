@@ -1078,7 +1078,15 @@ footer .footer-auxiliar {
   font-size: var(--unnamed-font-size-20);
   /* transform: matrix(0, 1, -1, 0, 0, 0); */
 }
-
+/* Cuando el botón es hover, el círculo se agranda para ajustarse */
+.btn-descargar .btn-ver:hover .flecha-circular {
+  background-color: var(--unnamed-color-0063f9);
+  color: #fff;
+  transform: scaleY(1.08); /* Aumenta la longitud de la flecha */
+  transition: transform 0.3s ease; /* Animación de alargado */
+  font-size: var(--unnamed-font-size-20);
+  /* transform: matrix(0, 1, -1, 0, 0, 0); */
+}
 /* Fin Estilos para flecha descargar */
 /* Estilos para a hred subrayado */
 .hover-underline {
@@ -1541,6 +1549,13 @@ select.selector-listado {
   header .container-fluid {
     width: 90%;
   }
+  section .card-sustinable .col-lg-7 {
+    left: calc(50% - 3%);  /* Reduce 2% cuando la pantalla sea menor a 1024px */
+}
+.card4 .card4-title{
+  min-height: auto;
+}
+
 }
 @media (max-width: 1400px) {
   .tit-pequeño {
@@ -1639,7 +1654,7 @@ select.selector-listado {
   }
 
   .card2-title {
-    font-size: var(--unnamed-font-size-32);
+    font-size: var(--unnamed-font-size-26);
     line-height: 1.4;
   }
   .card-text {
@@ -1664,6 +1679,9 @@ select.selector-listado {
   .carousel-caption p {
     font-size: var(--unnamed-font-size-30);
   }
+  .section-background-3{
+    background: linear-gradient(to bottom, #e9eef4  40%, #fff 40%), linear-gradient(to bottom, #fff 50%, #fff 50%)
+   }
 }
 
 /* Responsividad para pantallas medianas (mayores a 1024px) */
@@ -1769,7 +1787,7 @@ select.selector-listado {
     line-height: var(--unnamed-line-spacing-32); /* Línea ajustada */
   }
   .card2-title {
-    font-size: var(--unnamed-font-size-28);
+    font-size: var(--unnamed-font-size-26);
     line-height: 1.3;
   }
   .card-text {
@@ -1812,6 +1830,13 @@ select.selector-listado {
   .container-fluid .custom-img img{
     min-height: 500px;
   }
+  .card-img-container{
+    height: auto;
+  }
+  .section-background-3{
+    background: linear-gradient(to bottom, #e9eef4  30%, #fff 30%), linear-gradient(to bottom, #fff 50%, #fff 50%)
+   }
+
 }
 @media (max-width: 992px) {
   .tit-pequeño {
@@ -1890,6 +1915,12 @@ select.selector-listado {
     font-size: 45px;
     line-height: 50px;
   }
+  section .card-sustinable .col-lg-7 {
+    position: relative;
+    width: 100%;
+    top: auto;
+    left: 0;
+}
   /* header{
     background-color: var(--unnamed-color-004891);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -2157,6 +2188,12 @@ select.selector-listado {
     font-size: 1rem;
   }
   .btn-descargar{
+    font-size: 14px;
+  }
+  .btn-vermas{
+    font-size: 14px;
+  }
+  .flecha-ver-mas{
     font-size: 14px;
   }
   .tamanio-p{
