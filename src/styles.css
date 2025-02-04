@@ -383,7 +383,7 @@ header.scrolled .navbar-toggler-icon {
 .quienes-somos-section {
   height: 120vh;
   display: flex;
-  align-items: center;
+  align-items: end;
   /* flex-direction: column;
   justify-content: center; */
   width: 100%;
@@ -498,7 +498,17 @@ header.scrolled .navbar-toggler-icon {
   transform-origin: left center;
 }
 
+.quienes-somos-section .btn_seccion_imagen{
+  font-family: var(--unnamed-font-family-raleway);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-bold);
+  font-size: var(--unnamed-font-size-16);
+  line-height: var(--unnamed-line-spacing-38);
+  color: var(--unnamed-color-7DF900);
 
+  letter-spacing: 0;
+  text-align: left;
+}
 
 
 
