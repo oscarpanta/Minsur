@@ -44,5 +44,11 @@ export class HeaderComponent {
       cinta.remove();
     }
   }
-
+  closeMenu() {
+    this.isMenuOpen = false;
+    const navbarCollapse = document.getElementById('navbarNav');
+    if (navbarCollapse) {
+      navbarCollapse.classList.remove('show');
+    }
+    }
 }
