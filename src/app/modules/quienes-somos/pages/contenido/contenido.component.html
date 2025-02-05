@@ -8,18 +8,16 @@
   [mode]="'video'">
 </app-imagen-view>
 <!-- section proposito -->
-<section class="contenedor-section section-background-2 ">
-  <div class="container-fluid my-5">
-          <div class="contenido-general ">
-              <div class="row">
-                  <p class="tit-pequeño">Nuestro Propósito</p>
-                  <p class="til-grande-azul">Mejoramos la vida transformando minerales en bienestar.</p>
-                  <p class="til-semi-pequenio">Este propósito nos guía a contribuir al desarrollo sostenible del país y trabajar por un legado enfocado en las personas.</p>
-              </div>
+<app-info-view-general
+  [titulo1]="'Nuestro Propósito'"
+  [titulo2]="
+    'Mejoramos la vida transformando minerales en bienestar.'
+  "
+  [descripcion]="
+    'Este propósito nos guía a contribuir al desarrollo sostenible del país y trabajar por un legado enfocado en las personas.'
+  "
+></app-info-view-general>
 
-          </div>
-  </div>
-</section>
 <!--  fin section proposito -->
   <!-- section nuestra vision -->
 <section class="contenedor-section section-background-2 ">

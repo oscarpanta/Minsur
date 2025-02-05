@@ -1,49 +1,55 @@
 <app-imagen-view
   [backgroundImage]="'assets/images/sostenibilidad.png'"
   [title]="'Sostenibilidad'"
-  [description]="'Forma parte esencial de nuestra estrategia de negocios y guía nuestras decisiones, buscando generar valor para la empresa y grupos de interés.'"
+  [description]="
+    'Forma parte esencial de nuestra estrategia de negocios y guía nuestras decisiones, buscando generar valor para la empresa y grupos de interés.'
+  "
   [videoLink]="'https://www.youtube.com/watch?v=quh3jZbOWzQ'"
   [videoThumbnail]="'assets/images/sostenibilidad.png'"
-  [mode]="'video'">
+  [mode]="'video'"
+>
 </app-imagen-view>
+<!-- section proposito -->
 
-  <!-- section proposito -->
-  <section class="contenedor-section section-background-2 ">
-    <div class="container-fluid my-5">
-            <div class="contenido-general ">
-                <div class="row">
-                    <p class="tit-pequeño">Un compromiso transversal</p>
-                    <p class="til-grande-azul">La sostenibilidad guía nuestras decisiones diarias.</p>
-                    <p class="til-semi-pequenio">Nuestra estrategia de sostenibilidad al 2030 que se basa en cuatro pilares
-                      : Seguridad y salud, Cuidado ambiental, Valor compartido, y Gobernanza responsable. Hemos establecido
-                      prioridades de trabajo y metas que involucran a todos los trabajadores y contamos con un comité especializado
-                      que supervisa su cumplimiento.</p>
-                </div>
+<app-info-view-general
+  [titulo1]="'Un compromiso transversal'"
+  [titulo2]="'La sostenibilidad guía nuestras decisiones diarias.'"
+  [descripcion]="
+    'Nuestra estrategia de sostenibilidad al 2030 que se basa en cuatro pilares: Seguridad y salud, Cuidado ambiental, Valor compartido, y Gobernanza responsable. Hemos establecido prioridades de trabajo y metas que involucran a todos los trabajadores y contamos con un comité especializado que supervisa su cumplimiento.'
+  "
+></app-info-view-general>
 
-            </div>
-    </div>
-  </section>
-  <!-- fin section proposito -->
-     <!-- section nuestra vision -->
-<section class="contenedor-section section-background-2 ">
-  <div class="seccion-fondo " style="background:url('../../../../../assets/images/proyecto_volar.png') center/cover no-repeat;">
-          <div class="container-fluid">
-              <div class="row d-flex justify-content-end">
-                  <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 my-5 py-3">
-                    <div class="contenido-flotante">
-                          <p class="titulo-realeway-grande mb-xl-5 mb-sm-2">Minería sostenible y fuente de bienestar para todos.</p>
-                          <p class="texto-base">
-                            Trabajamos guiados por exigentes estándares de sostenibilidad.
-                             Somos la única empresa peruana miembro del Consejo Internacional
-                             de Minería y Metales (ICMM), que agrupa a las 25 empresas mineras
-                             con las mejores prácticas ambientales, sociales y de gobernanza a nivel mundial.
-                              Sus lineamientos se incorporan a los procesos de gestión y son verificados periódicamente por un tercero independiente.
-                          </p>
 
-                      </div>
-                  </div>
-              </div>
+<!-- fin section proposito -->
+<!-- section nuestra vision -->
+<section class="contenedor-section section-background-2">
+  <div
+    class="seccion-fondo"
+    style="
+      background: url('../../../../../assets/images/proyecto_volar.png')
+        center/cover no-repeat;
+    "
+  >
+    <div class="container-fluid">
+      <div class="row d-flex justify-content-end">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 my-5 py-3">
+          <div class="contenido-flotante">
+            <p class="titulo-realeway-grande mb-xl-5 mb-sm-2">
+              Minería sostenible y fuente de bienestar para todos.
+            </p>
+            <p class="texto-base">
+              Trabajamos guiados por exigentes estándares de sostenibilidad.
+              Somos la única empresa peruana miembro del Consejo Internacional
+              de Minería y Metales (ICMM), que agrupa a las 25 empresas mineras
+              con las mejores prácticas ambientales, sociales y de gobernanza a
+              nivel mundial. Sus lineamientos se incorporan a los procesos de
+              gestión y son verificados periódicamente por un tercero
+              independiente.
+            </p>
           </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 <!--  fin section vision -->
@@ -58,27 +64,27 @@
             class="img-fluid mb-3"
           />
           <!-- Imagen -->
-
         </div>
 
         <!-- Segunda sección: Título, texto y nombre -->
         <div class="col-12 col-md-6">
-          <p class="titulo-seccion tit-interno">
-            Seguridad y salud  
-          </p>
+          <p class="titulo-seccion tit-interno">Seguridad y salud  </p>
 
           <p class="texto-seccion texto-base">
-            Nuestros altos estándares se basan en poner a las personas en el centro de nuestras decisiones y acciones.
-             Protegemos la vida y el bienestar mediante un sólido sistema de gestión y una cultura preventiva enfocada
-              en comportamientos, que se extiende dentro y fuera de nuestras operaciones.
+            Nuestros altos estándares se basan en poner a las personas en el
+            centro de nuestras decisiones y acciones. Protegemos la vida y el
+            bienestar mediante un sólido sistema de gestión y una cultura
+            preventiva enfocada en comportamientos, que se extiende dentro y
+            fuera de nuestras operaciones.
           </p>
           <a href="#" class="btn-vermas">
-            <span class="flecha-circular"><i class="fas fa-arrow-right flecha-ver-mas"></i></span>
+            <span class="flecha-circular"
+              ><i class="fas fa-arrow-right flecha-ver-mas"></i
+            ></span>
             ver más
           </a>
         </div>
-         <!-- Primera sección: Imagen y texto -->
-
+        <!-- Primera sección: Imagen y texto -->
       </div>
     </div>
   </div>
@@ -88,101 +94,37 @@
   <div class="container-fluid my-5">
     <div class="card9">
       <div class="row no-gutters">
-
-
         <!-- Segunda sección: Título, texto y nombre -->
-        <div class="col-12 col-md-6 ">
-          <p class="titulo-seccion tit-interno">
-            Cuidado ambiental
-          </p>
+        <div class="col-12 col-md-6">
+          <p class="titulo-seccion tit-interno">Cuidado ambiental</p>
 
           <p class="texto-seccion texto-base">
-            Tenemos un enfoque de reducción de nuestra huella ambiental, basado en la prevención
-             de riesgos ambientales y la promoción de resultados ambientales positivos. Nuestra estrategia
-             ambiental cumple con las regulaciones locales y estándares internacionales más exigentes, incluyendo los principios del ICMM.
+            Tenemos un enfoque de reducción de nuestra huella ambiental, basado
+            en la prevención de riesgos ambientales y la promoción de resultados
+            ambientales positivos. Nuestra estrategia ambiental cumple con las
+            regulaciones locales y estándares internacionales más exigentes,
+            incluyendo los principios del ICMM.
           </p>
           <a href="#" class="btn-vermas">
-            <span class="flecha-circular"><i class="fas fa-arrow-right flecha-ver-mas"></i></span>
+            <span class="flecha-circular"
+              ><i class="fas fa-arrow-right flecha-ver-mas"></i
+            ></span>
             ver más
           </a>
         </div>
-         <!-- Primera sección: Imagen y texto -->
-         <div class="col-12 col-md-6 d-flex flex-column ps-md-5 ps-ms-0">
+        <!-- Primera sección: Imagen y texto -->
+        <div class="col-12 col-md-6 d-flex flex-column ps-md-5 ps-ms-0">
           <img
             src="../../../../../assets/images/proyecto_volar2.png"
             alt="Imagen"
             class="img-fluid mb-3"
           />
           <!-- Imagen -->
-
         </div>
       </div>
     </div>
-    <div class="my-5">
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <!-- Card 1 -->
-        <div class="col">
-          <div class="card card12 h-100">
-            <div class="card-body">
-              <img src="../../../../../assets/images/localizacion.png" class="card-img-top" style="max-width: 50px;" alt="Imagen 1">
-            </div>
 
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Emisiones y Energía</h5>
-              <p class="card-text texto_base flex-grow-1">
-                Asumimos la responsabilidad de conducir una producción sostenible de minerales que nos dirija hacia una economía baja en carbono.
-              </p>
-              <hr class="my-3">
-              <a href="#" class="btn-vermas">
-                <span class="flecha-circular"><i class="fas fa-arrow-right flecha-ver-mas"></i></span>
-                ver más
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="col">
-          <div class="card card12 h-100">
-            <div class="card-body">
-              <img src="../../../../../assets/images/gota.png" class="card-img-top" style="max-width: 50px;" alt="Imagen 2">
-            </div>
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Agua y Biodiverisdad</h5>
-              <p class="card-text texto_base flex-grow-1">
-                Fomentamos la gestión eficiente y responsable del recurso hídrico y la protección de ecosistemas que rodean nuestras operaciones.
-              </p>
-              <hr class="my-3">
-              <a href="#" class="btn-vermas">
-                <span class="flecha-circular"><i class="fas fa-arrow-right flecha-ver-mas"></i></span>
-                ver más
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="col">
-          <div class="card card12 h-100">
-            <div class="card-body">
-              <img src="../../../../../assets/images/localizacion.png" class="card-img-top"  style="max-width: 50px;" alt="Imagen 3">
-            </div>
-
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Relaves </h5>
-              <p class="card-text texto_base flex-grow-1">
-                Aplicamos prácticas internacionales en el diseño, construcción, operación, supervisión y cierre de nuestras instalaciones de relaves.
-              </p>
-              <hr class="my-3">
-              <a href="#" class="btn-vermas">
-                <span class="flecha-circular"><i class="fas fa-arrow-right flecha-ver-mas"></i></span>
-                ver más
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <app-card-sostenibilidad [cards]="cuidadoAmbiental"></app-card-sostenibilidad>
   </div>
 </section>
 <!-- Finsection cuidado ambiental  -->
@@ -199,92 +141,26 @@
             class="img-fluid mb-3"
           />
           <!-- Imagen -->
-
         </div>
 
         <!-- Segunda sección: Título, texto y nombre -->
         <div class="col-12 col-md-6">
-          <p class="titulo-seccion tit-interno">
-            Valor Compartido
-          </p>
+          <p class="titulo-seccion tit-interno">Valor Compartido</p>
 
           <p class="texto-seccion texto-base">
-            Nuestro objetivo es generar un impacto positivo en nuestras
-            áreas de influencia, mediante programas de inversión social,
-            capacitación y desarrollo profesional. Invertimos en el talento humano
-            y establecemos relaciones duraderas con proveedores responsables,
-            contribuyendo así al progreso económico y social a lo largo de nuestra cadena de valor.
+            Nuestro objetivo es generar un impacto positivo en nuestras áreas de
+            influencia, mediante programas de inversión social, capacitación y
+            desarrollo profesional. Invertimos en el talento humano y
+            establecemos relaciones duraderas con proveedores responsables,
+            contribuyendo así al progreso económico y social a lo largo de
+            nuestra cadena de valor.
           </p>
         </div>
-         <!-- Primera sección: Imagen y texto -->
-
+        <!-- Primera sección: Imagen y texto -->
       </div>
     </div>
-    <div class="my-5">
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <!-- Card 1 -->
-        <div class="col">
-          <div class="card card12 h-100">
-            <div class="card-body">
-              <img src="../../../../../assets/images/icon_tuerca.png" class="card-img-top" style="max-width: 50px;" alt="Imagen 1">
-            </div>
 
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Comunidades</h5>
-              <p class="card-text texto_base flex-grow-1">
-                Generamos vínculos de confianza con las comunidades vecinas a partir de un relacionamiento y una comunicación cercanas.
-              </p>
-              <hr class="my-3">
-              <a href="#" class="btn-vermas">
-                <span class="flecha-circular"><i class="fas fa-arrow-right flecha-ver-mas"></i></span>
-                ver más
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="col">
-          <div class="card card12 h-100">
-            <div class="card-body">
-              <img src="../../../../../assets/images/icon_star.png" class="card-img-top" style="max-width: 50px;" alt="Imagen 2">
-            </div>
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Talento</h5>
-              <p class="card-text texto_base flex-grow-1">
-                Nuestro equipo es la fuerza impulsora de nuestro éxito. Juntos, construimos una cultura empresarial centrada en las personas.
-              </p>
-              <hr class="my-3">
-              <a href="#" class="btn-vermas">
-                <span class="flecha-circular"><i class="fas fa-arrow-right flecha-ver-mas"></i></span>
-                ver más
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="col">
-          <div class="card card12 h-100">
-            <div class="card-body">
-              <img src="../../../../../assets/images/icon_tuerca.png" class="card-img-top"  style="max-width: 50px;" alt="Imagen 3">
-            </div>
-
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Gestión de proveedores </h5>
-              <p class="card-text texto_base flex-grow-1">
-                Nos enfocamos en garantizar una cadena de suministro responsable, alineando estándares ambientales, sociales y de gobernanza.
-              </p>
-              <hr class="my-3">
-              <a href="#" class="btn-vermas">
-                <span class="flecha-circular"><i class="fas fa-arrow-right flecha-ver-mas"></i></span>
-                ver más
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <app-card-sostenibilidad [cards]="valorCompartido"></app-card-sostenibilidad>
   </div>
 </section>
 <!-- fin section valor compartido -->
@@ -294,134 +170,63 @@
   <div class="container-fluid my-5">
     <div class="card9">
       <div class="row no-gutters">
-
-
         <!-- Segunda sección: Título, texto y nombre -->
-        <div class="col-12 col-md-6 ">
-          <p class="titulo-seccion tit-interno">
-            Gobernanza responsable
-          </p>
+        <div class="col-12 col-md-6">
+          <p class="titulo-seccion tit-interno">Gobernanza responsable</p>
 
           <p class="texto-seccion texto-base">
-            Basamos nuestras prácticas de gobierno corporativo en una cultura ética robusta,
-            respaldada por políticas definidas y mecanismos efectivos de rendición de cuentas.
-            Nuestra gestión de riesgos, nos permite operar con integridad, reforzando la confianza
-             de nuestros grupos de interés.
+            Basamos nuestras prácticas de gobierno corporativo en una cultura
+            ética robusta, respaldada por políticas definidas y mecanismos
+            efectivos de rendición de cuentas. Nuestra gestión de riesgos, nos
+            permite operar con integridad, reforzando la confianza de nuestros
+            grupos de interés.
           </p>
           <a href="#" class="btn-vermas">
-            <span class="flecha-circular"><i class="fas fa-arrow-right flecha-ver-mas"></i></span>
+            <span class="flecha-circular"
+              ><i class="fas fa-arrow-right flecha-ver-mas"></i
+            ></span>
             ver más
           </a>
         </div>
-         <!-- Primera sección: Imagen y texto -->
-         <div class="col-12 col-md-6 d-flex flex-column ps-md-5 ps-ms-0">
+        <!-- Primera sección: Imagen y texto -->
+        <div class="col-12 col-md-6 d-flex flex-column ps-md-5 ps-ms-0">
           <img
             src="../../../../../assets/images/equipo_fundicion.png"
             alt="Imagen"
             class="img-fluid mb-3"
           />
           <!-- Imagen -->
-
         </div>
       </div>
     </div>
-    <div class="my-5">
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <!-- Card 1 -->
-        <div class="col">
-          <div class="card card12 h-100">
-            <div class="card-body">
-              <img src="../../../../../assets/images/icon_tuerca.png" class="card-img-top" style="max-width: 50px;" alt="Imagen 1">
-            </div>
 
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Ética y cumplimiento</h5>
-              <p class="card-text texto_base flex-grow-1">
-                Impulsamos una conducta ética y transparente en todas nuestras decisiones a través de sistemas de control que aseguran su cumplimiento, más allá de la legislación.
-              </p>
-              <hr class="my-3">
-              <a href="#" class="btn-vermas">
-                <span class="flecha-circular"><i class="fas fa-arrow-right flecha-ver-mas"></i></span>
-                ver más
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="col">
-          <div class="card card12 h-100">
-            <div class="card-body">
-              <img src="../../../../../assets/images/gota.png" class="card-img-top" style="max-width: 50px;" alt="Imagen 2">
-            </div>
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Derechos Humanos</h5>
-              <p class="card-text texto_base flex-grow-1">
-                Aseguramos el respeto a los derechos humanos mediante una debida diligencia, evaluando y previniendo la vulneración de estos a lo largo de nuestra cadena de valor.
-              </p>
-              <hr class="my-3">
-              <a href="#" class="btn-vermas">
-                <span class="flecha-circular"><i class="fas fa-arrow-right flecha-ver-mas"></i></span>
-                ver más
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="col">
-          <div class="card card12 h-100">
-            <div class="card-body">
-              <img src="../../../../../assets/images/localizacion.png" class="card-img-top"  style="max-width: 50px;" alt="Imagen 3">
-            </div>
-
-            <div class="card-body d-flex flex-column">
-              <h5 class="card-title">Transparencia</h5>
-              <p class="card-text texto_base flex-grow-1">
-                Promovemos un accionar transparente en todas nuestras decisiones de negocio y cadena de valor e implementamos los canales adecuados para asegurarlo.
-              </p>
-              <hr class="my-3">
-              <a href="#" class="btn-vermas">
-                <span class="flecha-circular"><i class="fas fa-arrow-right flecha-ver-mas"></i></span>
-                ver más
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <app-card-sostenibilidad [cards]="gobernanzaResponsable"></app-card-sostenibilidad>
   </div>
 </section>
 <!-- Fin section Gobernanza responsable -->
- <!-- section Reportes -->
+<!-- section Reportes -->
 <section class="contenedor-section section-background-2">
   <div class="container-fluid my-5">
     <div class="card9">
       <div class="row no-gutters">
-
-
         <!-- Segunda sección: Título, texto y nombre -->
-        <div class="col-12 col-md-6 ">
-          <p class="titulo-seccion tit-interno">
-            Reportes
-          </p>
+        <div class="col-12 col-md-6">
+          <p class="titulo-seccion tit-interno">Reportes</p>
 
           <p class="texto-seccion texto-base">
-            Nuestros reportes anuales son una muestra de nuestro compromiso con la transparencia
-            y la rendición de cuentas, detallando nuestros avances y desafíos en materia social,
-            ambiental y de gobernanza.
+            Nuestros reportes anuales son una muestra de nuestro compromiso con
+            la transparencia y la rendición de cuentas, detallando nuestros
+            avances y desafíos en materia social, ambiental y de gobernanza.
           </p>
-
         </div>
-         <!-- Primera sección: Imagen y texto -->
-         <div class="col-12 col-md-6 d-flex flex-column ps-md-5 ps-ms-0">
+        <!-- Primera sección: Imagen y texto -->
+        <div class="col-12 col-md-6 d-flex flex-column ps-md-5 ps-ms-0">
           <img
             src="../../../../../assets/images/reportes1.png"
             alt="Imagen"
             class="img-fluid mb-3"
           />
           <!-- Imagen -->
-
         </div>
       </div>
     </div>
@@ -437,16 +242,26 @@
               </div>
             </div>
             <div class="card4-footer border-bottom pb-2 border-top pt-2">
-              <div class="flex-grow-1 d-flex align-items-center justify-content-end">
+              <div
+                class="flex-grow-1 d-flex align-items-center justify-content-end"
+              >
                 <p class="mb-0 card4-footer m-2">PDF 12.5MB</p>
               </div>
-              <a routerLink="/" class="btn-descargar  me-sm-0 ms-sm-0 me-lg-5 ms-lg-2" download>
+              <a
+                routerLink="/"
+                class="btn-descargar me-sm-0 ms-sm-0 me-lg-5 ms-lg-2"
+                download
+              >
                 Descargar
                 <span class="flecha-circular"
                   ><i class="fas fa-arrow-down"></i
                 ></span>
               </a>
-              <a routerLink="/" class="btn-descargar btn-ver me-sm-0 ms-sm-0  me-lg-0 ms-lg-2 " download>
+              <a
+                routerLink="/"
+                class="btn-descargar btn-ver me-sm-0 ms-sm-0 me-lg-0 ms-lg-2"
+                download
+              >
                 Ver
                 <span class="flecha-circular"
                   ><i class="fas fa-arrow-right"></i
@@ -462,20 +277,32 @@
             <div class="card-body">
               <div class="d-flex align-items-center gap-2 mb-3">
                 <i class="fas fa-arrow-right flecha-blue"></i>
-                <h5 class="card-title tit-pequeño">Reporte de Sostenibilidad 2023</h5>
+                <h5 class="card-title tit-pequeño">
+                  Reporte de Sostenibilidad 2023
+                </h5>
               </div>
             </div>
             <div class="card4-footer border-bottom pb-2 border-top pt-2">
-              <div class="flex-grow-1 d-flex align-items-center justify-content-end">
+              <div
+                class="flex-grow-1 d-flex align-items-center justify-content-end"
+              >
                 <p class="mb-0 card4-footer m-2">PDF 12.5MB</p>
               </div>
-              <a routerLink="/" class="btn-descargar  me-sm-0 ms-sm-0 me-lg-5 ms-lg-2" download>
+              <a
+                routerLink="/"
+                class="btn-descargar me-sm-0 ms-sm-0 me-lg-5 ms-lg-2"
+                download
+              >
                 Descargar
                 <span class="flecha-circular"
                   ><i class="fas fa-arrow-down"></i
                 ></span>
               </a>
-              <a routerLink="/" class="btn-descargar btn-ver me-sm-0 ms-sm-0  me-lg-0 ms-lg-2 " download>
+              <a
+                routerLink="/"
+                class="btn-descargar btn-ver me-sm-0 ms-sm-0 me-lg-0 ms-lg-2"
+                download
+              >
                 Ver
                 <span class="flecha-circular"
                   ><i class="fas fa-arrow-right"></i
@@ -491,20 +318,32 @@
             <div class="card-body">
               <div class="d-flex align-items-center gap-2 mb-3">
                 <i class="fas fa-arrow-right flecha-blue"></i>
-                <h5 class="card-title tit-pequeño">Reporte de expectativas de desempeño ICMM 2023</h5>
+                <h5 class="card-title tit-pequeño">
+                  Reporte de expectativas de desempeño ICMM 2023
+                </h5>
               </div>
             </div>
             <div class="card4-footer border-bottom pb-2 border-top pt-2">
-              <div class="flex-grow-1 d-flex align-items-center justify-content-end">
+              <div
+                class="flex-grow-1 d-flex align-items-center justify-content-end"
+              >
                 <p class="mb-0 card4-footer m-2">PDF 12.5MB</p>
               </div>
-              <a routerLink="/" class="btn-descargar  me-sm-0 ms-sm-0 me-lg-5 ms-lg-2" download>
+              <a
+                routerLink="/"
+                class="btn-descargar me-sm-0 ms-sm-0 me-lg-5 ms-lg-2"
+                download
+              >
                 Descargar
                 <span class="flecha-circular"
                   ><i class="fas fa-arrow-down"></i
                 ></span>
               </a>
-              <a routerLink="/" class="btn-descargar btn-ver me-sm-0 ms-sm-0  me-lg-0 ms-lg-2 " download>
+              <a
+                routerLink="/"
+                class="btn-descargar btn-ver me-sm-0 ms-sm-0 me-lg-0 ms-lg-2"
+                download
+              >
                 Ver
                 <span class="flecha-circular"
                   ><i class="fas fa-arrow-right"></i
@@ -517,30 +356,43 @@
     </div>
   </div>
 </section>
- <!-- fin section Reportes -->
+<!-- fin section Reportes -->
 
- <!-- section certificacione -->
+<!-- section certificacione -->
 <section class="contenedor-section section-background-1">
   <div class="container-fluid">
     <div class="row">
       <!-- Columna 1 -->
       <div class="col-md-6 mb-4">
         <p class="tit-interno">Adherencias</p>
-        <p class="texto-base" style="min-height: 250px;">
-          Demostramos compromiso con la excelencia y sostenibilidad al adherirnos
-           a iniciativas como el Pacto Mundial de la ONU y la Iniciativa de Transparencia
-           en la Industria Extractiva (EITI). Reﬂejando dedicación a operaciones éticas,
-           responsables y alineadas a Objetivos de Desarrollo Sostenible.
+        <p class="texto-base" style="min-height: 250px">
+          Demostramos compromiso con la excelencia y sostenibilidad al
+          adherirnos a iniciativas como el Pacto Mundial de la ONU y la
+          Iniciativa de Transparencia en la Industria Extractiva (EITI).
+          Reﬂejando dedicación a operaciones éticas, responsables y alineadas a
+          Objetivos de Desarrollo Sostenible.
         </p>
         <div class="row g-2">
           <div class="col-6 col-sm-4 col-md-3">
-            <img src="../../../../../assets/images/certificacion1.png" class="img-fluid rounded" alt="Ejemplo 1">
+            <img
+              src="../../../../../assets/images/certificacion1.png"
+              class="img-fluid rounded"
+              alt="Ejemplo 1"
+            />
           </div>
           <div class="col-6 col-sm-4 col-md-3">
-            <img src="../../../../../assets/images/certificacion1.png" class="img-fluid rounded" alt="Ejemplo 2">
+            <img
+              src="../../../../../assets/images/certificacion1.png"
+              class="img-fluid rounded"
+              alt="Ejemplo 2"
+            />
           </div>
           <div class="col-6 col-sm-4 col-md-3">
-            <img src="../../../../../assets/images/certificacion1.png" class="img-fluid rounded" alt="Ejemplo 3">
+            <img
+              src="../../../../../assets/images/certificacion1.png"
+              class="img-fluid rounded"
+              alt="Ejemplo 3"
+            />
           </div>
         </div>
       </div>
@@ -548,24 +400,37 @@
       <!-- Columna 2 -->
       <div class="col-md-6 mb-4">
         <p class="tit-interno">Certificaciones</p>
-        <p class="texto-base" style="min-height: 250px;">
-          Nuestras certiﬁcaciones internacionales avalan nuestro compromiso con la sostenibilidad,
-           seguridad y calidad en las operaciones. Obtenidas tras rigurosas auditorías, demuestran
-           esfuerzo por mejorar, innovar y liderar industria minera hacia prácticas más responsables.
+        <p class="texto-base" style="min-height: 250px">
+          Nuestras certiﬁcaciones internacionales avalan nuestro compromiso con
+          la sostenibilidad, seguridad y calidad en las operaciones. Obtenidas
+          tras rigurosas auditorías, demuestran esfuerzo por mejorar, innovar y
+          liderar industria minera hacia prácticas más responsables.
         </p>
         <div class="row g-2">
           <div class="col-6 col-sm-4 col-md-3">
-            <img src="../../../../../assets/images/certificacion1.png" class="img-fluid rounded" alt="Ejemplo 1">
+            <img
+              src="../../../../../assets/images/certificacion1.png"
+              class="img-fluid rounded"
+              alt="Ejemplo 1"
+            />
           </div>
           <div class="col-6 col-sm-4 col-md-3">
-            <img src="../../../../../assets/images/certificacion1.png" class="img-fluid rounded" alt="Ejemplo 2">
+            <img
+              src="../../../../../assets/images/certificacion1.png"
+              class="img-fluid rounded"
+              alt="Ejemplo 2"
+            />
           </div>
           <div class="col-6 col-sm-4 col-md-3">
-            <img src="../../../../../assets/images/certificacion1.png" class="img-fluid rounded" alt="Ejemplo 3">
+            <img
+              src="../../../../../assets/images/certificacion1.png"
+              class="img-fluid rounded"
+              alt="Ejemplo 3"
+            />
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
- <!-- fin section certificaciones -->
+<!-- fin section certificaciones -->
