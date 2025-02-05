@@ -1,0 +1,43 @@
+.blue-line {
+  left: 0;
+  width: 100%;
+  height: 125px;
+  background-color: blue;
+  transition: top 0.3s ease-in-out;
+}
+.bg-gray{
+  background-color: #f0f0f0;
+}
+.bg-white{
+  background-color: #fff;
+}
+.news-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+  .news-date {
+    font-size: 14px;
+    color: #555;
+  }
+
+  .news-title {
+    font-size: 46px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 76px;
+    letter-spacing: -1.15px;
+  }
+
+  .news-image {
+    display: flex;
+    align-items: end;
+
+
+  }
+  .news-image img {
+    width: 100%;
+    height: calc(100% + 20px);
+    object-fit: cover;
+  }
+
