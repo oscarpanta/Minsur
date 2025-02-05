@@ -549,6 +549,24 @@ header.scrolled .navbar-toggler-icon {
   letter-spacing: var(--unnamed-character-spacing--0-7);
   color: var(--unnamed-color-36404e);
 }
+.listado-pequeño {
+  font-family: var(--unnamed-font-family-merriweather);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-24);
+  line-height: var(--unnamed-line-spacing-32);
+  letter-spacing: var(--unnamed-character-spacing--0-6);
+  color: var(--unnamed-color-36404e);
+}
+.listado-pequeño-blanco {
+  font-family: var(--unnamed-font-family-merriweather);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-normal);
+  font-size: var(--unnamed-font-size-24);
+  line-height: var(--unnamed-line-spacing-32);
+  letter-spacing: var(--unnamed-character-spacing--0-6);
+  color: var(--unnamed-color-ffffff);
+}
 .tit-interno {
   font-family: var(--unnamed-font-family-merriweather);
   font-style: var(--unnamed-font-style-normal);
@@ -782,6 +800,24 @@ header.scrolled .navbar-toggler-icon {
 
                           color: var(--unnamed-color-004891);
                         }
+            .titulo-grande-azul-marino {
+                          font-family: var(--unnamed-font-family-merriweather);
+                          font-style: var(--unnamed-font-style-normal);
+                          font-weight: var(--unnamed-font-weight-bold);
+                          font-size: var(--unnamed-font-size-42);
+                          line-height: var(--unnamed-line-spacing-58);
+                          letter-spacing: var(--unnamed-character-spacing--1-05);
+                          color: var(--unnamed-color-004891);
+                        }
+          .titulo-semi-pequeño-azul-marino {
+                          font-family: var(--unnamed-font-family-merriweather);
+                          font-style: var(--unnamed-font-style-normal);
+                          font-weight: var(--unnamed-font-weight-bold);
+                          font-size: var(--unnamed-font-size-32);
+                          line-height: var(--unnamed-line-spacing-42);
+                          letter-spacing: var(--unnamed-character-spacing--0-8);
+                          color: var(--unnamed-color-004891);
+                        }
 footer {
   background: var(--unnamed-color-004891);
   font-size: var(--unnamed-font-size-24);
@@ -813,7 +849,7 @@ footer {
 }
 .section-background-4 {
   background-color: black;
-  padding: 0;
+  /* padding: 0; */
 }
 .section-background-5 {
   background-color: var(--unnamed-color-004891);
@@ -833,6 +869,9 @@ footer {
 }
 .section-background-7 {
   background-color: var(--unnamed-color-E7F2FC);
+}
+.section-background-8 {
+  background-color: var(--unnamed-color-0063f9);
 }
 .mapa .img-fluid {
   object-fit: cover;
@@ -1104,7 +1143,19 @@ footer .footer-auxiliar {
   font-size: var(--unnamed-font-size-20);
   font-weight: var(--unnamed-font-weight-500);
 }
-
+.btn-vermas-blanco {
+  display: inline-flex;
+  align-items: center;
+  /* justify-content: center; */
+  padding: 8px 0px;
+  background-color: inherit;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-size: var(--unnamed-font-size-20);
+  font-weight: var(--unnamed-font-weight-500);
+  color: #fff;
+}
 .flecha-circular {
   display: inline-flex;
   align-items: center;
@@ -1125,6 +1176,18 @@ footer .footer-auxiliar {
   height: 30px; /* Tamaño inicial del círculo */
   background-color: inherit;
   border: 2px solid #7df900; /* Borde del círculo */
+  border-radius: 50%; /* Asegura que el contenedor sea un círculo */
+  transition: all 0.3s ease; /* Animación para agrandar el círculo */
+  margin-right: 0.5rem;
+}
+.flecha-circular-blanco {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px; /* Tamaño inicial del círculo */
+  height: 30px; /* Tamaño inicial del círculo */
+  background-color: inherit;
+  border: 2px solid #fff; /* Borde del círculo */
   border-radius: 50%; /* Asegura que el contenedor sea un círculo */
   transition: all 0.3s ease; /* Animación para agrandar el círculo */
   margin-right: 0.5rem;
@@ -1188,6 +1251,11 @@ footer .footer-auxiliar {
   font-weight: var(--unnamed-font-weight-bold);
 }
 .btn-descargar .flecha-circular {
+  width: 25px; /* Tamaño inicial del círculo */
+  height: 25px; /* Tamaño inicial del círculo */
+  margin-left: 0.5rem;
+}
+.btn-descargar .flecha-circular-blanco {
   width: 25px; /* Tamaño inicial del círculo */
   height: 25px; /* Tamaño inicial del círculo */
   margin-left: 0.5rem;
@@ -1560,6 +1628,10 @@ ul.font-color-orange li i {
     border-bottom: 1px solid #9FB5C9;
     padding-bottom: 1rem;
   }
+  .content-listado-2{
+    border-top: 1px solid #9FB5C9;
+    padding-top: 1rem;
+  }
 
 
 select.selector-listado {
@@ -1672,7 +1744,53 @@ select.selector-listado {
     letter-spacing: var(--unnamed-character-spacing--0-24);
     color: var(--unnamed-color-0063f9);
     }
+
     /* Fin Estilos para card comite ejecutivo */
+
+  .content-listado {
+      border-bottom: 2px solid #9FB5C9; /* Por defecto, el borde está oculto */
+      padding-bottom: 1rem;
+      transition: border-bottom 0.3s ease; /* Transición suave para el cambio */
+    }
+
+/* Cuando el contenido está expandido, el borde se oculta */
+.collapse.show + .content-listado {
+  border-bottom: 0; /* El borde desaparece cuando el contenido se expande */
+}
+
+/* Borde debajo del contenido expandido */
+
+/* Estilos para el botón */
+.toggle-btn {
+  background-color: transparent;
+  border: none;
+  position: relative;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+}
+
+/* Ícono por defecto (+) */
+.toggle-btn:after {
+  content: "\f067"; /* Ícono de más (+) */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #007bff;
+}
+
+
+/* Cambiar el ícono a (-) si el contenido está expandido */
+.toggle-btn:not(.collapsed):after {
+  content: "\f068"; /* Ícono de menos (-) */
+}
+.content-listado .card-body{
+  padding: 0 5rem;
+}
+.text-content{
+  min-height: 250px;
+}
+  /* Eliminar borde cuando el contenido esté expandido */
+
 
     /* Estilos para listas con descargar y ver */
 
@@ -1691,9 +1809,16 @@ select.selector-listado {
     font-size: 26px;
     line-height: 30px;
   }
+  .listado-pequeño {
+    font-size: 22px;
+    line-height: 30px;
+  }
   .tit-interno {
     font-size: 38px;
     line-height: 52px;
+  }
+  .titulo-semi-pequeño-azul-marino{
+    font-size: 30px;
   }
   .texto-base {
     font-size: 22px;
@@ -1716,6 +1841,10 @@ select.selector-listado {
     line-height: 28px;
   }
   .titulo-grande {
+    font-size: 36px;
+    line-height: 52px;
+  }
+  .titulo-grande-azul-marino {
     font-size: 36px;
     line-height: 52px;
   }
@@ -1799,9 +1928,16 @@ select.selector-listado {
     font-size: 24px;
     line-height: 28px;
   }
+  .listado-pequeño {
+    font-size: 22px;
+    line-height: 28px;
+  }
   .tit-interno {
     font-size: 34px;
     line-height: 50px;
+  }
+  .titulo-semi-pequeño-azul-marino{
+    font-size: 28px;
   }
   .texto-base {
     font-size: 20px;
@@ -1824,6 +1960,10 @@ select.selector-listado {
     line-height: 26px;
   }
   .titulo-grande {
+    font-size: 32px;
+    line-height: 48px;
+  }
+  .titulo-grande-azul-marino {
     font-size: 32px;
     line-height: 48px;
   }
@@ -1963,9 +2103,16 @@ select.selector-listado {
     font-size: 22px;
     line-height: 28px;
   }
+  .listado-pequeño	 {
+    font-size: 20px;
+    line-height: 28px;
+  }
   .tit-interno {
     font-size: 36px;
     line-height: 45px;
+  }
+  .titulo-semi-pequeño-azul-marino{
+    font-size: 26px;
   }
   .texto-base {
     font-size: 18px;
@@ -1988,6 +2135,10 @@ select.selector-listado {
     line-height: 28px;
   }
   .titulo-grande {
+    font-size: 36px;
+    line-height: 45px;
+  }
+  .titulo-grande-azul-marino {
     font-size: 36px;
     line-height: 45px;
   }
@@ -2143,9 +2294,16 @@ select.selector-listado {
     font-size: 20px;
     line-height: 26px;
   }
+  .listado-pequeño {
+    font-size: 18px;
+    line-height: 26px;
+  }
   .tit-interno {
     font-size: 34px;
     line-height: 40px;
+  }
+  .titulo-semi-pequeño-azul-marino{
+    font-size: 26px;
   }
   .texto-base {
     font-size: 16px;
@@ -2168,6 +2326,10 @@ select.selector-listado {
     line-height: 26px;
   }
   .titulo-grande {
+    font-size: 34px;
+    line-height: 40px;
+  }
+  .titulo-grande-azul-marino {
     font-size: 34px;
     line-height: 40px;
   }
@@ -2260,9 +2422,16 @@ select.selector-listado {
     font-size: 18px;
     line-height: 24px;
   }
+  .listado {
+    font-size: 16px;
+    line-height: 24px;
+  }
   .tit-interno {
     font-size: 32px;
     line-height: 35px;
+  }
+  .titulo-semi-pequeño-azul-marino{
+    font-size: 24px;
   }
   .texto-base {
     font-size: 14px;
@@ -2285,6 +2454,10 @@ select.selector-listado {
     line-height: 24px;
   }
   .titulo-grande {
+    font-size: 32px;
+    line-height: 35px;
+  }
+  .titulo-grande-azul-marino {
     font-size: 32px;
     line-height: 35px;
   }
@@ -2428,6 +2601,9 @@ select.selector-listado {
     font-size: var(--unnamed-font-size-24);
   }
   .titulo-grande {
+    font-size: var(--unnamed-font-size-24);
+  }
+  .titulo-grande-azul-marino {
     font-size: var(--unnamed-font-size-24);
   }
   .footer-minimo {
@@ -2591,7 +2767,9 @@ select.selector-listado {
         font-size: 20px;
         line-height: 32px;
       }
-
+      .text-content{
+        min-height: auto;
+      }
 }
 
 /* Responsividad para móviles pequeños (menos de 480px) */
@@ -2606,6 +2784,10 @@ select.selector-listado {
   }
   .listado {
     font-size: 16px;
+    line-height: 20px;
+  }
+  .listado-pequeño {
+    font-size: 14px;
     line-height: 20px;
   }
   .tit-interno {
@@ -2633,6 +2815,10 @@ select.selector-listado {
     line-height: 14px;
   }
   .titulo-grande {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .titulo-grande-azul-marino {
     font-size: 24px;
     line-height: 32px;
   }

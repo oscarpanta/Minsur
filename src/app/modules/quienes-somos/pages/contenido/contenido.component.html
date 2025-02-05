@@ -21,7 +21,7 @@
 <!--  fin section proposito -->
   <!-- section nuestra vision -->
 <section class="contenedor-section section-background-2 ">
-  <div class="container-fluid my-5">
+  <div class="container-fluid y-lg-5 my-md-0">
       <p class="mb-5 title-interna-index">Nuestra visión del futuro</p>
 
   </div>
@@ -45,7 +45,7 @@
 <!--  fin section vision -->
   <!-- section Gobierno Corporativo -->
 <section class="contenedor-section section-background-2 ">
-    <div class="container-fluid my-5">
+    <div class="container-fluid my-lg-5 my-md-0">
         <p class="mb-5 title-interna-index mb-5">Gobierno Corporativo</p>
         <div class="row pt-5 ">
             <div class="col-lg-12">
@@ -99,7 +99,7 @@
 <!--  fin Gobierno Corporativo -->
 <!-- Inciio alta gerencia -->
 <section class="contenedor-section section-background-1">
-  <div class="container-fluid">
+  <div class="container-fluid my-lg-5 my-md-0">
     <!-- Primer Row -->
     <p class="mb-5 tit-pequeño">Alta Gerencia</p>
     <div class="row align-items-end  mb-sm-0 mb-xl-5 custom-img">
@@ -124,7 +124,7 @@
 </section>
 
 <section class="contenedor-section section-background-1">
-  <div class="container-fluid my-5">
+  <div class="container-fluid my-lg-5 my-md-0">
 
 
     <p class="mb-5 tit-pequeño">Comité Ejecutivo</p>
@@ -228,7 +228,7 @@
 <!-- Fin alta gerencia -->
 <section class="contenedor-section section-background-2 ">
 
-  <div class="container-fluid my-5">
+  <div class="container-fluid my-lg-5 my-md-0">
     <div class="row align-items-center pb-5">
       <div class="col-md-6 mb-3 mb-md-0">
         <p class="title-interna-index mb-0">Políticas</p>
@@ -240,108 +240,111 @@
       </div>
     </div>
     <div class="pt-5">
-       <!-- Primer div -->
-       <div class="d-flex align-items-center mb-4 content-listado flex-wrap justify-content-center">
-      <i class="fas fa-arrow-right  flecha-blue me-3"></i>
-      <div class="flex-grow-1">
-        <p class="mb-0 listado">Código de Ética y Conducta</p>
-      </div>
-      <div class="flex-grow-1 d-flex align-items-center justify-content-end">
-        <p class="mb-0 card4-footer m-2">PDF 12.5MB</p>
-      </div>
-      <div>
-        <a routerLink="/" class="btn-descargar  me-sm-0 ms-sm-0 me-lg-5 ms-lg-2" download>
-          Descargar
-          <span class="flecha-circular"
-            ><i class="fas fa-arrow-down"></i
-          ></span>
-        </a>
-        <a routerLink="/" class="btn-descargar btn-ver me-sm-0 ms-sm-0  me-lg-0 ms-lg-2 " download>
-          Ver
-          <span class="flecha-circular"
-            ><i class="fas fa-arrow-right"></i
-          ></span>
-        </a>
-      </div>
-      </div>
+      <!-- Primer div -->
+      <div class="d-flex align-items-center mb-4 content-listado flex-column flex-md-row justify-content-md-between justify-content-center">
+       <!-- Flecha y texto alineados en la misma línea -->
+       <div class="d-flex align-items-center flex-grow-1">
+         <i class="fas fa-arrow-right flecha-blue me-3"></i>
+         <p class="mb-0 listado">Código de Ética y Conducta </p>
+       </div>
 
-      <!-- Segundo div -->
-      <div class="d-flex align-items-center mb-4 content-listado flex-wrap justify-content-center">
-        <i class="fas fa-arrow-right flecha-blue me-3"></i>
-        <div class="flex-grow-1">
+       <!-- Información del PDF -->
+       <div class="d-flex align-items-center justify-content-md-end mt-2 mt-md-0">
+         <p class="mb-0 card4-footer m-2">PDF 12.5MB</p>
+       </div>
 
-          <p class="mb-0 listado">Política Corporativa de Sostenibilidad</p>
-        </div>
-        <div class="flex-grow-1 d-flex align-items-center justify-content-end">
-          <p class="mb-0 card4-footer m-2">PDF 12.5MB</p>
-        </div>
-        <div>
-          <a routerLink="/" class="btn-descargar me-sm-0 ms-sm-0 me-lg-5 ms-lg-2" download>
-            Descargar
-            <span class="flecha-circular"
-              ><i class="fas fa-arrow-down"></i
-            ></span>
-          </a>
-          <a routerLink="/" class="btn-descargar btn-ver me-sm-0 ms-sm-0  me-lg-0 ms-lg-2 " download>
-            Ver
-            <span class="flecha-circular"
-              ><i class="fas fa-arrow-right"></i
-            ></span>
-          </a>
-        </div>
-      </div>
+       <!-- Botones Descargar y Ver, centrados en pantallas pequeñas -->
+       <div class="mt-2 text-center">
+         <a routerLink="/" class="btn-descargar me-2" download>
+           Descargar
+           <span class="flecha-circular"><i class="fas fa-arrow-down"></i></span>
+         </a>
+         <a routerLink="/" class="btn-descargar btn-ver" download>
+           Ver
+           <span class="flecha-circular"><i class="fas fa-arrow-right"></i></span>
+         </a>
+       </div>
+     </div>
 
-      <!-- Tercer div -->
-      <div class="d-flex align-items-center mb-4 content-listado flex-wrap justify-content-center">
-        <i class="fas fa-arrow-right flecha-blue me-3"></i>
-        <div class="flex-grow-1">
 
-          <p class="mb-0 listado">Política de Derechos Humanos</p>
-        </div>
-        <div class="flex-grow-1 d-flex align-items-center justify-content-end">
-          <p class="mb-0 card4-footer m-2">PDF 12.5MB</p>
-        </div>
-        <div>
-          <a routerLink="/" class="btn-descargar me-sm-0 ms-sm-0 me-lg-5 ms-lg-2" download>
-            Descargar
-            <span class="flecha-circular"
-              ><i class="fas fa-arrow-down"></i
-            ></span>
-          </a>
-          <a routerLink="/" class="btn-descargar btn-ver me-sm-0 ms-sm-0  me-lg-0 ms-lg-2 " download>
-            Ver
-            <span class="flecha-circular"
-              ><i class="fas fa-arrow-right"></i
-            ></span>
-          </a>
-        </div>
-      </div>
+     <!-- Segundo div -->
+     <div class="d-flex align-items-center mb-4 content-listado flex-column flex-md-row justify-content-md-between justify-content-center">
+       <!-- Flecha y texto alineados en la misma línea -->
+       <div class="d-flex align-items-center flex-grow-1">
+         <i class="fas fa-arrow-right flecha-blue me-3"></i>
+         <p class="mb-0 listado">Política Corporativa de Sostenibilidad </p>
+       </div>
 
-      <!-- Cuarto div -->
-      <div class="d-flex align-items-center mb-4 content-listado flex-wrap justify-content-center">
-        <i class="fas fa-arrow-right flecha-blue me-3"></i>
-        <div class="flex-grow-1">
-          <p class="mb-0 listado">Política Corporativa de Diversidad e Inclusión</p>
-        </div>
-        <div class="flex-grow-1 d-flex align-items-center justify-content-end">
-          <p class="mb-0 card4-footer m-2">PDF 12.5MB</p>
-        </div>
-        <div>
-          <a routerLink="/" class="btn-descargar me-sm-0 ms-sm-0 me-lg-5 ms-lg-2" download>
-            Descargar
-            <span class="flecha-circular"
-              ><i class="fas fa-arrow-down"></i
-            ></span>
-          </a>
-          <a routerLink="/" class="btn-descargar btn-ver me-sm-0 ms-sm-0  me-lg-0 ms-lg-2 " download>
-            Ver
-            <span class="flecha-circular"
-              ><i class="fas fa-arrow-right "></i
-            ></span>
-          </a>
-        </div>
-      </div>
-    </div>
+       <!-- Información del PDF -->
+       <div class="d-flex align-items-center justify-content-md-end mt-2 mt-md-0">
+         <p class="mb-0 card4-footer m-2">PDF 12.5MB</p>
+       </div>
+
+       <!-- Botones Descargar y Ver, centrados en pantallas pequeñas -->
+       <div class="mt-2 text-center">
+         <a routerLink="/" class="btn-descargar me-2" download>
+           Descargar
+           <span class="flecha-circular"><i class="fas fa-arrow-down"></i></span>
+         </a>
+         <a routerLink="/" class="btn-descargar btn-ver" download>
+           Ver
+           <span class="flecha-circular"><i class="fas fa-arrow-right"></i></span>
+         </a>
+       </div>
+     </div>
+
+     <!-- Tercer div -->
+     <div class="d-flex align-items-center mb-4 content-listado flex-column flex-md-row justify-content-md-between justify-content-center">
+       <!-- Flecha y texto alineados en la misma línea -->
+       <div class="d-flex align-items-center flex-grow-1">
+         <i class="fas fa-arrow-right flecha-blue me-3"></i>
+         <p class="mb-0 listado">Política de Derechos Humanos </p>
+       </div>
+
+       <!-- Información del PDF -->
+       <div class="d-flex align-items-center justify-content-md-end mt-2 mt-md-0">
+         <p class="mb-0 card4-footer m-2">PDF 12.5MB</p>
+       </div>
+
+       <!-- Botones Descargar y Ver, centrados en pantallas pequeñas -->
+       <div class="mt-2 text-center">
+         <a routerLink="/" class="btn-descargar me-2" download>
+           Descargar
+           <span class="flecha-circular"><i class="fas fa-arrow-down"></i></span>
+         </a>
+         <a routerLink="/" class="btn-descargar btn-ver" download>
+           Ver
+           <span class="flecha-circular"><i class="fas fa-arrow-right"></i></span>
+         </a>
+       </div>
+     </div>
+
+     <!-- Cuarto div -->
+     <div class="d-flex align-items-center mb-4 content-listado flex-column flex-md-row justify-content-md-between justify-content-center">
+       <!-- Flecha y texto alineados en la misma línea -->
+       <div class="d-flex align-items-center flex-grow-1">
+         <i class="fas fa-arrow-right flecha-blue me-3"></i>
+         <p class="mb-0 listado">Política Corporativa de Diversidad e Inclusión  </p>
+       </div>
+
+       <!-- Información del PDF -->
+       <div class="d-flex align-items-center justify-content-md-end mt-2 mt-md-0">
+         <p class="mb-0 card4-footer m-2">PDF 12.5MB</p>
+       </div>
+
+       <!-- Botones Descargar y Ver, centrados en pantallas pequeñas -->
+       <div class="mt-2 text-center">
+         <a routerLink="/" class="btn-descargar me-2" download>
+           Descargar
+           <span class="flecha-circular"><i class="fas fa-arrow-down"></i></span>
+         </a>
+         <a routerLink="/" class="btn-descargar btn-ver" download>
+           Ver
+           <span class="flecha-circular"><i class="fas fa-arrow-right"></i></span>
+         </a>
+       </div>
+     </div>
+   </div>
 
   </div>
 </section>
