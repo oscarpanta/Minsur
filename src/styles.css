@@ -12,6 +12,7 @@
   --unnamed-color-7DF900: #7df900;
   --unnamed-color-E9EEF4: #e9eef4;
   --unnamed-color-F98600: #f98600;
+  --unnamed-color-E7F2FC: #E7F2FC;
   /* Font/text values */
   --unnamed-font-family-merriweather: Merriweather;
   --unnamed-font-family-raleway: Raleway, sans-serif;
@@ -37,6 +38,7 @@
   --unnamed-font-size-36: 36px;
   --unnamed-font-size-38: 38px;
   --unnamed-font-size-42: 42px;
+  --unnamed-font-size-98: 98px;
   --unnamed-font-size-142: 142px;
   --unnamed-font-size-52: 52px;
   --unnamed-font-size-56: 56px;
@@ -55,6 +57,7 @@
   --unnamed-character-spacing--0-24: -0.24px;
   --unnamed-character-spacing--0-35: -0.35px;
   --unnamed-character-spacing--3-55: -3.55px;
+  --unnamed-character-spacing--2-45: -2.45px;
   --unnamed-line-spacing-14: 14px;
   --unnamed-line-spacing-15: 15px;
   --unnamed-line-spacing-22: 22px;
@@ -692,6 +695,93 @@ header.scrolled .navbar-toggler-icon {
                         line-height: var(--unnamed-line-spacing-66);
                         color: var(--unnamed-color-004891);
                         }
+  .numero-semi-grande {
+                          font-family: var(--unnamed-font-family-raleway);
+                          font-style: var(--unnamed-font-style-normal);
+                          font-weight: var(--unnamed-font-weight-300);
+                          font-size: var(--unnamed-font-size-98);
+                          line-height: var(--unnamed-line-spacing-58);
+                          letter-spacing: var(--unnamed-character-spacing--2-45);
+                          color: var(--unnamed-color-0063f9);
+                        }
+    .titulo-realeway-mediano {
+                          font-family: var(--unnamed-font-family-raleway);
+                          font-style: var(--unnamed-font-style-normal);
+                          font-weight: var(--unnamed-font-weight-300);
+                          font-size: var(--unnamed-font-size-28);
+                          line-height: var(--unnamed-line-spacing-38);
+                          color: var(--unnamed-color-36404e);
+                        }
+      .title-interna-index-blanco {
+                          font-family: var(--unnamed-font-family-merriweather);
+                          font-weight: var(--unnamed-font-weight-bold);
+                          font-size: 42px; /* Establece el tamaño de la fuente a 48 pt */
+                          line-height: 58pt; /* Establece el interlineado a 58 pt */
+                          letter-spacing: var(--unnamed-character-spacing--1-05);
+                          color: #fff; /* Establece el color del texto a #004891 */
+                        }
+      .titulo-mediano-verde {
+                          font-family: var(--unnamed-font-family-merriweather);
+                          font-style: var(--unnamed-font-style-normal);
+                          font-weight: var(--unnamed-font-weight-bold);
+                          font-size: var(--unnamed-font-size-32);
+                          line-height: var(--unnamed-line-spacing-42);
+                          letter-spacing: var(--unnamed-character-spacing--0-8);
+                          color: var(--unnamed-color-7DF900);
+                        }
+      .tit-pequeño-blanco {
+                          font-family: var(--unnamed-font-family-merriweather);
+                          font-style: var(--unnamed-font-style-normal);
+                          font-weight: var(--unnamed-font-weight-bold);
+                          font-size: var(--unnamed-font-size-32);
+                          line-height: var(--unnamed-line-spacing-42);
+                          letter-spacing: var(--unnamed-character-spacing--0-8);
+                          color: var(--unnamed-color-ffffff);
+                        }
+      .texto-semi-pequeño {
+                          font-family: var(--unnamed-font-family-raleway);
+                          font-style: var(--unnamed-font-style-normal);
+                          font-weight: var(--unnamed-font-weight-300);
+                          font-size: var(--unnamed-font-size-18);
+                          line-height: var(--unnamed-line-spacing-38);
+                          color: var(--unnamed-color-CCE7FF);
+                        }
+        .titulo-pequeño-semi-azul {
+                          font-family: var(--unnamed-font-family-raleway);
+                          font-style: var(--unnamed-font-style-normal);
+                          font-weight: var(--unnamed-font-weight-300);
+                          font-size: var(--unnamed-font-size-24);
+                          line-height: var(--unnamed-line-spacing-38);
+                          letter-spacing: var(--unnamed-character-spacing--0-24);
+                          color: var(--unnamed-color-5A9CFF);
+                        }
+          .titulo-pequeño-azul-bold {
+                          font-family: var(--unnamed-font-family-raleway);
+                          font-style: var(--unnamed-font-style-normal);
+                          font-weight: var(--unnamed-font-weight-bold);
+                          font-size: var(--unnamed-font-size-24);
+                          line-height: var(--unnamed-line-spacing-38);
+                          letter-spacing: var(--unnamed-character-spacing--0-24);
+                          color: var(--unnamed-color-0063f9);
+                        }
+          .titulo-pequeño-azul-marino {
+                          font-family: var(--unnamed-font-family-raleway);
+                          font-style: var(--unnamed-font-style-normal);
+                          font-weight: var(--unnamed-font-weight-300);
+                          font-size: var(--unnamed-font-size-24);
+                          line-height: var(--unnamed-line-spacing-38);
+
+                          color: var(--unnamed-color-004891);
+                        }
+          .titulo-pequeño-azul-marino-bold {
+                          font-family: var(--unnamed-font-family-raleway);
+                          font-style: var(--unnamed-font-style-normal);
+                          font-weight: var(--unnamed-font-weight-bold);
+                          font-size: var(--unnamed-font-size-24);
+                          line-height: var(--unnamed-line-spacing-38);
+
+                          color: var(--unnamed-color-004891);
+                        }
 footer {
   background: var(--unnamed-color-004891);
   font-size: var(--unnamed-font-size-24);
@@ -740,6 +830,9 @@ footer {
       );
       background-size: 100% 100%;
       background-repeat: no-repeat;
+}
+.section-background-7 {
+  background-color: var(--unnamed-color-E7F2FC);
 }
 .mapa .img-fluid {
   object-fit: cover;
@@ -1154,7 +1247,8 @@ footer .footer-auxiliar {
 .title-interna-index {
   font-family: var(--unnamed-font-family-merriweather);
   font-weight: var(--unnamed-font-weight-bold);
-  font-size: 39px; /* Establece el tamaño de la fuente a 48 pt */
+  letter-spacing: var(--unnamed-character-spacing--1-05);
+  font-size: 42px; /* Establece el tamaño de la fuente a 48 pt */
   line-height: 58pt; /* Establece el interlineado a 58 pt */
   color: #004891; /* Establece el color del texto a #004891 */
 }
@@ -1207,7 +1301,17 @@ footer .footer-auxiliar {
   max-height: 300px;
   object-fit: cover;
 }
+.card4.cards-reporte {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  align-items: end;
+}
 
+.card4.cards-reporte .card-img-top {
+  max-height: 350px;
+  object-fit: cover;
+}
 /* .card4 .card-title{
   min-height: 150px;
 } */
@@ -1221,7 +1325,11 @@ footer .footer-auxiliar {
   min-height: 150px;
   display: inline-block;
 }
-
+.card4.cards-reporte .card4-title {
+  min-height: auto;
+  display: inline-block;
+  max-width: 200px;
+}
 .card-img-container img {
   transition: transform 0.3s ease;
 }
@@ -1516,7 +1624,54 @@ select.selector-listado {
   .container-fluid .card12{
     background: none;
   }
-
+  .dividendos .table{
+    --bs-table-bg: transparent;
+    --bs-table-hover-bg: transparent;
+    --bs-table-striped-bg: transparent;
+    --bs-table-border-color: var(--unnamed-color-5A9CFF) ;
+  }
+  .calendario .table{
+    --bs-table-bg: transparent;
+    --bs-table-hover-bg: transparent;
+    --bs-table-striped-bg: transparent;
+    --bs-table-border-color: var(--unnamed-color-5A9CFF) ;
+  }
+ .dividendos .table td {
+  font-family: var(--unnamed-font-family-merriweather);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-300);
+  font-size: var(--unnamed-font-size-28);
+  line-height: var(--unnamed-line-spacing-42);
+  color: var(--unnamed-color-ffffff);
+    /* background-color: white !important; */
+  }
+ .dividendos .table th {
+  font-family: var(--unnamed-font-family-raleway);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-300);
+  font-size: var(--unnamed-font-size-24);
+  line-height: var(--unnamed-line-spacing-38);
+  letter-spacing: var(--unnamed-character-spacing--0-24);
+  color: var(--unnamed-color-5A9CFF);
+  }
+  .calendario .table td {
+    font-family: var(--unnamed-font-family-merriweather);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-300);
+    font-size: var(--unnamed-font-size-28);
+    line-height: var(--unnamed-line-spacing-42);
+    color: var(--unnamed-color-004891);
+      /* background-color: white !important; */
+    }
+   .calendario .table th {
+    font-family: var(--unnamed-font-family-raleway);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-600);
+    font-size: var(--unnamed-font-size-24);
+    line-height: var(--unnamed-line-spacing-38);
+    letter-spacing: var(--unnamed-character-spacing--0-24);
+    color: var(--unnamed-color-0063f9);
+    }
     /* Fin Estilos para card comite ejecutivo */
 
     /* Estilos para listas con descargar y ver */
@@ -1619,7 +1774,17 @@ select.selector-listado {
 .card4 .card4-title{
   min-height: auto;
 }
-
+.numero-semi-grande { font-size: 90px; line-height: 56px; }
+.til-semigrande-azul-marino { font-size: 50px; line-height: 62px; }
+.title-interna-index-blanco { font-size: 38px; line-height: 50px; }
+.titulo-pequeño-azul-marino {
+  font-size: 28px;
+  line-height: 42px;
+}
+.titulo-pequeño-azul-marino-bold {
+  font-size: 28px;
+  line-height: 42px;
+}
 }
 @media (max-width: 1400px) {
   .tit-pequeño {
@@ -1772,8 +1937,16 @@ select.selector-listado {
     font-size: var(--unnamed-font-size-22);
 
   }
-
-
+  .numero-semi-grande { font-size: 84px; line-height: 52px; }
+  .til-semigrande-azul-marino { font-size: 46px; line-height: 60px; }
+  .titulo-pequeño-azul-marino {
+    font-size: 26px;
+    line-height: 38px;
+  }
+  .titulo-pequeño-azul-marino-bold {
+    font-size: 26px;
+    line-height: 38px;
+  }
 }
 
 /* Responsividad para pantallas medianas (mayores a 1024px) */
@@ -1943,6 +2116,18 @@ select.selector-listado {
     font-size: var(--unnamed-font-size-20);
 
   }
+  .numero-semi-grande { font-size: 72px; line-height: 48px; }
+  .til-semigrande-azul-marino { font-size: 40px; line-height: 54px; }
+  .titulo-realeway-mediano { font-size: 22px; line-height: 32px; }
+
+  .titulo-pequeño-azul-marino {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .titulo-pequeño-azul-marino-bold {
+    font-size: 24px;
+    line-height: 36px;
+  }
 
 }
 @media (max-width: 992px) {
@@ -2046,10 +2231,19 @@ select.selector-listado {
   justify-content: center;
   align-items: center;
 }
-  /* header{
-    background-color: var(--unnamed-color-004891);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  } */
+.numero-semi-grande { font-size: 68px; line-height: 44px; }
+.til-semigrande-azul-marino { font-size: 36px; line-height: 50px; }
+.titulo-realeway-mediano { font-size: 20px; line-height: 30px; }
+
+.titulo-pequeño-azul-marino {
+  font-size: 22px;
+  line-height: 34px;
+}
+.titulo-pequeño-azul-marino-bold {
+  font-size: 22px;
+  line-height: 34px;
+}
+
 }
 
 /* Responsividad para pantallas más pequeñas (mayores a 768px) */
@@ -2365,6 +2559,39 @@ select.selector-listado {
   .quienes-somos-section .title {
     font-size: 50px;
 }
+.numero-semi-grande { font-size: 54px; line-height: 38px; }
+  .til-semigrande-azul-marino { font-size: 28px; line-height: 42px; }
+  .titulo-realeway-mediano { font-size: 18px; line-height: 28px; }
+
+  .dividendos .table td {
+
+    font-size: 24px;
+    line-height: normal;
+
+      /* background-color: white !important; */
+    }
+   .dividendos .table th {
+    font-size: 24px;
+    line-height: normal;
+    }
+    .calendario .table td {
+      font-size: 24px;
+      line-height: normal;
+        /* background-color: white !important; */
+      }
+     .calendario .table th {
+      font-size: 24px;
+      line-height: normal;
+      }
+      .titulo-pequeño-azul-marino {
+        font-size: 20px;
+        line-height: 32px;
+      }
+      .titulo-pequeño-azul-marino-bold {
+        font-size: 20px;
+        line-height: 32px;
+      }
+
 }
 
 /* Responsividad para móviles pequeños (menos de 480px) */
@@ -2554,4 +2781,16 @@ select.selector-listado {
     font-size: 44px;
     line-height: 46px;
 }
+.numero-semi-grande { font-size: 46px; line-height: 34px; }
+  .til-semigrande-azul-marino { font-size: 24px; line-height: 38px; }
+  .titulo-realeway-mediano { font-size: 16px; line-height: 26px; }
+
+  .titulo-pequeño-azul-marino {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .titulo-pequeño-azul-marino-bold {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
