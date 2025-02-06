@@ -17,9 +17,14 @@ export class HeaderComponent {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
         // Rutas donde el header debe tener fondo blanco desde el inicio
-        const whiteBackgroundRoutes = ['/noticias', '/home/trabaja-con-nosotros','/home/contactanos'];
+        // const whiteBackgroundRoutes = ['/noticias', '/home/trabaja-con-nosotros','/home/contactanos'];
 
-        this.forceWhiteBackground = whiteBackgroundRoutes.includes(event.url);
+        // this.forceWhiteBackground = whiteBackgroundRoutes.includes(event.url);
+            // Verificamos si la URL empieza con "/home/" o es una de las rutas específicas
+    // this.forceWhiteBackground = event.url.startsWith('/home/') || ['/noticias'].includes(event.url);
+    this.forceWhiteBackground = event.url.startsWith('/home/') || event.url.startsWith('/noticias/') ||  event.url.startsWith('/quienes-somos/')
+    || event.url.startsWith('/sostenibilidad/') ||  event.url.startsWith('/inversiones-reportes/')  || event.url.startsWith('/proveedores/')   ;
+
         this.isScrolled = this.forceWhiteBackground; // Si la ruta coincide, aplicamos el fondo blanco
       }
     });
