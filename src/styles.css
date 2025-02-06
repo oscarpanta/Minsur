@@ -39,6 +39,7 @@
   --unnamed-font-size-38: 38px;
   --unnamed-font-size-42: 42px;
   --unnamed-font-size-60: 60px;
+  --unnamed-font-size-72: 72px;
   --unnamed-font-size-98: 98px;
   --unnamed-font-size-142: 142px;
   --unnamed-font-size-52: 52px;
@@ -50,6 +51,7 @@
   --unnamed-character-spacing--0-82: -0.82px;
   --unnamed-character-spacing--0-6: -0.2px;
   --unnamed-character-spacing--0-6: -0.6px;
+  --unnamed-character-spacing--0-72: -0.72px;
   --unnamed-character-spacing--0-8: -0.8px;
   --unnamed-character-spacing--0-97: -0.97px;
   --unnamed-character-spacing--1-05: -1.05px;
@@ -71,6 +73,7 @@
   --unnamed-line-spacing-42: 42px;
   --unnamed-line-spacing-58: 58px;
   --unnamed-line-spacing-70: 70px;
+  --unnamed-line-spacing-72: 72px;
 }
 @font-face {
   font-family: 'Merriweather';
@@ -848,6 +851,15 @@ header.scrolled .logo {
                           line-height: var(--unnamed-line-spacing-42);
                           letter-spacing: var(--unnamed-character-spacing--0-8);
                           color: var(--unnamed-color-004891);
+                        }
+          .titulo-super-grande-blanco {
+                          font-family: var(--unnamed-font-family-raleway);
+                          font-style: var(--unnamed-font-style-normal);
+                          font-weight: var(--unnamed-font-weight-500);
+                          font-size: var(--unnamed-font-size-72);
+                          line-height: var(--unnamed-line-spacing-72);
+                          letter-spacing: var(--unnamed-character-spacing--0-72);
+                          color: var(--unnamed-color-ffffff);
                         }
 footer {
   background: var(--unnamed-color-004891);
@@ -1854,6 +1866,7 @@ select.selector-listado {
   }
   .breadcrumb {
     text-transform: uppercase;
+    --bs-breadcrumb-margin-bottom: 0rem !important;
   }
   .breadcrumb-item.active {
     text-decoration: underline;
@@ -1883,6 +1896,16 @@ select.selector-listado {
     .carousel-style-item{
       height: 100vh;
     }
+    .fondo-section-regular{
+      height: 60vh;
+      /* background-size: 150% 100% !important;
+      background-position: 80% center !important;
+      background-repeat: no-repeat !important; */
+      background-size: cover !important;
+      background-position: center !important;
+      background-repeat: no-repeat !important;
+    }
+
     /* Fin Estilos para listas con descargar y ver */
 /* Responsividad para pantallas grandes (mayores a 1400px) */
 @media (max-width: 1700px) {
@@ -2894,7 +2917,16 @@ select.selector-listado {
     .carousel-style-item{
       height: 60vh;
     }
+    .fondo-section-regular {
+      height: 30vh;
+      background-size: 150% 100% !important;
+      background-position: 80% center !important;
+
     }
+    .titulo-super-grande-blanco{
+      font-size: 36px;
+    }
+}
 
 /* Responsividad para móviles pequeños (menos de 480px) */
 @media (max-width: 480px) {
@@ -3114,5 +3146,9 @@ select.selector-listado {
   }
   .carousel-style-item{
     height: 35vh;
+  }
+  .titulo-super-grande-blanco{
+    font-size: 34px;
+    line-height: normal;
   }
 }
