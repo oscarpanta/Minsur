@@ -38,6 +38,7 @@
   --unnamed-font-size-36: 36px;
   --unnamed-font-size-38: 38px;
   --unnamed-font-size-42: 42px;
+  --unnamed-font-size-60: 60px;
   --unnamed-font-size-98: 98px;
   --unnamed-font-size-142: 142px;
   --unnamed-font-size-52: 52px;
@@ -69,6 +70,7 @@
   --unnamed-line-spacing-38: 38px;
   --unnamed-line-spacing-42: 42px;
   --unnamed-line-spacing-58: 58px;
+  --unnamed-line-spacing-70: 70px;
 }
 @font-face {
   font-family: 'Merriweather';
@@ -597,6 +599,15 @@ header.scrolled .logo {
   letter-spacing: var(--unnamed-character-spacing--0-24);
   color: var(--unnamed-color-ffffff);
 }
+.texto-base-blanco-bold {
+  font-family: var(--unnamed-font-family-raleway);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-bold);
+  font-size: var(--unnamed-font-size-24);
+  line-height: var(--unnamed-line-spacing-38);
+  letter-spacing: var(--unnamed-character-spacing--0-24);
+  color: var(--unnamed-color-ffffff);
+}
 .titulo-sustinable {
   font-family: var(--unnamed-font-family-merriweather);
   font-style: var(--unnamed-font-style-normal);
@@ -619,6 +630,14 @@ header.scrolled .logo {
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-300);
   font-size: var(--unnamed-font-size-19);
+  line-height: var(--unnamed-line-spacing-34);
+  color: var(--unnamed-color-ffffff);
+}
+.texto-minimo-blanco {
+  font-family: var(--unnamed-font-family-raleway);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-bold);
+  font-size: var(--unnamed-font-size-18);
   line-height: var(--unnamed-line-spacing-34);
   color: var(--unnamed-color-ffffff);
 }
@@ -757,6 +776,15 @@ header.scrolled .logo {
                           font-size: var(--unnamed-font-size-32);
                           line-height: var(--unnamed-line-spacing-42);
                           letter-spacing: var(--unnamed-character-spacing--0-8);
+                          color: var(--unnamed-color-ffffff);
+                        }
+    .tit-super-grande-blanco {
+                          font-family: var(--unnamed-font-family-raleway);
+                          font-style: var(--unnamed-font-style-normal);
+                          font-weight: var(--unnamed-font-weight-300);
+                          font-size: var(--unnamed-font-size-60);
+                          line-height: var(--unnamed-line-spacing-70);
+                          letter-spacing: var(--unnamed-character-spacing--0-6);
                           color: var(--unnamed-color-ffffff);
                         }
       .texto-semi-pequeño {
@@ -1563,6 +1591,11 @@ section .card-sustinable  .col-lg-7 img {
   max-width: 900px;
   max-height: 530px;
 }
+.card9.card-img-2 .img-fluid{
+  max-height: 600px;
+  border-radius: 0 20px 0 0;
+}
+
 .icono-imagen {
   width: 40px;
   height: 40px;
@@ -1661,8 +1694,24 @@ select.selector-listado {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     border: 0;
+    box-shadow: 0px 3px 6px #00000029;
   }
+  .container-fluid .card-img-3 .custom-card {
 
+    max-width: 900px;
+    padding: 5rem;
+    padding-bottom: 2rem;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 0;
+    box-shadow: 0px 3px 6px #00000029;
+  }
+  .card9.card-img-3 .img-fluid{
+    max-height: 600px;
+    border-radius: 20px 0 0 0;
+  }
   /* Estilos para card comite ejecutivo */
   .card10{
     border: 0;
@@ -1798,9 +1847,42 @@ select.selector-listado {
 }
   /* Eliminar borde cuando el contenido esté expandido */
 
+  /* Inicio estilos breadcrumb */
+  .section-breadcrumb{
+    margin-top: 12rem;
 
+  }
+  .breadcrumb {
+    text-transform: uppercase;
+  }
+  .breadcrumb-item.active {
+    text-decoration: underline;
+    color: white !important;
+
+  }
+  .breadcrumb-item{
+    padding: 8px 0;
+  }
+  .breadcrumb-item a {
+    text-decoration: none;
+  }
+  .breadcrumb-item+.breadcrumb-item::before {
+    color: var(--unnamed-color-ffffff) !important;
+    content: var(--bs-breadcrumb-divider, "<") !important;
+}
+  /* Fin estilos breadcrumb */
     /* Estilos para listas con descargar y ver */
 
+    /* Estilos arreglados para el carosuel */
+    .carousel-style{
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .carousel-style-item{
+      height: 100vh;
+    }
     /* Fin Estilos para listas con descargar y ver */
 /* Responsividad para pantallas grandes (mayores a 1400px) */
 @media (max-width: 1700px) {
@@ -2777,7 +2859,42 @@ select.selector-listado {
       .text-content{
         min-height: auto;
       }
-}
+      .quienes-somos-section {
+        height: 60vh;
+      }
+      .container-fluid .card-img-2 .custom-img img{
+        margin: 0 auto;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 0px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 0;
+        border: 0
+      }
+      .container-fluid .card-img-3 .custom-img img{
+        margin: 0 auto;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 20px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 20px;
+        border: 0
+      }
+      .container-fluid .card-img-3 .custom-card {
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 0px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 0px;
+        padding: 2rem;
+    }
+    .carousel-style{
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .carousel-style-item{
+      height: 60vh;
+    }
+    }
 
 /* Responsividad para móviles pequeños (menos de 480px) */
 @media (max-width: 480px) {
@@ -2985,5 +3102,17 @@ select.selector-listado {
   .titulo-pequeño-azul-marino-bold {
     font-size: 18px;
     line-height: 30px;
+  }
+  .quienes-somos-section {
+    height: 35vh;
+  }
+  .carousel-style{
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .carousel-style-item{
+    height: 35vh;
   }
 }
