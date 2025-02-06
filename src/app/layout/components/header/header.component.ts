@@ -23,7 +23,7 @@ export class HeaderComponent {
             // Verificamos si la URL empieza con "/home/" o es una de las rutas específicas
     // this.forceWhiteBackground = event.url.startsWith('/home/') || ['/noticias'].includes(event.url);
     this.forceWhiteBackground = event.url.startsWith('/home/') || event.url.startsWith('/noticias/') ||  event.url.startsWith('/quienes-somos/')
-    || event.url.startsWith('/sostenibilidad/') ||  event.url.startsWith('/inversiones-reportes/')  || event.url.startsWith('/proveedores/')   ;
+    || event.url.startsWith('/sostenibilidad/') ||  event.url.startsWith('/inversiones-reportes/')  || event.url.startsWith('/proveedores/') ||['/noticias'].includes(event.url)   ;
 
         this.isScrolled = this.forceWhiteBackground; // Si la ruta coincide, aplicamos el fondo blanco
       }

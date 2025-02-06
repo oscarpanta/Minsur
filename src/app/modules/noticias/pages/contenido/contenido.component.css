@@ -5,8 +5,12 @@
   background-color: blue;
   transition: top 0.3s ease-in-out;
 }
-.bg-gray{
+.noticias_inicio{
   background-color: #f0f0f0;
+}
+.noticias_inicio .info_noticias_general{
+  padding-right: calc(var(--bs-gutter-x)* .5);
+  padding-left: calc(var(--bs-gutter-x)* .5);
 }
 .bg-white{
   background-color: #fff;

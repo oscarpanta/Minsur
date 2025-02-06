@@ -1043,7 +1043,7 @@ footer .footer-auxiliar {
   margin: 0;
 }
 /* Esto es para el hover del titulo */
-.hover-card-underline {
+.hover-card-underline,.hover-card-underline2 {
   display: inline-block;
   cursor: pointer;
   text-decoration: none; /* Asegura que no haya subrayado por defecto */
@@ -1052,7 +1052,7 @@ footer .footer-auxiliar {
     text-decoration-thickness 0.5s ease;
 }
 
-.hover-card-underline::after {
+.hover-card-underline::after,.hover-card-underline2::after {
   content: "";
   position: absolute;
   left: 0;
@@ -1068,6 +1068,10 @@ footer .footer-auxiliar {
   text-decoration-color: currentColor; /* Establece el color del subrayado */
   text-decoration-thickness: 2px; /* Hace que el subrayado sea más grueso */
   line-height: calc(1.4em + 2px); /* Aumenta el line-height en 2px con efecto */
+}
+.hover-card-underline2:hover{
+  line-height: calc(1.4em + 2px); /* Aumenta el line-height en 2px con efecto */
+  color: var(--unnamed-color-0063f9)
 }
 /* Estilos para card con texto sin efecto
  */

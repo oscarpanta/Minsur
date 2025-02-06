@@ -7,4 +7,5 @@ import { Component, Input } from '@angular/core';
 })
 export class CardNoticiasComponent {
   @Input() titleNoticias : boolean=true
+  @Input() hoverClass: string = 'hover-card-underline'; // Clase por defecto
 }
