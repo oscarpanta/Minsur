@@ -21,16 +21,16 @@
 
   <div class="container-fluid">
     <div
-      class="header-content d-lg-flex d-block justify-content-between align-items-center"
+      class="header-content d-xl-flex d-block justify-content-between align-items-center"
     >
       <!-- Logo alineado a la izquierda y centrado verticalmente -->
-      <a class="navbar-brand logo-container d-lg-block d-none" routerLink="/">
+      <a class="navbar-brand logo-container d-xl-block d-none" routerLink="/">
         <img src="assets/images/Logo/LogoMinsur.png" alt="Logo" class="logo" />
       </a>
 
       <div class="right-content d-flex flex-column">
         <!-- Fila superior con enlaces a la derecha -->
-        <div class="top-bar d-none d-lg-flex justify-content-end">
+        <div class="top-bar d-none d-xl-flex justify-content-end">
           <a routerLink="home/contactanos" class="top-link">CONTÁCTANOS</a>
           <a routerLink="home/trabaja-con-nosotros" class="top-link"
             >TRABAJA CON NOSOTROS</a
@@ -45,8 +45,8 @@
         </div>
 
         <!-- Menú de navegación -->
-        <nav class="navbar navbar-expand-lg">
-          <a class="navbar-brand d-block d-lg-none" routerLink="/">
+        <nav class="navbar navbar-expand-xl">
+          <a class="navbar-brand d-block d-xl-none" routerLink="/">
             <img
               src="assets/images/Logo/LogoMinsur.png"
               alt="Logo"
@@ -90,13 +90,13 @@
               </li>
 
               <li class="nav-item  mx-2">
-                <a class="nav-link" routerLink="/" (click)="closeMenu()">Noticias</a>
+                <a class="nav-link" routerLink="/noticias" (click)="closeMenu()">Noticias</a>
               </li>
-              <li class="nav-item  mx-2 d-lg-none" (click)="closeMenu()">
+              <li class="nav-item  mx-2 d-xl-none" (click)="closeMenu()">
                 <a class="nav-link" href="#">Trabaja con Nosotros</a>
               </li>
 
-              <!-- <li class="nav-item d-lg-none">
+              <!-- <li class="nav-item d-xl-none">
                 <a class="nav-link" href="#">Español | Inglés</a>
               </li> -->
             </ul>
