@@ -17,28 +17,24 @@ export class ContenidoComponent implements AfterViewInit{
   ];
   videos = [
     {
-      title: "Innovación en Minería",
       description: "Minsur es la primera empresa peruana en ser reconocida por el prestigioso Shingo Institute.",
       thumbnail: "assets/images/quienes-somos.png",
       duration: "3:45",
       link: "https://www.youtube.com/watch?v=VIDEO_ID_1"
     },
     {
-      title: "Sostenibilidad y Medio Ambiente",
       description: "Minsur es la primera empresa peruana en ser reconocida por el prestigioso Shingo Institute",
       thumbnail: "assets/images/sostenibilidad.png",
       duration: "4:20",
       link: "https://www.youtube.com/watch?v=VIDEO_ID_2"
     },
     {
-      title: "Innovación en Minería",
       description: "Minsur es la primera empresa peruana en ser reconocida por el prestigioso Shingo Institute",
       thumbnail: "assets/images/quienes-somos.png",
       duration: "3:45",
       link: "https://www.youtube.com/watch?v=VIDEO_ID_1"
     },
     {
-      title: "Sostenibilidad y Medio Ambiente",
       description: "Minsur es la primera empresa peruana en ser reconocida por el prestigioso Shingo Institute",
       thumbnail: "assets/images/sostenibilidad.png",
       duration: "4:20",

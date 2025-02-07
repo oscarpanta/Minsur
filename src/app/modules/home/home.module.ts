@@ -14,6 +14,8 @@ import { TrabajaConNosotrosComponent } from './pages/trabaja-con-nosotros/trabaj
 import { ButtonComponent } from 'src/app/shared/button/button.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { EmisionesNetasGeneralComponent } from './pages/produccion-responsable/emisiones-netas-general/emisiones-netas-general.component';
+import { EnfoquePersonasGeneralComponent } from './pages/produccion-responsable/enfoque-personas-general/enfoque-personas-general.component';
 
 
 @NgModule({
@@ -27,6 +29,8 @@ import { SharedModule } from 'src/app/shared/shared.module';
     EconomiaCircularComponent,
     ContactanosComponent,
     TrabajaConNosotrosComponent,
+    EmisionesNetasGeneralComponent,
+    EnfoquePersonasGeneralComponent,
   ],
   imports: [
     CommonModule,
