@@ -1894,7 +1894,7 @@ select.selector-listado {
 
   /* Inicio estilos breadcrumb */
   .section-breadcrumb{
-    margin-top: 12rem;
+    /* margin-top: 12rem; */
 
   }
   .breadcrumb {
