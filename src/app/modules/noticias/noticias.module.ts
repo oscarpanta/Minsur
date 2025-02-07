@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule,CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { NoticiasRoutingModule } from './noticias-routing.module';
@@ -16,6 +16,7 @@ import { SharedModule } from "../../shared/shared.module";
     CommonModule,
     NoticiasRoutingModule,
     SharedModule
-]
+],
+schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })
 export class NoticiasModule { }

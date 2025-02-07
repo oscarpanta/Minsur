@@ -1,4 +1,4 @@
-import { AfterViewChecked, AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-contenido',
@@ -6,19 +6,56 @@ import { AfterViewChecked, AfterViewInit, Component, ElementRef, ViewChild } fro
   styleUrls: ['./contenido.component.css']
 })
 export class ContenidoComponent implements AfterViewInit{
-  @ViewChild('header') header!: ElementRef;
-  headerHeight: number = 0;
-
+ @ViewChild('swiperEl', { static: false }) swiperEl!: ElementRef;
+  noticias = [
+    { img: 'assets/images/noticia_principal.png', title: 'Minsur es la primera empresa peruana en ser reconocida por.' },
+    { img: 'assets/images/multimedia_galeria_princ.png', title: 'Minsur es la primera empresa peruana en ser reconocida por. Minsur es la primera empresa peruana en ser reconocida por.' },
+    { img: 'assets/images/noticia_principal.png', title: 'Título de Noticia 3' },
+    { img: 'assets/images/noticia_principal.png', title: 'Título de Noticia 4' },
+    { img: 'assets/images/noticia_principal.png', title: 'Título de Noticia 5' },
+    { img: 'assets/images/noticia_principal.png', title: 'Título de Noticia 6' },
+  ];
+  videos = [
+    {
+      title: "Innovación en Minería",
+      description: "Minsur es la primera empresa peruana en ser reconocida por el prestigioso Shingo Institute.",
+      thumbnail: "assets/images/quienes-somos.png",
+      duration: "3:45",
+      link: "https://www.youtube.com/watch?v=VIDEO_ID_1"
+    },
+    {
+      title: "Sostenibilidad y Medio Ambiente",
+      description: "Minsur es la primera empresa peruana en ser reconocida por el prestigioso Shingo Institute",
+      thumbnail: "assets/images/sostenibilidad.png",
+      duration: "4:20",
+      link: "https://www.youtube.com/watch?v=VIDEO_ID_2"
+    },
+    {
+      title: "Innovación en Minería",
+      description: "Minsur es la primera empresa peruana en ser reconocida por el prestigioso Shingo Institute",
+      thumbnail: "assets/images/quienes-somos.png",
+      duration: "3:45",
+      link: "https://www.youtube.com/watch?v=VIDEO_ID_1"
+    },
+    {
+      title: "Sostenibilidad y Medio Ambiente",
+      description: "Minsur es la primera empresa peruana en ser reconocida por el prestigioso Shingo Institute",
+      thumbnail: "assets/images/sostenibilidad.png",
+      duration: "4:20",
+      link: "https://www.youtube.com/watch?v=VIDEO_ID_2"
+    }
+  ];
   ngAfterViewInit() {
-      this.updateHeaderHeight();
-  }
-
-  updateHeaderHeight() {
-    const headerElement = document.querySelector('header') as HTMLElement;
-    if (headerElement) {
-      this.headerHeight = headerElement.offsetHeight;
-      console.log('Altura del header:', this.headerHeight); // Para verificar en consola
+    if (this.swiperEl && this.swiperEl.nativeElement) {
+      this.swiperEl.nativeElement.initialize();
     }
   }
-
+  moverDerecha() {
+    if (this.swiperEl && this.swiperEl.nativeElement && this.swiperEl.nativeElement.swiper) {
+      this.swiperEl.nativeElement.swiper.slideNext();
+    }
+  }
+  verVideo(url: string) {
+    window.open(url, "_blank");
+  }
 }
