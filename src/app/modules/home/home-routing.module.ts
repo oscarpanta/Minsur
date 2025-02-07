@@ -10,7 +10,7 @@ import { EnfoquePersonasComponent as DescripcionEnfoquePersonasComponent} from '
 import { TrazabilidadComponent } from './pages/descripcion-produccion-responsable/trazabilidad/trazabilidad.component';
 import { EconomiaCircularComponent } from './pages/produccion-responsable/economia-circular/economia-circular.component';
 // import { EmisionesNetasComponent } from './pages/produccion-responsable/emisiones-netas/emisiones-netas.component';
-import { EnfoquePersonasComponent } from './pages/produccion-responsable/enfoque-personas/enfoque-personas.component';
+//import { EnfoquePersonasComponent } from './pages/produccion-responsable/enfoque-personas/enfoque-personas.component';
 import { EmisionesNetasGeneralComponent } from './pages/produccion-responsable/emisiones-netas-general/emisiones-netas-general.component';
 import { EnfoquePersonasGeneralComponent } from './pages/produccion-responsable/enfoque-personas-general/enfoque-personas-general.component';
 
