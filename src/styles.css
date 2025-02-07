@@ -889,6 +889,15 @@ header.scrolled .logo {
                           line-height: var(--unnamed-line-spacing-34);
                           color: var(--unnamed-color-36404e);
                         }
+          .titulo-super-grande-azul {
+                          font-family: var(--unnamed-font-family-merriweather);
+                          font-style: var(--unnamed-font-style-normal);
+                          font-weight: var(--unnamed-font-weight-500);
+                          font-size: var(--unnamed-font-size-72);
+                          line-height: var(--unnamed-line-spacing-66);
+
+                          color: var(--unnamed-color-004891);
+                        }
 footer {
   background: var(--unnamed-color-004891);
   font-size: var(--unnamed-font-size-24);
@@ -1904,6 +1913,11 @@ select.selector-listado {
   .breadcrumb-item.active {
     text-decoration: underline;
     color: white !important;
+
+  }
+  .breadcrumb-item.active.bread-azul{
+    text-decoration: none;
+    color: #5a9cff !important;
 
   }
   .breadcrumb-item{
@@ -3052,6 +3066,9 @@ select.selector-listado {
     .titulo-super-grande-blanco{
       font-size: 36px;
     }
+    .titulo-super-grande-azul{
+      font-size: 36px;
+    }
     .titulo-realeway-mediano-grande{
       font-size: 32px;
       line-height: 34px;
@@ -3278,6 +3295,10 @@ select.selector-listado {
     height: 35vh;
   }
   .titulo-super-grande-blanco{
+    font-size: 34px;
+    line-height: normal;
+  }
+  .titulo-super-grande-azul{
     font-size: 34px;
     line-height: normal;
   }
