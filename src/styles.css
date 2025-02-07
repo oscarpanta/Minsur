@@ -38,6 +38,7 @@
   --unnamed-font-size-36: 36px;
   --unnamed-font-size-38: 38px;
   --unnamed-font-size-42: 42px;
+  --unnamed-font-size-46: 46px;
   --unnamed-font-size-60: 60px;
   --unnamed-font-size-72: 72px;
   --unnamed-font-size-98: 98px;
@@ -698,6 +699,15 @@ header.scrolled .logo {
           letter-spacing: var(--unnamed-character-spacing--0-6);
           color: var(--unnamed-color-36404e);
           }
+  .titulo-realeway-mediano-grande {
+            font-family: var(--unnamed-font-family-raleway);
+            font-style: var(--unnamed-font-style-normal);
+            font-weight: var(--unnamed-font-weight-normal);
+            font-size: var(--unnamed-font-size-46);
+            line-height: var(--unnamed-line-spacing-72);
+            letter-spacing: var(--unnamed-character-spacing--1-05);
+            color: var(--unnamed-color-36404e);
+            }
 .til-mediano-azul {
               font-family: var(--unnamed-font-family-raleway);
               font-style: var(--unnamed-font-style-normal);
@@ -861,6 +871,14 @@ header.scrolled .logo {
                           letter-spacing: var(--unnamed-character-spacing--0-72);
                           color: var(--unnamed-color-ffffff);
                         }
+          .texto-formulario {
+                          font-family: var(--unnamed-font-family-raleway);
+                          font-style: var(--unnamed-font-style-normal);
+                          font-weight: var(--unnamed-font-weight-500);
+                          font-size: var(--unnamed-font-size-20);
+                          line-height: var(--unnamed-line-spacing-34);
+                          color: var(--unnamed-color-36404e);
+                        }
 footer {
   background: var(--unnamed-color-004891);
   font-size: var(--unnamed-font-size-24);
@@ -944,6 +962,11 @@ footer .footer-auxiliar {
   text-decoration: none;
   transition: color 0.3s ease;
   color: var(--unnamed-color-CCE7FF);
+}
+.list-unstyled.contacto-iconos a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+  color: var(--unnamed-color-0063f9) !important;
 }
 .footer-iconos li {
   font-size: calc(1rem + 1vw);
@@ -1907,6 +1930,93 @@ select.selector-listado {
     }
 
     /* Fin Estilos para listas con descargar y ver */
+
+    /* Estilos para el formulario */
+    /* Contenedor relativo */
+.position-relative {
+  position: relative;
+  margin-top: 25px;
+}
+
+/* Input y select personalizados */
+
+.custom-input {
+  width: 100%;
+  padding: 10px 10px 5px;
+  border: 0;
+  background: transparent;
+  font-size: 16px;
+  outline: none;
+  border-radius: 0px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #36404e;
+}
+
+.custom-input::placeholder {
+  color: transparent;
+}
+
+/* Estilo de las etiquetas flotantes */
+.floating-label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  font-size: 14px;
+  color: #36404e;
+  transform: translateY(-50%);
+  transition: all 0.2s ease-in-out;
+  pointer-events: none;
+}
+
+/* Efecto flotante para input y select */
+.custom-input:focus + .floating-label,
+.custom-input:not(:placeholder-shown) + .floating-label {
+  top: -10px;
+  font-size: 12px;
+  color: var(--unnamed-color-0063f9);
+}
+/* Contenedor del select */
+.select-container {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Estilo del select */
+.custom-select {
+  width: 100%;
+  padding: 10px 10px 10px 10px;
+  border: 0;
+  background-color: transparent;
+  appearance: none;
+  font-size: 16px;
+  outline: none;
+  border-bottom: 1px solid #36404E;
+}
+
+/* Etiqueta flotante */
+.floating-label {
+  position: absolute;
+  left: 10px;
+  top: 12px; /* Ajustar la posición para que no quede en el medio */
+  transform: translateY(0);
+  color: #36404e;
+  font-size: 16px;
+  transition: all 0.2s ease;
+  pointer-events: none;
+}
+
+/* Estilo cuando el select tiene foco o valor */
+.select-container:focus-within .floating-label,
+.custom-select:not([value=""]) + .floating-label {
+  top: -10px;
+  font-size: 12px;
+  color: #007bff;
+}
+
+
+
+     /* Estilos para el formulario */
 /* Responsividad para pantallas grandes (mayores a 1400px) */
 @media (max-width: 1700px) {
   .tit-pequeño {
@@ -2390,6 +2500,12 @@ select.selector-listado {
   .titulo-pequeño-azul-marino-bold {
     font-size: 24px;
     line-height: 36px;
+  }
+  .fondo-section-regular {
+    height: 60vh;
+    background-size: 150% 100% !important;
+    background-position: 80% center !important;
+
   }
 
 }
@@ -2926,6 +3042,10 @@ select.selector-listado {
     .titulo-super-grande-blanco{
       font-size: 36px;
     }
+    .titulo-realeway-mediano-grande{
+      font-size: 32px;
+      line-height: 34px;
+    }
 }
 
 /* Responsividad para móviles pequeños (menos de 480px) */
@@ -3150,5 +3270,12 @@ select.selector-listado {
   .titulo-super-grande-blanco{
     font-size: 34px;
     line-height: normal;
+  }
+  .titulo-realeway-mediano-grande{
+    font-size: 26px;
+    line-height: 28px;
+  }
+  .titulo-pequeño-azul-bold{
+    font-size: 20px;
   }
 }
