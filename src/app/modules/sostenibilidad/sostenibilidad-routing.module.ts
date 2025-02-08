@@ -17,26 +17,26 @@ import { TalentoComponent } from './pages/valor-compartido/talento/talento.compo
 const routes: Routes = [
         { path: '', component: ContenidoComponent },
 
-        { path: 'agua-diversidad', component: AguaBiodiversidadComponent },
-        { path: 'cuidado-ambiental', component: CuidadoAmbientalComponent },
+        { path: 'agua-diversidad', component: AguaBiodiversidadComponent,data:{breadcrumb:'Agua y Biodiversidad'} },
+        { path: 'cuidado-ambiental', component: CuidadoAmbientalComponent,data:{breadcrumb:'Cuidado Ambiental'} },
 
-        { path: 'derechos-humanos', component: DerechosHumanosComponent },
-        { path: 'emisiones-energia', component: EmisionesEnergiaComponent },
+        { path: 'derechos-humanos', component: DerechosHumanosComponent,data:{breadcrumb:'Derechos Humanos'} },
+        { path: 'emisiones-energia', component: EmisionesEnergiaComponent,data:{breadcrumb:'Emisiones y Energia'} },
 
-        { path: 'etica-cumplimiento', component: EticaCumplimientoComponent },
+        { path: 'etica-cumplimiento', component: EticaCumplimientoComponent,data:{breadcrumb:'Ética y Cumplimiento'} },
 
-        { path: 'gobernanza-responsable', component: GobernanzaResponsableComponent },
+        { path: 'gobernanza-responsable', component: GobernanzaResponsableComponent,data:{breadcrumb:'Gobernanza Responsable'} },
 
-        { path: 'relevos', component: RelevosComponent },
-        { path: 'seguridad-salud', component: SeguridadSaludComponent },
+        { path: 'relevos', component: RelevosComponent,data:{breadcrumb:'Relaves'} },
+        { path: 'seguridad-salud', component: SeguridadSaludComponent,data:{breadcrumb:'Seguridad y Salud'} },
 
-        { path: 'transparencia', component: TransparenciaComponent },
+        { path: 'transparencia', component: TransparenciaComponent,data:{breadcrumb:'Transparencia'} },
 
-        { path: 'comunidad', component: ComunidadComponent },
+        { path: 'comunidad', component: ComunidadComponent,data:{breadcrumb:'Comunidad'} },
 
-        { path: 'gestion-proveedores', component: GestionProveedoresComponent },
+        { path: 'gestion-proveedores', component: GestionProveedoresComponent,data:{breadcrumb:'Proveedores'} },
 
-        { path: 'talento', component: TalentoComponent },
+        { path: 'talento', component: TalentoComponent,data:{breadcrumb:'Talento'} },
 
 ];
 

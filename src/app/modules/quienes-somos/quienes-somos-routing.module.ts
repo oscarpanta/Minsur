@@ -4,9 +4,12 @@ import { ContenidoComponent } from './pages/contenido/contenido.component';
 import { AltaGerenciaComponent } from './pages/alta-gerencia/alta-gerencia.component';
 
 const routes: Routes = [
-          { path: '', component: ContenidoComponent },
+          { path: '', component: ContenidoComponent ,
+        }
+          ,
 
-          { path: 'alta-gerencia', component: AltaGerenciaComponent },
+          { path: 'alta-gerencia', component: AltaGerenciaComponent,
+          },
 
 ];
 

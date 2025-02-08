@@ -8,10 +8,10 @@ import { PucamarcaComponent } from './pages/unidades/pucamarca/pucamarca.compone
 const routes: Routes = [
         { path: '', component: ContenidoComponent },
 
-        { path: 'san-rafael', component: SanRafaelComponent },
-        { path: 'pisco', component: PiscoComponent },
+        { path: 'san-rafael', component: SanRafaelComponent,data:{breadcrumb:'San Rafael'} },
+        { path: 'pisco', component: PiscoComponent,data:{breadcrumb:'Fundacion Pisco'} },
 
-        { path: 'pucamarca', component: PucamarcaComponent },
+        { path: 'pucamarca', component: PucamarcaComponent,data:{breadcrumb:'Pucamarca'} },
 
 
 ];

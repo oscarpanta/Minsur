@@ -1,0 +1,23 @@
+<section class="section-background-8 section-breadcrumb">
+  <div class="container-fluid">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb text-white rounded">
+        <li *ngFor="let breadcrumb of breadcrumbService.breadcrumbs; let last = last" class="breadcrumb-item" [ngClass]="{'active': last}">
+          <ng-container *ngIf="!last">
+            <a [routerLink]="breadcrumb.url" class="texto-minimo-blanco">{{ breadcrumb.label }}</a>
+          </ng-container>
+          <ng-container *ngIf="last" >
+            <a  class="texto-minimo-blanco">{{ breadcrumb.label }}</a>
+
+          </ng-container>
+        </li>
+        <li class="ms-auto">
+          <a routerLink="/" class="btn-vermas-blanco">
+            <span class="flecha-circular-blanco"><i class="fas fa-arrow-left flecha-ver-mas-blanco"></i></span>
+            Volver
+          </a>
+        </li>
+      </ol>
+    </nav>
+  </div>
+</section>

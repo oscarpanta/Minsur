@@ -17,22 +17,22 @@ const routes: Routes = [
   { path: '', component: ContenidoComponent },
 
   { path: 'comunicados', component: ComunicadosComponent },
-  { path: 'canal-integridad', component: CanalIntegridadComponent },
+  { path: 'canal-integridad', component: CanalIntegridadComponent,data:{breadcrumb:'Canal Integridad'} },
 
   { path: 'contactanos', component: ContactanosComponent},
 
-  { path: 'trabaja-con-nosotros', component: TrabajaConNosotrosComponent },
+  { path: 'trabaja-con-nosotros', component: TrabajaConNosotrosComponent,data:{breadcrumb:'Trabaja con Nosotros'} },
 
   { path: 'descripcion-emisiones-netas', component: DescripcionEmisionesNetasComponent },
 
   { path: 'descripcion-enfoque-personas', component: DescripcionEnfoquePersonasComponent },
 
   { path: 'trazabilidad', component: TrazabilidadComponent },
-  { path: 'economia-circular', component: EconomiaCircularComponent },
+  { path: 'economia-circular', component: EconomiaCircularComponent ,data:{breadcrumb:'Economia Circular'}},
 
-  { path: 'emisiones-netas', component: EmisionesNetasGeneralComponent },
+  { path: 'emisiones-netas', component: EmisionesNetasGeneralComponent,data:{breadcrumb:'Emisiones Netas Cero'} },
 
-  { path: 'enfoque-personas', component: EnfoquePersonasGeneralComponent },
+  { path: 'enfoque-personas', component: EnfoquePersonasGeneralComponent,data:{breadcrumb:'Enfoque en personas'} },
 
   // { path: '', redirectTo: '', pathMatch: 'full' }
 
