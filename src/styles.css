@@ -960,14 +960,105 @@ header.scrolled .logo {
 }
 
 
-
-
-
 /* FIN ESTILOS DETALLE NOTICIAS */
+/* ESTILOS DETALLE - ALTA GERENCIA */
+.seccion_alta_gerencia{
+  background-color: #004891;
+}
+.container_alta_gerencia{
+  background-color: #fff;
+  border-radius: 20px;
+}
+.container_alta_gerencia .news_date_detalle{
+  font-family: var(--unnamed-font-family-raleway);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-500);
+  font-size: var(--unnamed-font-size-24);
+  line-height: 29px;
+  color: var(--unnamed-color-004891);
+
+  letter-spacing: 0;
+  text-align: left;
+
+}
+.container_alta_gerencia .news_title_detalle{
+  font-family: var(--unnamed-font-family-raleway);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-500);
+  font-size: var(--unnamed-font-size-56);
+  line-height: 66px;
+  color: var(--unnamed-color-0063f9);
+
+  letter-spacing: 0;
+  text-align: left;
+
+}
+.container_alta_gerencia .text_ceo{
+  font-family: var(--unnamed-font-family-raleway);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-500);
+  font-size: var(--unnamed-font-size-32);
+  line-height: 66px;
+  color: var(--unnamed-color-36404e);
+
+  letter-spacing: 0;
+  text-align: left;
+}
+
+
+.compartir_container a{
+  border-bottom: 1px solid #D4D9E7;
+  font-family: var(--unnamed-font-family-raleway);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-500);
+  font-size: var(--unnamed-font-size-18);
+  line-height: 24px;
+  color: var(--unnamed-color-004891);
+
+  letter-spacing: -0.36;
+  text-align: left;
+  text-decoration: none;
+}
+.container_alta_gerencia .news-image img {
+  height: calc(100% + 40px);
+  object-fit: cover;
+  width:100%;
+  position: relative;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.container_alta_gerencia .detalle_texto{
+  border-bottom: 1px solid #D4D9E7;
+}
+.container_alta_gerencia .detalle_texto p{
+  font-family: var(--unnamed-font-family-raleway);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-500);
+  font-size: var(--unnamed-font-size-24);
+  line-height: 38px;
+  color: var(--unnamed-color-36404e);
+
+  letter-spacing: -0.24;
+  text-align: left;
+}
+.container_alta_gerencia .presentacion_corporativa{
+  padding: 3rem 3rem 5rem 3rem;
+}
+.container_alta_gerencia .presentacion_corporativa .presentacion_text{
+  font-family: var(--unnamed-font-family-merriweather);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-500);
+  font-size: var(--unnamed-font-size-32);
+  line-height: 34px;
+  color: var(--unnamed-color-36404e);
+
+  letter-spacing: -0.8;
+  text-align: left;
+}
 
 
 
-
+/* FIN ESTILOS ALTA GERENCIA */
 /* Character Styles */
 .tit-pequeño {
   font-family: var(--unnamed-font-family-merriweather);
@@ -2878,11 +2969,24 @@ select.selector-listado {
   }
 
 
+  .container_alta_gerencia .news_title_detalle{
+
+    font-size: var(--unnamed-font-size-52);
+
+  }
+
+
   .container_detalle_noticia .presentacion_corporativa .presentacion_text{
 
     font-size: var(--unnamed-font-size-30);
 
   }
+  .container_alta_gerencia .text_ceo{
+
+    font-size: var(--unnamed-font-size-30);
+
+  }
+
 }
 
 /* Responsividad para pantallas medianas (mayores a 1024px) */
@@ -3092,7 +3196,10 @@ select.selector-listado {
 
   }
 
+  .container_alta_gerencia .news_date_detalle{
+    font-size: var(--unnamed-font-size-22);
 
+  }
 
 
   .container_detalle_noticia .presentacion_corporativa .presentacion_text{
@@ -3102,6 +3209,12 @@ select.selector-listado {
   }
   .btn-vermas.listado{
     font-size: 26px;
+  }
+
+  .container_alta_gerencia .text_ceo{
+
+    font-size: var(--unnamed-font-size-28);
+
   }
 }
 @media (max-width: 992px) {
@@ -3257,6 +3370,7 @@ select.selector-listado {
   padding-bottom: 3rem;
   text-align: center;
 }
+
 }
 
 /* Responsividad para pantallas más pequeñas (mayores a 768px) */
@@ -3691,11 +3805,11 @@ select.selector-listado {
       margin-left: auto;
     }
 
-    .container_detalle_noticia .news_date_detalle{
+    .container_detalle_noticia .news_date_detalle, .container_alta_gerencia .news_date_detalle{
       font-size: var(--unnamed-font-size-20);
 
     }
-    .container_detalle_noticia .news_title_detalle{
+    .container_detalle_noticia .news_title_detalle,.container_alta_gerencia .news_title_detalle{
 
       font-size: var(--unnamed-font-size-46);
 
@@ -3712,7 +3826,7 @@ select.selector-listado {
 
     }
 
-    .container_detalle_noticia .detalle_texto p{
+    .container_detalle_noticia .detalle_texto p,.container_alta_gerencia .detalle_texto p{
 
       font-size: var(--unnamed-font-size-20);
 
@@ -3735,6 +3849,17 @@ select.selector-listado {
       color: var(--unnamed-color-0063f9);
       padding-bottom: 3rem;
       text-align: center;
+  }
+  .container_detalle_noticia .news-image img {
+    height: calc(100%);
+    object-fit: cover;
+    position: relative;
+  }
+
+  .container_alta_gerencia .text_ceo{
+
+    font-size: var(--unnamed-font-size-26);
+
   }
 }
 
@@ -3972,11 +4097,11 @@ select.selector-listado {
   .titulo-pequeño-azul-bold{
     font-size: 20px;
   }
-  .container_detalle_noticia .news_date_detalle{
+  .container_detalle_noticia .news_date_detalle,.container_alta_gerencia .news_date_detalle{
     font-size: var(--unnamed-font-size-18);
 
   }
-  .container_detalle_noticia .news_title_detalle{
+  .container_detalle_noticia .news_title_detalle,.container_alta_gerencia .news_title_detalle{
 
     font-size: var(--unnamed-font-size-42);
 
@@ -3993,7 +4118,7 @@ select.selector-listado {
 
   }
 
-  .container_detalle_noticia .detalle_texto p{
+  .container_detalle_noticia .detalle_texto p,.container_alta_gerencia .detalle_texto p{
 
     font-size: var(--unnamed-font-size-18);
 
@@ -4016,5 +4141,11 @@ select.selector-listado {
     color: var(--unnamed-color-0063f9);
     padding-bottom: 3rem;
     text-align: center;
+}
+
+.container_alta_gerencia .text_ceo{
+
+  font-size: var(--unnamed-font-size-24);
+
 }
 }
