@@ -27,7 +27,7 @@ const routes: Routes = [
 
         { path: 'gobernanza-responsable', component: GobernanzaResponsableComponent,data:{breadcrumb:'Gobernanza Responsable'} },
 
-        { path: 'relevos', component: RelevosComponent,data:{breadcrumb:'Relaves'} },
+        { path: 'relaves', component: RelevosComponent,data:{breadcrumb:'Relaves'} },
         { path: 'seguridad-salud', component: SeguridadSaludComponent,data:{breadcrumb:'Seguridad y Salud'} },
 
         { path: 'transparencia', component: TransparenciaComponent,data:{breadcrumb:'Transparencia'} },
@@ -37,6 +37,7 @@ const routes: Routes = [
         { path: 'gestion-proveedores', component: GestionProveedoresComponent,data:{breadcrumb:'Proveedores'} },
 
         { path: 'talento', component: TalentoComponent,data:{breadcrumb:'Talento'} },
+
 
 ];
 

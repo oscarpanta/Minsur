@@ -20,6 +20,7 @@
   --unnamed-font-weight-300: 300;
   --unnamed-font-weight-500: 500;
   --unnamed-font-weight-600: 600;
+  --unnamed-font-weight-700: 700;
   --unnamed-font-weight-bold: bold;
   --unnamed-font-weight-normal: normal;
   --unnamed-font-size-14: 14px;
@@ -1311,7 +1312,7 @@ header.scrolled .logo {
           .titulo-super-grande-blanco {
                           font-family: var(--unnamed-font-family-raleway);
                           font-style: var(--unnamed-font-style-normal);
-                          font-weight: var(--unnamed-font-weight-500);
+                          font-weight: var(--unnamed-font-weight-600);
                           font-size: var(--unnamed-font-size-72);
                           line-height: var(--unnamed-line-spacing-72);
                           letter-spacing: var(--unnamed-character-spacing--0-72);
@@ -2538,6 +2539,41 @@ select.selector-listado {
   margin: 0;
   font-size: 16px;
 }
+.style-custom-texto h1,
+.style-custom-texto h2,
+.style-custom-texto h3,
+.style-custom-texto h4 {
+  font-size: var(--unnamed-font-size-52);
+  font-family: var(--unnamed-font-family-raleway);
+  font-weight: var(--unnamed-font-weight-500);
+  line-height: var(--unnamed-font-size-60);
+  letter-spacing: var(--unnamed-character-spacing--0-6);
+  color: var(--unnamed-color-0063f9);
+  padding-bottom: 3rem;
+  text-align: center;
+}
+.style-custom-texto img{
+  border-radius: 20px;
+  margin: 0 auto;
+
+}
+.style-custom-texto ul{
+  list-style: none;
+  padding: 0;
+}
+.style-custom-texto li::before {
+  content: "\f061"; /* Unicode de Font Awesome para un icono */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: var(--unnamed-color-0063f9);
+  font-size: 16px;
+}
+.style-custom-texto a{
+  text-decoration: none;
+  color: var(--unnamed-color-0063f9);
+  font-weight: bold;
+  margin: 3rem 0;
+}
 /* Hover opcional */
 
 /* Fin de estilos para menu de reportes */
@@ -3211,6 +3247,16 @@ select.selector-listado {
 }.btn-vermas.listado{
   font-size: 24px;
 }
+.style-custom-texto h1, .style-custom-texto h2, .style-custom-texto h3, .style-custom-texto h4 {
+  font-size: var(--unnamed-font-size-32);
+  font-family: var(--unnamed-font-family-raleway);
+  font-weight: var(--unnamed-font-weight-500);
+  line-height: normal;
+  letter-spacing: normal;
+  color: var(--unnamed-color-0063f9);
+  padding-bottom: 3rem;
+  text-align: center;
+}
 }
 
 /* Responsividad para pantallas más pequeñas (mayores a 768px) */
@@ -3680,6 +3726,16 @@ select.selector-listado {
       .btn-vermas.listado{
       font-size: 22px;
     }
+    .style-custom-texto h1, .style-custom-texto h2, .style-custom-texto h3, .style-custom-texto h4 {
+      font-size: var(--unnamed-font-size-28);
+      font-family: var(--unnamed-font-family-raleway);
+      font-weight: var(--unnamed-font-weight-500);
+      line-height: normal;
+      letter-spacing: normal;
+      color: var(--unnamed-color-0063f9);
+      padding-bottom: 3rem;
+      text-align: center;
+  }
 }
 
 /* Responsividad para móviles pequeños (menos de 480px) */
@@ -3951,4 +4007,14 @@ select.selector-listado {
   .btn-vermas.listado{
     font-size: 20px;
   }
+  .style-custom-texto h1, .style-custom-texto h2, .style-custom-texto h3, .style-custom-texto h4 {
+    font-size: var(--unnamed-font-size-24);
+    font-family: var(--unnamed-font-family-raleway);
+    font-weight: var(--unnamed-font-weight-500);
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--unnamed-color-0063f9);
+    padding-bottom: 3rem;
+    text-align: center;
+}
 }
