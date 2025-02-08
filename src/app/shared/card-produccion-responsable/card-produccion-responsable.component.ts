@@ -6,5 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./card-produccion-responsable.component.css']
 })
 export class CardProduccionResponsableComponent {
-  @Input() descripcion: boolean = true; // Imagen de fondo
+  @Input()
+  descripcion: boolean = true; // Imagen de fondo
+  cardRadius: string = "";
 }

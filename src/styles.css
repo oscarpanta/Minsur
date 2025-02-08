@@ -1438,6 +1438,9 @@ footer .footer-auxiliar {
   object-fit: cover;
 }
 
+.card-2 .card-img-top .cardradius {
+  border-radius: 20px ;
+}
 .card2-title {
   font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold)
     var(--unnamed-font-size-32) / var(--unnamed-line-spacing-42)
@@ -2275,7 +2278,15 @@ select.selector-listado {
       background-position: center !important;
       background-repeat: no-repeat !important;
     }
-
+    .fondo-section-regular-2{
+      height: 100vh;
+      /* background-size: 150% 100% !important;
+      background-position: 80% center !important;
+      background-repeat: no-repeat !important; */
+      background-size: cover !important;
+      background-position: center !important;
+      background-repeat: no-repeat !important;
+    }
     /* Fin Estilos para listas con descargar y ver */
 
     /* Estilos para el formulario */
@@ -2854,7 +2865,12 @@ select.selector-listado {
     background-position: 80% center !important;
 
   }
+  .fondo-section-regular-2 {
+    height: 60vh;
+    background-size: 150% 100% !important;
+    background-position: 80% center !important;
 
+  }
 }
 @media (max-width: 992px) {
   .tit-pequeño {
@@ -3381,6 +3397,12 @@ select.selector-listado {
       height: 60vh;
     }
     .fondo-section-regular {
+      height: 30vh;
+      background-size: 150% 100% !important;
+      background-position: 80% center !important;
+
+    }
+    .fondo-section-regular-2 {
       height: 30vh;
       background-size: 150% 100% !important;
       background-position: 80% center !important;

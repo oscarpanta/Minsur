@@ -8,7 +8,7 @@ import { InfoViewGeneralComponent } from './info-view-general/info-view-general.
 import { CardSostenibilidadComponent } from './card-sostenibilidad/card-sostenibilidad.component';
 import { RouterModule } from '@angular/router';
 import { CardPresentacionesComponent } from './card-presentaciones/card-presentaciones.component';
-
+import { CardUnidadesComponent } from './card-unidades/card-unidades.component';
 
 
 @NgModule({
@@ -19,7 +19,8 @@ import { CardPresentacionesComponent } from './card-presentaciones/card-presenta
     CardNoticiasComponent,
     InfoViewGeneralComponent,
     CardSostenibilidadComponent,
-    CardPresentacionesComponent
+    CardPresentacionesComponent,
+    CardUnidadesComponent
   ],
   imports: [
     CommonModule,
@@ -32,7 +33,8 @@ import { CardPresentacionesComponent } from './card-presentaciones/card-presenta
     CardNoticiasComponent,
     InfoViewGeneralComponent,
     CardSostenibilidadComponent,
-    CardPresentacionesComponent
+    CardPresentacionesComponent,
+    CardUnidadesComponent
   ]
 })
 export class SharedModule { }

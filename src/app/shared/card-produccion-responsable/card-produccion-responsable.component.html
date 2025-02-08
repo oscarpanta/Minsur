@@ -12,6 +12,7 @@
             src="assets/images/economia_circular.png"
             alt="Economía circular"
             class="card-img-top"
+            [ngClass]="cardRadius"
           />
           <div class="card-body my-5">
             <p class="card2-title">
@@ -39,6 +40,7 @@
             src="assets/images/emisiones_netas.png"
             alt="Emisiones netas cero"
             class="card-img-top"
+            [ngClass]="cardRadius"
           />
           <div class="card-body my-5">
             <p class="card2-title">
@@ -67,11 +69,12 @@
             src="assets/images/trazabilidad.png"
             alt="Producto 3"
             class="card-img-top"
+            [ngClass]="cardRadius"
           />
           <div class="card-body my-5">
             <p class="card2-title">
               <i class="fas fa-arrow-right flecha-blue"></i>
-              <a href="" class="hover-underline">Trazabilidad</a>
+              <a routerLink="/home/trazabilidad"  class="hover-underline">Trazabilidad</a>
             </p>
             <p class="card-text mt-4 mb-5" *ngIf="descripcion">
               Primera minera en usar tecnología blockchain para verificar
@@ -95,11 +98,12 @@
             src="assets/images/enfoque_personas.png"
             alt="Enfoque en personas"
             class="card-img-top"
+            [ngClass]="cardRadius"
           />
           <div class="card-body my-5">
             <p class="card2-title">
               <i class="fas fa-arrow-right flecha-blue"></i>
-              <a href="" class="hover-underline">Enfoque en personas</a>
+              <a  routerLink="/home/descripcion-enfoque-personas" class="hover-underline">Enfoque en personas</a>
             </p>
             <p class="card-text mt-4 mb-5" *ngIf="descripcion">
               Nuestro éxito está ligado con nuestro propósito empresarial de
