@@ -2666,7 +2666,18 @@ select.selector-listado {
   margin: 3rem 0;
 }
 /* Hover opcional */
-
+.extra-fondo .quienes-somos-section .title{
+  font-family: var(--unnamed-font-family-raleway);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-600);
+  font-size: var(--unnamed-font-size-72);
+  line-height: var(--unnamed-line-spacing-72);
+  letter-spacing: var(--unnamed-character-spacing--0-72);
+  color: var(--unnamed-color-ffffff);
+}
+.extra-fondo .quienes-somos-section{
+  height: 80vh;
+}
 /* Fin de estilos para menu de reportes */
      /* Estilos para el formulario */
 /* Responsividad para pantallas grandes (mayores a 1400px) */
@@ -3785,6 +3796,9 @@ select.selector-listado {
     .titulo-super-grande-blanco{
       font-size: 36px;
     }
+    .extra-fondo .quienes-somos-section .title{
+      font-size: 36px;
+    }
     .titulo-super-grande-azul{
       font-size: 36px;
     }
@@ -4083,6 +4097,10 @@ select.selector-listado {
     height: 35vh;
   }
   .titulo-super-grande-blanco{
+    font-size: 34px;
+    line-height: normal;
+  }
+  .extra-fondo .quienes-somos-section .title{
     font-size: 34px;
     line-height: normal;
   }

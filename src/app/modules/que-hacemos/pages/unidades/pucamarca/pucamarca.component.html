@@ -1,6 +1,6 @@
 
 <!-- seection del breadcrumb -->
-<section class="section-background-8 section-breadcrumb ">
+<!-- <section class="section-background-8 section-breadcrumb ">
   <div class="container-fluid">
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb text-white rounded">
@@ -17,10 +17,11 @@
       </ol>
     </nav>
   </div>
-</section>
+</section> -->
+<app-breadcrumbs></app-breadcrumbs>
 <!-- Fin seection del breadcrumb -->
  <!-- Inicio de fondo con texto -->
-<section class=" d-flex align-items-center fondo-section-regular-2" style="background: url('../../../../../../assets/images/pisco.png') ;">
+<!-- <section class=" d-flex align-items-center fondo-section-regular-2" style="background: url('../../../../../../assets/images/pisco.png') ;">
   <div class="container-fluid">
     <div class="row  text-center text-sm-start">
       <div class="col-lg-6 col-md-5 col-sm-12 text-left text-content">
@@ -28,7 +29,18 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
+<div class="extra-fondo">
+  <app-imagen-view
+  [backgroundImage]="'assets/images/fondo_pumacarma.png'"
+  [title]="'Planta de Fundición y Refinería (PFR) Pisco'"
+  [description]="''"
+  [videoLink]="'https://www.youtube.com/watch?v=quh3jZbOWzQ'"
+  [videoThumbnail]="'assets/images/fondo_pumacarma.png'"
+  [mode]="'video'"
+>
+</app-imagen-view>
+</div>
 <!-- Fin de fondo con texto -->
 
 
