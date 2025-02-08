@@ -25,6 +25,7 @@ export class HeaderComponent {
           event.url.startsWith('/home/') ||
           event.url.startsWith('/noticias/') ||
           event.url.startsWith('/quienes-somos/') ||
+          event.url.startsWith('/que-hacemos/') ||
           event.url.startsWith('/sostenibilidad/') ||
           event.url.startsWith('/inversiones-reportes/') ||
           event.url.startsWith('/proveedores/') ||
