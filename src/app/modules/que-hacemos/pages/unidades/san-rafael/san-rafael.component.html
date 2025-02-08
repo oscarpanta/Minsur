@@ -20,16 +20,29 @@
 </section>
 <!-- Fin seection del breadcrumb -->
  <!-- Inicio de fondo con texto -->
-<section class=" d-flex align-items-center fondo-section-regular-2" style="background: url('../../../../../../assets/images/san-rafael.png') ;">
+<!-- <section class=" d-flex align-items-center fondo-section-regular-2" style="background: url('../../../../../../assets/images/san-rafael.png') ;">
   <div class="container-fluid">
     <div class="row  text-center text-sm-start">
       <div class="col-lg-6 col-md-5 col-sm-12 text-left text-content">
         <h1 class="titulo-super-grande-blanco ">Unidad Minera San Rafael</h1>
       </div>
     </div>
-    <div class="row"></div>
+    <div class="row">
+
+    </div>
   </div>
-</section>
+</section> -->
+
+<app-imagen-view
+  [backgroundImage]="'assets/images/san-rafael.png'"
+  [title]="'Unidad Minera San Rafael'"
+  [description]="''"
+  [videoLink]="'https://www.youtube.com/watch?v=quh3jZbOWzQ'"
+  [videoThumbnail]="'assets/images/san-rafael.png'"
+  [mode]="'video'"
+>
+</app-imagen-view>
+
 <!-- Fin de fondo con texto -->
 
 
