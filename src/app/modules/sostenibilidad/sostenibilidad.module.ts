@@ -18,6 +18,7 @@ import { TalentoComponent } from './pages/valor-compartido/talento/talento.compo
 import { SharedModule } from 'src/app/shared/shared.module';
 
 
+
 @NgModule({
   declarations: [
     AguaBiodiversidadComponent,
@@ -32,7 +33,8 @@ import { SharedModule } from 'src/app/shared/shared.module';
     TransparenciaComponent,
     ComunidadComponent,
     GestionProveedoresComponent,
-    TalentoComponent
+    TalentoComponent,
+
   ],
   imports: [
     CommonModule,

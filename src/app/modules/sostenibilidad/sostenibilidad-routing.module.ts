@@ -27,7 +27,7 @@ const routes: Routes = [
 
         { path: 'gobernanza-responsable', component: GobernanzaResponsableComponent },
 
-        { path: 'relevos', component: RelevosComponent },
+        { path: 'relaves', component: RelevosComponent },
         { path: 'seguridad-salud', component: SeguridadSaludComponent },
 
         { path: 'transparencia', component: TransparenciaComponent },
@@ -37,6 +37,7 @@ const routes: Routes = [
         { path: 'gestion-proveedores', component: GestionProveedoresComponent },
 
         { path: 'talento', component: TalentoComponent },
+
 
 ];
 

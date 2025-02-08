@@ -23,7 +23,7 @@ export class ContenidoComponent {
       title: 'Relaves',
       text: 'Aplicamos prácticas internacionales en el diseño, construcción, operación, supervisión y cierre de nuestras instalaciones de relaves.',
       image: 'assets/images/localizacion.png',
-      route: '/sostenibilidad/relevos'
+      route: '/sostenibilidad/relaves'
 
     },
   ];
