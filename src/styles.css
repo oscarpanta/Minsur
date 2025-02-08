@@ -1305,6 +1305,12 @@ footer .footer-auxiliar {
   transition: color 0.3s ease;
   color: var(--unnamed-color-CCE7FF);
 }
+.list-unstyled a .listado {
+  text-decoration: none;
+  transition: color 0.3s ease;
+  color: var(--unnamed-color-36404e);
+}
+
 .list-unstyled.contacto-iconos a {
   text-decoration: none;
   transition: color 0.3s ease;
@@ -1321,6 +1327,9 @@ footer .footer-auxiliar {
 } */
 .list-unstyled a:hover {
   color: var(--unnamed-color-7DF900); /* Color verde al hacer hover */
+}
+.list-unstyled a.listado:hover {
+  color: var(--unnamed-color-0063f9); /* Color verde al hacer hover */
 }
 .flecha-circular-footer {
   display: inline-flex;
@@ -1607,6 +1616,9 @@ footer .footer-auxiliar {
   transition: all 0.3s ease; /* Animación para agrandar el círculo */
   margin-right: 0.5rem;
 }
+
+
+
 /* Flecha de Font Awesome */
 .flecha-ver-mas {
   font-size: 18px; /* Tamaño inicial de la flecha */
@@ -1627,6 +1639,14 @@ footer .footer-auxiliar {
   background-color: #0063f9;
   color: #fff;
 }
+.btn-vermas.listado:hover .flecha-circular {
+  width: 100px; /* El círculo se agranda para seguir la flecha */
+  height: 30px; /* El círculo mantiene la misma altura */
+  background-color: transparent;
+  color: var(--unnamed-color-0063f9);
+  border: 0;
+}
+
 .btn-vermas:hover .flecha-circular-verde {
   width: 100px; /* El círculo se agranda para seguir la flecha */
   height: 30px; /* El círculo mantiene la misma altura */
@@ -1635,6 +1655,23 @@ footer .footer-auxiliar {
   color: #36404e;
 }
 
+
+ .listado.active  .flecha-circular {
+  width: 100px; /* El círculo se agranda para seguir la flecha */
+  height: 30px; /* El círculo mantiene la misma altura */
+  border-radius: 250px;
+}
+.listado .flecha-circular {
+  border: 0;
+}
+  .listado.active .flecha-blue{
+  color: var(--unnamed-color-0063f9);
+  font-size: 16px;
+}
+.btn-vermas.listado{
+  font-size: var(--unnamed-font-size-28);
+  color: var(--unnamed-color-36404e);
+}
 .flecha-circular-no-hover {
   display: flex;
   justify-content: center;
@@ -2372,8 +2409,25 @@ select.selector-listado {
   color: #007bff;
 }
 
+/* Estilos para el menu de reportes */
+ .link-list a.listado {
+  text-decoration: none;
+  padding: 0.5rem;
+  display: inline-block;
+}
 
+/* Estado activo mediante focus */
+ .link-list a.listado:focus, .link-list a.active {
+  color: var(--unnamed-color-0063f9);
+  font-weight: bold;
+}
+.listado .flecha-blue{
+  margin: 0;
+  font-size: 16px;
+}
+/* Hover opcional */
 
+/* Fin de estilos para menu de reportes */
      /* Estilos para el formulario */
 /* Responsividad para pantallas grandes (mayores a 1400px) */
 @media (max-width: 1700px) {
