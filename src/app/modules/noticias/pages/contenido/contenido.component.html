@@ -1,11 +1,9 @@
 <div class="blue-line"></div>
 <section class="py-lg-3 py-2 section_noticias_inicio">
   <div class="container-fluid py-sm-4 py-1">
-    <div
-      class="d-flex justify-content-between align-items-end col-12 mb-lg-5 mb-sm-3 mb-2"
-    >
-      <div class="col-4 title">Ultimas Noticias</div>
-      <div class="d-flex flex-column col-4">
+    <!-- <div class="d-flex justify-content-between align-items-md-center align-items-lg-end  col-12 mb-2 mb-sm-3 mb-lg-5 flex-column justify-content-between">
+      <div class="col-12 col-lg-4 title">Ultimas Noticias</div>
+      <div class="d-flex flex-column col-12 col-lg-4">
         <span class="text-end">Ordenar por</span>
         <select
           name=""
@@ -16,8 +14,19 @@
         </select>
 
       </div>
-    </div>
+    </div> -->
+    <div class="d-flex flex-lg-row flex-column justify-content-between align-items-lg-end align-items-center col-12 mb-2 mb-sm-3 mb-lg-5">
+      <!-- Título -->
+      <div class="col-12 col-lg-4 title text-lg-start text-center mb-3 mb-lg-0">Ultimas Noticias</div>
 
+      <!-- Selector -->
+      <div class="d-flex flex-column col-12 col-lg-4">
+        <span class="text-end text-lg-start">Ordenar por</span>
+        <select name="" id="" class="selector-listado form-select">
+          <option value="">Mas recientes</option>
+        </select>
+      </div>
+    </div>
     <div
       class="row align-items-stretch info_noticias_general py-lg-4 py-sm-3 py-2"
     >

@@ -2350,6 +2350,9 @@ select.selector-listado {
     border: 0;
     box-shadow: 0px 3px 6px #00000029;
   }
+  .container-fluid .custom-card .card-body{
+    min-height: 200px;
+  }
   .card9.card-img-3 .img-fluid{
     max-height: 600px;
     border-radius: 20px 0 0 0;
@@ -3417,7 +3420,15 @@ select.selector-listado {
   padding-bottom: 3rem;
   text-align: center;
 }
-
+.news-title{
+  font-size: 30px;
+}
+footer .row {
+  text-align: center;
+}
+footer .footer-iconos {
+  justify-content: center;
+}
 }
 
 /* Responsividad para pantallas más pequeñas (mayores a 768px) */
@@ -3679,6 +3690,9 @@ select.selector-listado {
     border-bottom-left-radius: 20px;
     padding: 2rem;
   }
+  .container-fluid .custom-card .card-body{
+    min-height: auto;
+  }
   .contenido-general{
     max-width: 100%;
   }
@@ -3705,7 +3719,13 @@ select.selector-listado {
   .btn-vermas{
     font-size: 14px;
   }
+  .btn-vermas-blanco{
+    font-size: 14px;
+  }
   .flecha-ver-mas{
+    font-size: 14px;
+  }
+  .flecha-ver-mas-blanco{
     font-size: 14px;
   }
   .tamanio-p{
@@ -3742,33 +3762,34 @@ select.selector-listado {
   .quienes-somos-section {
 
     align-items: center;
+    height: 80vh;
 
   }
   .quienes-somos-section .title {
     font-size: 50px;
 }
 .numero-semi-grande { font-size: 54px; line-height: 38px; }
-  .til-semigrande-azul-marino { font-size: 28px; line-height: 42px; }
+  .til-semigrande-azul-marino { font-size: 36px; line-height: 42px; }
   .titulo-realeway-mediano { font-size: 18px; line-height: 28px; }
   .titulo-azul-mediano { font-size: 18px; line-height: 28px; }
   .dividendos .table td {
 
-    font-size: 24px;
+    font-size: 18px;
     line-height: normal;
 
       /* background-color: white !important; */
     }
    .dividendos .table th {
-    font-size: 24px;
+    font-size: 16px;
     line-height: normal;
     }
     .calendario .table td {
-      font-size: 24px;
+      font-size: 18px;
       line-height: normal;
         /* background-color: white !important; */
       }
      .calendario .table th {
-      font-size: 24px;
+      font-size: 16px;
       line-height: normal;
       }
       .titulo-pequeño-azul-marino {
@@ -3783,7 +3804,7 @@ select.selector-listado {
         min-height: auto;
       }
       .quienes-somos-section {
-        height: 60vh;
+        height: 80vh;
       }
       .container-fluid .card-img-2 .custom-img img{
         margin: 0 auto;
@@ -3914,12 +3935,78 @@ select.selector-listado {
     font-size: var(--unnamed-font-size-26);
 
   }
+  .news-title{
+    font-size: 28px;
+    line-height: normal;
+  }
+  .card3{
+    min-height: 500px;
+  }
+  .section_noticias_inicio .title{
+    font-size: 30px;
+  }
+  .news-date{
+    font-size: 18px;
+  }
+  .section_multimedia .title{
+    font-size: 30px;
+    line-height: normal;
+  }
+  .section_multimedia .title_galerias{
+    font-size: 24px;
+    line-height: normal;
+  }
+  .section_multimedia .carousel .carousel-text h5{
+    font-size: 20px;
+    line-height: normal;
+  }
+  .section_multimedia .carousel .carousel-text p{
+    font-size: 16px;
+    line-height: normal;
+  }
+  .mini-slider-title{
+    font-size: 16px;
+    line-height: normal;
+  }
+  .video_multimedia .video-info .video-description{
+    font-size: 16px;
+    line-height: normal;
+  }
+  .indicator-title{
+    font-size: 16px;
+    line-height: normal;
+  }
+  .card-img{
+    min-height: 300px;
+  }
+  .card6 .card-footer a{
+    font-size: 16px;
+  }
+  .quienes-somos-section .description{
+    font-size: 20px;
+    line-height: normal;
+  }
+  .titulo-mediano-verde{
+    font-size: 20px;
+  }
+  .titulo-pequeño-semi-azul{
+    font-size: 16px;
+  }
+  .listado-pequeño-blanco{
+    font-size: 16px;
+  }
+  .texto-base-blanco-bold{
+    font-size: 16px;
+  }
+  .titulo-pequeño-azul-bold{
+    font-size: 16px;
+  }
 }
 
 /* Responsividad para móviles pequeños (menos de 480px) */
 @media (max-width: 480px) {
   .tit-pequeño {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 24px;
   }
   .numero-grande {
@@ -3927,11 +4014,11 @@ select.selector-listado {
     line-height: 32px;
   }
   .listado {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 20px;
   }
   .listado-pequeño {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 20px;
   }
   .tit-interno {
@@ -3966,6 +4053,9 @@ select.selector-listado {
     font-size: 24px;
     line-height: 32px;
   }
+  footer{
+    padding: 1rem;
+  }
   .footer-minimo {
     font-size: 14px;
     line-height: 16px;
@@ -3975,12 +4065,12 @@ select.selector-listado {
     line-height: 32px;
   }
   .til-semi-pequenio {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 26px;
   }
   .til-grande-azul {
-    font-size: 48px;
-    line-height: 48px;
+    font-size: 44px;
+    line-height: 46px;
   }
   .titulo-realeway-grande {
     font-size: 24px;
@@ -3991,7 +4081,7 @@ select.selector-listado {
     line-height: 38px;
   }
   .til-pequenio-azul {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 24px;
   }
   .til-semipequenio-azul {
@@ -4059,7 +4149,7 @@ select.selector-listado {
     min-height: 150px;
   }
   .card5 .card2-title {
-    min-height: 110px;
+    min-height: 100px;
   }
   .logo-sustinable p {
     font-size: 2rem; /* Reducir aún más el tamaño de la fuente */
@@ -4069,12 +4159,13 @@ select.selector-listado {
   }
 
   .carousel-caption h3 {
-    font-size: 44px;
-    line-height: 46px;
+    font-size: 40px;
+    line-height: 42px;
   }
 
   .carousel-caption p {
     font-size: var(--unnamed-font-size-24);
+    line-height: normal;
   }
 
   .p-cinta span,
@@ -4087,7 +4178,7 @@ select.selector-listado {
     max-height: 450px;
   }
   .quienes-somos-section .description {
-
+    line-height: normal;
     font-size: var(--unnamed-font-size-24);
 
   }
@@ -4112,7 +4203,7 @@ select.selector-listado {
     line-height: 46px;
 }
 .numero-semi-grande { font-size: 46px; line-height: 34px; }
-  .til-semigrande-azul-marino { font-size: 24px; line-height: 38px; }
+  .til-semigrande-azul-marino { font-size: 36px; line-height: 38px; }
   .titulo-realeway-mediano { font-size: 16px; line-height: 26px; }
   .titulo-azul-mediano { font-size: 16px; line-height: 26px; }
   .titulo-pequeño-azul-marino {
@@ -4124,16 +4215,16 @@ select.selector-listado {
     line-height: 30px;
   }
   .quienes-somos-section {
-    height: 35vh;
+    height: 80vh;
   }
   .carousel-style{
-    height: 35vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
   .carousel-style-item{
-    height: 35vh;
+    height: 60vh;
   }
   .titulo-super-grande-blanco{
     font-size: 34px;
@@ -4155,7 +4246,7 @@ select.selector-listado {
     line-height: 28px;
   }
   .titulo-pequeño-azul-bold{
-    font-size: 20px;
+    font-size: 16px;
   }
   .container_detalle_noticia .news_date_detalle,.container_alta_gerencia .news_date_detalle{
     font-size: var(--unnamed-font-size-18);
@@ -4193,7 +4284,7 @@ select.selector-listado {
     font-size: 20px;
   }
   .style-custom-texto h1, .style-custom-texto h2, .style-custom-texto h3, .style-custom-texto h4 {
-    font-size: var(--unnamed-font-size-24);
+    font-size: var(--unnamed-font-size-20);
     font-family: var(--unnamed-font-family-raleway);
     font-weight: var(--unnamed-font-weight-500);
     line-height: normal;
