@@ -3762,7 +3762,7 @@ footer .footer-iconos {
   .quienes-somos-section {
 
     align-items: center;
-    height: 80vh;
+    height: 100vh;
 
   }
   .quienes-somos-section .title {
@@ -3804,7 +3804,7 @@ footer .footer-iconos {
         min-height: auto;
       }
       .quienes-somos-section {
-        height: 80vh;
+        height: 100vh;
       }
       .container-fluid .card-img-2 .custom-img img{
         margin: 0 auto;
@@ -3830,13 +3830,13 @@ footer .footer-iconos {
         padding: 2rem;
     }
     .carousel-style{
-      height: 60vh;
+      height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
     .carousel-style-item{
-      height: 60vh;
+      height: 100vh;
     }
     .fondo-section-regular {
       height: 30vh;
@@ -4215,16 +4215,16 @@ footer .footer-iconos {
     line-height: 30px;
   }
   .quienes-somos-section {
-    height: 80vh;
+    height: 100vh;
   }
   .carousel-style{
-    height: 60vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
   .carousel-style-item{
-    height: 60vh;
+    height: 100vh;
   }
   .titulo-super-grande-blanco{
     font-size: 34px;
