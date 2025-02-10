@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "minsur:build:production"
+              "buildTarget": "minsur:build:production"
             },
             "development": {
-              "browserTarget": "minsur:build:development"
+              "buildTarget": "minsur:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "minsur:build"
+            "buildTarget": "minsur:build"
           }
         },
         "test": {
