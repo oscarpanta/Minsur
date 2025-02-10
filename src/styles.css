@@ -3885,7 +3885,7 @@ footer .footer-iconos {
     }
     .container_detalle_noticia .news_title_detalle,.container_alta_gerencia .news_title_detalle{
 
-      font-size: var(--unnamed-font-size-46);
+      font-size: var(--unnamed-font-size-36);
 
     }
     .compartir_container a{
@@ -3932,7 +3932,7 @@ footer .footer-iconos {
 
   .container_alta_gerencia .text_ceo{
 
-    font-size: var(--unnamed-font-size-26);
+    font-size: var(--unnamed-font-size-24);
 
   }
   .news-title{
@@ -4254,7 +4254,7 @@ footer .footer-iconos {
   }
   .container_detalle_noticia .news_title_detalle,.container_alta_gerencia .news_title_detalle{
 
-    font-size: var(--unnamed-font-size-42);
+    font-size: var(--unnamed-font-size-36);
     line-height: 50px;
 
   }
@@ -4272,14 +4272,14 @@ footer .footer-iconos {
 
   .container_detalle_noticia .detalle_texto p,.container_alta_gerencia .detalle_texto p{
 
-    font-size: var(--unnamed-font-size-18);
+    font-size: var(--unnamed-font-size-16);
     line-height: 30px;
 
   }
 
   .container_detalle_noticia .presentacion_corporativa .presentacion_text{
 
-    font-size: var(--unnamed-font-size-22);
+    font-size: var(--unnamed-font-size-20);
 
   }
   .btn-vermas.listado{
@@ -4298,7 +4298,11 @@ footer .footer-iconos {
 
 .container_alta_gerencia .text_ceo{
 
-  font-size: var(--unnamed-font-size-24);
+  font-size: var(--unnamed-font-size-20);
 
+}
+.news-title{
+  font-size: 26px;
+  line-height: normal;
 }
 }
