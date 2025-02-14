@@ -410,7 +410,7 @@ header.scrolled .logo {
 
 .quienes-somos-section .title {
   font-family: var(--unnamed-font-family-merriweather);
-  font-weight: var(--unnamed-font-weight-normal);
+  font-weight: var(--unnamed-font-weight-bold);
   font-size: var(--unnamed-font-size-82);
   color: var(--unnamed-color-ffffff);
   letter-spacing: -2.05px;
