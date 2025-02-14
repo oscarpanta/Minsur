@@ -195,11 +195,12 @@ header .navbar-toggler-icon {
   transition: color 0.3s ease;
 
   font-family: var(--unnamed-font-family-merriweather);
-  font-weight: var(--unnamed-font-weight-normal);
+  font-weight: var(--unnamed-font-weight-bold);
   font-size: var(--unnamed-font-size-22);
   color: var(--unnamed-color-ffffff);
   text-align: center;
   letter-spacing: -0.55px;
+
 }
 
 .nav-item .nav-link:hover {
