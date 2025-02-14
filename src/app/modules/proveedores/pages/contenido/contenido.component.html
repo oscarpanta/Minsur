@@ -24,9 +24,17 @@
         <p class="tit-interno mb-0">Biblioteca de documentos</p>
       </div>
       <div class="col-md-6">
-        <select name="" id="" class="selector-listado form-select">
-          <option value="">Políticas Corporativas</option>
-        </select>
+        <!-- Contenedor del select -->
+        <div class="custom-select-listados">
+          <select class="selector-listado form form-control">
+              <option value="" disabled selected hidden>Políticas Corporativas</option> <!-- Oculta la primera opción -->
+              <option value="corporativas">Corporativas</option>
+              <option value="seguridad">Seguridad y Salud</option>
+              <option value="medio">Medio Ambiente</option>
+              <option value="governance">Governance</option>
+              <option value="etica">Ética</option>
+          </select>
+        </div>
       </div>
     </div>
     <div class="pt-5">
@@ -173,7 +181,7 @@
     </div>
     <div class="row d-flex justify-content-between mt-5  content-listado-2 listado-pequeño-blanco">
       <!-- Primer div -->
-      <div class="col-lg-6">
+      <div class="col-lg-5">
         <div class="d-flex align-items-center flex-column flex-md-row mb-4 justify-content-md-between justify-content-start">
           <!-- Ícono y texto -->
           <div class="d-flex align-items-center flex-grow-1">
@@ -185,7 +193,7 @@
 
           <!-- Botón centrado en pantallas pequeñas -->
           <div class="mt-2 mt-md-0 text-center">
-            <a routerLink="/" class="btn-descargar btn-vermas-blanco me-sm-0 ms-sm-0 me-lg-5 ms-lg-2 ms-xl-5" download>
+            <a routerLink="/" class="btn-descargar btn-vermas-blanco" download>
               Descargar
               <span class="flecha-circular-blanco">
                 <i class="fas fa-arrow-down"></i>
@@ -195,7 +203,7 @@
         </div>
       </div>
 
-      <div class="col-lg-6">
+      <div class="col-lg-5">
         <div class="d-flex align-items-center flex-column flex-md-row mb-4 justify-content-md-between justify-content-start x">
           <!-- Ícono y texto -->
           <div class="d-flex align-items-center flex-grow-1">
@@ -207,7 +215,7 @@
 
           <!-- Botón centrado en pantallas pequeñas -->
           <div class="mt-2 mt-md-0 text-center">
-            <a routerLink="/" class="btn-descargar btn-vermas-blanco me-sm-0 ms-sm-0 me-lg-5 ms-lg-2 ms-xl-5" download>
+            <a routerLink="/" class="btn-descargar btn-vermas-blanco " download>
               Descargar
               <span class="flecha-circular-blanco">
                 <i class="fas fa-arrow-down"></i>
@@ -255,7 +263,7 @@
     </div>
     <div class="row d-flex justify-content-between mt-5 content-listado-2 listado-pequeño">
         <!-- Primer div -->
-        <div class="col-lg-6">
+        <div class="col-lg-5">
           <div class="d-flex align-items-center flex-column flex-md-row mb-4 justify-content-md-between justify-content-start">
             <!-- Ícono y texto -->
             <div class="d-flex align-items-center flex-grow-1">
@@ -267,7 +275,7 @@
 
             <!-- Botón centrado en pantallas pequeñas -->
             <div class="mt-2 mt-md-0 text-center">
-              <a routerLink="/" class="btn-descargar me-sm-0 ms-sm-0 me-lg-5 ms-lg-2 ms-xl-5" download>
+              <a routerLink="/" class="btn-descargar " download>
                 Descargar
                 <span class="flecha-circular">
                   <i class="fas fa-arrow-down"></i>
@@ -277,7 +285,7 @@
           </div>
         </div>
 
-        <div class="col-lg-6">
+        <div class="col-lg-5">
           <div class="d-flex align-items-center flex-column flex-md-row mb-4 justify-content-md-between justify-content-start">
             <!-- Ícono y texto -->
             <div class="d-flex align-items-center flex-grow-1">
@@ -289,7 +297,7 @@
 
             <!-- Botón centrado en pantallas pequeñas -->
             <div class="mt-2 mt-md-0 text-center">
-              <a routerLink="/" class="btn-descargar me-sm-0 ms-sm-0 me-lg-5 ms-lg-2 ms-xl-5" download>
+              <a routerLink="/" class="btn-descargar " download>
                 Descargar
                 <span class="flecha-circular">
                   <i class="fas fa-arrow-down"></i>
@@ -314,9 +322,16 @@
             <p class="tit-interno mb-0">Preguntas frecuentes</p>
           </div>
           <div class="col-md-6">
-            <select name="" id="" class="selector-listado form-select">
-              <option value="">Políticas Corporativas</option>
-            </select>
+            <div class="custom-select-listados">
+              <select class="selector-listado form form-control">
+                  <option value="" disabled selected hidden>Políticas Corporativas</option> <!-- Oculta la primera opción -->
+                  <option value="corporativas">Corporativas</option>
+                  <option value="seguridad">Seguridad y Salud</option>
+                  <option value="medio">Medio Ambiente</option>
+                  <option value="governance">Governance</option>
+                  <option value="etica">Ética</option>
+              </select>
+            </div>
           </div>
       </div>
       <div>
@@ -358,12 +373,12 @@
 
             <!-- Botón centrado debajo en pantallas pequeñas -->
             <div class="mt-2 mt-md-0 text-center">
-              <button class="toggle-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false">
+              <button class="toggle-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"><i class="fa-light fa-circle-plus"></i>
               </button>
             </div>
           </div>
 
-          <div id="collapseOne" class="collapse content-expand">
+          <div id="collapseTwo" class="collapse content-expand">
             <div class="row d-flex justify-content-center">
               <div class="col-lg-10">
                 <div class="texto-base">
@@ -384,12 +399,12 @@
 
             <!-- Botón centrado debajo en pantallas pequeñas -->
             <div class="mt-2 mt-md-0 text-center">
-              <button class="toggle-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false">
+              <button class="toggle-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTree" aria-expanded="false">
               </button>
             </div>
           </div>
 
-          <div id="collapseOne" class="collapse content-expand">
+          <div id="collapseTree" class="collapse content-expand">
             <div class="row d-flex justify-content-center">
               <div class="col-lg-10">
                 <div class="texto-base">

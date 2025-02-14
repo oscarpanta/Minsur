@@ -10,7 +10,7 @@ export class ContenidoComponent {
     {
       title: 'Emisiones y Energía',
       text: 'Asumimos la responsabilidad de conducir una producción sostenible de minerales que nos dirija hacia una economía baja en carbono.',
-      image: 'assets/images/icon_globe.png',
+      image: 'assets/images/icon-globe.png',
       route: '/sostenibilidad/emisiones-energia'
     },
     {
@@ -32,7 +32,7 @@ export class ContenidoComponent {
     {
       title: 'Comunidades',
       text: 'Generamos vínculos de confianza con las comunidades vecinas a partir de un relacionamiento y una comunicación cercanas.',
-      image: 'assets/images/icon_people.png',
+      image: 'assets/images/icon_users.png',
       route: '/sostenibilidad/comunidad'
 
 

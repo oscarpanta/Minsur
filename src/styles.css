@@ -2330,8 +2330,9 @@ ul.font-color-orange li i {
   }
   .content-listado-2{
     border-top: 1px solid #9FB5C9;
-    padding-top: 1rem;
+    padding-top: 2.5rem;
   }
+
   .style-comunicados .content-listado{
     border-top: 1px solid #9FB5C9;
     border-bottom: 0;
@@ -2497,14 +2498,34 @@ select.selector-listado {
 .toggle-btn:after {
   content: "\f067"; /* Ícono de más (+) */
   font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  color: #007bff;
+  font-weight: 700;
+  color: #004891;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;  /* Tamaño del círculo */
+  height: 24px;
+  border: 2px solid #004891; /* Borde azul */
+  border-radius: 50%; /* Hace que sea un círculo */
+  font-size: 16px; /* Tamaño del símbolo */
+  background-color: transparent; /* Fondo transparente */
 }
 
 
 /* Cambiar el ícono a (-) si el contenido está expandido */
 .toggle-btn:not(.collapsed):after {
   content: "\f068"; /* Ícono de menos (-) */
+  font-weight: bold;
+  color: #004891;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;  /* Tamaño del círculo */
+  height: 24px;
+  border: 2px solid #004891; /* Borde azul */
+  border-radius: 50%; /* Hace que sea un círculo */
+  font-size: 16px; /* Tamaño del símbolo */
+  background-color: transparent; /* Fondo transparente */
 }
 .content-listado .card-body{
   padding: 0 5rem;
@@ -2753,10 +2774,84 @@ select.selector-listado {
 .info-item:first-child {
   /* padding-right: 20px; */
 }
+.calendario table tbody tr:last-child{
+  border-bottom: 1px solid transparent;
+
+}
+
 
 /* Fin de estilos para menu de reportes */
+
+
+/* Contenedor del select */
+.custom-select-listados {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+/* Estiliza el select y oculta la flecha nativa */
+.custom-select-listados .selector-listado {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+  padding: 10px 40px 10px 15px; /* Espacio para el icono */
+  font-size: 24px;
+  cursor: pointer;
+  background-color: white;
+  color: var(--unnamed-color-004891);
+}
+
+/* Agregar el icono inicial (flecha abajo) */
+.custom-select-listados::after {
+  content: "\f0d7"; /* fa-chevron-down */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: transform 0.3s ease;
+  color: var(--unnamed-color-004891);
+}
+
+/* Cambiar el icono cuando el select está enfocado */
+.custom-select-listados:has(select:focus)::after {
+  content: "\f0d8"; /* fa-chevron-up */
+  color: var(--unnamed-color-004891);
+}
+/* Agregar el icono inicial (flecha abajo) */
+.custom-select-listados::after {
+  content: "\f0d7"; /* fa-chevron-down */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;  /* Asegurar que use el peso correcto */
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: transform 0.3s ease;
+  color: var(--unnamed-color-004891); /* Color correcto */
+}
+/* Asegurar que el color se mantenga en focus */
+.selector-listado:focus {
+  color: var(--unnamed-color-004891) !important;
+}
+/* Cambiar el icono cuando el select está enfocado */
+.custom-select-listados:has(select:focus)::after {
+  content: "\f0d8"; /* fa-chevron-up */
+  font-family: "Font Awesome 5 Free"; /* Asegurar que la fuente se mantenga */
+  font-weight: 900;  /* Asegurar que no cambie el peso */
+  color: var(--unnamed-color-004891); /* Mantener el mismo color */
+}
+
      /* Estilos para el formulario */
 /* Responsividad para pantallas grandes (mayores a 1400px) */
+
+
+
 @media (max-width: 1700px) {
   .tit-pequeño {
     font-size: 28px;
@@ -3087,6 +3182,12 @@ select.selector-listado {
   .nav-item .nav-link{
     font-size: 20px;
   }
+  .card4.cards-reporte .card4-title{
+    font-size: 28px;
+  }
+  .btn-descargar {
+    font-size: 14px;
+}
 }
 
 /* Responsividad para pantallas medianas (mayores a 1024px) */
@@ -4054,6 +4155,9 @@ footer .footer-iconos {
   .titulo-pequeño-azul-bold{
     font-size: 16px;
   }
+  .card4.cards-reporte .card4-title{
+    font-size: 24px;
+  }
 }
 
 /* Responsividad para móviles pequeños (menos de 480px) */
@@ -4357,5 +4461,8 @@ footer .footer-iconos {
 .news-title{
   font-size: 26px;
   line-height: normal;
+}
+.card4.cards-reporte .card4-title{
+  font-size: 20px;
 }
 }
