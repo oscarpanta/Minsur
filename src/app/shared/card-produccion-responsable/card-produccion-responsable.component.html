@@ -5,7 +5,7 @@
         class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 g-4 "
 
       >
-      <!-- Card 1 -->
+
       <div class="col col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
         <div class="card-2">
           <img
@@ -15,25 +15,23 @@
             [ngClass]="cardRadius"
           />
           <div class="card-body my-5">
-            <p class="card2-title">
-              <i class="fas fa-arrow-right flecha-blue"></i>
-              <a href="" class="hover-underline">Economía circular</a>
+            <p class="card2-title d-flex align-items-center">
+              <i class="fas fa-arrow-right flecha-blue me-2"></i>
+              <a href="" class="hover-underline text-wrap">Economía circular</a>
             </p>
             <p class="card-text mt-4 mb-5" *ngIf="descripcion">
-              Tranformamos la producción y consumo de minerales fomentando la
+              Transformamos la producción y consumo de minerales fomentando la
               eficiencia de procesos para crear valor con menos recursos.
             </p>
             <a routerLink="/home/economia-circular" class="btn-vermas" *ngIf="descripcion">
-              <span class="flecha-circular"
-                ><i class="fas fa-arrow-right flecha-ver-mas"></i
-              ></span>
-              ver más
+              <span class="flecha-circular">
+                <i class="fas fa-arrow-right flecha-ver-mas"></i>
+              </span>
+              Ver más
             </a>
           </div>
         </div>
       </div>
-
-      <!-- Card 2 -->
       <div class="col col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
         <div class="card-2">
           <img
@@ -43,8 +41,8 @@
             [ngClass]="cardRadius"
           />
           <div class="card-body my-5">
-            <p class="card2-title">
-              <i class="fas fa-arrow-right flecha-blue"></i>
+            <p class="card2-title d-flex align-items-center">
+              <i class="fas fa-arrow-right flecha-blue me-2"></i>
               <a routerLink="/home/descripcion-emisiones-netas" class="hover-underline">Emisiones netas cero</a>
             </p>
             <p class="card-text mt-4 mb-5" *ngIf="descripcion">
@@ -52,28 +50,26 @@
               hoja de ruta orientada a mitigar emisiones y afrontar
               climáticos.
             </p>
-            <a routerLink="/home/emisiones-netas" class="btn-vermas" *ngIf="descripcion">
-              <span class="flecha-circular"
-                ><i class="fas fa-arrow-right flecha-ver-mas"></i
-              ></span>
-              ver más
+            <a routerLink="/home/emisiones-netas"  class="btn-vermas" *ngIf="descripcion">
+              <span class="flecha-circular">
+                <i class="fas fa-arrow-right flecha-ver-mas"></i>
+              </span>
+              Ver más
             </a>
           </div>
         </div>
       </div>
-
-      <!-- Card 3 -->
       <div class="col col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
         <div class="card-2">
           <img
             src="assets/images/trazabilidad.png"
-            alt="Producto 3"
+            alt="imagen 3"
             class="card-img-top"
             [ngClass]="cardRadius"
           />
           <div class="card-body my-5">
-            <p class="card2-title">
-              <i class="fas fa-arrow-right flecha-blue"></i>
+            <p class="card2-title d-flex align-items-center">
+              <i class="fas fa-arrow-right flecha-blue me-2"></i>
               <a routerLink="/home/trazabilidad"  class="hover-underline">Trazabilidad</a>
             </p>
             <p class="card-text mt-4 mb-5" *ngIf="descripcion">
@@ -81,17 +77,15 @@
               origen del estaño, reafirmando nuestro compromiso con la
               transparencia y la producción ética.
             </p>
-            <a routerLink="/" class="btn-vermas" *ngIf="descripcion">
-              <span class="flecha-circular"
-                ><i class="fas fa-arrow-right flecha-ver-mas"></i
-              ></span>
-              ver más
+            <a routerLink="/home/economia-circular" class="btn-vermas" *ngIf="descripcion">
+              <span class="flecha-circular">
+                <i class="fas fa-arrow-right flecha-ver-mas"></i>
+              </span>
+              Ver más
             </a>
           </div>
         </div>
       </div>
-
-      <!-- Card 4 -->
       <div class="col col-lg-3 col-md-6 col-sm-12 d-flex justify-content-center">
         <div class="card-2">
           <img
@@ -101,8 +95,8 @@
             [ngClass]="cardRadius"
           />
           <div class="card-body my-5">
-            <p class="card2-title">
-              <i class="fas fa-arrow-right flecha-blue"></i>
+            <p class="card2-title d-flex align-items-center">
+              <i class="fas fa-arrow-right flecha-blue me-2"></i>
               <a  routerLink="/home/descripcion-enfoque-personas" class="hover-underline">Enfoque en personas</a>
             </p>
             <p class="card-text mt-4 mb-5" *ngIf="descripcion">
@@ -110,15 +104,19 @@
               generar bienestar en nuestra gente y en las comunidades donde
               operamos.
             </p>
-            <a routerLink="/home/enfoque-personas" class="btn-vermas" *ngIf="descripcion">
-              <span class="flecha-circular"
-                ><i class="fas fa-arrow-right flecha-ver-mas"></i
-              ></span>
-              ver más
+            <a routerLink="/home/economia-circular" class="btn-vermas" *ngIf="descripcion">
+              <span class="flecha-circular">
+                <i class="fas fa-arrow-right flecha-ver-mas"></i>
+              </span>
+              Ver más
             </a>
           </div>
         </div>
       </div>
+
+
+
+
     </div>
   </div>
 </div>

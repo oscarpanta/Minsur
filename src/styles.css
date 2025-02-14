@@ -90,7 +90,12 @@
   font-weight: 700;
   font-style: normal;
 }
-
+@font-face {
+  font-family: 'Raleway';
+  src: url('./assets/fonts/Raleway-Regular.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
 @font-face {
   font-family: 'Raleway';
   src: url('./assets/fonts/Raleway-Regular.ttf') format('truetype');
@@ -195,11 +200,14 @@ header .navbar-toggler-icon {
   transition: color 0.3s ease;
 
   font-family: var(--unnamed-font-family-merriweather);
-  font-weight: var(--unnamed-font-weight-bold);
+  /* font-weight: var(--unnamed-font-weight-bold); */
+  font-weight: var(--unnamed-font-weight-normal);
   font-size: var(--unnamed-font-size-22);
   color: var(--unnamed-color-ffffff);
   text-align: center;
   letter-spacing: -0.55px;
+  /* letter-spacing: var(--unnamed-character-spacing--0-6); */
+  line-height: var(--unnamed-line-spacing-34);
 
 }
 
@@ -314,7 +322,7 @@ header.scrolled .logo {
 
 }
 .carousel-inner .carousel-caption div{
-  width: 45%;
+  width: 58%;
 
 }
 
@@ -341,6 +349,7 @@ header.scrolled .logo {
     padding-left: calc(var(--bs-gutter-x)* .5);
 
 }
+
 .carousel-indicators-container .carousel-indicator-group {
   display: flex;
   width: 100%;
@@ -366,7 +375,9 @@ header.scrolled .logo {
   color: #7df900;
   opacity: 1;
 }
-
+.carousel-indicators [data-bs-target]{
+  margin-left: 0 !important;
+}
 .carousel-caption h1 {
   font-family: var(--unnamed-font-family-raleway);
   font-weight: var(--unnamed-font-weight-normal);
@@ -1084,7 +1095,7 @@ header.scrolled .logo {
   font-size: var(--unnamed-font-size-142);
   line-height: var(--unnamed-line-spacing-58);
   letter-spacing: var(--unnamed-character-spacing--3-55);
-  color: var(--unnamed-color-0063f9);
+  color: var(--unnamed-color-5A9CFF);
 }
 .listado {
   font-family: var(--unnamed-font-family-merriweather);
@@ -1358,7 +1369,7 @@ header.scrolled .logo {
                           font-family: var(--unnamed-font-family-raleway);
                           font-style: var(--unnamed-font-style-normal);
                           font-weight: var(--unnamed-font-weight-300);
-                          font-size: var(--unnamed-font-size-24);
+                          font-size: var(--unnamed-font-size-22);
                           line-height: var(--unnamed-line-spacing-38);
                           letter-spacing: var(--unnamed-character-spacing--0-24);
                           color: var(--unnamed-color-5A9CFF);
@@ -1472,6 +1483,9 @@ footer {
   margin: 0;
   padding: 3rem 0;
 }
+.contenedor-section-0{
+  margin: 3rem 0;
+}
 .section-background-4 {
   background-color: black;
   /* padding: 0; */
@@ -1568,7 +1582,7 @@ footer .footer-auxiliar {
 }
 .responsive-line {
   border: 0;
-  border-top: 2px solid #ffffff; /* Color de la línea */
+  border-top: 2px solid #232324; /* Color de la línea */
   width: 100%; /* Abarca todo el ancho del contenedor */
   margin: 20px 0; /* Espaciado superior e inferior */
   box-sizing: border-box;
@@ -2206,7 +2220,7 @@ section  .card-sustinable  .col-lg-7 {
 section .card-sustinable  .col-lg-7 img {
   width: 100%; /* Hace que la imagen ocupe todo el contenedor */
   height: 100%;
-  object-fit: cover; /* Hace que la imagen cubra todo el espacio sin distorsionarse */
+  object-fit: contain; /* Hace que la imagen cubra todo el espacio sin distorsionarse */
 }
 
 /* Estilo específico para la palabra "TIN" en un cuadro blanco con letras negras */
@@ -2718,6 +2732,21 @@ select.selector-listado {
 .style-comunicados p{
   margin-bottom: 2rem;
 }
+
+.info-item {
+  /* padding: 10px 0px; */
+  border-right: 1px solid #0055c5; /* Borde derecho */
+}
+
+.info-item:last-child {
+  border-right: none; /* Elimina el borde del último elemento */
+}
+
+/* Asegurar que el primer elemento tenga padding igual al resto */
+.info-item:first-child {
+  /* padding-right: 20px; */
+}
+
 /* Fin de estilos para menu de reportes */
      /* Estilos para el formulario */
 /* Responsividad para pantallas grandes (mayores a 1400px) */
@@ -2943,8 +2972,8 @@ select.selector-listado {
   }
 
   .texto-base-blanco {
-    font-size: var(--unnamed-font-size-22); /* Tamaño ligeramente menor */
-    line-height: var(--unnamed-line-spacing-32); /* Ajuste para línea */
+    font-size: var(--unnamed-font-size-20); /* Tamaño ligeramente menor */
+    line-height: var(--unnamed-line-spacing-28); /* Ajuste para línea */
   }
   .texto-titulo-blanco {
     font-size: var(--unnamed-font-size-36); /* Tamaño ligeramente menor */
@@ -2971,7 +3000,8 @@ select.selector-listado {
   }
 
   .carousel-caption h3 {
-    font-size: 62px;
+    font-size: 58px;
+    line-height: 60px;
   }
 
   .carousel-caption p {
