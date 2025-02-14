@@ -10,7 +10,7 @@ export class ContenidoComponent {
     {
       title: 'Emisiones y Energía',
       text: 'Asumimos la responsabilidad de conducir una producción sostenible de minerales que nos dirija hacia una economía baja en carbono.',
-      image: 'assets/images/localizacion.png',
+      image: 'assets/images/icon_globe.png',
       route: '/sostenibilidad/emisiones-energia'
     },
     {
@@ -32,7 +32,7 @@ export class ContenidoComponent {
     {
       title: 'Comunidades',
       text: 'Generamos vínculos de confianza con las comunidades vecinas a partir de un relacionamiento y una comunicación cercanas.',
-      image: 'assets/images/icon_tuerca.png',
+      image: 'assets/images/icon_people.png',
       route: '/sostenibilidad/comunidad'
 
 
@@ -56,7 +56,7 @@ export class ContenidoComponent {
     {
       title: 'Ética y cumplimiento',
       text: 'Impulsamos una conducta ética y transparente en todas nuestras decisiones a través de sistemas de control que aseguran su cumplimiento, más allá de la legislación.',
-      image: 'assets/images/icon_tuerca.png',
+      image: 'assets/images/icon_globe.png',
       route: '/sostenibilidad/etica-cumplimiento'
 
     },

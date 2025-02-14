@@ -313,7 +313,7 @@ header.scrolled .logo {
 
 }
 .carousel-inner .carousel-caption div{
-  width: 45%;
+  width: 58%;
 
 }
 
@@ -348,7 +348,9 @@ header.scrolled .logo {
   width: 100%;
   border-radius: 0;
 }
-
+.carousel-indicators [data-bs-target] {
+  margin-left: 0px !important;
+}
 .slide_index {
   cursor: pointer;
 }
@@ -1011,7 +1013,9 @@ header.scrolled .logo {
   letter-spacing: 0;
   text-align: left;
 }
-
+/* .container_alta_gerencia .text_ceo i{
+  font-size: 18px;
+} */
 
 .compartir_container a{
   border-bottom: 1px solid #D4D9E7;
@@ -1274,7 +1278,7 @@ header.scrolled .logo {
                       font-weight: var(--unnamed-font-weight-300);
                       font-size: var(--unnamed-font-size-56);
                       line-height: var(--unnamed-line-spacing-66);
-                      color: var(--unnamed-color-0063f9);
+                      color: var(--unnamed-color-0063f9) !important;
                       }
   .til-semigrande-azul-marino {
                         font-family: var(--unnamed-font-family-raleway);
@@ -1509,7 +1513,9 @@ footer {
 }
 /* Para el logo, establecer el ancho al 40% */
 footer .img-fluid {
-  max-width: 400px;
+  min-width: 350px;
+  max-width: 350px;
+
 }
 footer li {
   margin-bottom: 1rem;
@@ -1567,7 +1573,7 @@ footer .footer-auxiliar {
 }
 .responsive-line {
   border: 0;
-  border-top: 2px solid #ffffff; /* Color de la línea */
+  border-top: 2px solid #151516; /* Color de la línea */
   width: 100%; /* Abarca todo el ancho del contenedor */
   margin: 20px 0; /* Espaciado superior e inferior */
   box-sizing: border-box;
@@ -1641,6 +1647,7 @@ footer .footer-auxiliar {
 
 .descripcion {
   opacity: 0;
+  margin-top: 0.5rem;
   margin-left: 3.5rem;
   margin-right: 2rem;
   transition: opacity 0.3s ease;
@@ -2205,7 +2212,7 @@ section  .card-sustinable  .col-lg-7 {
 section .card-sustinable  .col-lg-7 img {
   width: 100%; /* Hace que la imagen ocupe todo el contenedor */
   height: 100%;
-  object-fit: cover; /* Hace que la imagen cubra todo el espacio sin distorsionarse */
+  /* object-fit: cover;  */
 }
 
 /* Estilo específico para la palabra "TIN" en un cuadro blanco con letras negras */
@@ -2329,7 +2336,7 @@ select.selector-listado {
   .container-fluid .custom-card {
 
     max-width: 900px;
-    padding: 5rem;
+    padding: 8rem;
     padding-bottom: 2rem;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -2351,7 +2358,8 @@ select.selector-listado {
     box-shadow: 0px 3px 6px #00000029;
   }
   .container-fluid .custom-card .card-body{
-    min-height: 200px;
+    min-height: 100px;
+    max-height: 100px;
   }
   .card9.card-img-3 .img-fluid{
     max-height: 600px;
@@ -2717,6 +2725,9 @@ select.selector-listado {
 .style-comunicados p{
   margin-bottom: 2rem;
 }
+.til-semi-pequenio i{
+  font-size: 18px;
+}
 /* Fin de estilos para menu de reportes */
      /* Estilos para el formulario */
 /* Responsividad para pantallas grandes (mayores a 1400px) */
@@ -2924,11 +2935,11 @@ select.selector-listado {
     line-height: 36px;
   }
   .til-semigrande-azul {
-    font-size: 48px;
+    font-size: 46px;
     line-height: 58px;
   }
   .til-semigrande-azul-marino {
-    font-size: 48px;
+    font-size: 46px;
     line-height: 58px;
   }
   .card {
@@ -2970,7 +2981,7 @@ select.selector-listado {
   }
 
   .carousel-caption h3 {
-    font-size: 62px;
+    font-size: 56px;
   }
 
   .carousel-caption p {
@@ -3002,7 +3013,7 @@ select.selector-listado {
 
   }
   .numero-semi-grande { font-size: 84px; line-height: 52px; }
-  .til-semigrande-azul-marino { font-size: 46px; line-height: 60px; }
+  .til-semigrande-azul-marino { font-size: 44px; line-height: 60px; }
   .titulo-pequeño-azul-marino {
     font-size: 26px;
     line-height: 38px;
@@ -3036,7 +3047,16 @@ select.selector-listado {
     font-size: var(--unnamed-font-size-30);
 
   }
-
+  footer .footer-auxiliar{
+    font-size: 18px;
+  }
+  .container-fluid .custom-card{
+    padding: 5rem;
+    /* height: 80% !important; */
+  }
+  .container-fluid .custom-card .card-body{
+    min-height: auto;
+  }
 }
 
 /* Responsividad para pantallas medianas (mayores a 1024px) */
@@ -3125,11 +3145,11 @@ select.selector-listado {
     line-height: 36px;
   }
   .til-semigrande-azul {
-    font-size: 48px;
+    font-size: 46px;
     line-height: 52px;
   }
   .til-semigrande-azul-marino {
-    font-size: 48px;
+    font-size: 46px;
     line-height: 52px;
   }
   .title-interna-index {
@@ -3173,7 +3193,7 @@ select.selector-listado {
   }
 
   .carousel-caption h3 {
-    font-size: 56px;
+    font-size: 50px;
   }
 
   .carousel-caption p {
@@ -3657,7 +3677,7 @@ footer .footer-iconos {
   }
 
   .carousel-caption h3 {
-    font-size: 50px;
+    font-size: 46px;
     line-height: 52px;
   }
 
