@@ -2062,6 +2062,7 @@ footer .footer-auxiliar {
   width: 100%;
   display: flex;
   align-items: end;
+  color: var(--unnamed-color-36404e);
 }
 
 .card4.cards-reporte .card-img-top {
@@ -2085,6 +2086,9 @@ footer .footer-auxiliar {
   min-height: auto;
   display: inline-block;
   max-width: 200px;
+  font-size: var(--unnamed-font-size-32);
+  line-height: var(--unnamed-line-spacing-42);
+  letter-spacing: var(--unnamed-character-spacing--0-8);
 }
 .card-img-container img {
   transition: transform 0.3s ease;
@@ -2093,11 +2097,14 @@ footer .footer-auxiliar {
 .card4:hover .card-img-container img {
   transform: scale(1.05);
 }
-
-.card4-title:hover .hover-card-reporte-underline {
+/* .card4.cards-reporte:hover .card-img-container img {
+  transform:  scale(1.05);;
+} */
+/* .card4-title:hover .hover-card-reporte-underline {
   text-decoration: underline;
   cursor: pointer;
-}
+} */
+
 .card4-footer {
   display: flex;
   justify-content: space-between;
