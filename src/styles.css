@@ -3036,7 +3036,19 @@ select.selector-listado {
     font-size: var(--unnamed-font-size-30);
 
   }
-
+  footer .footer-auxiliar{
+    font-size: 18px;
+  }
+  .container-fluid .custom-card{
+    padding: 5rem;
+    /* height: 80% !important; */
+  }
+  .container-fluid .custom-card .card-body{
+    min-height: auto;
+  }
+  .nav-item .nav-link{
+    font-size: 20px;
+  }
 }
 
 /* Responsividad para pantallas medianas (mayores a 1024px) */
@@ -3266,6 +3278,9 @@ select.selector-listado {
     font-size: var(--unnamed-font-size-28);
 
   }
+  /* .nav-item .nav-link{
+    font-size: 18px;
+  } */
 }
 @media (max-width: 992px) {
   .tit-pequeño {
