@@ -2853,7 +2853,7 @@ select.selector-listado {
 .btn-vermas2 {
   display: inline-flex;
   align-items: center;
-  padding: 8px 10px;
+  padding: 8px 0px;
   background-color: inherit;
   border-radius: 25px;
   text-decoration: none;
