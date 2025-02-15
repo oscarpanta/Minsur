@@ -5,7 +5,7 @@
     <p class="mb-5 title-interna-index" *ngIf="titleNoticias">Noticias</p>
     <div class="row g-4 justify-content-center justify-content-md-between">
       <!-- Card 1 -->
-      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-xxl-5 mb-lg-3 mb-sm-1">
         <div class="card3 h-100">
           <img
             src="assets/images/noticia1.png"
@@ -13,10 +13,10 @@
             alt="Imagen 1"
           />
           <div
-            class="card-body d-flex flex-column justify-content-between m-3 m-sm-3 m-lg-4 m-xl-5"
+            class="card-body d-flex flex-column justify-content-between m-3 mx-sm-3 mx-lg-4 mx-xl-5 my-sm-2 my-lg-4"
           >
             <div>
-              <div class="mb-1 mb-md-2 mb-lg-3 text-fecha">
+              <div class="mb-1 mb-md-3 mb-lg-5 text-fecha">
                 Junio, 2024
               </div>
               <!-- <p class="card2-title hover-card-underline"> -->
@@ -25,7 +25,7 @@
                 Antauta y Ajoyani
               </p>
             </div>
-            <div class="mt-3">
+            <div class="my-2">
               <a routerLink="/noticias/detalle/1" class="btn-vermas">
                 <span class="flecha-circular"
                   ><i class="fas fa-arrow-right flecha-ver-mas"></i
@@ -38,7 +38,7 @@
       </div>
 
       <!-- Card 2 -->
-      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-xxl-5 mb-lg-3 mb-sm-1">
         <div class="card3 h-100">
           <img
             src="assets/images/noticia2.png"
@@ -46,7 +46,7 @@
             alt="Imagen 1"
           />
           <div
-          class="card-body d-flex flex-column justify-content-between m-3 m-sm-3 m-lg-4 m-xl-5"
+          class="card-body d-flex flex-column justify-content-between m-3 mx-sm-3 mx-lg-4 mx-xl-5 my-sm-2 my-lg-4"
           >
             <div>
               <div class="mb-1 mb-md-2 mb-lg-3 text-fecha">
@@ -57,7 +57,7 @@
                 Jones
               </p>
             </div>
-            <div class="mt-3">
+            <div class="my-2">
               <a routerLink="/noticias/detalle/2" class="btn-vermas">
                 <span class="flecha-circular"
                   ><i class="fas fa-arrow-right flecha-ver-mas"></i
@@ -70,7 +70,7 @@
       </div>
 
       <!-- Card 3 -->
-      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-xxl-5 mb-lg-3 mb-sm-1">
         <div class="card3 h-100">
           <img
             src="assets/images/noticia3.png"
@@ -78,7 +78,7 @@
             alt="Imagen 1"
           />
           <div
-          class="card-body d-flex flex-column justify-content-between m-3 m-sm-3 m-lg-4 m-xl-5"
+          class="card-body d-flex flex-column justify-content-between m-3 mx-sm-3 mx-lg-4 mx-xl-5 my-sm-2 my-lg-4"
           >
             <div>
               <div class=" mb-1 mb-md-2 mb-lg-3 text-fecha">
@@ -89,7 +89,103 @@
                 prestigioso Shingo Institute
               </p>
             </div>
-            <div class="mt-3">
+            <div class="my-2">
+              <a routerLink="/noticias/detalle/3" class="btn-vermas">
+                <span class="flecha-circular"
+                  ><i class="fas fa-arrow-right flecha-ver-mas"></i
+                ></span>
+                ver más
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+       <!-- Card 1 -->
+       <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-xxl-5 mb-lg-3 mb-sm-1">
+        <div class="card3 h-100">
+          <img
+            src="assets/images/noticia1.png"
+            class="card-img-top"
+            alt="Imagen 1"
+          />
+          <div
+            class="card-body d-flex flex-column justify-content-between m-3 mx-sm-3 mx-lg-4 mx-xl-5 my-sm-2 my-lg-4"
+          >
+            <div>
+              <div class="mb-1 mb-md-3 mb-lg-5 text-fecha">
+                Junio, 2024
+              </div>
+              <!-- <p class="card2-title hover-card-underline"> -->
+                <p class="card2-title" [ngClass]="hoverClass">
+                Clínica móvil Minsur ha realizado más de 2,500 atenciones en
+                Antauta y Ajoyani
+              </p>
+            </div>
+            <div class="my-2">
+              <a routerLink="/noticias/detalle/1" class="btn-vermas">
+                <span class="flecha-circular"
+                  ><i class="fas fa-arrow-right flecha-ver-mas"></i
+                ></span>
+                ver más
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-xxl-5 mb-lg-3 mb-sm-1">
+        <div class="card3 h-100">
+          <img
+            src="assets/images/noticia2.png"
+            class="card-img-top"
+            alt="Imagen 1"
+          />
+          <div
+          class="card-body d-flex flex-column justify-content-between m-3 mx-sm-3 mx-lg-4 mx-xl-5 my-sm-2 my-lg-4"
+          >
+            <div>
+              <div class="mb-1 mb-md-2 mb-lg-3 text-fecha">
+                Mayo, 2024
+              </div>
+              <p class="card2-title" [ngClass]="hoverClass">
+                Formamos parte de índice de sostenibilidad de la BVL y S&P Dow
+                Jones
+              </p>
+            </div>
+            <div class="my-2">
+              <a routerLink="/noticias/detalle/2" class="btn-vermas">
+                <span class="flecha-circular"
+                  ><i class="fas fa-arrow-right flecha-ver-mas"></i
+                ></span>
+                ver más
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 mb-xxl-5 mb-lg-3 mb-sm-1">
+        <div class="card3 h-100">
+          <img
+            src="assets/images/noticia3.png"
+            class="card-img-top"
+            alt="Imagen 1"
+          />
+          <div
+          class="card-body d-flex flex-column justify-content-between m-3 mx-sm-3 mx-lg-4 mx-xl-5 my-sm-2 my-lg-4"
+          >
+            <div>
+              <div class=" mb-1 mb-md-2 mb-lg-3 text-fecha">
+                Abril, 2024
+              </div>
+              <p class="card2-title" [ngClass]="hoverClass">
+                Minsur es la primera empresa peruana en ser reconocida por el
+                prestigioso Shingo Institute
+              </p>
+            </div>
+            <div class="my-2">
               <a routerLink="/noticias/detalle/3" class="btn-vermas">
                 <span class="flecha-circular"
                   ><i class="fas fa-arrow-right flecha-ver-mas"></i

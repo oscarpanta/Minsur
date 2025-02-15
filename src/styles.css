@@ -1784,7 +1784,7 @@ footer .footer-auxiliar {
 }
 .text-fecha {
   font-family: var(--unnamed-font-family-raleway);
-  font-size: var(--unnamed-font-size-15);
+  font-size: var(--unnamed-font-size-18);
   font-weight: var(--unnamed-font-weight-bold);
   color: var(--unnamed-color-0063f9) !important;
 }
@@ -4157,6 +4157,9 @@ footer .footer-iconos {
   }
   .card4.cards-reporte .card4-title{
     font-size: 24px;
+  }
+  .text-fecha{
+    font-size:16px
   }
 }
 

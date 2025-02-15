@@ -22,9 +22,17 @@
       <!-- Selector -->
       <div class="d-flex flex-column col-12 col-lg-4">
         <span class="text-end text-lg-start">Ordenar por</span>
-        <select name="" id="" class="selector-listado form-select">
-          <option value="">Mas recientes</option>
-        </select>
+        <div class="custom-select-listados">
+          <select class="selector-listado form form-control">
+            <option value="" disabled selected hidden>Más recientes</option> <!-- Oculta la primera opción -->
+            <option value="corporativas">Seguridad y Salud</option>
+            <option value="seguridad">Medio Ambiente</option>
+            <option value="governance">Governance</option>
+            <option value="etica">Ética</option>
+
+          </select>
+        </div>
+
       </div>
     </div>
     <div
