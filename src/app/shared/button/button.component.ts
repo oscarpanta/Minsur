@@ -1,18 +1,17 @@
-import { Component } from '@angular/core';
-import { trigger, state, style, transition, animate } from '@angular/animations';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-button',
   templateUrl: './button.component.html',
   styleUrls: ['./button.component.css'],
-  animations: [
-    trigger('expandArrow', [
-      state('normal', style({ width: '20px' })), // Estado inicial
-      state('expanded', style({ width: '50px' })), // Estado final
-      transition('normal <=> expanded', animate('300ms ease-in-out'))
-    ])
-  ]
+
 })
 export class ButtonComponent {
-  isHovered = false;
+  @Input() link: string = '/';
+  @Input() defaultBorderColor: string = '#0063f9';
+  // @Input() hoverBorderColor: string = '#7df900';
+  @Input() defaultStrokeColor: string = '#0063f9';
+  @Input() hoverStrokeColor: string = '#ffffff';
+  @Input() label: string = 'Ver más';
+  @Input() textColor: string = '#0063f9';
 }

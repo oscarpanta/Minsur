@@ -3,16 +3,24 @@
     <div *ngFor="let card of cards" class="col">
       <div class="card card12 h-100">
         <div class="card-body">
-          <img [src]="card.image" class="card-img-top" style="max-width: 45px; max-height: 45px; min-height: 45px;" [alt]="card.title">
+          <img
+            [src]="card.image"
+            class="card-img-top"
+            style="max-width: 45px; max-height: 45px; min-height: 45px"
+            [alt]="card.title"
+          />
         </div>
         <div class="card-body d-flex flex-column">
           <h5 class="card-title">{{ card.title }}</h5>
-          <p class="card-text texto_base flex-grow-0 flex-lg-grow-1">{{ card.text }}</p>
-          <hr class="my-3">
-          <a [routerLink]="card.route" class="btn-vermas">
+          <p class="card-text texto_base flex-grow-0 flex-lg-grow-1">
+            {{ card.text }}
+          </p>
+          <hr class="my-3" />
+          <app-button link="{{ card.route }}"> </app-button>
+          <!-- <a [routerLink]="card.route" class="btn-vermas">
             <span class="flecha-circular"><i class="fas fa-arrow-right flecha-ver-mas"></i></span>
             ver más
-          </a>
+          </a> -->
         </div>
       </div>
     </div>

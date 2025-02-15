@@ -20,7 +20,6 @@
   "
 ></app-info-view-general>
 
-
 <!-- fin section proposito -->
 <!-- section nuestra vision -->
 <section class="contenedor-section section-background-2">
@@ -78,12 +77,15 @@
             preventiva enfocada en comportamientos, que se extiende dentro y
             fuera de nuestras operaciones.
           </p>
-          <a routerLink="/sostenibilidad/seguridad-salud" class="btn-vermas">
-            <span class="flecha-circular"
-              ><i class="fas fa-arrow-right flecha-ver-mas"></i
-            ></span>
-            ver más
-          </a>
+
+          <app-button
+          link="/sostenibilidad/seguridad-salud"
+          defaultBorderColor="#0063f9"
+          defaultStrokeColor="#0063f9"
+          hoverStrokeColor="#ffffff"
+          label="Ver más"
+          textColor="#0063f9"
+        ></app-button>
         </div>
         <!-- Primera sección: Imagen y texto -->
       </div>
@@ -106,12 +108,14 @@
             regulaciones locales y estándares internacionales más exigentes,
             incluyendo los principios del ICMM.
           </p>
-          <a routerLink="/sostenibilidad/cuidado-ambiental" class="btn-vermas">
-            <span class="flecha-circular"
-              ><i class="fas fa-arrow-right flecha-ver-mas"></i
-            ></span>
-            ver más
-          </a>
+          <app-button
+          link="/sostenibilidad/cuidado-ambiental"
+          defaultBorderColor="#0063f9"
+          defaultStrokeColor="#0063f9"
+          hoverStrokeColor="#ffffff"
+          label="Ver más"
+          textColor="#0063f9"
+        ></app-button>
         </div>
         <!-- Primera sección: Imagen y texto -->
         <div class="col-12 col-md-6 d-flex flex-column ps-md-5 ps-ms-0">
@@ -125,7 +129,9 @@
       </div>
     </div>
 
-    <app-card-sostenibilidad [cards]="cuidadoAmbiental"></app-card-sostenibilidad>
+    <app-card-sostenibilidad
+      [cards]="cuidadoAmbiental"
+    ></app-card-sostenibilidad>
   </div>
 </section>
 <!-- Finsection cuidado ambiental  -->
@@ -161,7 +167,9 @@
       </div>
     </div>
 
-    <app-card-sostenibilidad [cards]="valorCompartido"></app-card-sostenibilidad>
+    <app-card-sostenibilidad
+      [cards]="valorCompartido"
+    ></app-card-sostenibilidad>
   </div>
 </section>
 <!-- fin section valor compartido -->
@@ -188,19 +196,27 @@
             ></span>
             ver más
           </a> -->
-          <a routerLink="/sostenibilidad/gobernanza-responsable" class="btn-vermas2">
+          <!-- <a routerLink="/sostenibilidad/gobernanza-responsable" class="btn-vermas2">
             <span class="arrow-container">
-              <!-- SVG del cuerpo de la flecha (la línea) -->
               <svg class="arrow-body" width="40" height="20" viewBox="0 0 40 20" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
                 <line x1="0" y1="10" x2="40" y2="10" stroke="#0063f9" stroke-width="2" stroke-linecap="round" />
               </svg>
-              <!-- SVG de la cabeza de la flecha (la punta ">") -->
-              <svg class="arrow-head" width="20" height="15" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <svg class="arrow-head" width="15" height="15" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                 <polyline points="0,0 10,10 0,20" stroke="#0063f9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
               </svg>
             </span>
             ver más
-          </a>
+          </a> -->
+          <app-button
+            link="/sostenibilidad/gobernanza-responsable"
+            defaultBorderColor="#0063f9"
+            defaultStrokeColor="#0063f9"
+            hoverStrokeColor="#ffffff"
+            label="Ver más"
+            textColor="#0063f9"
+          >
+          </app-button>
+
         </div>
         <!-- Primera sección: Imagen y texto -->
         <div class="col-12 col-md-6 d-flex flex-column ps-md-5 ps-ms-0">
@@ -214,7 +230,9 @@
       </div>
     </div>
 
-    <app-card-sostenibilidad [cards]="gobernanzaResponsable"></app-card-sostenibilidad>
+    <app-card-sostenibilidad
+      [cards]="gobernanzaResponsable"
+    ></app-card-sostenibilidad>
   </div>
 </section>
 <!-- Fin section Gobernanza responsable -->
@@ -237,9 +255,9 @@
           <p class="titulo-seccion tit-interno">Reportes</p>
 
           <p class="texto-seccion texto-base">
-            Nuestros reportes anuales son una muestra de nuestro compromiso
-            con la transparencia y la rendición de cuentas, detallando nuestros avances y
-            desafíos en materia social, ambiental y de gobernanza.
+            Nuestros reportes anuales son una muestra de nuestro compromiso con
+            la transparencia y la rendición de cuentas, detallando nuestros
+            avances y desafíos en materia social, ambiental y de gobernanza.
           </p>
         </div>
         <!-- Primera sección: Imagen y texto -->
@@ -254,9 +272,7 @@
             <div class="card-body">
               <div class="d-flex align-items-start gap-2 mb-3">
                 <i class="fas fa-arrow-right flecha-blue mt-1"></i>
-                <h5 class="card-title tit-pequeño">
-                  Memoria Anual 2023
-                </h5>
+                <h5 class="card-title tit-pequeño">Memoria Anual 2023</h5>
               </div>
             </div>
             <div class="card4-footer border-bottom pb-2 border-top pt-2">
@@ -277,7 +293,7 @@
               </a>
               <a
                 routerLink="/"
-                class="btn-descargar btn-ver me-sm-0 ms-sm-0 me-lg-0 ms-lg-3 "
+                class="btn-descargar btn-ver me-sm-0 ms-sm-0 me-lg-0 ms-lg-3"
                 download
               >
                 Ver
@@ -292,8 +308,6 @@
         <!-- Card 2 -->
         <div class="col">
           <div class="card h-100">
-
-
             <div class="card-body">
               <div class="d-flex align-items-start gap-2 mb-3">
                 <i class="fas fa-arrow-right flecha-blue mt-1"></i>
@@ -320,7 +334,7 @@
               </a>
               <a
                 routerLink="/"
-                class="btn-descargar btn-ver me-sm-0 ms-sm-0 me-lg-0 ms-lg-3 "
+                class="btn-descargar btn-ver me-sm-0 ms-sm-0 me-lg-0 ms-lg-3"
                 download
               >
                 Ver
@@ -335,8 +349,6 @@
         <!-- Card 3 -->
         <div class="col">
           <div class="card h-100">
-
-
             <div class="card-body">
               <div class="d-flex align-items-start gap-2 mb-3">
                 <i class="fas fa-arrow-right flecha-blue mt-1"></i>
@@ -363,7 +375,7 @@
               </a>
               <a
                 routerLink="/"
-                class="btn-descargar btn-ver me-sm-0 ms-sm-0 me-lg-0 ms-lg-3 "
+                class="btn-descargar btn-ver me-sm-0 ms-sm-0 me-lg-0 ms-lg-3"
                 download
               >
                 Ver
@@ -388,14 +400,14 @@
       <!-- Columna 1 -->
       <div class="col-md-5 mb-3">
         <p class="tit-interno">Adherencias</p>
-        <p class="texto-base text-content" >
+        <p class="texto-base text-content">
           Demostramos compromiso con la excelencia y sostenibilidad al
           adherirnos a iniciativas como el Pacto Mundial de la ONU y la
           Iniciativa de Transparencia en la Industria Extractiva (EITI).
           Reﬂejando dedicación a operaciones éticas, responsables y alineadas a
           Objetivos de Desarrollo Sostenible.
         </p>
-        <div class="row g-2 d-flex align-items-center" style="height: 200px;">
+        <div class="row g-2 d-flex align-items-center" style="height: 200px">
           <div class="col-6 col-sm-4 col-md-6">
             <img
               src="../../../../../assets/images/adherencia2.png"
@@ -410,35 +422,40 @@
               alt="Ejemplo 2"
             />
           </div>
-
         </div>
       </div>
 
       <!-- Columna 2 -->
       <div class="col-md-5 mb-3">
         <p class="tit-interno">Certificaciones</p>
-        <p class="texto-base text-content" >
+        <p class="texto-base text-content">
           Nuestras certiﬁcaciones internacionales avalan nuestro compromiso con
           la sostenibilidad, seguridad y calidad en las operaciones. Obtenidas
           tras rigurosas auditorías, demuestran esfuerzo por mejorar, innovar y
           liderar industria minera hacia prácticas más responsables.
         </p>
-        <div class="row g-2" style="height: 200px;">
-          <div class="col-6 col-sm-6 col-md-6 col-xxl-4 d-flex align-items-center">
+        <div class="row g-2" style="height: 200px">
+          <div
+            class="col-6 col-sm-6 col-md-6 col-xxl-4 d-flex align-items-center"
+          >
             <img
               src="../../../../../assets/images/certificacion1.png"
               class="img-fluid rounded"
               alt="Ejemplo 1"
             />
           </div>
-          <div class="col-6 col-sm-6 col-md-6 col-xxl-4 d-flex align-items-center">
+          <div
+            class="col-6 col-sm-6 col-md-6 col-xxl-4 d-flex align-items-center"
+          >
             <img
               src="../../../../../assets/images/certificacion1.png"
               class="img-fluid rounded"
               alt="Ejemplo 2"
             />
           </div>
-          <div class="col-6 col-sm-6  col-md-6 col-xxl-4 d-flex align-items-center">
+          <div
+            class="col-6 col-sm-6 col-md-6 col-xxl-4 d-flex align-items-center"
+          >
             <img
               src="../../../../../assets/images/certificacion1.png"
               class="img-fluid rounded"

@@ -2848,6 +2848,92 @@ select.selector-listado {
 }
 
      /* Estilos para el formulario */
+
+/* ESTILOS FLECHA NUEVO*/
+.btn-vermas2 {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 0px;
+  background-color: inherit;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+/* Contenedor que simula el fondo circular (inicialmente un círculo) */
+.arrow-container {
+  display: inline-flex;
+  align-items: center;
+  overflow: hidden; /* Controla el ancho */
+  transition: all 0.3s ease;
+  height: 30px;
+  border: 2px solid var(--arrow-border-color);
+  border-radius: 50%; /* Círculo inicial */
+  margin-right: 0.5rem;
+  width: 30px;
+}
+
+/* Cuerpo de la flecha (la línea) */
+.arrow-body {
+  transition: width 0.3s ease;
+  width: 15px;
+  margin-left: 5px;
+}
+
+/* Cabeza de la flecha (la punta) */
+.arrow-head {
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+  margin-left: -8px; /* Ajuste para unirla al cuerpo */
+}
+
+/* Estado hover: se expande el contenedor y cambian colores */
+.btn-vermas2:hover .arrow-container {
+  width: 100px; /* Se alarga el contenedor */
+  height: 30px;
+  border-radius: 250px; /* Pasa a tener forma "pill" */
+  background-color: var(--arrow-border-color);
+  color: #fff;
+}
+
+/* En hover, se expande solo el cuerpo de la flecha */
+.btn-vermas2:hover .arrow-body {
+  width: 80px; /* El cuerpo se alarga */
+  margin-left: 10px;
+}
+
+/* En hover, la cabeza puede desplazarse (ajústalo si lo requieres) */
+.btn-vermas2:hover .arrow-head {
+  /* Si deseas moverla un poco, puedes aplicar transform: translateX(...); */
+  /* En este ejemplo se deja sin transformación adicional */
+}
+
+/* En hover, se cambia el color del trazo de la flecha */
+.btn-vermas2:hover .arrow-body line,
+.btn-vermas2:hover .arrow-head polyline {
+  stroke: var(--arrow-hover-stroke-color);
+  transition: stroke 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Responsividad para pantallas grandes (mayores a 1400px) */
 
 
