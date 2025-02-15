@@ -1,0 +1,66 @@
+.btn-vermas2 {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 10px;
+  background-color: inherit;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.arrow-container {
+  display: inline-flex;
+  align-items: center;
+  overflow: hidden; /* Para controlar el ancho */
+  transition: width 0.3s ease;
+  /* width: 60px;  */
+  /* 40px (cuerpo) + 20px (cabeza) en estado inicial */
+  height: 30px;
+  border: 2px solid #0063f9; /* Borde del círculo */
+  border-radius: 50%; /* Asegura que el contenedor sea un círculo */
+  transition: all 0.3s ease; /* Animación para agrandar el círculo */
+  margin-right: 0.5rem;
+}
+
+/* El cuerpo de la flecha, que se expandirá */
+.arrow-body {
+  transition: width 0.3s ease;
+  width: 15px;
+  margin-left: 10px;
+}
+
+/* La cabeza de la flecha se mantiene fija, pero se moverá */
+.arrow-head {
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+  margin-left: -10px;
+}
+
+/* Estado hover: se expande el contenedor */
+.btn-vermas2:hover .arrow-container {
+  width: 100px; /* Nuevo ancho total (puedes ajustar) */
+  height: 30px; /* El círculo mantiene la misma altura */
+  border-radius: 250px;
+  background-color: #0063f9;
+  color: #fff;
+}
+
+/* En hover, se expande solo el cuerpo */
+.btn-vermas2:hover .arrow-body {
+  width: 80px; /* El cuerpo pasa de 40px a 80px */
+  margin-left: 10px;
+  transition: width 0.3sease
+}
+
+/* En hover, la cabeza se desplaza a la derecha para quedar al final de la línea */
+.btn-vermas2:hover .arrow-head {
+  /* transform: translateX(20px);  */
+}
+
+/* Opcional: Cambiar el color de la flecha en hover */
+.btn-vermas2:hover .arrow-body line,
+.btn-vermas2:hover .arrow-head polyline {
+  stroke: white;
+}
