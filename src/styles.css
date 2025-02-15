@@ -2791,21 +2791,21 @@ select.selector-listado {
 }
 
 /* Estiliza el select y oculta la flecha nativa */
-.custom-select-listados .selector-listado {
+/* .custom-select-listados .selector-listado {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   width: 100%;
-  padding: 10px 40px 10px 15px; /* Espacio para el icono */
+  padding: 10px 40px 10px 15px;
   font-size: 24px;
   cursor: pointer;
   background-color: white;
   color: var(--unnamed-color-004891);
-}
+} */
 
 /* Agregar el icono inicial (flecha abajo) */
-.custom-select-listados::after {
-  content: "\f0d7"; /* fa-chevron-down */
+/* .custom-select-listados::after {
+  content: "\f0d7";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   position: absolute;
@@ -2815,37 +2815,106 @@ select.selector-listado {
   pointer-events: none;
   transition: transform 0.3s ease;
   color: var(--unnamed-color-004891);
-}
+} */
 
 /* Cambiar el icono cuando el select está enfocado */
-.custom-select-listados:has(select:focus)::after {
-  content: "\f0d8"; /* fa-chevron-up */
+/* .custom-select-listados:has(select:focus)::after {
+  content: "\f0d8";
   color: var(--unnamed-color-004891);
-}
+} */
 /* Agregar el icono inicial (flecha abajo) */
-.custom-select-listados::after {
-  content: "\f0d7"; /* fa-chevron-down */
+/* .custom-select-listados::after {
+  content: "\f0d7";
   font-family: "Font Awesome 5 Free";
-  font-weight: 900;  /* Asegurar que use el peso correcto */
+  font-weight: 900;
   position: absolute;
   right: 15px;
   top: 50%;
   transform: translateY(-50%);
   pointer-events: none;
   transition: transform 0.3s ease;
-  color: var(--unnamed-color-004891); /* Color correcto */
-}
+  color: var(--unnamed-color-004891);
+} */
 /* Asegurar que el color se mantenga en focus */
 .selector-listado:focus {
   color: var(--unnamed-color-004891) !important;
 }
 /* Cambiar el icono cuando el select está enfocado */
-.custom-select-listados:has(select:focus)::after {
-  content: "\f0d8"; /* fa-chevron-up */
-  font-family: "Font Awesome 5 Free"; /* Asegurar que la fuente se mantenga */
-  font-weight: 900;  /* Asegurar que no cambie el peso */
-  color: var(--unnamed-color-004891); /* Mantener el mismo color */
+/* .custom-select-listados:has(select:focus)::after {
+  content: "\f0d8";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: var(--unnamed-color-004891);
+} */
+.custom-select-listados .selector-listado:hover {
+  pointer-events: auto;
 }
+/* Estilos para el select nuevo */
+.custom-select-listados .custom-select {
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+  border: 0;
+  padding: 0;
+}
+
+/* Agregar el contenedor del select */
+.custom-select-listados .select-trigger {
+  background: white;
+  color: #004891;
+  padding: 10px;
+  border: 1px solid #c3d0dc;
+  position: relative;
+}
+
+/* Agregar el icono inicial (fa-chevron-down) */
+.custom-select-listados .select-trigger::after {
+  content: "\f0d7"; /* fa-chevron-down */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease;
+}
+
+/* Mostrar opciones al pasar el mouse */
+.custom-select-listados .custom-select:hover .options {
+  display: block;
+
+}
+
+/* Cambiar el icono cuando se despliega */
+.custom-select-listados .custom-select:hover .select-trigger::after {
+  content: "\f0d8"; /* fa-chevron-up */
+}
+
+.custom-select-listados .options {
+  display: none;
+  position: absolute;
+  width: 100%;
+  background: white;
+  border: 1px solid #c3d0dc;
+  border-top: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 99;
+}
+
+.custom-select-listados .options li {
+  padding: 10px;
+  color: #004891;
+}
+
+.custom-select-listados .options li:hover {
+  color: var(--unnamed-color-0063f9);
+}
+
+/* Fin de estilos para el select nuevo */
 
      /* Estilos para el formulario */
 

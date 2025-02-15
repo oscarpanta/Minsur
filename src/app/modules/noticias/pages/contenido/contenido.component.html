@@ -23,15 +23,29 @@
       <div class="d-flex flex-column col-12 col-lg-4">
         <span class="text-end text-lg-start">Ordenar por</span>
         <div class="custom-select-listados">
+          <div class="custom-select">
+            <div class="select-trigger">Más Recientes</div>
+            <ul class="options">
+              <li data-value="corporativas">Corporativas</li>
+              <li data-value="seguridad">Seguridad y Salud</li>
+              <li data-value="medio">Medio Ambiente</li>
+              <li data-value="governance">Governance</li>
+              <li data-value="etica">Ética</li>
+            </ul>
+          </div>
+
+
+        </div>
+        <!-- <div class="custom-select-listados">
           <select class="selector-listado form form-control">
-            <option value="" disabled selected hidden>Más recientes</option> <!-- Oculta la primera opción -->
+            <option value="" disabled selected hidden>Más recientes</option>
             <option value="corporativas">Seguridad y Salud</option>
             <option value="seguridad">Medio Ambiente</option>
             <option value="governance">Governance</option>
             <option value="etica">Ética</option>
 
           </select>
-        </div>
+        </div> -->
 
       </div>
     </div>
@@ -49,13 +63,22 @@
             Jones
           </h4>
         </div>
+          <app-button
 
-        <a routerLink="detalle/1" class="btn-vermas" style="max-width: max-content">
+            link="detalle/1"
+            defaultBorderColor="#0063f9"
+            defaultStrokeColor="#0063f9"
+            hoverStrokeColor="#ffffff"
+            label="ver más"
+            textColor="#0063f9"
+          >
+          </app-button>
+        <!-- <a routerLink="detalle/1" class="btn-vermas" style="max-width: max-content">
           <span class="flecha-circular">
             <i class="fas fa-arrow-right flecha-ver-mas"></i>
           </span>
           Ver más
-        </a>
+        </a> -->
       </div>
 
       <!-- Sección de Imagen -->

@@ -19,22 +19,36 @@
 <section class="contenedor-section section-background-7 ">
 
   <div class="container-fluid my-lg-5 my-md-0">
-    <div class="row align-items-center pb-5">
+    <div class="row align-items-center pb-5 d-flex justify-content-between">
       <div class="col-md-6 mb-3 mb-md-0">
         <p class="tit-interno mb-0">Biblioteca de documentos</p>
       </div>
-      <div class="col-md-6">
-        <!-- Contenedor del select -->
+      <div class="col-md-4">
         <div class="custom-select-listados">
+          <div class="custom-select">
+            <div class="select-trigger">Políticas Corporativas</div>
+            <ul class="options">
+              <li data-value="corporativas">Corporativas</li>
+              <li data-value="seguridad">Seguridad y Salud</li>
+              <li data-value="medio">Medio Ambiente</li>
+              <li data-value="governance">Governance</li>
+              <li data-value="etica">Ética</li>
+            </ul>
+          </div>
+
+
+        </div>
+        <!-- Contenedor del select -->
+        <!-- <div class="custom-select-listados">
           <select class="selector-listado form form-control">
-              <option value="" disabled selected hidden>Políticas Corporativas</option> <!-- Oculta la primera opción -->
+              <option value="" disabled selected hidden>Políticas Corporativas</option>
               <option value="corporativas">Corporativas</option>
               <option value="seguridad">Seguridad y Salud</option>
               <option value="medio">Medio Ambiente</option>
               <option value="governance">Governance</option>
               <option value="etica">Ética</option>
           </select>
-        </div>
+        </div> -->
       </div>
     </div>
     <div class="pt-5">
@@ -45,14 +59,40 @@
           <i class="fas fa-arrow-right flecha-blue me-3"></i>
           <p class="mb-0 listado">Política Corporativa de Sostenibilidad </p>
         </div>
-
-        <!-- Información del PDF -->
-        <div class="d-flex align-items-center justify-content-md-end mt-2 mt-md-0">
-          <p class="mb-0 card4-footer m-2">PDF 12.5MB</p>
+        <div class="card4-footer">
+          <div
+            class="flex-grow-0 flex-lg-grow-1 d-flex align-items-center justify-content-end me-sm-0 ms-sm-0 me-lg-5"
+          >
+          <p class="m-0 card4-footer">PDF 12.5MB</p>
         </div>
+        <a
+          routerLink="/"
+          class="btn-descargar me-sm-0 ms-sm-0 me-lg-5 ms-lg-0"
+          download
+        >
+          Descargar
+          <span class="flecha-circular"
+            ><i class="fas fa-arrow-down"></i
+          ></span>
+        </a>
+        <a
+          routerLink="/"
+          class="btn-descargar btn-ver me-sm-0 ms-sm-0 me-lg-0 ms-lg-3"
+          download
+        >
+          Ver
+          <span class="flecha-circular"
+            ><i class="fas fa-arrow-right"></i
+          ></span>
+        </a>
+        </div>
+        <!-- Información del PDF -->
+        <!-- <div class="d-flex align-items-center justify-content-md-end mt-2 mt-md-0">
+          <p class="mb-0 card4-footer m-2">PDF 12.5MB</p>
+        </div> -->
 
         <!-- Botones Descargar y Ver, centrados en pantallas pequeñas -->
-        <div class="mt-2 text-center">
+        <!-- <div class="mt-2 text-center">
           <a routerLink="/" class="btn-descargar me-2" download>
             Descargar
             <span class="flecha-circular"><i class="fas fa-arrow-down"></i></span>
@@ -61,7 +101,7 @@
             Ver
             <span class="flecha-circular"><i class="fas fa-arrow-right"></i></span>
           </a>
-        </div>
+        </div> -->
       </div>
 
 
@@ -72,14 +112,40 @@
           <i class="fas fa-arrow-right flecha-blue me-3"></i>
           <p class="mb-0 listado">Política Corporativa de Sostenibilidad </p>
         </div>
-
-        <!-- Información del PDF -->
-        <div class="d-flex align-items-center justify-content-md-end mt-2 mt-md-0">
-          <p class="mb-0 card4-footer m-2">PDF 12.5MB</p>
+        <div class="card4-footer">
+          <div
+            class="flex-grow-0 flex-lg-grow-1 d-flex align-items-center justify-content-end me-sm-0 ms-sm-0 me-lg-5"
+          >
+          <p class="m-0 card4-footer">PDF 12.5MB</p>
         </div>
+        <a
+          routerLink="/"
+          class="btn-descargar me-sm-0 ms-sm-0 me-lg-5 ms-lg-0"
+          download
+        >
+          Descargar
+          <span class="flecha-circular"
+            ><i class="fas fa-arrow-down"></i
+          ></span>
+        </a>
+        <a
+          routerLink="/"
+          class="btn-descargar btn-ver me-sm-0 ms-sm-0 me-lg-0 ms-lg-3"
+          download
+        >
+          Ver
+          <span class="flecha-circular"
+            ><i class="fas fa-arrow-right"></i
+          ></span>
+        </a>
+        </div>
+        <!-- Información del PDF -->
+        <!-- <div class="d-flex align-items-center justify-content-md-end mt-2 mt-md-0">
+          <p class="mb-0 card4-footer m-2">PDF 12.5MB</p>
+        </div> -->
 
         <!-- Botones Descargar y Ver, centrados en pantallas pequeñas -->
-        <div class="mt-2 text-center">
+        <!-- <div class="mt-2 text-center">
           <a routerLink="/" class="btn-descargar me-2" download>
             Descargar
             <span class="flecha-circular"><i class="fas fa-arrow-down"></i></span>
@@ -88,7 +154,7 @@
             Ver
             <span class="flecha-circular"><i class="fas fa-arrow-right"></i></span>
           </a>
-        </div>
+        </div> -->
       </div>
 
       <!-- Tercer div -->
@@ -98,14 +164,40 @@
           <i class="fas fa-arrow-right flecha-blue me-3"></i>
           <p class="mb-0 listado">Política Corporativa de Sostenibilidad </p>
         </div>
-
-        <!-- Información del PDF -->
-        <div class="d-flex align-items-center justify-content-md-end mt-2 mt-md-0">
-          <p class="mb-0 card4-footer m-2">PDF 12.5MB</p>
+        <div class="card4-footer">
+          <div
+            class="flex-grow-0 flex-lg-grow-1 d-flex align-items-center justify-content-end me-sm-0 ms-sm-0 me-lg-5"
+          >
+          <p class="m-0 card4-footer">PDF 12.5MB</p>
         </div>
+        <a
+          routerLink="/"
+          class="btn-descargar me-sm-0 ms-sm-0 me-lg-5 ms-lg-0"
+          download
+        >
+          Descargar
+          <span class="flecha-circular"
+            ><i class="fas fa-arrow-down"></i
+          ></span>
+        </a>
+        <a
+          routerLink="/"
+          class="btn-descargar btn-ver me-sm-0 ms-sm-0 me-lg-0 ms-lg-3"
+          download
+        >
+          Ver
+          <span class="flecha-circular"
+            ><i class="fas fa-arrow-right"></i
+          ></span>
+        </a>
+        </div>
+        <!-- Información del PDF -->
+        <!-- <div class="d-flex align-items-center justify-content-md-end mt-2 mt-md-0">
+          <p class="mb-0 card4-footer m-2">PDF 12.5MB</p>
+        </div> -->
 
         <!-- Botones Descargar y Ver, centrados en pantallas pequeñas -->
-        <div class="mt-2 text-center">
+        <!-- <div class="mt-2 text-center">
           <a routerLink="/" class="btn-descargar me-2" download>
             Descargar
             <span class="flecha-circular"><i class="fas fa-arrow-down"></i></span>
@@ -114,7 +206,7 @@
             Ver
             <span class="flecha-circular"><i class="fas fa-arrow-right"></i></span>
           </a>
-        </div>
+        </div> -->
       </div>
 
       <!-- Cuarto div -->
@@ -124,14 +216,40 @@
           <i class="fas fa-arrow-right flecha-blue me-3"></i>
           <p class="mb-0 listado">Política Corporativa de Sostenibilidad </p>
         </div>
-
-        <!-- Información del PDF -->
-        <div class="d-flex align-items-center justify-content-md-end mt-2 mt-md-0">
-          <p class="mb-0 card4-footer m-2">PDF 12.5MB</p>
+        <div class="card4-footer">
+          <div
+            class="flex-grow-0 flex-lg-grow-1 d-flex align-items-center justify-content-end me-sm-0 ms-sm-0 me-lg-5"
+          >
+          <p class="m-0 card4-footer">PDF 12.5MB</p>
         </div>
+        <a
+          routerLink="/"
+          class="btn-descargar me-sm-0 ms-sm-0 me-lg-5 ms-lg-0"
+          download
+        >
+          Descargar
+          <span class="flecha-circular"
+            ><i class="fas fa-arrow-down"></i
+          ></span>
+        </a>
+        <a
+          routerLink="/"
+          class="btn-descargar btn-ver me-sm-0 ms-sm-0 me-lg-0 ms-lg-3"
+          download
+        >
+          Ver
+          <span class="flecha-circular"
+            ><i class="fas fa-arrow-right"></i
+          ></span>
+        </a>
+        </div>
+        <!-- Información del PDF -->
+        <!-- <div class="d-flex align-items-center justify-content-md-end mt-2 mt-md-0">
+          <p class="mb-0 card4-footer m-2">PDF 12.5MB</p>
+        </div> -->
 
         <!-- Botones Descargar y Ver, centrados en pantallas pequeñas -->
-        <div class="mt-2 text-center">
+        <!-- <div class="mt-2 text-center">
           <a routerLink="/" class="btn-descargar me-2" download>
             Descargar
             <span class="flecha-circular"><i class="fas fa-arrow-down"></i></span>
@@ -140,7 +258,7 @@
             Ver
             <span class="flecha-circular"><i class="fas fa-arrow-right"></i></span>
           </a>
-        </div>
+        </div> -->
       </div>
     </div>
 
@@ -169,12 +287,22 @@
              innovadoras nos ayudarán a alcanzar el crecimiento conjunto con nuestros proveedores.
               Ingresa a nuestro portal y conoce las herramientas que usamos para ello..
           </p>
-          <a href="#" class="btn-vermas-blanco">
+          <app-button
+
+          link="/"
+          defaultBorderColor="#ffff"
+          defaultStrokeColor="#ffff"
+          hoverStrokeColor="#0063f9"
+          label="Visita nuestro Portal de Proveedores"
+          textColor="#ffff"
+        >
+        </app-button>
+          <!-- <a href="#" class="btn-vermas-blanco">
             <span class="flecha-circular-blanco"
               ><i class="fas fa-arrow-right flecha-ver-mas-blanco"></i
             ></span>
             Visita nuestro Portal de Proveedores
-          </a>
+          </a> -->
         </div>
         <!-- Primera sección: Imagen y texto -->
       </div>
@@ -243,12 +371,22 @@
           <p class="texto-seccion texto-base">
             Es una plataforma que emplea soluciones SAP para optimizar la gestión de la relación entre empresa y proveedores en operaciones contables. Puedes contactarte a través del siguiente correo de soporte: soporte.portaldeproveedores&#64;minsur.com
           </p>
-          <a href="#" class="btn-vermas">
+          <app-button
+
+            link="/home/quienes-somos/alta-gerencia"
+            defaultBorderColor="#0063f9"
+            defaultStrokeColor="#0063f9"
+            hoverStrokeColor="#ffffff"
+            label="Visita el Portal Intelecta"
+            textColor="#0063f9"
+          >
+          </app-button>
+          <!-- <a href="#" class="btn-vermas">
             <span class="flecha-circular"
               ><i class="fas fa-arrow-right flecha-ver-mas"></i
             ></span>
             Visita el Portal Intelecta
-          </a>
+          </a> -->
         </div>
         <!-- Primera sección: Imagen y texto -->
         <div class="col-12 col-md-6 d-flex flex-column ps-md-5 ps-ms-0">
@@ -317,20 +455,31 @@
  <section class="contenedor-section section-background-2">
   <div class="my-lg-5 my-md-0">
     <div class="container-fluid">
-      <div class="row align-items-center pb-5">
+      <div class="row align-items-center pb-5 d-flex justify-content-between">
           <div class="col-md-6 mb-3 mb-md-0">
             <p class="tit-interno mb-0">Preguntas frecuentes</p>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-4">
             <div class="custom-select-listados">
-              <select class="selector-listado form form-control">
-                  <option value="" disabled selected hidden>Políticas Corporativas</option> <!-- Oculta la primera opción -->
+              <div class="custom-select">
+                <div class="select-trigger">Políticas Corporativas</div>
+                <ul class="options">
+                  <li data-value="corporativas">Corporativas</li>
+                  <li data-value="seguridad">Seguridad y Salud</li>
+                  <li data-value="medio">Medio Ambiente</li>
+                  <li data-value="governance">Governance</li>
+                  <li data-value="etica">Ética</li>
+                </ul>
+              </div>
+
+              <!-- <select class="selector-listado form form-control">
+                  <option value="" disabled selected hidden>Políticas Corporativas</option>
                   <option value="corporativas">Corporativas</option>
                   <option value="seguridad">Seguridad y Salud</option>
                   <option value="medio">Medio Ambiente</option>
                   <option value="governance">Governance</option>
                   <option value="etica">Ética</option>
-              </select>
+              </select> -->
             </div>
           </div>
       </div>
