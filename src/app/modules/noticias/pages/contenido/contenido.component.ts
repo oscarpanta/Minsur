@@ -53,8 +53,8 @@ export class ContenidoComponent implements AfterViewInit{
     { img: 'assets/images/personal_mineria_3.png', title: 'Minsur es la primera empresa peruana en ser reconocida por.' },
     { img: 'assets/images/emisiones_netas.png', title: 'Minsur es la primera empresa peruana en ser reconocida por.' },
     { img: 'assets/images/personal_mineria2.png', title: 'Minsur es la primera empresa peruana en ser reconocida por.' },
-    { img: 'assets/images/personal_mineria2.png', title: 'Minsur es la primera empresa peruana en ser reconocida por.' },
-    { img: 'assets/images/personal_mineria2.png', title: 'Minsur es la primera empresa peruana en ser reconocida por.' },
+    { img: 'assets/images/personal_mineria.png', title: 'Minsur es la primera empresa peruana en ser reconocida por.' },
+    { img: 'assets/images/carrousel/quienes.png', title: 'Minsur es la primera empresa peruana en ser reconocida por.' },
   ];
   videos = [
     {
