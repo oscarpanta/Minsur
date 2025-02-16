@@ -764,7 +764,7 @@ header.scrolled .logo {
   /* display: flex;
   align-items: center; */
   display: flex;
-  align-items: stretch; /* Asegura que la imagen y el texto tengan la misma altura */
+  align-items: center; /* Asegura que la imagen y el texto tengan la misma altura */
   gap: 15px;
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
@@ -775,7 +775,7 @@ header.scrolled .logo {
 .video_multimedia .video-thumbnail {
   position: relative;
   width: 230px;
-  /* height: 85px; */
+  height: 140px;
   flex-shrink: 0;
   display: flex;
   align-items: center;
@@ -1386,7 +1386,7 @@ header.scrolled .logo {
                           font-family: var(--unnamed-font-family-raleway);
                           font-style: var(--unnamed-font-style-normal);
                           font-weight: var(--unnamed-font-weight-300);
-                          font-size: var(--unnamed-font-size-22);
+                          font-size: var(--unnamed-font-size-20);
                           line-height: var(--unnamed-line-spacing-38);
                           letter-spacing: var(--unnamed-character-spacing--0-24);
                           color: var(--unnamed-color-5A9CFF);
@@ -2437,11 +2437,18 @@ select.selector-listado {
   .container-fluid .card12{
     background: none;
   }
-  .dividendos .table{
+  .dividendos .table thead{
     --bs-table-bg: transparent;
     --bs-table-hover-bg: transparent;
     --bs-table-striped-bg: transparent;
-    --bs-table-border-color: var(--unnamed-color-5A9CFF) ;
+
+  }
+  .dividendos .table .tbody-table{
+    border-color:  var(--unnamed-color-0063f9) !important ;;
+    --bs-table-bg: transparent;
+    --bs-table-hover-bg: transparent;
+    --bs-table-striped-bg: transparent;
+
   }
   .calendario .table{
     --bs-table-bg: transparent;
@@ -2449,6 +2456,14 @@ select.selector-listado {
     --bs-table-striped-bg: transparent;
     --bs-table-border-color: var(--unnamed-color-5A9CFF) ;
   }
+  .calendario .table thead{
+    --bs-table-bg: transparent;
+    --bs-table-hover-bg: transparent;
+    --bs-table-striped-bg: transparent;
+    border-color: #004891;
+
+  }
+
  .dividendos .table td {
   font-family: var(--unnamed-font-family-merriweather);
   font-style: var(--unnamed-font-style-normal);
@@ -2462,7 +2477,7 @@ select.selector-listado {
   font-family: var(--unnamed-font-family-raleway);
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-300);
-  font-size: var(--unnamed-font-size-24);
+  font-size: var(--unnamed-font-size-22);
   line-height: var(--unnamed-line-spacing-38);
   letter-spacing: var(--unnamed-character-spacing--0-24);
   color: var(--unnamed-color-5A9CFF);
@@ -2778,19 +2793,8 @@ select.selector-listado {
   margin-bottom: 2rem;
 }
 
-.info-item {
-  /* padding: 10px 0px; */
-  border-right: 1px solid #0055c5; /* Borde derecho */
-}
 
-.info-item:last-child {
-  border-right: none; /* Elimina el borde del último elemento */
-}
 
-/* Asegurar que el primer elemento tenga padding igual al resto */
-.info-item:first-child {
-  /* padding-right: 20px; */
-}
 .calendario table tbody tr:last-child{
   border-bottom: 1px solid transparent;
 
@@ -3009,12 +3013,40 @@ select.selector-listado {
 
 
 
+/* Estilos para bonos */
+.info-container {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Columnas ajustables */
+  align-items: flex-start;
+  text-align: flex-start;
+  width: 100%;
 
+}
 
+.info-container .info-item {
+  padding: 0px 10px; /* Espaciado uniforme */
+  border-right: 1px solid #1258c3;
+}
 
+.info-container .info-item:last-child {
+  border-right: none; /* Quitar borde del último elemento */
+  padding: 0;
+  padding-left: 10px;
+}
+.info-container .info-item:first-child {
+  border-left: none; /* Quitar borde del último elemento */
+  padding: 0;
+  padding-right: 10px;
+}
 
+/* Fin Estilos para bonos */
 
-
+.separator {
+  width: 1px;
+  height: 80%;
+  background-color: #0063f9; /* Color de la línea */
+}
 
 
 
@@ -4332,6 +4364,9 @@ footer .footer-iconos {
   }
   .text-fecha{
     font-size:16px
+  }
+  .info-container .info-item{
+    border: 0;
   }
 }
 
