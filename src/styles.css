@@ -649,10 +649,10 @@ header.scrolled .logo {
 }
 .section_multimedia .carousel .carousel-text {
   background:var(--unnamed-color-36404e);
-  padding: 15px;
   text-align: left;
   width: 100%;
   min-height: 150px;
+  max-height: 150px;
 }
 .section_multimedia .carousel .carousel-text h5 {
   font-family: var(--unnamed-font-family-raleway);
@@ -661,7 +661,7 @@ header.scrolled .logo {
   font-size: var(--unnamed-font-size-32);
   line-height: 24px;
   color: var(--unnamed-color-ffffff);
-
+  margin-bottom: 1.5rem;
   letter-spacing: 0;
   text-align: left;
 }
@@ -669,7 +669,7 @@ header.scrolled .logo {
   font-family: var(--unnamed-font-family-raleway);
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-300);
-  font-size: var(--unnamed-font-size-24);
+  font-size: var(--unnamed-font-size-20);
   line-height: 24px;
   color: var(--unnamed-color-ffffff);
 
@@ -684,13 +684,15 @@ header.scrolled .logo {
 }
 
 .section_multimedia .carousel .img-carousel {
-  height: 500px;
+  height: 550px;
   object-fit: cover;
 }
 .section_multimedia .carousel .carousel-control-next-icon {
   background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
-
+.carousel-control-next, .carousel-control-prev{
+  top: -80px  !important;
+}
 .mini-slider-container {
   display: flex;
   width: 100%;
@@ -789,7 +791,7 @@ header.scrolled .logo {
   position: absolute;
   bottom: 15px;
   left: 15px;
-  background-color: rgba(54, 64, 78, 0.4);
+  background-color: rgba(77, 81, 87, 0.4);
   /* background-color: var(--unnamed-color-36404e); */
   color: white;
   font-size: 12px;
