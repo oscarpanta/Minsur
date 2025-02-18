@@ -378,7 +378,7 @@ header.scrolled .logo {
 .carousel-indicators [data-bs-target]{
   margin-left: 0 !important;
 }
-.carousel-caption h1 {
+.carousel-caption .subtitulo-carousel {
   font-family: var(--unnamed-font-family-raleway);
   font-weight: var(--unnamed-font-weight-normal);
   font-size: var(--unnamed-font-size-24);
@@ -418,7 +418,16 @@ header.scrolled .logo {
   justify-content: center; */
   width: 100%;
 }
-
+.quienes-somos-section .container{
+  /* height: 120vh; */
+  height: 60rem;
+  /* height: 100vh; */
+  display: flex;
+  align-items: end;
+  /* flex-direction: column;
+  justify-content: center; */
+  width: 100%;
+}
 .quienes-somos-section .title {
   font-family: var(--unnamed-font-family-merriweather);
   font-weight: var(--unnamed-font-weight-bold);
@@ -2076,7 +2085,7 @@ footer .footer-auxiliar {
 
 .card4 .card-img-top {
   max-height: 300px;
-  object-fit: cover;
+  object-fit: fill;
 }
 .card4.cards-reporte {
   max-width: 100%;
@@ -2609,7 +2618,8 @@ select.selector-listado {
 
     /* Estilos arreglados para el carosuel */
     .carousel-style{
-      height: 100vh;
+      /* height: 100vh; */
+      height: 60rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -3224,7 +3234,7 @@ select.selector-listado {
     left: calc(50% - 3%);  /* Reduce 2% cuando la pantalla sea menor a 1024px */
 }
 .card4 .card4-title{
-  min-height: auto;
+  min-height: 75px;
 }
 .numero-semi-grande { font-size: 90px; line-height: 56px; }
 .til-semigrande-azul-marino { font-size: 50px; line-height: 62px; }
@@ -3334,7 +3344,7 @@ select.selector-listado {
     max-height: 450px;
   }
   .card-img {
-    min-height: 500px;
+    min-height: 400px;
   }
   .card:hover .overlay {
     height: 100%; /* Aumenta el tamaño de la capa al 100% en hover */
@@ -3350,12 +3360,13 @@ select.selector-listado {
   }
 
   .card2-title {
-    font-size: var(--unnamed-font-size-26);
+    font-size: var(--unnamed-font-size-22);
     line-height: 1.4;
   }
   .card-text {
-    font-size: var(--unnamed-font-size-21);
-    line-height: var(--unnamed-line-spacing-38);
+    font-size: var(--unnamed-font-size-16);
+    line-height: var(--unnamed-line-spacing-26);
+    min-height: 135px;
   }
   .card4 {
     font-size: 1.5rem; /* Tamaño para pantallas grandes */
@@ -3364,31 +3375,33 @@ select.selector-listado {
     font-size: 3.5rem;
   }
 
-  .carousel-caption h1 {
-    font-size: var(--unnamed-font-size-22);
-  }
 
-  .carousel-caption h3 {
-    font-size: 58px;
-    line-height: 60px;
+  .carousel-caption .subtitulo-carousel {
+    font-size: 22px;
+    line-height: 30px;
   }
-
+  .carousel-caption  h3 {
+    font-size: 50px;
+    line-height: 52px;
+    margin-bottom: 1.5rem;
+  }
   .carousel-caption p {
-    font-size: var(--unnamed-font-size-30);
+    font-size: var(--unnamed-font-size-22);
+    line-height: 26px;
   }
   .section-background-3{
     background: linear-gradient(to bottom, #e9eef4  40%, #fff 40%), linear-gradient(to bottom, #fff 50%, #fff 50%)
    }
    .quienes-somos-section .title {
 
-    font-size: 76px;
-
+      font-size: 50px;
+    letter-spacing: normal;
   }
 
   .quienes-somos-section .description {
 
-    font-size: var(--unnamed-font-size-30);
-
+    font-size: var(--unnamed-font-size-24);
+    line-height: 26px;
   }
   .quienes-somos-section .video-info h5 {
 
@@ -3398,7 +3411,8 @@ select.selector-listado {
 
   .quienes-somos-section .video-info p {
 
-    font-size: var(--unnamed-font-size-22);
+    font-size: var(--unnamed-font-size-16);
+    line-height: 18px;
 
   }
   .numero-semi-grande { font-size: 84px; line-height: 52px; }
@@ -3437,7 +3451,7 @@ select.selector-listado {
 
   }
   footer .footer-auxiliar{
-    font-size: 18px;
+    font-size: 12px;
   }
   .container-fluid .custom-card{
     padding: 5rem;
@@ -3447,14 +3461,89 @@ select.selector-listado {
     min-height: auto;
   }
   .nav-item .nav-link{
-    font-size: 20px;
+    font-size: 15px;
   }
   .card4.cards-reporte .card4-title{
     font-size: 28px;
   }
   .btn-descargar {
-    font-size: 14px;
+    font-size: 10px;
 }
+.p-cinta span,
+  .p-cinta button {
+
+    font-size: var(--unnamed-font-size-16);
+    line-height: var(--unnamed-line-spacing-32);
+  }
+  .carousel-inner .carousel-caption div{
+    width: 50%;
+
+  }
+  .carousel-inner .carousel-caption{
+    top: 3rem;
+  }
+  .carousel-caption h3 {
+    font-size: 45px;
+    line-height: 42px;
+  }
+  .btn-vermas2{
+    font-size: 16px;
+  }
+  .indicator-title{
+    font-size: 16px;
+    line-height: normal;
+  }
+  .quienes-somos-section {
+
+     height: 45rem;
+
+  }
+  .carousel-style {
+    height: 42rem;
+  }
+  .carousel-style-item{
+    height: 42rem;
+  }
+  .card3{
+    min-height: 550px;
+  }
+  .text-fecha{
+    font-size: 15px;
+  }
+  .card4{
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .card-img-container{
+    max-height: 230px;
+  }
+  .card4-footer{
+    font-size: 10px;
+  }
+  .card5 .card-body{
+    min-height: 230px;
+  }
+  .card5{
+    max-height: 550px;
+  }
+  .card5 .card2-title{
+    min-height: 180px;
+  }
+  .card5 .card2-title {
+    min-height: 100px;
+  }
+  .card6 .card-footer a{
+    font-size: 16px;
+  }
+  .card6 .card-text{
+    min-height: 100px;
+  }
+  footer {
+    font-size: 18px;
+  }
+  footer li{
+    margin-bottom: 0.5rem;
+  }
 }
 
 /* Responsividad para pantallas medianas (mayores a 1024px) */
@@ -3586,22 +3675,22 @@ select.selector-listado {
     font-size: 3rem;
   }
 
-  .carousel-caption h1 {
+  .carousel-caption .carousel-caption .subtitulo-carousel {
     font-size: var(--unnamed-font-size-20);
   }
 
-  .carousel-caption h3 {
-    font-size: 56px;
+  .carousel-caption .subtitulo-carousel h3 {
+    font-size: 50px;
   }
 
   .carousel-caption p {
-    font-size: var(--unnamed-font-size-28);
+    font-size: var(--unnamed-font-size-22);
   }
   .p-cinta span,
   .p-cinta button {
 
-    font-size: var(--unnamed-font-size-22);
-    line-height: var(--unnamed-line-spacing-36);
+    font-size: var(--unnamed-font-size-16);
+    line-height: var(--unnamed-line-spacing-32);
   }
   .contenido-flotante{
     padding: 3rem;
@@ -3620,13 +3709,14 @@ select.selector-listado {
    }
    .quienes-somos-section .title {
 
-    font-size: 76px;
+    font-size: 50px;
 
   }
 
   .quienes-somos-section .description {
 
-    font-size: var(--unnamed-font-size-28);
+    font-size: var(--unnamed-font-size-22);
+    line-height: 26px;
 
   }
 
@@ -3683,6 +3773,10 @@ select.selector-listado {
 
     font-size: var(--unnamed-font-size-28);
 
+  }
+  .carousel-caption h3 {
+    font-size: 30px;
+    line-height: 32px;
   }
   /* .nav-item .nav-link{
     font-size: 18px;
@@ -4077,13 +4171,13 @@ footer .footer-iconos {
     text-align: center;
   }
 
-  .carousel-caption h3 {
-    font-size: 50px;
+  .carousel-caption .subtitulo-carouse {
+    font-size: 25px;
     line-height: 52px;
   }
 
   .carousel-caption p {
-    font-size: var(--unnamed-font-size-26);
+    font-size: var(--unnamed-font-size-22);
     text-align: center;
   }
   /* .carousel-inner .carousel-caption {
@@ -4184,7 +4278,7 @@ footer .footer-iconos {
 
     align-items: center;
     /* height: 100vh; */
-    height: 60rem;
+    height: 50rem;
 
   }
   .quienes-somos-section .title {
@@ -4230,7 +4324,7 @@ footer .footer-iconos {
       }
       .quienes-somos-section {
         /* height: 100vh; */
-        height: 60rem;
+        height: 50rem;
       }
       .container-fluid .card-img-2 .custom-img img{
         margin: 0 auto;
@@ -4256,13 +4350,13 @@ footer .footer-iconos {
         padding: 2rem;
     }
     .carousel-style{
-      height: 100vh;
+      height: 50rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
     .carousel-style-item{
-      height: 100vh;
+      height: 50rem;
     }
     .fondo-section-regular {
       height: 30vh;
@@ -4445,6 +4539,13 @@ footer .footer-iconos {
     flex: 1 1 100%;    /* Los items ocuparán el 100% de la fila */
     margin-bottom: 15px;
   }
+  .carousel-caption h3 {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .carousel-caption .subtitulo-carousel{
+    text-align: center;
+  }
 }
 
 /* Responsividad para móviles pequeños (menos de 480px) */
@@ -4533,7 +4634,7 @@ footer .footer-iconos {
     line-height: 24px;
   }
   .til-semigrande-azul {
-    font-size: 36px;
+    font-size: 30px;
     line-height: 38px;
   }
   .til-semigrande-azul-marino {
@@ -4602,13 +4703,13 @@ footer .footer-iconos {
     font-size: var(--unnamed-font-size-16);
   }
 
-  .carousel-caption h3 {
-    font-size: 40px;
-    line-height: 42px;
+  .carousel-caption .subtitulo-carouse {
+    font-size: 30px;
+    line-height: 40px;
   }
 
   .carousel-caption p {
-    font-size: var(--unnamed-font-size-24);
+    font-size: var(--unnamed-font-size-22);
     line-height: normal;
   }
 
@@ -4660,16 +4761,16 @@ footer .footer-iconos {
   }
   .quienes-somos-section {
     /* height: 100vh; */
-    height: 60rem;
+    height: 50rem;
   }
   .carousel-style{
-    height: 100vh;
+    height: 50rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
   .carousel-style-item{
-    height: 100vh;
+    height: 50rem;
   }
   .titulo-super-grande-blanco{
     font-size: 34px;
