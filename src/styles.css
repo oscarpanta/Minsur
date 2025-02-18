@@ -410,7 +410,8 @@ header.scrolled .logo {
 
 .quienes-somos-section {
   /* height: 120vh; */
-  height: 100vh;
+  height: 60rem;
+  /* height: 100vh; */
   display: flex;
   align-items: end;
   /* flex-direction: column;
@@ -2614,7 +2615,8 @@ select.selector-listado {
       justify-content: center;
     }
     .carousel-style-item{
-      height: 100vh;
+      /* height: 100vh; */
+      height: 60rem;
     }
     .fondo-section-regular{
       height: 60vh;
@@ -2818,67 +2820,17 @@ select.selector-listado {
   width: 100%;
 }
 
-/* Estiliza el select y oculta la flecha nativa */
-/* .custom-select-listados .selector-listado {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  width: 100%;
-  padding: 10px 40px 10px 15px;
-  font-size: 24px;
-  cursor: pointer;
-  background-color: white;
-  color: var(--unnamed-color-004891);
-} */
-
-/* Agregar el icono inicial (flecha abajo) */
-/* .custom-select-listados::after {
-  content: "\f0d7";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  position: absolute;
-  right: 15px;
-  top: 50%;
-  transform: translateY(-50%);
-  pointer-events: none;
-  transition: transform 0.3s ease;
-  color: var(--unnamed-color-004891);
-} */
-
-/* Cambiar el icono cuando el select está enfocado */
-/* .custom-select-listados:has(select:focus)::after {
-  content: "\f0d8";
-  color: var(--unnamed-color-004891);
-} */
-/* Agregar el icono inicial (flecha abajo) */
-/* .custom-select-listados::after {
-  content: "\f0d7";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  position: absolute;
-  right: 15px;
-  top: 50%;
-  transform: translateY(-50%);
-  pointer-events: none;
-  transition: transform 0.3s ease;
-  color: var(--unnamed-color-004891);
-} */
 /* Asegurar que el color se mantenga en focus */
 .selector-listado:focus {
   color: var(--unnamed-color-004891) !important;
 }
-/* Cambiar el icono cuando el select está enfocado */
-/* .custom-select-listados:has(select:focus)::after {
-  content: "\f0d8";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  color: var(--unnamed-color-004891);
-} */
+
 .custom-select-listados .selector-listado:hover {
   pointer-events: auto;
 }
 /* Estilos para el select nuevo */
-.custom-select-listados .custom-select {
+
+ .custom-select-listados .custom-select {
   position: relative;
   width: 100%;
   cursor: pointer;
@@ -2888,7 +2840,7 @@ select.selector-listado {
   padding: 0;
 }
 
-/* Agregar el contenedor del select */
+
 .custom-select-listados .select-trigger {
   background: white;
   color: #004891;
@@ -2897,9 +2849,9 @@ select.selector-listado {
   position: relative;
 }
 
-/* Agregar el icono inicial (fa-chevron-down) */
+
 .custom-select-listados .select-trigger::after {
-  content: "\f0d7"; /* fa-chevron-down */
+  content: "\f0d7";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   position: absolute;
@@ -2909,19 +2861,43 @@ select.selector-listado {
   transition: transform 0.3s ease;
 }
 
-/* Mostrar opciones al pasar el mouse */
+
 .custom-select-listados .custom-select:hover .options {
   display: block;
 
 }
 
-/* Cambiar el icono cuando se despliega */
 .custom-select-listados .custom-select:hover .select-trigger::after {
-  content: "\f0d8"; /* fa-chevron-up */
+  /* content: "\f0d8"; */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+/* Agregar el icono al primer elemento de la lista */
+.custom-select-listados .options li:first-child {
+  position: relative;
+  padding-right: 30px; /* Para dejar espacio al icono */
 }
 
+/* Estilizar el icono en el primer <li> */
+.custom-select-listados .options li:first-child::after {
+  content: "\f0d8"; /* fa-chevron-up */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Mostrar el icono solo cuando el menú esté desplegado */
+.custom-select-listados .custom-select:hover .options li:first-child::after {
+  opacity: 1;
+}
 .custom-select-listados .options {
-  display: none;
+  display: block; /* Mantener la lista activa */
   position: absolute;
   width: 100%;
   background: white;
@@ -2931,8 +2907,35 @@ select.selector-listado {
   padding: 0;
   margin: 0;
   z-index: 99;
+  top: 1px;
+  transform: translateY(-20px);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+  /* display: none;
+  position: absolute;
+  width: 100%;
+  background: white;
+  border: 1px solid #c3d0dc;
+  border-top: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 99; */
+}
+/* Mostrar opciones con animación */
+.custom-select-listados .custom-select:hover .options {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
 }
 
+/* Ocultar opciones cuando el mouse se va */
+.custom-select-listados .custom-select:not(:hover) .options {
+  transform: translateY(-20px);
+  opacity: 0;
+  visibility: hidden;
+}
 .custom-select-listados .options li {
   padding: 10px;
   color: #004891;
@@ -3021,31 +3024,84 @@ select.selector-listado {
 
 
 /* Estilos para bonos */
-.info-container {
+/* .info-container {
   display: grid;
   grid-auto-flow: row;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Columnas ajustables */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   align-items: flex-start;
   text-align: flex-start;
   width: 100%;
 
-}
+} */
 
-.info-container .info-item {
-  padding: 0px 20px; /* Espaciado uniforme */
-  border-right: 1px solid #1258c3;
-}
+/* .info-container .info-item {
 
-.info-container .info-item:last-child {
-  border-right: none; /* Quitar borde del último elemento */
   padding: 0;
-  padding-left: 10px;
+  border-right: 1px solid #1258c3;
+
+} */
+
+/* .info-container .info-item:last-child {
+  border-right: none;
+  padding: 0;
+  padding-left:  1.5rem;
+} */
+/* .info-container .info-item:first-child {
+  border-left: none;
+  padding: 0;
+  padding-right: 1.5rem;
+} */
+/* Contenedor principal */
+.info-container {
+  display: flex;
+  justify-content: space-between;  /* Distribuye los elementos con espacio entre ellos */
+  align-items: center;             /* Centra los elementos verticalmente */
+  padding-left: 0rem;              /* Espacio a la izquierda */
+  padding-right: 0rem;             /* Espacio a la derecha */
+  flex-wrap: wrap;                 /* Permite que los elementos se ajusten en filas si no hay espacio suficiente */
+  gap: 0px;                       /* Espacio entre los elementos */
+  width: 100%;
+  box-sizing: border-box;          /* Asegura que el padding se incluya en el cálculo del tamaño */
+  align-items: flex-start;
+  text-align: flex-start;
+}
+
+/* Estilo de cada elemento dentro del contenedor */
+.info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-right: 1.5rem !important;
+  text-align: left;
+
+  flex: 1 1 150px;        /* Permite que cada item ocupe un 1/6 del contenedor (se ajusta automáticamente) */
+  min-width: 165px;       /* Establece un ancho mínimo */
+  border-right: 1px solid #1258c3;  /* Borde derecho para separar los items */
+
+}
+
+.info-item:last-child {
+  border-right: none;     /* Elimina el borde derecho en el último item */
 }
 .info-container .info-item:first-child {
-  border-left: none; /* Quitar borde del último elemento */
+  border-left: none;
   padding: 0;
-  padding-right: 10px;
+  /* padding-right: 1.2rem !important; */
 }
+/* Estilo para las secciones dentro de cada item */
+.info-container .section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+
+/* Ajustes responsivos */
+
+
+
 
 /* Fin Estilos para bonos */
 
@@ -4127,7 +4183,8 @@ footer .footer-iconos {
   .quienes-somos-section {
 
     align-items: center;
-    height: 100vh;
+    /* height: 100vh; */
+    height: 60rem;
 
   }
   .quienes-somos-section .title {
@@ -4172,7 +4229,8 @@ footer .footer-iconos {
         min-height: auto;
       }
       .quienes-somos-section {
-        height: 100vh;
+        /* height: 100vh; */
+        height: 60rem;
       }
       .container-fluid .card-img-2 .custom-img img{
         margin: 0 auto;
@@ -4377,6 +4435,15 @@ footer .footer-iconos {
   }
   .info-container .info-item{
     border: 0;
+  }
+  .info-container {
+    flex-wrap: wrap;   /* En pantallas pequeñas, los items se apilan */
+    justify-content: center;
+  }
+
+  .info-item {
+    flex: 1 1 100%;    /* Los items ocuparán el 100% de la fila */
+    margin-bottom: 15px;
   }
 }
 
@@ -4592,7 +4659,8 @@ footer .footer-iconos {
     line-height: 30px;
   }
   .quienes-somos-section {
-    height: 100vh;
+    /* height: 100vh; */
+    height: 60rem;
   }
   .carousel-style{
     height: 100vh;
