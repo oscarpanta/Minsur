@@ -539,6 +539,7 @@ header.scrolled .logo {
 
   letter-spacing: 0;
   text-align: left;
+  text-transform: uppercase;
 }
 /* ESTILOS NOTICIAS */
 .blue-line {
@@ -2567,6 +2568,10 @@ select.selector-listado {
 .text-content{
   min-height: 250px;
 }
+.text-content-certificaciones{
+  min-height: 200px;
+}
+
   /* Eliminar borde cuando el contenido esté expandido */
 
   /* Inicio estilos breadcrumb */
@@ -4161,6 +4166,9 @@ footer .footer-iconos {
         line-height: 32px;
       }
       .text-content{
+        min-height: auto;
+      }
+      .text-content-certificaciones{
         min-height: auto;
       }
       .quienes-somos-section {
