@@ -517,6 +517,8 @@ header.scrolled .logo {
   line-height: var(--unnamed-line-spacing-34);
   opacity: 1;
   text-align: left;
+  text-transform: uppercase;
+
 }
 .quienes-somos-section .small-section:hover .video-info p {
   text-decoration: underline;
@@ -1303,7 +1305,7 @@ header.scrolled .logo {
                       font-weight: var(--unnamed-font-weight-300);
                       font-size: var(--unnamed-font-size-56);
                       line-height: var(--unnamed-line-spacing-66);
-                      color: var(--unnamed-color-0063f9);
+                      color: var(--unnamed-color-0063f9) !important;
                       }
   .til-semigrande-azul-marino {
                         font-family: var(--unnamed-font-family-raleway);
@@ -3025,7 +3027,7 @@ select.selector-listado {
 }
 
 .info-container .info-item {
-  padding: 0px 10px; /* Espaciado uniforme */
+  padding: 0px 20px; /* Espaciado uniforme */
   border-right: 1px solid #1258c3;
 }
 

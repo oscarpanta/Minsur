@@ -23,7 +23,7 @@ noticias: Noticia[] = [
     {
       image: 'assets/images/noticia3.png',
       date: 'Abril, 2024',
-      title: 'Minsur es la primera empresa peruana en ser reconocida por el prestigioso Shingo Institute',
+      title: 'Minsur es la primera empresa peruana en ser reconocida por el prestigioso Shingo',
       link: '/noticias/detalle/3'
     },
   ];
