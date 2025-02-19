@@ -3084,6 +3084,11 @@ select.selector-listado {
 .container-fluid .card.card.card-descargas {
   min-height: 200px;
 }
+
+.card-certificaciones .img_certificaciones {
+  height: 150px;
+}
+
 /* Responsividad para pantallas grandes (mayores a 1400px) */
 
 @media (max-width: 1700px) {
@@ -3537,6 +3542,7 @@ select.selector-listado {
   .card-certificaciones img {
     max-width: 100px;
   }
+
   .card-adherencias img {
     max-width: 200px;
   }
@@ -4709,6 +4715,9 @@ select.selector-listado {
   }
   .custom-select-listados .custom-select {
     font-size: 18px;
+  }
+  .card-certificaciones .img_certificaciones {
+    height: 200px;
   }
 }
 /* Responsividad para móviles pequeños (menos de 480px) */
