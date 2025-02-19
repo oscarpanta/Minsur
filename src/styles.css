@@ -1523,6 +1523,7 @@ footer {
 }
 .section-background-4 {
   background-color: black;
+  padding-bottom: 0;
   /* padding: 0; */
 }
 .section-background-5 {
@@ -2417,11 +2418,17 @@ select.selector-listado {
     border-radius: 20px 0 0 0;
   }
   /* Estilos para card comite ejecutivo */
-  .card10{
+
+ .card10{
     border: 0;
     background: var(--unnamed-color-ffffff);
+
   }
-  .card10 .card-body{
+  .container-fluid .card.card10{
+    min-height: 300px;
+
+  }
+  .container-fluid .card.card10 .card-body{
     min-height: 250px;
 
   }
@@ -2455,6 +2462,7 @@ select.selector-listado {
   }
   .container-fluid .card12{
     background: none;
+    min-height: 200px;
   }
   .card12 .card-body{
     flex: 0 1 auto;
@@ -2588,7 +2596,7 @@ select.selector-listado {
   min-height: 250px;
 }
 .text-content-certificaciones{
-  min-height: 200px;
+  min-height: 250px;
 }
 
   /* Eliminar borde cuando el contenido esté expandido */
@@ -3139,7 +3147,9 @@ select.selector-listado {
 }
 /* Estilos apra overlay */
 
-
+.container-fluid .card.card.card-descargas{
+  min-height: 200px;
+}
 /* Responsividad para pantallas grandes (mayores a 1400px) */
 
 
@@ -3268,8 +3278,12 @@ select.selector-listado {
     font-size: 20px;
     line-height: 34px;
   }
+  .tit-pequeño-blanco {
+    font-size: 20px;
+    line-height: 34px;
+  }
   .numero-grande {
-    font-size: 110px;
+    font-size: 82px;
     line-height: 48px;
   }
   .listado {
@@ -3281,8 +3295,8 @@ select.selector-listado {
     line-height: 28px;
   }
   .tit-interno {
-    font-size: 34px;
-    line-height: 50px;
+    font-size: 28px;
+    line-height: 36px;
   }
   .titulo-semi-pequeño-azul-marino{
     font-size: 28px;
@@ -3359,13 +3373,18 @@ select.selector-listado {
   .card {
     max-height: 450px;
   }
+  .card.card-descargas {
+    max-height: 100px; /* Ajuste para pantallas móviles */
+  }
   .card-img {
     min-height: 400px;
   }
   .card:hover .overlay {
     height: 60%;
   }
-
+  .card11:hover .overlay {
+    height: 100%;
+  }
   .texto-base-blanco {
     font-size: var(--unnamed-font-size-16); /* Tamaño ligeramente menor */
     line-height: var(--unnamed-line-spacing-28); /* Ajuste para línea */
@@ -3431,14 +3450,14 @@ select.selector-listado {
     line-height: 18px;
 
   }
-  .numero-semi-grande { font-size: 84px; line-height: 52px; }
+  .numero-semi-grande { font-size: 70px; line-height: 52px; }
   .til-semigrande-azul-marino { font-size: 40px; line-height: 60px; }
   .titulo-pequeño-azul-marino {
-    font-size: 26px;
-    line-height: 38px;
+    font-size: 12px;
+    line-height: 12px;
   }
   .titulo-pequeño-azul-marino-bold {
-    font-size: 26px;
+    font-size: 20px;
     line-height: 38px;
   }
 
@@ -3483,10 +3502,14 @@ select.selector-listado {
     font-size: 15px;
   }
   .card4.cards-reporte .card4-title{
-    font-size: 28px;
+    font-size: 18px;
+    line-height: 24px;
   }
   .btn-descargar {
     font-size: 10px;
+}
+.btn-descargar{
+  padding: 0;
 }
 .p-cinta span,
   .p-cinta button {
@@ -3585,6 +3608,28 @@ select.selector-listado {
 .container-fluid .card.custom-card{
   min-height: 300px;
 }
+.container-fluid .card.card.card-descargas {
+  min-height: 180px;
+
+}
+.text-content-certificaciones{
+  min-height: 150px;
+}
+.text-content-certificaciones{
+  min-height: 150px;
+}
+.card-certificaciones img{
+  max-width: 100px;
+}
+.card-adherencias img{
+  max-width: 200px;
+}
+.btn-vermas2{
+  padding: 0;
+}
+.card-body-sostenibilidad{
+  min-height: 80px;
+}
 .container-fluid .custom-img .img-fluid{
  max-height: 350px;
 }
@@ -3592,6 +3637,9 @@ select.selector-listado {
   min-height: 100px;
 }
 .overlay{
+  height: 60px;
+}
+.card11 .overlay{
   height: 60px;
 }
 .contenedor-section{
@@ -3604,7 +3652,10 @@ select.selector-listado {
   height: 50px;
 }
 .contenido-flotante{
-  padding: 4rem;
+  padding: 3rem;
+}
+.contenido-flotante-2{
+  padding: 2.5rem !important;
 }
 .content-directorio p{
   padding-bottom: 2rem;
@@ -3621,6 +3672,61 @@ select.selector-listado {
 .content-listado{
   padding-bottom: 0.5rem;
 }
+.flecha-blue{
+  font-size: 16px;
+}
+.card11 .descripcion{
+  margin: 1rem;
+}
+.card11 p{
+
+  margin-bottom: 0.5rem;
+}
+.section-background-6{
+background: linear-gradient(to bottom,
+  #fff 30%, /* 30% blanco */
+  #e9eef4 30% 85%, /* 60% azul, desde el 30% hasta el 90% */
+  #fff 85% 100% /* 10% blanco, desde el 90% hasta el 100% */
+  );
+}
+.section-background-4 {
+  padding-bottom: 0;
+
+  /* padding: 0; */
+}
+.container-fluid .card.card10 .card-body{
+  min-height: 150px;
+}
+.titulo-realeway-mediano{
+  font-size: 24px;
+}
+.texto-semi-pequeño{
+  font-size: 14px;
+}
+.titulo-mediano-verde{
+  font-size: 24px;
+}
+.dividendos .table th{
+  font-size: 18px;
+}
+.calendario .table th{
+  font-size: 18px;
+}
+.titulo-pequeño-azul-bold{
+  font-size: 20px;
+}
+.calendario .table td {
+  font-size: 24px;
+}
+.dividendos .table td {
+  font-size: 24px;
+}
+.listado-pequeño-blanco{
+  font-size: 16px;
+}
+.listado-pequeño{
+  font-size: 16px;
+}
 }
 
 /* Responsividad para pantallas medianas (mayores a 1024px) */
@@ -3629,8 +3735,12 @@ select.selector-listado {
     font-size: 20px;
     line-height: 36px;
   }
+  .tit-pequeño-blanco {
+    font-size: 20px;
+    line-height: 36px;
+  }
   .numero-grande {
-    font-size: 100px;
+    font-size: 80px;
     line-height: 45px;
   }
   .listado {
@@ -3642,8 +3752,8 @@ select.selector-listado {
     line-height: 28px;
   }
   .tit-interno {
-    font-size: 36px;
-    line-height: 45px;
+    font-size: 28px;
+    line-height: 36px;
   }
   .titulo-semi-pequeño-azul-marino{
     font-size: 26px;
@@ -3770,7 +3880,7 @@ select.selector-listado {
     line-height: var(--unnamed-line-spacing-32);
   }
   .contenido-flotante{
-    padding: 3rem;
+    padding: 2.5rem;
   }
   .container-fluid .custom-card{
     padding: 3rem;
@@ -3802,16 +3912,16 @@ select.selector-listado {
     font-size: var(--unnamed-font-size-20);
 
   }
-  .numero-semi-grande { font-size: 72px; line-height: 48px; }
+  .numero-semi-grande { font-size: 68px; line-height: 48px; }
   .til-semigrande-azul-marino { font-size: 40px; line-height: 54px; }
   .titulo-realeway-mediano { font-size: 22px; line-height: 32px; }
   .titulo-azul-mediano { font-size: 22px; line-height: 32px; }
   .titulo-pequeño-azul-marino {
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 12px;
+    line-height: 12px;
   }
   .titulo-pequeño-azul-marino-bold {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 36px;
   }
   .fondo-section-regular {
@@ -3864,8 +3974,12 @@ select.selector-listado {
     font-size: 20px;
     line-height: 34px;
   }
+  .tit-pequeño-blanco {
+    font-size: 20px;
+    line-height: 34px;
+  }
   .numero-grande {
-    font-size: 90px;
+    font-size: 76px;
     line-height: 40px;
   }
   .listado {
@@ -3877,8 +3991,8 @@ select.selector-listado {
     line-height: 26px;
   }
   .tit-interno {
-    font-size: 34px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 34px;
   }
   .titulo-semi-pequeño-azul-marino{
     font-size: 26px;
@@ -3971,16 +4085,16 @@ select.selector-listado {
   justify-content: center;
   align-items: center;
 }
-.numero-semi-grande { font-size: 68px; line-height: 44px; }
+.numero-semi-grande { font-size: 66px; line-height: 44px; }
 .til-semigrande-azul-marino { font-size: 36px; line-height: 50px; }
 .titulo-realeway-mediano { font-size: 20px; line-height: 30px; }
 .titulo-azul-mediano { font-size: 20px; line-height: 30px; }
 .titulo-pequeño-azul-marino {
-  font-size: 22px;
-  line-height: 34px;
+  font-size: 12px;
+  line-height: 12px;
 }
 .titulo-pequeño-azul-marino-bold {
-  font-size: 22px;
+  font-size: 18px;
   line-height: 34px;
 }
 .container_detalle_noticia .presentacion_corporativa{
@@ -4029,8 +4143,12 @@ footer .footer-iconos {
     font-size: 18px;
     line-height: 32px;
   }
+  .tit-pequeño-blanco {
+    font-size: 18px;
+    line-height: 32px;
+  }
   .numero-grande {
-    font-size: 80px;
+    font-size: 74px;
     line-height: 35px;
   }
   .listado {
@@ -4042,8 +4160,8 @@ footer .footer-iconos {
     line-height: 24px;
   }
   .tit-interno {
-    font-size: 32px;
-    line-height: 35px;
+    font-size: 24px;
+    line-height: 36px;
     text-align: center;
   }
   .titulo-semi-pequeño-azul-marino{
@@ -4387,11 +4505,11 @@ footer .footer-iconos {
       line-height: normal;
       }
       .titulo-pequeño-azul-marino {
-        font-size: 20px;
-        line-height: 32px;
+        font-size: 12px;
+        line-height: 12px;
       }
       .titulo-pequeño-azul-marino-bold {
-        font-size: 20px;
+        font-size: 18px;
         line-height: 32px;
       }
       .text-content{
@@ -4637,8 +4755,12 @@ footer .footer-iconos {
     font-size: 16px;
     line-height: 24px;
   }
+  .tit-pequeño-blanco {
+    font-size: 16px;
+    line-height: 24px;
+  }
   .numero-grande {
-    font-size: 80px;
+    font-size: 70px;
     line-height: 32px;
   }
   .listado {
@@ -4650,7 +4772,7 @@ footer .footer-iconos {
     line-height: 20px;
   }
   .tit-interno {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 32px;
   }
   .texto-base {
@@ -4835,11 +4957,11 @@ footer .footer-iconos {
   .titulo-realeway-mediano { font-size: 16px; line-height: 26px; }
   .titulo-azul-mediano { font-size: 16px; line-height: 26px; }
   .titulo-pequeño-azul-marino {
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 12px;
+    line-height: 12px;
   }
   .titulo-pequeño-azul-marino-bold {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 30px;
   }
   .quienes-somos-section {
