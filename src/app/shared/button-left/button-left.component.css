@@ -1,28 +1,4 @@
-/* Estilos base para el botón (se puede reutilizar la mayor parte de .btn-vermas2) */
-.btn-vermas2 {
-  display: inline-flex;
-  align-items: center;
-  padding: 8px 10px;
-  background-color: inherit;
-  border-radius: 25px;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 500;
-  transition: all 0.3s ease;
-}
 
-/* Contenedor del fondo circular – se reutiliza, sin cambios */
-.arrow-container {
-  display: inline-flex;
-  align-items: center;
-  overflow: hidden; /* Controla el ancho */
-  transition: all 0.3s ease;
-  height: 30px;
-  border: 2px solid var(--arrow-border-color);
-  border-radius: 50%; /* Círculo inicial */
-  margin-right: 0.5rem;
-  width: 30px;
-}
 
 /* Para la variante izquierda, añadimos la clase .arrow-left y ajustamos márgenes */
 .arrow-container.arrow-left {
@@ -33,34 +9,34 @@
   transition: width 0.3s ease;
   width: 15px;
   /* En la flecha derecha usabas margin-left; aquí usamos margin-right para separar la línea de la cabeza */
-  margin-right: 5px;
+  margin-left: -15px;
 }
 
 .arrow-container.arrow-left .arrow-head {
   transition: transform 0.3s ease;
   flex-shrink: 0;
   /* Ajusta para unirla al cuerpo: en lugar de margin-left negativo, usaremos margin-right negativo */
-  margin-right: -8px;
+  margin-left: 6px;
 }
 
 /* Estado hover: se expande el contenedor y cambian colores */
 .btn-vermas2.arrow-left-btn:hover .arrow-container {
-  width: 100px; /* Se alarga el contenedor */
+  width: 70px; /* Se alarga el contenedor */
   height: 30px;
   border-radius: 250px; /* Pasa a tener forma "pill" */
-  background-color: var(--arrow-border-color);
+  background-color: var(--arrow-background-color);
   color: #fff;
 }
 
 /* En hover, se expande solo el cuerpo (la línea) */
 .btn-vermas2.arrow-left-btn:hover .arrow-container .arrow-body {
-  width: 80px; /* El cuerpo se alarga */
+  width: 50px; /* El cuerpo se alarga */
   margin-right: 10px;
 }
 
 /* En hover, la cabeza se desplaza hacia la izquierda para quedar al final de la línea */
 .btn-vermas2.arrow-left-btn:hover .arrow-container .arrow-head {
-  transform: translateX(-10px);
+  /* transform: translateX(-10px); */
 }
 
 /* En hover, se cambia el color del trazo de la flecha */
