@@ -169,9 +169,9 @@ header .navbar-toggler-icon {
   padding-bottom: 5px;
 }
 
-.top-link,
-.top-link_idioma {
-  margin-left: 15px;
+.top-link,.top-link_idioma
+{
+
   text-decoration: none;
   font-family: var(--unnamed-font-family-raleway);
   font-style: var(--unnamed-font-style-normal);
@@ -180,7 +180,12 @@ header .navbar-toggler-icon {
   letter-spacing: 0px;
   color: var(--unnamed-color-ffffff);
 }
-
+.top-link_idioma {
+  margin-left: 0rem;
+}
+.top-link{
+  margin-left: 2rem;
+}
 .top-link:hover {
   text-decoration: underline;
   color: #7df900;
@@ -1514,7 +1519,7 @@ footer {
   padding: 3rem 0;
 }
 .contenedor-section-0{
-  margin: 3rem 0;
+  margin: 0rem 0;
 }
 .section-background-4 {
   background-color: black;
@@ -1652,7 +1657,7 @@ footer .footer-auxiliar {
   position: relative;
   width: 100%;
   max-width: 830px;
-  max-height: 675px;
+  min-height: 660px;
   border: 0;
   /* border: 1px solid #fff; */
   border-radius: 20px 20px 0 0;
@@ -1671,7 +1676,7 @@ footer .footer-auxiliar {
 
 .overlay {
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   left: 0;
   width: 100%;
   height: 100px;
@@ -1692,7 +1697,7 @@ footer .footer-auxiliar {
 }
 
 .card:hover .overlay {
-  height: 70%;
+  height: 50%;
 }
 
 .card:hover .descripcion {
@@ -2212,6 +2217,7 @@ footer .footer-auxiliar {
 /* Inicio estilos card sustinable */
 .card8 {
   padding: 2rem;
+  margin:2rem 0rem 0rem 4rem;
 }
 .card8 .img-fluid {
   max-width: 510px;
@@ -3122,7 +3128,13 @@ select.selector-listado {
 }
 
 
-
+.navbar-expand-xl .navbar-nav .nav-link{
+  padding: 0 25px !important;
+}
+.navbar-expand-xl .navbar-nav .nav-link:last-child{
+  padding-right: 0px !important;
+}
+/* Estilos apra overlay */
 
 
 /* Responsividad para pantallas grandes (mayores a 1400px) */
@@ -3273,19 +3285,19 @@ select.selector-listado {
     font-size: 28px;
   }
   .texto-base {
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 18px;
+    line-height: 24px;
   }
   .texto-base-blanco {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .titulo-sustinable {
     font-size: 20px;
     line-height: 32px;
   }
-  .titulo-sustinable {
-    font-size: 22px;
-    line-height: 36px;
-  }
   .texto-sustinable {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 28px;
   }
   .texto-minimo {
@@ -3347,16 +3359,16 @@ select.selector-listado {
     min-height: 400px;
   }
   .card:hover .overlay {
-    height: 100%; /* Aumenta el tamaño de la capa al 100% en hover */
+    height: 60%;
   }
 
   .texto-base-blanco {
-    font-size: var(--unnamed-font-size-20); /* Tamaño ligeramente menor */
+    font-size: var(--unnamed-font-size-18); /* Tamaño ligeramente menor */
     line-height: var(--unnamed-line-spacing-28); /* Ajuste para línea */
   }
   .texto-titulo-blanco {
-    font-size: var(--unnamed-font-size-36); /* Tamaño ligeramente menor */
-    line-height: var(--unnamed-line-spacing-36); /* Ajuste en línea */
+    font-size: var(--unnamed-font-size-24); /* Tamaño ligeramente menor */
+    line-height: var(--unnamed-line-spacing-28); /* Ajuste en línea */
   }
 
   .card2-title {
@@ -3364,7 +3376,7 @@ select.selector-listado {
     line-height: 1.4;
   }
   .card-text {
-    font-size: var(--unnamed-font-size-16);
+    font-size: var(--unnamed-font-size-15);
     line-height: var(--unnamed-line-spacing-26);
     min-height: 135px;
   }
@@ -3372,7 +3384,7 @@ select.selector-listado {
     font-size: 1.5rem; /* Tamaño para pantallas grandes */
   }
   .logo-sustinable p {
-    font-size: 3.5rem;
+    font-size: 30px ;
   }
 
 
@@ -3479,15 +3491,15 @@ select.selector-listado {
     width: 50%;
 
   }
-  .carousel-inner .carousel-caption{
+  /* .carousel-inner .carousel-caption{
     top: 3rem;
-  }
+  } */
   .carousel-caption h3 {
     font-size: 45px;
     line-height: 42px;
   }
   .btn-vermas2{
-    font-size: 16px;
+    font-size: 14px;
   }
   .indicator-title{
     font-size: 16px;
@@ -3515,7 +3527,7 @@ select.selector-listado {
     line-height: 18px;
   }
   .card-img-container{
-    max-height: 230px;
+    max-height: 200px;
   }
   .card4-footer{
     font-size: 10px;
@@ -3536,14 +3548,42 @@ select.selector-listado {
     font-size: 16px;
   }
   .card6 .card-text{
-    min-height: 100px;
+    min-height: 80px;
   }
   footer {
-    font-size: 18px;
+    font-size: 12px;
   }
   footer li{
-    margin-bottom: 0.5rem;
+    margin-bottom: 0rem;
   }
+  .top-link,
+.top-link_idioma {
+  font-size: 10px;
+}
+.title-interna-index{
+  font-size: 26px;
+  letter-spacing: normal;
+  line-height: 40px;
+}
+.responsive-line{
+  margin: 0;
+}
+.flecha {
+ font-size: 16px;
+}
+.container-fluid .card {
+  min-height: 450px;
+
+}
+.overlay{
+  height: 60px;
+}
+.contenedor-section{
+  padding: 2rem 0;
+}
+.card-footer a{
+  font-size: 14px;
+}
 }
 
 /* Responsividad para pantallas medianas (mayores a 1024px) */
@@ -3580,7 +3620,7 @@ select.selector-listado {
     line-height: 30px;
   }
   .titulo-sustinable {
-    font-size: 22px;
+    font-size: 20px;
     line-height: 36px;
   }
   .texto-sustinable {
@@ -3640,7 +3680,7 @@ select.selector-listado {
     line-height: 52px;
   }
   .title-interna-index {
-    font-size: 34px;
+    font-size: 26px;
     line-height: 52px;
   }
   .card {
@@ -3650,12 +3690,12 @@ select.selector-listado {
     min-height: 500px;
   }
   .card:hover .overlay {
-    height: 100%; /* Overlay al 100% en hover */
+    height: 50%; /* Overlay al 100% en hover */
   }
 
   .texto-titulo-blanco {
-    font-size: var(--unnamed-font-size-32); /* Ajuste de tamaño de fuente */
-    line-height: var(--unnamed-line-spacing-32); /* Línea ajustada */
+    font-size: var(--unnamed-font-size-24); /* Ajuste de tamaño de fuente */
+    line-height: var(--unnamed-line-spacing-26); /* Línea ajustada */
   }
   .card2-title {
     font-size: var(--unnamed-font-size-26);
@@ -3672,7 +3712,7 @@ select.selector-listado {
     font-size: 1.25rem; /* Tamaño para pantallas medianas */
   }
   .logo-sustinable p {
-    font-size: 3rem;
+    font-size: 26rem;
   }
 
   .carousel-caption .carousel-caption .subtitulo-carousel {
@@ -4052,7 +4092,7 @@ footer .footer-iconos {
     padding: 0;
   }
   .title-interna-index {
-    font-size: 28px;
+    font-size: 24px;
     line-height: 46px;
   }
 
@@ -4060,15 +4100,15 @@ footer .footer-iconos {
     height: 100%; /* Overlay al 100% en hover */
   }
 
-  .texto-base-blanco {
+  /* .texto-base-blanco {
     font-size: var(
       --unnamed-font-size-18
-    ); /* Tamaño de fuente pequeño para pantallas pequeñas */
-    line-height: var(--unnamed-line-spacing-28); /* Ajuste en línea */
-  }
+    );
+    line-height: var(--unnamed-line-spacing-28);
+  } */
   .texto-titulo-blanco {
-    font-size: var(--unnamed-font-size-28); /* Tamaño de fuente más pequeño */
-    line-height: var(--unnamed-line-spacing-30); /* Ajuste de línea */
+    font-size: var(--unnamed-font-size-22); /* Tamaño de fuente más pequeño */
+    line-height: var(--unnamed-line-spacing-24); /* Ajuste de línea */
   }
   .card2-title {
     font-size: var(--unnamed-font-size-24);
@@ -4130,7 +4170,7 @@ footer .footer-iconos {
     background-repeat: no-repeat;
   }
   .logo-sustinable p {
-    font-size: 3rem;
+    font-size: 24rem;
   }
   .texto-sustinable {
     font-size: var(--unnamed-font-size-16);
@@ -4697,7 +4737,7 @@ footer .footer-iconos {
     min-height: 100px;
   }
   .logo-sustinable p {
-    font-size: 2rem; /* Reducir aún más el tamaño de la fuente */
+    font-size: 24px; /* Reducir aún más el tamaño de la fuente */
   }
   .carousel-caption h1 {
     font-size: var(--unnamed-font-size-16);
