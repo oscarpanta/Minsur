@@ -3710,6 +3710,10 @@ select.selector-listado {
   .container_alta_gerencia .text_ceo {
     font-size: 25px;
   }
+  .video_multimedia .video-thumbnail .video-duration {
+
+    font-size: 16px;
+  }
 }
 
 /* Responsividad para pantallas medianas (mayores a 1024px) */
@@ -4718,6 +4722,9 @@ select.selector-listado {
   }
   .card-certificaciones .img_certificaciones {
     height: 200px;
+  }
+  .section_noticias_inicio .news-image img {
+    height:100%
   }
 }
 /* Responsividad para móviles pequeños (menos de 480px) */
