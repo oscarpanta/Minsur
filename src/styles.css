@@ -2456,6 +2456,9 @@ select.selector-listado {
   .container-fluid .card12{
     background: none;
   }
+  .card12 .card-body{
+    flex: 0 1 auto;
+  }
   .dividendos .table thead{
     --bs-table-bg: transparent;
     --bs-table-hover-bg: transparent;
@@ -3712,7 +3715,7 @@ select.selector-listado {
     font-size: 1.25rem; /* Tamaño para pantallas medianas */
   }
   .logo-sustinable p {
-    font-size: 26rem;
+    font-size: 26px;
   }
 
   .carousel-caption .carousel-caption .subtitulo-carousel {
@@ -4007,6 +4010,7 @@ footer .footer-iconos {
   .tit-interno {
     font-size: 32px;
     line-height: 35px;
+    text-align: center;
   }
   .titulo-semi-pequeño-azul-marino{
     font-size: 24px;
@@ -4170,7 +4174,7 @@ footer .footer-iconos {
     background-repeat: no-repeat;
   }
   .logo-sustinable p {
-    font-size: 24rem;
+    font-size: 24px;
   }
   .texto-sustinable {
     font-size: var(--unnamed-font-size-16);
@@ -4737,7 +4741,7 @@ footer .footer-iconos {
     min-height: 100px;
   }
   .logo-sustinable p {
-    font-size: 24px; /* Reducir aún más el tamaño de la fuente */
+    font-size: 20px; /* Reducir aún más el tamaño de la fuente */
   }
   .carousel-caption h1 {
     font-size: var(--unnamed-font-size-16);
