@@ -2334,7 +2334,7 @@ ul.font-color-orange li i {
 /* Agregado Estilos para contenidos generales */
 .contenido-general{
   max-width: 100%;
-  padding: 1.5rem;
+  /* padding: 1.5rem; */
   margin: 0 auto;
   text-align: center;
 }
@@ -2523,7 +2523,7 @@ select.selector-listado {
     /* Fin Estilos para card comite ejecutivo */
 
   .content-listado {
-      border-bottom: 2px solid #9FB5C9; /* Por defecto, el borde está oculto */
+      border-bottom: 1px solid #9FB5C9; /* Por defecto, el borde está oculto */
       padding-bottom: 1rem;
       transition: border-bottom 0.3s ease; /* Transición suave para el cambio */
     }
@@ -3262,19 +3262,19 @@ select.selector-listado {
 }
 @media (max-width: 1400px) {
   .tit-pequeño {
-    font-size: 26px;
-    line-height: 36px;
+    font-size: 20px;
+    line-height: 34px;
   }
   .numero-grande {
     font-size: 110px;
     line-height: 48px;
   }
   .listado {
-    font-size: 24px;
+    font-size: 22px;
     line-height: 28px;
   }
   .listado-pequeño {
-    font-size: 22px;
+    font-size: 20px;
     line-height: 28px;
   }
   .tit-interno {
@@ -3285,11 +3285,12 @@ select.selector-listado {
     font-size: 28px;
   }
   .texto-base {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
+    margin-bottom: 1rem;
   }
   .texto-base-blanco {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
   }
   .titulo-sustinable {
@@ -3321,35 +3322,35 @@ select.selector-listado {
     line-height: 46px;
   }
   .til-semi-pequenio {
-    font-size: 28px;
-    line-height: 44px;
+    font-size: 20px;
+    line-height: 28px;
   }
   .til-grande-azul {
-    font-size: 60px;
-    line-height: 64px;
+    font-size: 45px;
+    line-height: 55px;
   }
   .titulo-realeway-grande {
-    font-size: 44px;
-    line-height: 56px;
+    font-size: 34px;
+    line-height: 42px;
   }
   .til-mediano-azul {
-    font-size: 34px;
+    font-size: 26px;
     line-height: 58px;
   }
   .til-pequenio-azul {
-    font-size: 26px;
+    font-size: 20px;
     line-height: 36px;
   }
   .til-semipequenio-azul {
-    font-size: 28px;
+    font-size: 22px;
     line-height: 36px;
   }
   .til-semigrande-azul {
-    font-size: 48px;
+    font-size: 40px;
     line-height: 58px;
   }
   .til-semigrande-azul-marino {
-    font-size: 48px;
+    font-size: 40px;
     line-height: 58px;
   }
   .card {
@@ -3363,7 +3364,7 @@ select.selector-listado {
   }
 
   .texto-base-blanco {
-    font-size: var(--unnamed-font-size-18); /* Tamaño ligeramente menor */
+    font-size: var(--unnamed-font-size-16); /* Tamaño ligeramente menor */
     line-height: var(--unnamed-line-spacing-28); /* Ajuste para línea */
   }
   .texto-titulo-blanco {
@@ -3428,7 +3429,7 @@ select.selector-listado {
 
   }
   .numero-semi-grande { font-size: 84px; line-height: 52px; }
-  .til-semigrande-azul-marino { font-size: 46px; line-height: 60px; }
+  .til-semigrande-azul-marino { font-size: 40px; line-height: 60px; }
   .titulo-pequeño-azul-marino {
     font-size: 26px;
     line-height: 38px;
@@ -3466,8 +3467,11 @@ select.selector-listado {
     font-size: 12px;
   }
   .container-fluid .custom-card{
-    padding: 5rem;
+    padding: 3rem;
     /* height: 80% !important; */
+  }
+  .container-fluid .card .custom-card{
+    max-height: 250px;
   }
   .container-fluid .custom-card .card-body{
     min-height: auto;
@@ -3507,7 +3511,7 @@ select.selector-listado {
   }
   .quienes-somos-section {
 
-     height: 45rem;
+     height: 42rem;
 
   }
   .carousel-style {
@@ -3572,24 +3576,54 @@ select.selector-listado {
  font-size: 16px;
 }
 .container-fluid .card {
-  min-height: 450px;
+  min-height: 300px;
 
+}
+.container-fluid .card.custom-card{
+  min-height: 300px;
+}
+.container-fluid .custom-img .img-fluid{
+ max-height: 350px;
+}
+.container-fluid .custom-card .card-body{
+  min-height: 100px;
 }
 .overlay{
   height: 60px;
 }
 .contenedor-section{
-  padding: 2rem 0;
+  padding: 2rem 0 2rem 0;
 }
 .card-footer a{
   font-size: 14px;
+}
+.logo{
+  height: 50px;
+}
+.contenido-flotante{
+  padding: 4rem;
+}
+.content-directorio p{
+  padding-bottom: 2rem;
+}
+.tamanio-p{
+  height: 115px;
+}
+.card10 .card-body{
+  min-height: 150px;
+}
+.custom-select-listados .custom-select{
+  font-size: 20px;
+}
+.content-listado{
+  padding-bottom: 0.5rem;
 }
 }
 
 /* Responsividad para pantallas medianas (mayores a 1024px) */
 @media (max-width: 1024px) {
   .tit-pequeño {
-    font-size: 26px;
+    font-size: 20px;
     line-height: 36px;
   }
   .numero-grande {
@@ -3597,7 +3631,7 @@ select.selector-listado {
     line-height: 45px;
   }
   .listado {
-    font-size: 22px;
+    font-size: 20px;
     line-height: 28px;
   }
   .listado-pequeño	 {
@@ -3612,11 +3646,11 @@ select.selector-listado {
     font-size: 26px;
   }
   .texto-base {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 30px;
   }
   .texto-base-blanco {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 30px;
   }
   .titulo-sustinable {
@@ -3648,35 +3682,35 @@ select.selector-listado {
     line-height: 45px;
   }
   .til-semi-pequenio {
-    font-size: 26px;
-    line-height: 46px;
+    font-size: 20px;
+    line-height: 28px;
   }
   .til-grande-azul {
-    font-size: 60px;
-    line-height: 60px;
+    font-size: 42px;
+    line-height: 55px;
   }
   .titulo-realeway-grande {
-    font-size: 40px;
-    line-height: 52px;
+    font-size: 34px;
+    line-height: 40px;
   }
   .til-mediano-azul {
-    font-size: 36px;
+    font-size: 26px;
     line-height: 52px;
   }
   .til-pequenio-azul {
-    font-size: 26px;
+    font-size: 20px;
     line-height: 36px;
   }
   .til-semipequenio-azul {
-    font-size: 28px;
+    font-size: 22px;
     line-height: 36px;
   }
   .til-semigrande-azul {
-    font-size: 48px;
+    font-size: 40px;
     line-height: 52px;
   }
   .til-semigrande-azul-marino {
-    font-size: 48px;
+    font-size: 40px;
     line-height: 52px;
   }
   .title-interna-index {
@@ -3824,7 +3858,7 @@ select.selector-listado {
 }
 @media (max-width: 992px) {
   .tit-pequeño {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 34px;
   }
   .numero-grande {
@@ -3883,35 +3917,35 @@ select.selector-listado {
     line-height: 40px;
   }
   .til-semi-pequenio {
-    font-size: 24px;
-    line-height: 44px;
+    font-size: 20px;
+    line-height: 28px;
   }
   .til-grande-azul {
-    font-size: 55px;
+    font-size: 40px;
     line-height: 55px;
   }
   .titulo-realeway-grande {
-    font-size: 38px;
-    line-height: 50px;
+    font-size: 32px;
+    line-height: 40px;
   }
   .til-mediano-azul {
-    font-size: 34px;
+    font-size: 24px;
     line-height: 50px;
   }
   .til-pequenio-azul {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 34px;
   }
   .til-semipequenio-azul {
-    font-size: 26px;
+    font-size: 20px;
     line-height: 34px;
   }
   .til-semigrande-azul {
-    font-size: 45px;
+    font-size: 36px;
     line-height: 50px;
   }
   .til-semigrande-azul-marino {
-    font-size: 45px;
+    font-size: 36px;
     line-height: 50px;
   }
   section .card-sustinable .col-lg-7 {
@@ -3989,7 +4023,7 @@ footer .footer-iconos {
 /* Responsividad para pantallas más pequeñas (mayores a 768px) */
 @media (max-width: 768px) {
   .tit-pequeño {
-    font-size: 22px;
+    font-size: 18px;
     line-height: 32px;
   }
   .numero-grande {
@@ -4048,35 +4082,35 @@ footer .footer-iconos {
     line-height: 35px;
   }
   .til-semi-pequenio {
-    font-size: 22px;
-    line-height: 42px;
+    font-size: 18px;
+    line-height: 26px;
   }
   .til-grande-azul {
-    font-size: 50px;
+    font-size: 35px;
     line-height: 50px;
   }
   .titulo-realeway-grande {
-    font-size: 34px;
-    line-height: 48px;
+    font-size: 30px;
+    line-height: 38px;
   }
   .til-mediano-azul {
-    font-size: 32px;
+    font-size: 20px;
     line-height: 48px;
   }
   .til-pequenio-azul {
-    font-size: 22px;
+    font-size: 20px;
     line-height: 32px;
   }
   .til-semipequenio-azul {
-    font-size: 24px;
+    font-size: 18px;
     line-height: 32px;
   }
   .til-semigrande-azul {
-    font-size: 42px;
+    font-size: 34px;
     line-height: 48px;
   }
   .til-semigrande-azul-marino {
-    font-size: 42px;
+    font-size: 34px;
     line-height: 48px;
   }
   section .container-fluid {
@@ -4325,7 +4359,7 @@ footer .footer-iconos {
     font-size: 50px;
 }
 .numero-semi-grande { font-size: 54px; line-height: 38px; }
-  .til-semigrande-azul-marino { font-size: 36px; line-height: 42px; }
+  .til-semigrande-azul-marino { font-size: 34px; line-height: 42px; }
   .titulo-realeway-mediano { font-size: 18px; line-height: 28px; }
   .titulo-azul-mediano { font-size: 18px; line-height: 28px; }
   .dividendos .table td {
@@ -4586,12 +4620,17 @@ footer .footer-iconos {
   .carousel-caption .subtitulo-carousel{
     text-align: center;
   }
+  .card8{
+    margin: 2rem;
+  }
+  .custom-select-listados .custom-select{
+    font-size: 18px;
+  }
 }
-
 /* Responsividad para móviles pequeños (menos de 480px) */
 @media (max-width: 480px) {
   .tit-pequeño {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 24px;
   }
   .numero-grande {
@@ -4650,11 +4689,11 @@ footer .footer-iconos {
     line-height: 32px;
   }
   .til-semi-pequenio {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 26px;
   }
   .til-grande-azul {
-    font-size: 44px;
+    font-size: 30px;
     line-height: 46px;
   }
   .titulo-realeway-grande {
@@ -4666,11 +4705,11 @@ footer .footer-iconos {
     line-height: 38px;
   }
   .til-pequenio-azul {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 24px;
   }
   .til-semipequenio-azul {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 24px;
   }
   .til-semigrande-azul {
