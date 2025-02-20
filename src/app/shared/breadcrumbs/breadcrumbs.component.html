@@ -7,7 +7,7 @@
             let breadcrumb of breadcrumbService.breadcrumbs;
             let last = last
           "
-          class="breadcrumb-item"
+          class="breadcrumb-item d-flex align-items-center"
           [ngClass]="{ active: last }"
         >
           <ng-container *ngIf="!last">
@@ -20,7 +20,7 @@
           </ng-container>
         </li>
         <li class="ms-auto">
-          <div style="padding: 8px 0">
+          <div class="breadcrumb-volver" style="padding: 12px 0">
             <app-button-left
               link="/"
               defaultBorderColor="#ffffff"

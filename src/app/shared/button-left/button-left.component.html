@@ -8,12 +8,12 @@
   [style.color]="textColor">
  <span class="arrow-container arrow-left">
    <!-- SVG de la cabeza de la flecha (la punta "<") -->
-   <svg class="arrow-head" width="15" height="15" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+   <svg class="arrow-head-left" width="15" height="15" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
      <!-- Para invertir la punta, invertimos los puntos: de "0,0 10,10 0,20" a "10,0 0,10 10,20" -->
      <polyline points="10,0 0,10 10,20" stroke="var(--arrow-stroke-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
    </svg>
    <!-- SVG del cuerpo de la flecha (la línea), invertido -->
-   <svg class="arrow-body" width="40" height="20" viewBox="0 0 40 20" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+   <svg class="arrow-body-left" width="40" height="20" viewBox="0 0 40 20" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
      <!-- La línea se dibuja de x1=40 a x2=0 para que vaya de derecha a izquierda -->
      <line x1="40" y1="10" x2="0" y2="10" stroke="var(--arrow-stroke-color)" stroke-width="2" stroke-linecap="round" />
    </svg>
