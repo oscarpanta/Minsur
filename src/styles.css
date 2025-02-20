@@ -1640,6 +1640,9 @@ footer .footer-auxiliar {
   border-radius: 20px 20px 0 0;
   overflow: hidden;
 }
+.container-fluid .card.card11 img{
+  min-height: 600px;
+}
 .texto-titulo-blanco {
   font-size: var(--unnamed-font-size-38); /* Tamaño ligeramente menor */
   line-height: var(--unnamed-line-spacing-42); /* Ajuste en línea */
