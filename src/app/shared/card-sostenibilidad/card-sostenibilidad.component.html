@@ -1,4 +1,4 @@
-<div class="my-5">
+<div class="my-xxl-5 my-xl-2">
   <div class="row row-cols-1 row-cols-md-3 g-4">
     <div *ngFor="let card of cards" class="col">
       <div class="card card12 h-100">
@@ -15,12 +15,9 @@
           <p class="card-text texto_base card-body-sostenibilidad flex-grow-0 flex-lg-grow-1">
             {{ card.text }}
           </p>
-          <hr class="my-xxl-3 my-xl-1" />
+          <hr class="my-xxl-3 my-xl-3" />
           <app-button link="{{ card.route }}"> </app-button>
-          <!-- <a [routerLink]="card.route" class="btn-vermas">
-            <span class="flecha-circular"><i class="fas fa-arrow-right flecha-ver-mas"></i></span>
-            ver más
-          </a> -->
+
         </div>
       </div>
     </div>

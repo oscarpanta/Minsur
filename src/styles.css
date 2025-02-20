@@ -548,7 +548,7 @@ header.scrolled .logo {
   left: 0;
   width: 100%;
   height: 25px;
-  background-color: blue;
+  background-color: var(--unnamed-color-0063f9);
   transition: top 0.3s ease-in-out;
 }
 .section_noticias_inicio {
@@ -1631,7 +1631,7 @@ footer .footer-auxiliar {
   position: relative;
   width: 100%;
   max-width: 830px;
-  min-height: 660px;
+  min-height: 630px;
   border: 0;
   /* border: 1px solid #fff; */
   border-radius: 20px 20px 0 0;
@@ -1664,7 +1664,7 @@ footer .footer-auxiliar {
 
 .descripcion {
   opacity: 0;
-  margin-left: 3.5rem;
+  margin-left: 2.5rem;
   margin-right: 2rem;
   transition: opacity 0.3s ease;
 }
@@ -2151,7 +2151,7 @@ footer .footer-auxiliar {
   min-height: 250px;
 }
 .card5 .card2-title {
-  min-height: 228px;
+  min-height: 250px;
 }
 .card5 .hover-card-underline:hover {
   color: var(--unnamed-color-004891);
@@ -2322,7 +2322,7 @@ ul.font-color-orange li i {
   background: var(--unnamed-color-ffffff); /* Fondo semitransparente */
   border-radius: 20px;
   box-shadow: 0px 3px 6px #00000029;
-  padding: 5rem;
+  padding: 3rem;
 }
 .texto-base {
   margin-bottom: 2rem;
@@ -2395,7 +2395,7 @@ select.selector-listado {
   min-height: 300px;
 }
 .container-fluid .card.card10 .card-body {
-  min-height: 250px;
+  min-height: 200px;
 }
 .tamanio-p {
   height: 150px;
@@ -2412,7 +2412,7 @@ select.selector-listado {
 }
 
 .card11 .descripcion {
-  margin: 1.5rem;
+  margin: 0rem 1rem 0rem 2.5rem;
 }
 .card11:hover .overlay {
   height: 100%;
@@ -3088,7 +3088,15 @@ select.selector-listado {
 .card-certificaciones .img_certificaciones {
   height: 150px;
 }
-
+.card-alta-gerencia{
+  background: #fff;
+}
+.card11 p{
+  margin-bottom: 0.3rem;
+}
+.container-fluid .card.card12 .card-text{
+  min-height: 150px;
+}
 /* Responsividad para pantallas grandes (mayores a 1400px) */
 
 @media (max-width: 1700px) {
@@ -3293,7 +3301,7 @@ select.selector-listado {
     line-height: 55px;
   }
   .titulo-realeway-grande {
-    font-size: 34px;
+    font-size: 36px;
     line-height: 42px;
   }
   .til-mediano-azul {
@@ -3486,7 +3494,7 @@ select.selector-listado {
     font-size: 10px;
   }
   .card5 .card-body {
-    min-height: 230px;
+    min-height: 182px;
   }
   .card5 {
     max-height: 550px;
@@ -3525,8 +3533,14 @@ select.selector-listado {
     font-size: 16px;
   }
   .container-fluid .card {
-    min-height: 300px;
+    /* min-height: 300px; */
+    min-height: 74vh;
   }
+  .container-fluid .card.card12{
+    min-height: auto;
+
+  }
+
   .container-fluid .card.custom-card {
     min-height: 300px;
   }
@@ -3574,7 +3588,7 @@ select.selector-listado {
     height: 50px;
   }
   .contenido-flotante {
-    padding: 3rem;
+    padding: 2.5rem;
   }
   .contenido-flotante-2 {
     padding: 2.5rem !important;
@@ -3597,8 +3611,11 @@ select.selector-listado {
   .flecha-blue {
     font-size: 16px;
   }
+  .descripcion{
+    margin-left: 2rem;
+  }
   .card11 .descripcion {
-    margin: 1rem;
+    margin: 1.5rem;
   }
   .card11 p {
     margin-bottom: 0.5rem;
@@ -3616,6 +3633,10 @@ select.selector-listado {
     padding-bottom: 0;
 
     /* padding: 0; */
+  }
+  .container-fluid .card.card12{
+    min-height: none;
+    height: auto;
   }
   .container-fluid .card.card10 .card-body {
     min-height: 150px;
@@ -3713,6 +3734,28 @@ select.selector-listado {
   .video_multimedia .video-thumbnail .video-duration {
 
     font-size: 16px;
+  }
+  .container-fluid .card.card12 .card-text{
+    min-height: 100px;
+    max-height: 100px;
+  }
+  /* .arrow-head{
+    width: 10px;
+    margin-left: -4px;
+  }
+  .arrow-body{
+    width: 10px;
+    margin-left: 5px;
+  }
+  .arrow-container{
+    width: 25px;
+    height: 25px;
+  } */
+  .titulo-pequeño-semi-azul{
+    font-size: 16px;
+  }
+  .info-container .info-item{
+    min-width: 120px;
   }
 }
 
@@ -3875,7 +3918,7 @@ select.selector-listado {
     min-height: 500px;
   }
   .card-img-container {
-    height: auto;
+    max-height: none;
   }
   .section-background-3 {
     background: linear-gradient(to bottom, #e9eef4 30%, #fff 30%),
@@ -4066,6 +4109,7 @@ select.selector-listado {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100%;
   }
   .numero-semi-grande {
     font-size: 66px;
@@ -4131,6 +4175,10 @@ select.selector-listado {
   footer .footer-iconos {
     justify-content: center;
   }
+  .container-fluid .card{
+    min-height: 32vh;
+  }
+
 }
 
 /* Responsividad para pantallas más pequeñas (mayores a 768px) */
@@ -4272,6 +4320,11 @@ select.selector-listado {
   }
   .card4 {
     font-size: 1.1rem; /* Tamaño para pantallas más pequeñas */
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  .card-img-container{
+    height: auto;
   }
   .margin-titles {
     margin-left: 0rem;
@@ -4533,6 +4586,10 @@ select.selector-listado {
     border-bottom-left-radius: 20px;
     border: 0;
   }
+  .container-fluid .card{
+    min-height: 21vh;
+  }
+
   .container-fluid .card-img-3 .custom-card {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 0px;
@@ -4726,6 +4783,11 @@ select.selector-listado {
   .section_noticias_inicio .news-image img {
     height:100%
   }
+  .card11:hover .overlay {
+    height: 100%;
+    color: var(--unnamed-color-ffffff);
+    background-color: var(--unnamed-color-36404e);
+  }
 }
 /* Responsividad para móviles pequeños (menos de 480px) */
 @media (max-width: 480px) {
@@ -4835,7 +4897,7 @@ select.selector-listado {
     height: 70px;
   }
   .card:hover .overlay {
-    height: 100%; /* Overlay al 100% en hover */
+    height: 70%; /* Overlay al 100% en hover */
   }
 
   .texto-base-blanco {
@@ -4849,7 +4911,7 @@ select.selector-listado {
     line-height: var(--unnamed-line-spacing-26); /* Ajuste en altura de línea */
   }
   .descripcion {
-    margin-left: 2rem;
+    margin-left: 1.5rem;
     margin-right: 1rem;
   }
   .card2-title {
@@ -5029,5 +5091,16 @@ select.selector-listado {
   }
   .card4.cards-reporte .card4-title {
     font-size: 20px;
+  }
+  .container-fluid .card{
+    min-height: 21vh;
+  }
+  .container-fluid .card.card11{
+    min-height: 32vh;
+  }
+  .card11:hover .overlay {
+    height: 100%;
+    color: var(--unnamed-color-ffffff);
+    background-color: var(--unnamed-color-36404e);
   }
 }
