@@ -3537,13 +3537,24 @@ select.selector-listado {
   }
   .container-fluid .card {
     /* min-height: 300px; */
-    min-height: 74vh;
+    min-height: 500px;
+  }
+  .container-fluid .card img {
+    /* min-height: 300px; */
+    min-height: 400px;
   }
   .container-fluid .card.card12{
     min-height: auto;
 
   }
+  .container-fluid .card.card11{
+    min-height: 450px;
 
+  }
+  .container-fluid .card.card11 img{
+    min-height: 400px;
+
+  }
   .container-fluid .card.custom-card {
     min-height: 300px;
   }
@@ -3576,7 +3587,7 @@ select.selector-listado {
     min-height: 100px;
   }
   .overlay {
-    height: 60px;
+    height: 80px;
   }
   .card11 .overlay {
     height: 60px;
@@ -3993,9 +4004,20 @@ select.selector-listado {
     font-size: 30px;
     line-height: 32px;
   }
-  /* .nav-item .nav-link{
-    font-size: 18px;
-  } */
+  .container-fluid .card {
+    min-height: 480px;
+  }
+  .container-fluid .card.card11{
+    min-height: 450px;
+
+  }
+  .container-fluid .card.card11 img{
+    min-height: 400px;
+
+  }
+  .card11:hover .overlay {
+  height: 100%;
+  }
 }
 @media (max-width: 992px) {
   .tit-pequeño {
@@ -4181,7 +4203,24 @@ select.selector-listado {
   .container-fluid .card{
     min-height: 32vh;
   }
+  .container-fluid .card.card11{
+    min-height: auto;
 
+  }
+  .container-fluid .card {
+    min-height: 480px;
+  }
+  .container-fluid .card.card11{
+    min-height: 450px;
+
+  }
+  .container-fluid .card.card11 img{
+    min-height: 400px;
+
+  }
+  .card11:hover .overlay {
+  height: 100%;
+  }
 }
 
 /* Responsividad para pantallas más pequeñas (mayores a 768px) */
@@ -4589,10 +4628,13 @@ select.selector-listado {
     border-bottom-left-radius: 20px;
     border: 0;
   }
-  .container-fluid .card{
+  /* .container-fluid .card{
     min-height: 21vh;
-  }
+  } */
+  .container-fluid .card.card11{
+    min-height: auto;
 
+  }
   .container-fluid .card-img-3 .custom-card {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 0px;
@@ -5096,10 +5138,16 @@ select.selector-listado {
     font-size: 20px;
   }
   .container-fluid .card{
-    min-height: 18vh;
+    min-height: 400px;
+  }
+  .container-fluid .card img{
+    min-height: 400px;
   }
   .container-fluid .card.card11{
-    min-height: 32vh;
+    min-height: 500px;
+  }
+  .container-fluid .card.card11 img{
+    min-height: 500px;
   }
   .card11:hover .overlay {
     height: 100%;
