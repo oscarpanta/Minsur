@@ -50,40 +50,40 @@ export class ContenidoComponent implements AfterViewInit{
    ];
 
   noticias = [
-    { img: 'assets/images/personal_mineria_3.png', title: 'Minsur es la primera empresa peruana en ser reconocida por.' },
-    { img: 'assets/images/emisiones_netas.png', title: 'Minsur es la primera empresa peruana en ser reconocida por.' },
-    { img: 'assets/images/personal_mineria2.png', title: 'Minsur es la primera empresa peruana en ser reconocida por.' },
-    { img: 'assets/images/personal_mineria.png', title: 'Minsur es la primera empresa peruana en ser reconocida por.' },
-    { img: 'assets/images/carrousel/quienes.png', title: 'Minsur es la primera empresa peruana en ser reconocida por.' },
+    { img: 'assets/images/swiper/personal_mineria_3.png', title: 'Minsur es la primera empresa peruana en ser reconocida por.' },
+    { img: 'assets/images/swiper/emisiones_netas.png', title: 'Minsur es la primera empresa peruana en ser reconocida por.' },
+    { img: 'assets/images/swiper/personal_mineria_swiper.png', title: 'Minsur es la primera empresa peruana en ser reconocida por.' },
+    { img: 'assets/images/swiper/personal_mineria_swiper2.png', title: 'Minsur es la primera empresa peruana en ser reconocida por.' },
+    { img: 'assets/images/swiper/emisiones_netas.png', title: 'Minsur es la primera empresa peruana en ser reconocida por.' },
   ];
   videos = [
     {
       description: "Minsur es la primera empresa peruana en ser reconocida por el prestigioso Shingo Institute.",
-      thumbnail: "assets/images/carrousel/quienes.png",
+      thumbnail: "assets/images/videos/video1.png",
       duration: "3:45",
       link: "https://www.youtube.com/watch?v=VIDEO_ID_1"
     },
     {
       description: "Minsur es la primera empresa peruana en ser reconocida por el prestigioso Shingo Institute",
-      thumbnail: "assets/images/emisiones_netas.png",
+      thumbnail: "assets/images/videos/video2.png",
       duration: "4:20",
       link: "https://www.youtube.com/watch?v=VIDEO_ID_2"
     },
     {
       description: "Minsur es la primera empresa peruana en ser reconocida por el prestigioso Shingo Institute",
-      thumbnail: "assets/images/trabaja_nosotros2.png",
+      thumbnail: "assets/images/videos/video3.png",
       duration: "3:45",
       link: "https://www.youtube.com/watch?v=VIDEO_ID_1"
     },
     {
       description: "Minsur es la primera empresa peruana en ser reconocida por el prestigioso Shingo Institute",
-      thumbnail: "assets/images/carrousel/quienes.png",
+      thumbnail: "assets/images/videos/video4.png",
       duration: "4:20",
       link: "https://www.youtube.com/watch?v=VIDEO_ID_2"
     },
     {
       description: "Minsur es la primera empresa peruana en ser reconocida por el prestigioso Shingo Institute",
-      thumbnail: "assets/images/inversionistas-reportes.png",
+      thumbnail: "assets/images/videos/video5.png",
       duration: "4:20",
       link: "https://www.youtube.com/watch?v=VIDEO_ID_2"
     }

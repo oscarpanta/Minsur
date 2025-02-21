@@ -90,7 +90,7 @@
 }
 @font-face {
   font-family: "Raleway";
-  src: url("./assets/fonts/Raleway-Regular.ttf") format("truetype");
+  src: url("./assets/fonts/Raleway-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
@@ -107,7 +107,12 @@
   font-weight: 700;
   font-style: normal;
 }
-
+@font-face {
+  font-family: "Raleway";
+  src: url("./assets/fonts/Raleway-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
 section .container-fluid {
   width: 85%;
   max-width: 1920px;
@@ -1536,7 +1541,7 @@ footer {
 }
 /* Para el logo, establecer el ancho al 40% */
 footer .img-fluid {
-  max-width: 400px;
+  max-width: 230px;
 }
 footer li {
   margin-bottom: 1rem;
@@ -1592,12 +1597,22 @@ footer .footer-auxiliar {
   margin-left: 0.5rem;
   font-size: var(--unnamed-font-size-18);
 }
+.responsive-line-redes {
+  border: 0;
+  border-top: 2px solid #1E385D; /* Color de la línea */
+  width: 100%; /* Abarca todo el ancho del contenedor */
+  /* margin: 20px 0;  */
+  box-sizing: border-box;
+
+}
 .responsive-line {
   border: 0;
-  border-top: 2px solid #232324; /* Color de la línea */
-  width: 100%; /* Abarca todo el ancho del contenedor */
-  margin: 20px 0; /* Espaciado superior e inferior */
-  box-sizing: border-box;
+  border-top: 2px solid #1E385D;
+  width: 99vw; /* Ocupa todo el ancho de la ventana */
+  margin: 20px 0;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 /* Estilos para hacer el diseño responsivo */
 /* @media (max-width: 768px) {
@@ -4488,7 +4503,7 @@ max-height: 550px;
     margin: 0;
   }
   footer .img-fluid {
-    max-width: 250px;
+    max-width: 200px;
   }
   /* Estilo para los iconos */
   .footer-iconos i {
