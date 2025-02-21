@@ -1774,7 +1774,7 @@ footer .footer-auxiliar {
   font-family: var(--unnamed-font-family-raleway);
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-normal);
-  font-size: var(--unnamed-font-size-21);
+  font-size: var(--unnamed-font-size-24);
   line-height: var(--unnamed-line-spacing-38);
   letter-spacing: var(--unnamed-character-spacing--0-21);
   color: var(--unnamed-color-36404e);
@@ -3290,7 +3290,7 @@ select.selector-listado {
     line-height: 48px;
   }
   .listado {
-    font-size: 22px;
+    font-size: 18px;
     line-height: 28px;
   }
   .listado-pequeño {
@@ -3305,7 +3305,7 @@ select.selector-listado {
     font-size: 28px;
   }
   .texto-base {
-    font-size: 17px;
+    font-size: 16px;
     line-height: 27px;
     margin-bottom: 1rem;
   }
@@ -3402,7 +3402,7 @@ select.selector-listado {
     line-height: 1.4;
   }
   .card-text {
-    font-size: var(--unnamed-font-size-15);
+    font-size: var(--unnamed-font-size-16);
     line-height: var(--unnamed-line-spacing-26);
     min-height: 135px;
   }
@@ -3663,7 +3663,7 @@ select.selector-listado {
     min-height: 150px;
   }
   .custom-select-listados .custom-select {
-    font-size: 20px;
+    font-size: 16px;
   }
   .content-listado {
     padding-bottom: 0.5rem;
@@ -3738,13 +3738,13 @@ select.selector-listado {
     font-size: 22px;
   }
   .section_noticias_inicio .title {
-    font-size: 42px;
+    font-size: 36px;
   }
   .section_multimedia .title {
-    font-size: 34px;
+    font-size: 30px;
   }
   .section_multimedia .title_galerias {
-    font-size: 28px;
+    font-size: 25px;
   }
   .section_multimedia .carousel .img-carousel {
     height: 400px;
@@ -3838,6 +3838,10 @@ select.selector-listado {
     height: 25px;
 
   }
+  .titulo-realeway-mediano-grande {
+    font-size: 35px;
+    line-height: 50px;
+  }
 }
 
 /* Responsividad para pantallas medianas (mayores a 1024px) */
@@ -3854,10 +3858,7 @@ select.selector-listado {
     font-size: 80px;
     line-height: 45px;
   }
-  .listado {
-    font-size: 20px;
-    line-height: 28px;
-  }
+
   .listado-pequeño {
     font-size: 20px;
     line-height: 28px;
@@ -4097,7 +4098,6 @@ select.selector-listado {
     line-height: 40px;
   }
   .listado {
-    font-size: 20px;
     line-height: 26px;
   }
   .listado-pequeño {
@@ -4803,11 +4803,11 @@ select.selector-listado {
     font-size: 18px;
   }
   .section_multimedia .title {
-    font-size: 30px;
+    font-size: 28px;
     line-height: normal;
   }
   .section_multimedia .title_galerias {
-    font-size: 24px;
+    font-size: 23px;
     line-height: normal;
   }
   .section_multimedia .carousel .carousel-text h5 {
@@ -4881,7 +4881,7 @@ select.selector-listado {
     margin: 2rem;
   }
   .custom-select-listados .custom-select {
-    font-size: 18px;
+    font-size: 15px;
   }
   .card-certificaciones .img_certificaciones {
     height: 200px;
