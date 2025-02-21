@@ -3275,6 +3275,18 @@ select.selector-listado {
     font-size: 28px;
     line-height: 42px;
   }
+  .container-fluid .card{
+    min-height: 580px;
+  }
+  .container-fluid .card img{
+    min-height: 400px;
+  }
+  .card:hover .overlay {
+    height: 65%;
+  }
+  .card11:hover .overlay {
+    height: 100%;
+    }
 }
 @media (max-width: 1400px) {
   .tit-pequeño {
@@ -4265,7 +4277,10 @@ select.selector-listado {
     justify-content: center;
   }
   .container-fluid .card{
-    min-height: 32vh;
+    min-height: 400px;
+  }
+  .container-fluid .card img{
+    min-height: 400px;
   }
   .container-fluid .card.card11{
     min-height: auto;
