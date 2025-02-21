@@ -3276,7 +3276,7 @@ select.selector-listado {
     line-height: 42px;
   }
   .container-fluid .card{
-    min-height: 580px;
+    min-height: 560px;
   }
   .container-fluid .card img{
     min-height: 400px;
@@ -3287,6 +3287,20 @@ select.selector-listado {
   .card11:hover .overlay {
     height: 100%;
     }
+    .container-fluid .card.card12{
+      min-height: 300px;
+
+    }
+    .section-background-6 {
+      background: linear-gradient(
+        to bottom,
+        #fff 30%,
+        /* 30% blanco */ #e9eef4 30% 84%,
+        /* 60% azul, desde el 30% hasta el 90% */ #fff 84% 100%
+          /* 10% blanco, desde el 90% hasta el 100% */
+      );
+    }
+
 }
 @media (max-width: 1400px) {
   .tit-pequeño {
@@ -4278,6 +4292,9 @@ select.selector-listado {
   }
   .container-fluid .card{
     min-height: 400px;
+  }
+  .card:hover .overlay {
+    height: 70%;
   }
   .container-fluid .card img{
     min-height: 400px;
