@@ -1676,7 +1676,7 @@ footer .footer-auxiliar {
 }
 
 .card:hover .overlay {
-  height: 50%;
+  height: 70%;
 }
 
 .card:hover .descripcion {
@@ -4998,7 +4998,7 @@ select.selector-listado {
   }
   .til-grande-azul {
     font-size: 30px;
-    line-height: 46px;
+    line-height: 40px;
   }
   .titulo-realeway-grande {
     font-size: 24px;
@@ -5032,10 +5032,10 @@ select.selector-listado {
     max-height: 300px; /* Ajuste para pantallas móviles */
   }
   .overlay {
-    height: 70px;
+    height: 50px;
   }
   .card:hover .overlay {
-    height: 70%; /* Overlay al 100% en hover */
+    height: 100%; /* Overlay al 100% en hover */
   }
 
   .texto-base-blanco {
@@ -5044,9 +5044,9 @@ select.selector-listado {
   }
   .texto-titulo-blanco {
     font-size: var(
-      --unnamed-font-size-24
+      --unnamed-font-size-16
     ); /* Tamaño más pequeño para móviles */
-    line-height: var(--unnamed-line-spacing-26); /* Ajuste en altura de línea */
+    line-height: var(--unnamed-line-spacing-22); /* Ajuste en altura de línea */
   }
   .descripcion {
     margin-left: 1.5rem;
@@ -5234,7 +5234,7 @@ select.selector-listado {
     min-height: 400px;
   }
   .container-fluid .card img{
-    min-height: 400px;
+    min-height: 350px;
   }
   .container-fluid .card.card11{
     min-height: 500px;
