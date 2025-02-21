@@ -2095,7 +2095,7 @@ footer .footer-auxiliar {
 
 .card4.cards-reporte .card-img-top {
   max-height: 350px;
-  object-fit: cover;
+  object-fit: fill;
 }
 /* .card4 .card-title{
   min-height: 150px;
