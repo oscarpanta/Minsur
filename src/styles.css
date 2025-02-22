@@ -4982,6 +4982,10 @@ max-height: 550px;
     min-height: auto;
     /* max-height: 200px; */
   }
+  .info-container .section {
+
+    align-items: center;
+  }
 }
 /* Responsividad para móviles pequeños (menos de 480px) */
 @media (max-width: 480px) {
