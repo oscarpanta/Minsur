@@ -3300,6 +3300,9 @@ max-height: 550px;
   .container-fluid .card img{
     min-height: 400px;
   }
+  .container-fluid .card.card10 img{
+    min-height: auto;
+  }
   .card:hover .overlay {
     height: 65%;
   }
@@ -4971,6 +4974,14 @@ max-height: 550px;
     margin-left: 0rem;
     margin-right: 0rem;
   }
+  .container-fluid .card.card10 .card-body{
+    min-height: auto;
+    /* max-height: 100px; */
+  }
+  .container-fluid .card.card10{
+    min-height: auto;
+    /* max-height: 200px; */
+  }
 }
 /* Responsividad para móviles pequeños (menos de 480px) */
 @media (max-width: 480px) {
@@ -5102,7 +5113,7 @@ max-height: 550px;
     line-height: 1.2;
   }
   .card-text {
-    font-size: var(--unnamed-font-size-13);
+    font-size:  var(--unnamed-font-size-16);
     line-height: 1.4;
     min-height: auto;
   }
