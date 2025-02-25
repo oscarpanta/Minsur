@@ -1121,7 +1121,8 @@ header.scrolled .logo {
 .listado {
   font-family: var(--unnamed-font-family-merriweather);
   font-style: var(--unnamed-font-style-normal);
-  font-weight: var(--unnamed-font-weight-normal);
+  /* font-weight: var(--unnamed-font-weight-normal); */
+  font-weight: var(--unnamed-font-weight-600);
   font-size: var(--unnamed-font-size-28);
   line-height: var(--unnamed-line-spacing-34);
   letter-spacing: var(--unnamed-character-spacing--0-7);
@@ -1312,7 +1313,7 @@ header.scrolled .logo {
 .til-semigrande-azul-marino {
   font-family: var(--unnamed-font-family-raleway);
   font-style: var(--unnamed-font-style-normal);
-  font-weight: var(--unnamed-font-weight-300);
+  font-weight: var(--unnamed-font-weight-500);
   font-size: var(--unnamed-font-size-56);
   line-height: var(--unnamed-line-spacing-66);
   color: var(--unnamed-color-004891);
@@ -1554,10 +1555,15 @@ footer li {
 }
 footer .footer-auxiliar {
   /* font-size: var(--unnamed-font-size-20); */
+  font-family: var(--unnamed-font-family-raleway);
+  font-weight: var(--unnamed-font-weight-500);
+  font-style: var(--unnamed-font-style-normal);
   font-family: "Raleway Medium";
   font-size: var(--unnamed-font-size-20);
   line-height: var(--unnamed-line-spacing-34);
   color: var(--unnamed-color-5A9CFF);
+  text-align: left;
+
 }
 /* Cambiar color de los íconos al hacer hover */
 .list-unstyled a {
@@ -1621,6 +1627,7 @@ footer .footer-auxiliar {
   left: 50%;
   transform: translateX(-50%);
 }
+
 /* Estilos para hacer el diseño responsivo */
 /* @media (max-width: 768px) {
   .col-md-4 {
@@ -3190,6 +3197,15 @@ max-height: 550px;
 }
 
 /* Responsividad para pantallas grandes (mayores a 1400px) */
+.card-title-sostenibilidad{
+  font-size: var(--unnamed-font-size-32);
+  font-family: var(--unnamed-font-family-merriweather);
+  font-weight: var(--unnamed-font-weight-500);
+  line-height: var(--unnamed-font-size-82);
+  letter-spacing: var(--unnamed-character-spacing--0-8);
+  color: var(--unnamed-color-36404e);
+  text-align: left;
+}
 
 @media (max-width: 1700px) {
   .tit-pequeño {
@@ -3542,7 +3558,7 @@ max-height: 550px;
   }
 
   footer .footer-auxiliar {
-    font-size: 12px;
+    font-size: 13px;
   }
   .container-fluid .custom-card {
     padding: 3rem;
@@ -3921,6 +3937,11 @@ max-height: 550px;
     min-height: 300px;
   }
 
+  .card-title-sostenibilidad{
+    font-size: var(--unnamed-font-size-18);
+    line-height: 30px;
+
+  }
 }
 
 /* Responsividad para pantallas medianas (mayores a 1024px) */
