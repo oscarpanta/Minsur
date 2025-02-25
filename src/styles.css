@@ -1523,8 +1523,8 @@ footer {
   background: linear-gradient(
     to bottom,
     #fff 30%,
-    /* 30% blanco */ #e9eef4 30% 90%,
-    /* 60% azul, desde el 30% hasta el 90% */ #fff 90% 100%
+    /* 30% blanco */ #e9eef4 30% 85%,
+    /* 60% azul, desde el 30% hasta el 90% */ #fff 85% 100%
       /* 10% blanco, desde el 90% hasta el 100% */
   );
   background-size: 100% 100%;
