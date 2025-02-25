@@ -13,7 +13,7 @@
   --unnamed-color-E7F2FC: #e7f2fc;
   /* Font/text values */
   --unnamed-font-family-merriweather: Merriweather;
-  --unnamed-font-family-raleway: Raleway, sans-serif;
+  --unnamed-font-family-raleway: Raleway;
   --unnamed-font-style-normal: normal;
   --unnamed-font-weight-300: 300;
   --unnamed-font-weight-500: 500;
@@ -111,6 +111,12 @@
   font-family: "Raleway";
   src: url("./assets/fonts/Raleway-SemiBold.ttf") format("truetype");
   font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway Medium";
+  src:        url("./assets/fonts/Raleway-Medium.ttf") format("truetype");
+  font-weight: 500;
   font-style: normal;
 }
 section .container-fluid {
@@ -1548,6 +1554,7 @@ footer li {
 }
 footer .footer-auxiliar {
   /* font-size: var(--unnamed-font-size-20); */
+  font-family: "Raleway Medium";
   font-size: var(--unnamed-font-size-20);
   line-height: var(--unnamed-line-spacing-34);
   color: var(--unnamed-color-5A9CFF);
@@ -2961,6 +2968,8 @@ max-height: 550px;
   font-size: 20px;
   font-weight: 500;
   transition: all 0.3s ease;
+  font-family: var(--unnamed-font-family-raleway);
+  font-weight: 600;
 }
 
 /* Contenedor que simula el fondo circular (inicialmente un círculo) */
@@ -3000,6 +3009,7 @@ max-height: 550px;
   color: #fff;
 }
 
+
 /* En hover, se expande solo el cuerpo de la flecha */
 .btn-vermas2:hover .arrow-body {
   width: 80px; /* El cuerpo se alarga */
@@ -3011,6 +3021,19 @@ max-height: 550px;
   /* Si deseas moverla un poco, puedes aplicar transform: translateX(...); */
   /* En este ejemplo se deja sin transformación adicional */
 }
+.btn-vermas2:hover .reportes-label {
+  visibility: hidden; /* Oculta el texto original */
+  position: relative;
+}
+.btn-vermas2:hover .reportes-label::after {
+  content: "revisar más reportes"; /* Nuevo texto */
+  visibility: visible;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+
 
 /* En hover, se cambia el color del trazo de la flecha */
 .btn-vermas2:hover .arrow-body line,
@@ -3165,6 +3188,7 @@ max-height: 550px;
 .container-fluid .card.card12 .card-text{
   min-height: 150px;
 }
+
 /* Responsividad para pantallas grandes (mayores a 1400px) */
 
 @media (max-width: 1700px) {
