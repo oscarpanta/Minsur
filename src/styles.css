@@ -279,6 +279,9 @@ header.scrolled .navbar-toggler-icon {
 header.scrolled .logo {
   content: url("assets/images/Logo/LogoMinsurScroll.png");
 }
+header.scrolled .navbar-nav .nav-link:focus, .nav-link:hover {
+  color: #004891;
+}
 /* COMUNICADO HEADER */
 .p-cinta {
   width: 100%;
