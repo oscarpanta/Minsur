@@ -1,0 +1,33 @@
+.btn-animate {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  padding: 10px 15px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-animate .arrow {
+  display: flex;
+  align-items: center;
+  height: 2px;
+  background-color: #000 ;
+  border-radius: 50px;
+  transition: width 0.3s ease-in-out;
+  position: relative;
+}
+
+.btn-animate .arrow::after {
+  content: ">";
+  font-size: 18px;
+  font-weight: bold;
+  position: absolute;
+  right: -12px;
+  top: -15px;
+  color: #000;
+
+}

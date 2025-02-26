@@ -62,7 +62,7 @@
               }}
             </p>
 
-            <div class="d-flex align-items-center justify-content-end">
+            <div class="d-flex align-items-center justify-content-end linea-home">
               <a
                 *ngIf="videoLink"
                 [href]="videoLink"
@@ -70,6 +70,7 @@
                 class="btn_seccion_imagen btn"
               >
                 {{ buttonText }}
+
                 <span class="flecha-circular-verde ms-1">
                   <i
                     *ngIf="buttonText === 'Descargar'"

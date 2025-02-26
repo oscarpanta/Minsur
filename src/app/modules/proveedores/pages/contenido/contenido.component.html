@@ -18,12 +18,13 @@
 
 <section class="contenedor-section section-background-1  ">
 
-  <div class="container-fluid my-lg-5 my-md-0">
+  <div class="container-fluid my-lg-5 my-md-0 section_documentos">
     <div class="row align-items-center pb-2 d-flex justify-content-between">
       <div class="col-md-6 mb-3 mb-md-0">
         <p class="tit-interno mb-0">Biblioteca de documentos</p>
       </div>
-      <div class="col-md-4">
+      <div class="d-flex flex-column col-12 col-lg-4">
+        <span class="text-end text-lg-end mb-3">Filtrar:</span>
         <div class="custom-select-listados">
           <div class="custom-select">
             <div class="select-trigger">Políticas Corporativas</div>
@@ -38,18 +39,10 @@
 
 
         </div>
-        <!-- Contenedor del select -->
-        <!-- <div class="custom-select-listados">
-          <select class="selector-listado form form-control">
-              <option value="" disabled selected hidden>Políticas Corporativas</option>
-              <option value="corporativas">Corporativas</option>
-              <option value="seguridad">Seguridad y Salud</option>
-              <option value="medio">Medio Ambiente</option>
-              <option value="governance">Governance</option>
-              <option value="etica">Ética</option>
-          </select>
-        </div> -->
+
+
       </div>
+
     </div>
     <div class="pt-5">
        <!-- Primer div -->
@@ -70,7 +63,7 @@
           class="btn-descargar me-sm-0 ms-sm-0 me-lg-5 ms-lg-0 p-2"
           download
         >
-          Descargar
+          descargar
           <span class="flecha-circular"
             ><i class="fas fa-arrow-down"></i
           ></span>
@@ -80,28 +73,13 @@
           class="btn-descargar btn-ver me-sm-0 ms-sm-0 me-lg-0 ms-lg-3"
           download
         >
-          Ver
+          ver
           <span class="flecha-circular"
             ><i class="fas fa-arrow-right"></i
           ></span>
         </a>
         </div>
-        <!-- Información del PDF -->
-        <!-- <div class="d-flex align-items-center justify-content-md-end mt-2 mt-md-0">
-          <p class="mb-0 card4-footer m-2">PDF 12.5MB</p>
-        </div> -->
 
-        <!-- Botones Descargar y Ver, centrados en pantallas pequeñas -->
-        <!-- <div class="mt-2 text-center">
-          <a routerLink="/" class="btn-descargar me-2" download>
-            Descargar
-            <span class="flecha-circular"><i class="fas fa-arrow-down"></i></span>
-          </a>
-          <a routerLink="/" class="btn-descargar btn-ver" download>
-            Ver
-            <span class="flecha-circular"><i class="fas fa-arrow-right"></i></span>
-          </a>
-        </div> -->
       </div>
 
 
@@ -123,7 +101,7 @@
           class="btn-descargar me-sm-0 ms-sm-0 me-lg-5 ms-lg-0 p-2"
           download
         >
-          Descargar
+          descargar
           <span class="flecha-circular"
             ><i class="fas fa-arrow-down"></i
           ></span>
@@ -133,7 +111,7 @@
           class="btn-descargar btn-ver me-sm-0 ms-sm-0 me-lg-0 ms-lg-3"
           download
         >
-          Ver
+          ver
           <span class="flecha-circular"
             ><i class="fas fa-arrow-right"></i
           ></span>
@@ -160,7 +138,7 @@
           class="btn-descargar me-sm-0 ms-sm-0 me-lg-5 ms-lg-0 p-2"
           download
         >
-          Descargar
+          descargar
           <span class="flecha-circular"
             ><i class="fas fa-arrow-down"></i
           ></span>
@@ -170,7 +148,7 @@
           class="btn-descargar btn-ver me-sm-0 ms-sm-0 me-lg-0 ms-lg-3"
           download
         >
-          Ver
+          ver
           <span class="flecha-circular"
             ><i class="fas fa-arrow-right"></i
           ></span>
@@ -197,7 +175,7 @@
           class="btn-descargar me-sm-0 ms-sm-0 me-lg-5 ms-lg-0 p-2"
           download
         >
-          Descargar
+          descargar
           <span class="flecha-circular"
             ><i class="fas fa-arrow-down"></i
           ></span>
@@ -207,7 +185,7 @@
           class="btn-descargar btn-ver me-sm-0 ms-sm-0 me-lg-0 ms-lg-3"
           download
         >
-          Ver
+          ver
           <span class="flecha-circular"
             ><i class="fas fa-arrow-right"></i
           ></span>
@@ -225,7 +203,7 @@
     <div class="card9 mb-3 mb-xxl-0 mb-md-2">
       <!-- <div class="row no-gutters"> -->
         <div class="row d-flex align-items-center justify-content-center">
-          <div class="row col-lg-10">
+          <div class="row col-lg-11">
             <div class="col-12 col-md-5 d-flex flex-column pe-md-5 pe-ms-0">
               <img
                 src="../../../../../assets/images/portal_proveedores.png"
@@ -267,12 +245,12 @@
       </div>
     </div>
     <div class="row  align-items-center justify-content-center">
-      <div class="col-lg-10 mt-xxl-5 mt-xl-2">
+      <div class="col-lg-11 mt-xxl-5 mt-xl-2">
 
         <div class="row justify-content-center justify-content-md-between content-listado-2 listado-pequeño-blanco">
 
           <!-- Primer div -->
-          <div class="col-12 col-md-5">
+          <div class="col-12 col-md-5 p-0">
             <div class="d-flex align-items-center flex-column flex-md-row mb-4 justify-content-between">
               <!-- Ícono y texto -->
               <div class="d-flex align-items-center">
@@ -282,8 +260,8 @@
 
               <!-- Botón centrado en pantallas pequeñas -->
               <div class="mt-2 mt-md-0 text-center">
-                <a routerLink="/" class="btn-descargar btn-vermas-blanco " download>
-                  Descargar
+                <a routerLink="/" class="btn-descargar btn-vermas-blanco" download>
+                  descargar
                   <span class="flecha-circular-blanco">
                     <i class="fas fa-arrow-down"></i>
                   </span>
@@ -293,7 +271,7 @@
           </div>
 
           <!-- Segundo div -->
-          <div class="col-12 col-md-5">
+          <div class="col-12 col-md-5 p-0">
             <div class="d-flex align-items-center flex-column flex-md-row mb-4 justify-content-between">
               <!-- Ícono y texto -->
               <div class="d-flex align-items-center">
@@ -303,8 +281,8 @@
 
               <!-- Botón centrado en pantallas pequeñas -->
               <div class="mt-2 mt-md-0 text-center">
-                <a routerLink="/" class="btn-descargar btn-vermas-blanco " download>
-                  Descargar
+                <a routerLink="/" class="btn-descargar  btn-vermas-blanco" download>
+                  descargar
                   <span class="flecha-circular-blanco">
                     <i class="fas fa-arrow-down"></i>
                   </span>
@@ -325,7 +303,7 @@
     <div class="card9 mb-3 mb-xxl-0 mb-md-2">
 
         <div class="row d-flex align-items-center justify-content-center">
-          <div class="row col-lg-10">
+          <div class="row col-lg-11">
             <!-- Segunda sección: Título, texto y nombre -->
             <div class="col-12 col-md-5 my-2 ">
               <p class="titulo-seccion tit-interno mb-xxl-5 mb-xl-4 mb-md-1">Portal Intelecta</p>
@@ -343,12 +321,7 @@
                 textColor="#0063f9"
               >
               </app-button>
-              <!-- <a href="#" class="btn-vermas">
-                <span class="flecha-circular"
-                  ><i class="fas fa-arrow-right flecha-ver-mas"></i
-                ></span>
-                Visita el Portal Intelecta
-              </a> -->
+
             </div>
             <!-- Primera sección: Imagen y texto -->
             <div class="col-12 col-md-7 d-flex flex-column ps-md-5 ps-ms-0">
@@ -364,12 +337,12 @@
       </div>
     </div>
     <div class="row  align-items-center justify-content-center">
-      <div class="col-lg-10  mt-xxl-5 mt-xl-2">
+      <div class="col-lg-11  mt-xxl-5 mt-xl-2">
 
           <div class="row justify-content-center justify-content-md-between content-listado-2 listado-pequeño">
 
             <!-- Primer div -->
-            <div class="col-12 col-md-5">
+            <div class="col-12 col-md-5 p-0">
               <div class="d-flex align-items-center flex-column flex-md-row mb-4 justify-content-between">
                 <!-- Ícono y texto -->
                 <div class="d-flex align-items-center">
@@ -379,8 +352,8 @@
 
                 <!-- Botón centrado en pantallas pequeñas -->
                 <div class="mt-2 mt-md-0 text-center">
-                  <a routerLink="/" class="btn-descargar btn-vermas " download>
-                    Descargar
+                  <a routerLink="/" class="btn-descargar  " download>
+                    descargar
                     <span class="flecha-circular">
                       <i class="fas fa-arrow-down"></i>
                     </span>
@@ -390,7 +363,7 @@
             </div>
 
             <!-- Segundo div -->
-            <div class="col-12 col-md-5">
+            <div class="col-12 col-md-5 p-0">
               <div class="d-flex align-items-center flex-column flex-md-row mb-4 justify-content-between">
                 <!-- Ícono y texto -->
                 <div class="d-flex align-items-center">
@@ -400,8 +373,8 @@
 
                 <!-- Botón centrado en pantallas pequeñas -->
                 <div class="mt-2 mt-md-0 text-center">
-                  <a routerLink="/" class="btn-descargar btn-vermas " download>
-                    Descargar
+                  <a routerLink="/" class="btn-descargar  " download>
+                    descargar
                     <span class="flecha-circular">
                       <i class="fas fa-arrow-down"></i>
                     </span>

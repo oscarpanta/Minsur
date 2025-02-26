@@ -592,12 +592,7 @@
                       textColor="#0063f9"
                     >
                     </app-button>
-                    <!-- <a routerLink="/home/comunicados" class="btn-vermas">
-                      <span class="flecha-circular"
-                        ><i class="fas fa-arrow-right flecha-ver-mas"></i
-                      ></span>
-                      ver más
-                    </a> -->
+
                   </div>
                 </div>
               </div>
@@ -638,14 +633,16 @@
               <div
                 class="card-footer d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center"
               >
-                <a routerLink="/home/canal-integridad" class="btn-vermas">
-                  <span class="flecha-circular-no-hover">
-                    <i
-                      class="fas fa-long-arrow-alt-right flecha-ver-mas-no-hover"
-                    ></i>
-                  </span>
-                  escribenos
-                </a>
+
+                <app-button
+                link="/home/canal-integridad"
+                defaultBorderColor="#0063f9"
+                defaultStrokeColor="#0063f9"
+                hoverStrokeColor="#ffffff"
+                label="escríbenos"
+                textColor="#0063f9"
+              >
+              </app-button>
                 <a routerLink="/" class="btn-descargar mt-2 mt-md-0" download>
                   <span class="flecha-circular">
                     <i class="fas fa-arrow-down"></i>

@@ -353,6 +353,7 @@ header.scrolled .logo {
   font-size: var(--unnamed-font-size-18);
   color: var(--unnamed-color-ffffff);
   opacity: 0.5;
+  text-transform: uppercase;
 }
 .carousel-indicators-container .carousel-indicators {
   /* width: 100%; */
@@ -598,7 +599,17 @@ header.scrolled .logo {
   letter-spacing: -0.45;
   text-align: right;
 }
+.section_documentos .text-end {
+  font-family: var(--unnamed-font-family-raleway);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-500);
+  font-size: var(--unnamed-font-size-18);
+  line-height: var(--unnamed-line-spacing-34);
+  color: var(--unnamed-color-36404e);
 
+  letter-spacing: -0.45;
+  text-align: right;
+}
 .section_noticias_inicio .info_noticias_general {
   padding-right: calc(var(--bs-gutter-x) * 0.5);
   padding-left: calc(var(--bs-gutter-x) * 0.5);
@@ -1593,6 +1604,11 @@ footer .footer-auxiliar {
   font-size: calc(1rem + 1vw);
   margin: 0.2rem;
   max-width: 300px;
+
+}
+footer .list-unstyled.section-canal  li{
+  font-family: var(--unnamed-font-family-raleway);
+  font-weight: 300;
 }
 /* .linea-footer {
   border-bottom: 1px solid #ffffff;
@@ -1601,8 +1617,8 @@ footer .footer-auxiliar {
 .list-unstyled a:hover {
   color: var(--unnamed-color-7DF900); /* Color verde al hacer hover */
 }
-.list-unstyled a.listado:hover {
-  color: var(--unnamed-color-0063f9); /* Color verde al hacer hover */
+.list-unstyled a .listado:hover {
+  /* color: var(--unnamed-color-0063f9); */
 }
 .flecha-circular-footer {
   display: inline-flex;
@@ -1670,7 +1686,7 @@ footer .footer-auxiliar {
   position: relative;
   width: 100%;
   max-width: 830px;
-  min-height: 630px;
+  min-height: 620px;
   border: 0;
   /* border: 1px solid #fff; */
   border-radius: 20px 20px 0 0;
@@ -1727,6 +1743,9 @@ footer .footer-auxiliar {
   justify-content: space-between;
   height: 100%;
   max-width: 373px;
+}
+.card-2 .card-text{
+  min-height: 280px;
 }
 .card-2 .card-img-top {
   max-height: 250px;
@@ -1824,7 +1843,7 @@ footer .footer-auxiliar {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  min-height: 750px;
+  min-height: 720px;
   box-shadow: 6px 6px 10px #00000029;
   transition: box-shadow 0.3s ease-in-out;
   background: #fff;
@@ -1991,28 +2010,30 @@ footer .footer-auxiliar {
   width: 25px; /* Tamaño inicial del círculo */
   height: 25px; /* Tamaño inicial del círculo */
   margin-left: 0.5rem;
+  font-size: 12px;
 }
 .btn-descargar .flecha-circular-blanco {
   width: 25px; /* Tamaño inicial del círculo */
   height: 25px; /* Tamaño inicial del círculo */
   margin-left: 0.5rem;
+  font-size: 12px;
 }
 /* Cuando el botón es hover, el círculo se agranda para ajustarse */
 .btn-descargar:hover .flecha-circular {
   background-color: var(--unnamed-color-0063f9);
   color: #fff;
-  transform: scaleY(1.08); /* Aumenta la longitud de la flecha */
+  transform: scaleY(1.04); /* Aumenta la longitud de la flecha */
   transition: transform 0.3s ease; /* Animación de alargado */
-  font-size: var(--unnamed-font-size-20);
+  font-size: var(--unnamed-font-size-14);
   /* transform: matrix(0, 1, -1, 0, 0, 0); */
 }
 /* Cuando el botón es hover, el círculo se agranda para ajustarse */
 .btn-descargar .btn-ver:hover .flecha-circular {
   background-color: var(--unnamed-color-0063f9);
   color: #fff;
-  transform: scaleY(1.08); /* Aumenta la longitud de la flecha */
+  transform: scaleX(1.04); /* Aumenta la longitud de la flecha */
   transition: transform 0.3s ease; /* Animación de alargado */
-  font-size: var(--unnamed-font-size-20);
+  font-size: var(--unnamed-font-size-14);
   /* transform: matrix(0, 1, -1, 0, 0, 0); */
 }
 /* Fin Estilos para flecha descargar */
@@ -2763,7 +2784,7 @@ max-height: 550px;
 .link-list a.listado:focus,
 .link-list a.active {
   color: var(--unnamed-color-0063f9);
-  font-weight: bold;
+
 }
 .listado .flecha-blue {
   margin: 0;
@@ -3022,14 +3043,26 @@ max-height: 550px;
   background-color: var(--arrow-border-color);
   color: #fff;
 }
+.btn-vermas2.arrow-reporte:hover .arrow-container{
 
+  width: 100px; /* Se alarga el contenedor */
+  height: 30px;
+  border-radius: 250px;
+  background-color: var(--arrow-border-color);
+  }
+.btn-vermas2.arrow-reporte:hover .listado {
+  color: var(--unnamed-color-0063f9);
+  }
 
 /* En hover, se expande solo el cuerpo de la flecha */
 .btn-vermas2:hover .arrow-body {
   width: 80px; /* El cuerpo se alarga */
   margin-left: 10px;
 }
-
+.btn-vermas2.arrow-reporte:hover .arrow-body {
+  width: 50px; /* El cuerpo se alarga */
+  margin-left: 10px;
+}
 /* En hover, la cabeza puede desplazarse (ajústalo si lo requieres) */
 .btn-vermas2:hover .arrow-head {
   /* Si deseas moverla un poco, puedes aplicar transform: translateX(...); */
@@ -3200,7 +3233,7 @@ max-height: 550px;
   margin-bottom: 0.3rem;
 }
 .container-fluid .card.card12 .card-text{
-  min-height: 150px;
+  min-height: 200px;
 }
 
 /* Responsividad para pantallas grandes (mayores a 1400px) */
@@ -3213,6 +3246,12 @@ max-height: 550px;
   color: var(--unnamed-color-36404e);
   text-align: left;
 }
+.linea-home{
+  border-top: 2px solid #363b44;
+}
+/* .nav-link:focus, .nav-link:hover{
+  color: #fff !important;
+} */
 
 @media (max-width: 1700px) {
   .tit-pequeño {
@@ -3500,6 +3539,10 @@ max-height: 550px;
     font-size: var(--unnamed-font-size-16);
     line-height: var(--unnamed-line-spacing-26);
     min-height: 135px;
+  }
+  .card-2 .card-text{
+    min-height: 135px;
+
   }
   .card4 {
     font-size: 1.5rem; /* Tamaño para pantallas grandes */
