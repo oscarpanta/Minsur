@@ -1177,6 +1177,15 @@ header.scrolled .logo {
   letter-spacing: var(--unnamed-character-spacing--1-05);
   color: var(--unnamed-color-004891);
 }
+.tit-interno-subtitulo {
+  font-family: var(--unnamed-font-family-merriweather);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: 300;
+  font-size: var(--unnamed-font-size-42);
+  line-height: var(--unnamed-line-spacing-58);
+  letter-spacing: var(--unnamed-character-spacing--1-05);
+  color: var(--unnamed-color-004891);
+}
 .texto-base {
   font-family: var(--unnamed-font-family-raleway);
   font-style: var(--unnamed-font-style-normal);
@@ -3373,6 +3382,10 @@ max-height: 550px;
     font-size: 38px;
     line-height: 52px;
   }
+  .tit-interno-subtitulo {
+    font-size: 38px;
+    line-height: 52px;
+  }
   .titulo-semi-pequeño-azul-marino {
     font-size: 30px;
   }
@@ -3531,6 +3544,10 @@ max-height: 550px;
     line-height: 28px;
   }
   .tit-interno {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .tit-interno-subtitulo {
     font-size: 28px;
     line-height: 36px;
   }
@@ -4116,6 +4133,10 @@ max-height: 550px;
     font-size: 28px;
     line-height: 36px;
   }
+  .tit-interno-subtitulo {
+    font-size: 28px;
+    line-height: 36px;
+  }
   .titulo-semi-pequeño-azul-marino {
     font-size: 26px;
   }
@@ -4358,6 +4379,10 @@ max-height: 550px;
     font-size: 24px;
     line-height: 34px;
   }
+  .tit-interno-subtitulo {
+    font-size: 24px;
+    line-height: 34px;
+  }
   .titulo-semi-pequeño-azul-marino {
     font-size: 26px;
   }
@@ -4566,6 +4591,11 @@ max-height: 550px;
     line-height: 24px;
   }
   .tit-interno {
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+  }
+  .tit-interno-subtitulo {
     font-size: 24px;
     line-height: 36px;
     text-align: center;
