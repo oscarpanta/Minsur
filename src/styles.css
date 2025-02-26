@@ -4111,6 +4111,9 @@ max-height: 550px;
     line-height: 30px;
 
   }
+  .btn-descargar2 {
+    font-size: 14px;
+  }
 }
 
 /* Responsividad para pantallas medianas (mayores a 1024px) */

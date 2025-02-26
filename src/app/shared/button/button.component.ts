@@ -12,6 +12,6 @@ export class ButtonComponent {
   // @Input() hoverBorderColor: string = '#7df900';
   @Input() defaultStrokeColor: string = '#0063f9';
   @Input() hoverStrokeColor: string = '#ffffff';
-  @Input() label: string = 'Ver más';
+  @Input() label: string = 'ver más';
   @Input() textColor: string = '#0063f9';
 }
