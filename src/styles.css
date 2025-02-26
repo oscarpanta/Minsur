@@ -1203,7 +1203,7 @@ header.scrolled .logo {
 .titulo-sustinable {
   font-family: var(--unnamed-font-family-merriweather);
   font-style: var(--unnamed-font-style-normal);
-  font-weight: var(--unnamed-font-weight-bold);
+  font-weight: 300;
   font-size: var(--unnamed-font-size-28);
   line-height: var(--unnamed-line-spacing-42);
   color: var(--unnamed-color-ffffff);
@@ -1254,11 +1254,18 @@ header.scrolled .logo {
 .titulo-grande-verde {
   font-family: var(--unnamed-font-family-merriweather);
   font-style: var(--unnamed-font-style-normal);
-  font-weight: var(--unnamed-font-weight-bold);
+  font-weight: 400;
   font-size: var(--unnamed-font-size-38);
   line-height: var(--unnamed-line-spacing-58);
   letter-spacing: var(--unnamed-character-spacing--0-97);
   color: var(--unnamed-color-7DF900);
+}
+.card2-title.title-produccion {
+  font-weight: 400;
+}
+.texto-base-blanco.clasificacion{
+  color: #CCE7FF;
+  font-weight: 300;
 }
 .til-semi-pequenio {
   font-family: var(--unnamed-font-family-raleway);
@@ -1804,6 +1811,7 @@ footer .list-unstyled.section-canal  li{
   cursor: pointer;
   text-decoration: none; /* Asegura que no haya subrayado por defecto */
   position: relative;
+  font-weight:400;
 }
 
 .hover-card-reporte-underline::after {
@@ -3252,6 +3260,15 @@ max-height: 550px;
 /* .nav-link:focus, .nav-link:hover{
   color: #fff !important;
 } */
+.card12 .tit-pequeño {
+  font-family: var(--unnamed-font-family-merriweather);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: 300;
+  font-size: var(--unnamed-font-size-32);
+  line-height: var(--unnamed-line-spacing-42);
+  letter-spacing: var(--unnamed-character-spacing--0-8);
+  color: var(--unnamed-color-36404e);
+}
 
 @media (max-width: 1700px) {
   .tit-pequeño {
