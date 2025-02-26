@@ -3840,7 +3840,7 @@ max-height: 550px;
   }
   .container-fluid .card {
     /* min-height: 300px; */
-    min-height: 500px;
+    min-height: 480px;
   }
   .container-fluid .card img {
     /* min-height: 300px; */
@@ -4112,7 +4112,7 @@ max-height: 550px;
 
   }
   .btn-descargar2 {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
