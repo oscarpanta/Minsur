@@ -2856,7 +2856,7 @@ max-height: 550px;
 }
 .style-custom-texto .canal-atencion i {
   color: var(--unnamed-color-0063f9);
-  font-size: 16px;
+  font-size: 20px;
 }
 .style-custom-texto .canal-atencion p {
   margin: 0;
@@ -4113,6 +4113,10 @@ max-height: 550px;
   }
   .btn-descargar2 {
     font-size: 12px;
+  }
+  .style-custom-texto .canal-atencion i {
+    color: var(--unnamed-color-0063f9);
+    font-size: 16px;
   }
 }
 
