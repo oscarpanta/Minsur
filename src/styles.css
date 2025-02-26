@@ -3263,15 +3263,18 @@ max-height: 550px;
 .card12 .tit-pequeño {
   font-family: var(--unnamed-font-family-merriweather);
   font-style: var(--unnamed-font-style-normal);
-  font-weight: 300;
+  font-weight: 400;
   font-size: var(--unnamed-font-size-32);
   line-height: var(--unnamed-line-spacing-42);
   letter-spacing: var(--unnamed-character-spacing--0-8);
   color: var(--unnamed-color-36404e);
 }
+.card-bolder-sostenibilidad .card12 .tit-pequeño{
+  font-weight: 600;
+}
 
 @media (max-width: 1700px) {
-  .tit-pequeño {
+  .tit-pequeño,.card12 .tit-pequeño {
     font-size: 28px;
     line-height: 38px;
   }
@@ -3428,7 +3431,7 @@ max-height: 550px;
 
 }
 @media (max-width: 1400px) {
-  .tit-pequeño {
+  .tit-pequeño,.card12 .tit-pequeño {
     font-size: 20px;
     line-height: 34px;
   }
@@ -4013,7 +4016,7 @@ max-height: 550px;
 
 /* Responsividad para pantallas medianas (mayores a 1024px) */
 @media (max-width: 1200px) {
-  .tit-pequeño {
+  .tit-pequeño,.card12 .tit-pequeño {
     font-size: 20px;
     line-height: 36px;
   }
@@ -4253,7 +4256,7 @@ max-height: 550px;
   }
 }
 @media (max-width: 992px) {
-  .tit-pequeño {
+  .tit-pequeño,.card12 .tit-pequeño {
     font-size: 20px;
     line-height: 34px;
   }
@@ -4463,7 +4466,7 @@ max-height: 550px;
 
 /* Responsividad para pantallas más pequeñas (mayores a 768px) */
 @media (max-width: 768px) {
-  .tit-pequeño {
+  .tit-pequeño,.card12 .tit-pequeño {
     font-size: 18px;
     line-height: 32px;
   }
@@ -5101,7 +5104,7 @@ max-height: 550px;
 }
 /* Responsividad para móviles pequeños (menos de 480px) */
 @media (max-width: 480px) {
-  .tit-pequeño {
+  .tit-pequeño,.card12 .tit-pequeño {
     font-size: 16px;
     line-height: 24px;
   }
