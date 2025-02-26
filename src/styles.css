@@ -726,7 +726,7 @@ header.scrolled .logo {
 }
 .carousel-control-next,
 .carousel-control-prev {
-  top: -80px !important;
+  top: -20px !important;
 }
 .mini-slider-container {
   display: flex;
@@ -809,7 +809,7 @@ header.scrolled .logo {
 
 .video_multimedia .video-thumbnail {
   position: relative;
-  width: 230px;
+  width: 200px;
   height: 140px;
   flex-shrink: 0;
   display: flex;
@@ -2999,7 +2999,22 @@ max-height: 550px;
 /* Fin de estilos para el select nuevo */
 
 /* Estilos para el formulario */
+/* Estilos FLECHA NUEVO DESCARGA */
+/* .btn-vermas2 {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 0px;
+  background-color: inherit;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  font-family: var(--unnamed-font-family-raleway);
+  font-weight: 600;
+} */
 
+/* fin FLECHA NUEVO DESCARGA */
 /* ESTILOS FLECHA NUEVO*/
 .btn-vermas2 {
   display: inline-flex;
