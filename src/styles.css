@@ -1153,7 +1153,7 @@ header.scrolled .logo {
 .listado-pequeño {
   font-family: var(--unnamed-font-family-merriweather);
   font-style: var(--unnamed-font-style-normal);
-  font-weight: var(--unnamed-font-weight-normal);
+  font-weight: 300;
   font-size: var(--unnamed-font-size-24);
   line-height: var(--unnamed-line-spacing-32);
   letter-spacing: var(--unnamed-character-spacing--0-6);
@@ -1162,7 +1162,7 @@ header.scrolled .logo {
 .listado-pequeño-blanco {
   font-family: var(--unnamed-font-family-merriweather);
   font-style: var(--unnamed-font-style-normal);
-  font-weight: var(--unnamed-font-weight-normal);
+  font-weight: 300;
   font-size: var(--unnamed-font-size-24);
   line-height: var(--unnamed-line-spacing-32);
   letter-spacing: var(--unnamed-character-spacing--0-6);
