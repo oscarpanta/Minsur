@@ -12,7 +12,7 @@ import { CardUnidadesComponent } from './card-unidades/card-unidades.component';
 import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 import { ButtonLeftComponent } from './button-left/button-left.component';
 import { ButtonReporteComponent } from './button-reporte/button-reporte.component';
-
+import { ButtonDescargaComponent } from './button-descargar/button-descargar.component';
 @NgModule({
   declarations: [
     ButtonComponent,
@@ -25,7 +25,8 @@ import { ButtonReporteComponent } from './button-reporte/button-reporte.componen
     CardUnidadesComponent,
     BreadcrumbsComponent,
     ButtonLeftComponent,
-    ButtonReporteComponent
+    ButtonReporteComponent,
+    ButtonDescargaComponent
   ],
   imports: [
     CommonModule,
@@ -42,7 +43,8 @@ import { ButtonReporteComponent } from './button-reporte/button-reporte.componen
     CardUnidadesComponent,
     BreadcrumbsComponent,
     ButtonLeftComponent,
-    ButtonReporteComponent
+    ButtonReporteComponent,
+    ButtonDescargaComponent
   ]
 })
 export class SharedModule { }

@@ -3000,19 +3000,79 @@ max-height: 550px;
 
 /* Estilos para el formulario */
 /* Estilos FLECHA NUEVO DESCARGA */
-/* .btn-vermas2 {
+.btn-descargar2 {
   display: inline-flex;
   align-items: center;
   padding: 8px 0px;
   background-color: inherit;
   border-radius: 25px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
   transition: all 0.3s ease;
   font-family: var(--unnamed-font-family-raleway);
   font-weight: 600;
-} */
+}
+
+/* Contenedor circular de la flecha */
+.btn-descargar2 .arrow-container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  height: 25px;
+  width: 25px;
+  border: 2px solid var(--arrow-border-color);
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+/* Línea de la flecha */
+.btn-descargar2 .arrow-body {
+  transition: height 0.3s ease, margin-top 0.3s ease;
+  width: 18px;
+  height: 15px; /* Tamaño inicial */
+  margin-right: -16.5px;
+  margin-left: 2px;
+  margin-top: 5px;
+}
+
+/* Cabeza de la flecha */
+.btn-descargar2 .arrow-head {
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+/* Estado hover: expansión ligera */
+.btn-descargar2:hover .arrow-container {
+  width: 25px; /* En lugar de 100px, ahora solo 40px */
+  height: 25px;
+  border-radius: 50px; /* Se mantiene más circular */
+  background-color: var(--arrow-border-color);
+  color: #fff;
+}
+
+/* Hover: expansión ligera de la línea */
+.btn-descargar2:hover .arrow-body {
+  width: 18px;
+  margin-left: 2px;
+  margin-top: 6px;
+  height: 25px;
+}
+.btn-descargar2:hover .arrow-head {
+  margin-top: 12px;
+}
+
+/* Cambio de color en hover */
+.btn-descargar2:hover .arrow-body line,
+.btn-descargar2:hover .arrow-head polyline {
+  stroke: var(--arrow-hover-stroke-color);
+  transition: stroke 0.3s ease;
+}
+
 
 /* fin FLECHA NUEVO DESCARGA */
 /* ESTILOS FLECHA NUEVO*/
