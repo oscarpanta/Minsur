@@ -1140,7 +1140,7 @@ header.scrolled .logo {
   font-family: var(--unnamed-font-family-merriweather);
   font-style: var(--unnamed-font-style-normal);
   /* font-weight: var(--unnamed-font-weight-normal); */
-  font-weight: var(--unnamed-font-weight-400);
+  font-weight: 400;
   font-size: var(--unnamed-font-size-28);
   line-height: var(--unnamed-line-spacing-34);
   letter-spacing: var(--unnamed-character-spacing--0-7);
