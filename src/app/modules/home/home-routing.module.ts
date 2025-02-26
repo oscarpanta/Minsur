@@ -17,7 +17,7 @@ const routes: Routes = [
   { path: '', component: ContenidoComponent },
 
   { path: 'comunicados', component: ComunicadosComponent },
-  { path: 'canal-integridad', component: CanalIntegridadComponent,data:{breadcrumb:'Canal Integridad'} },
+  { path: 'canal-integridad', component: CanalIntegridadComponent,data:{breadcrumb:'Canal de Integridad'} },
 
   { path: 'contactanos', component: ContactanosComponent},
 
