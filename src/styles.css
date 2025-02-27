@@ -3188,8 +3188,8 @@ max-height: 550px;
 }
 .btn-vermas2.arrow-reporte:hover .arrow-container{
 
-  width: 100px; /* Se alarga el contenedor */
-  height: 30px;
+  width: 50px; /* Se alarga el contenedor */
+  /* height: 30px; */
   border-radius: 250px;
   background-color: var(--arrow-border-color);
   }
@@ -3418,6 +3418,15 @@ max-height: 550px;
   color: var(--unnamed-color-7DF900);
 
 }
+.listado.estados{
+  font-family: var(--unnamed-font-family-raleway);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: 600;
+  font-size: var(--unnamed-font-size-24);
+  line-height: var(--unnamed-line-spacing-38);
+  letter-spacing: var(--unnamed-character-spacing--0-24);
+  color: var(--unnamed-color-36404e);
+}
 @media (max-width: 1700px) {
   .tit-pequeño,.card12 .tit-pequeño {
     font-size: 28px;
@@ -3581,8 +3590,13 @@ max-height: 550px;
           /* 10% blanco, desde el 90% hasta el 100% */
       );
     }
+    .listado.estados{
+      font-size: 22px;
+            line-height: 30px;
 
-}
+    }
+
+  }
 @media (max-width: 1400px) {
   .tit-pequeño,.card12 .tit-pequeño {
     font-size: 20px;
@@ -4195,6 +4209,10 @@ max-height: 550px;
   text-align: center;
 }
 
+.listado.estados{
+	font-size: 17px;
+        line-height: 28px;
+}
 }
 
 /* Responsividad para pantallas medianas (mayores a 1024px) */
@@ -5311,6 +5329,10 @@ max-height: 550px;
   .card11:hover .tit-pequeño{
     margin: 0.5rem 0 !important;
   }
+  .listado.estados{
+    font-size: 15px;
+    line-height: 24px;
+}
 }
 /* Responsividad para móviles pequeños (menos de 480px) */
 @media (max-width: 480px) {
@@ -5636,4 +5658,8 @@ max-height: 550px;
     color: var(--unnamed-color-ffffff);
     background-color: var(--unnamed-color-36404e);
   }
+  .listado.estados{
+    font-size: 14px;
+    line-height: 20px;
+}
 }
