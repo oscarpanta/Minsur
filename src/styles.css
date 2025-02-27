@@ -2910,7 +2910,7 @@ max-height: 550px;
 }
 /* Hover opcional */
 .extra-fondo .quienes-somos-section .title {
-  font-family: var(--unnamed-font-family-raleway);
+  font-family: var(--unnamed-font-family-merriweather);
   font-style: var(--unnamed-font-style-normal);
   font-weight: 400;
   font-size: var(--unnamed-font-size-72);
