@@ -4217,6 +4217,11 @@ max-height: 550px;
 	font-size: 17px;
         line-height: 28px;
 }
+.extra-fondo .quienes-somos-section .title{
+  font-size: 50px;
+  letter-spacing: normal;
+  line-height: 60px;
+}
 }
 
 /* Responsividad para pantallas medianas (mayores a 1024px) */
@@ -4388,6 +4393,9 @@ max-height: 550px;
   }
   .quienes-somos-section .title {
     font-size: 50px;
+  }
+  .extra-fondo .quienes-somos-section .title{
+    font-size: 48px;
   }
 
   .quienes-somos-section .description {
@@ -5030,6 +5038,9 @@ max-height: 550px;
   }
   .quienes-somos-section .title {
     font-size: 50px;
+  }
+  .extra-fondo .quienes-somos-section .title{
+    font-size: 48;
   }
   .numero-semi-grande {
     font-size: 54px;
