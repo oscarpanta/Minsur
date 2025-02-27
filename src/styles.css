@@ -2874,6 +2874,7 @@ max-height: 550px;
 .style-custom-texto img {
   border-radius: 20px;
   margin: 0 auto;
+  width: 80%;
 }
 .style-custom-texto ul {
   list-style: none;
@@ -2909,7 +2910,7 @@ max-height: 550px;
 .extra-fondo .quienes-somos-section .title {
   font-family: var(--unnamed-font-family-raleway);
   font-style: var(--unnamed-font-style-normal);
-  font-weight: var(--unnamed-font-weight-600);
+  font-weight: 400;
   font-size: var(--unnamed-font-size-72);
   line-height: var(--unnamed-line-spacing-72);
   letter-spacing: var(--unnamed-character-spacing--0-72);
@@ -3427,6 +3428,7 @@ max-height: 550px;
   letter-spacing: var(--unnamed-character-spacing--0-24);
   color: var(--unnamed-color-36404e);
 }
+
 @media (max-width: 1700px) {
   .tit-pequeño,.card12 .tit-pequeño {
     font-size: 28px;
@@ -4677,6 +4679,10 @@ max-height: 550px;
   }
   .card11:hover .overlay {
   height: 100%;
+  }
+  .container-fluid .card.card12 .card-text{
+    min-height: auto;
+    max-height: max-content;
   }
 }
 
