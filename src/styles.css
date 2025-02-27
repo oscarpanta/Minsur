@@ -1256,7 +1256,7 @@ header.scrolled .navbar-nav .nav-link:focus, .nav-link:hover {
   font-weight: var(--unnamed-font-weight-bold);
   font-size: var(--unnamed-font-size-18);
   line-height: var(--unnamed-line-spacing-34);
-  color: var(--unnamed-color-ffffff);
+  color: var(--unnamed-color-CCE7FF);
 }
 .titulo-grande {
   font-family: var(--unnamed-font-family-merriweather);

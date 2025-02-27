@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 import { BreadcrumbService } from 'src/app/core/services/breadcrumb.service';
 interface Breadcrumb {
@@ -11,6 +11,8 @@ interface Breadcrumb {
   styleUrls: ['./breadcrumbs.component.css']
 })
 export class BreadcrumbsComponent implements OnInit{
+    @Input() link: string = '/';
+
   constructor(public breadcrumbService: BreadcrumbService) {}
 
   ngOnInit(): void {
