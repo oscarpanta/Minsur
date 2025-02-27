@@ -1,57 +1,57 @@
 
-<section class="contenedor-section section-background-7">
+<section class="contenedor-section section-background-9">
   <div class="container-fluid my-lg-5 my-md-0">
     <p class="mb-5 titulo-grande-azul-marino">Contacto</p>
-    <div class="row texto-base d-flex justify-content-between">
+    <div class="row texto-base d-flex justify-xl-content-between justify-content-evenly">
       <div class="col-lg-5">
-          <div class="row  ">
+          <div class="row  mb-xxl-5 mb-xl-3">
               <div class="col-lg-12 titulo-realeway-mediano-grande">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a tellus lectus.</p>
               </div>
           </div>
-          <div class="row">
+          <div class="row mb-xxl-3 mb-xl-1">
             <p class="titulo-pequeño-azul-bold">Dirección:</p>
             <p>Av. Víctor Andrés Belaúnde 171, San Isidro, Lima 27, Lima-Perú</p>
           </div>
-          <div class="row">
+          <div class="row mb-xxl-3 mb-xl-1">
               <div class="col-lg-8">
                 <p class="titulo-pequeño-azul-bold">Teléfono:</p>
                 <p> 0 800 1 8114 (opción 2009) </p>
               </div>
           </div>
-          <div class="row">
+          <div class="row mb-xxl-3 mb-xl-1">
             <div class="col-lg-8">
               <p class="titulo-pequeño-azul-bold">Correo: </p>
               <p>info&#64;minsur.com</p>
             </div>
           </div>
-          <div class="row">
+          <div class="row mb-xxl-3 mb-xl-1 mt-xxl-5 mt-xl-3">
             <div class="col-lg-8">
 
               <div class="pb-xl-5 pb-sm-1 pb-sm-1">
                 <p class="footer-auxiliar">Encuéntranos en nuestras redes:</p>
-                <ul class="list-unstyled footer-iconos contacto-iconos d-flex titulo-pequeño-azul-bold">
-                    <li><a routerLink="/" class="me-3"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a routerLink="/" class="me-3"><i class="fab fa-instagram"></i></a></li>
-                    <li><a routerLink="/" class="me-3"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li><a routerLink="/" class="me-3"><i class="fab fa-twitter"></i></a></li>
-                    <li><a routerLink="/" class="me-3"><i class="fab fa-youtube"></i></a></li>
-                </ul>
+                <ul class="list-unstyled footer-iconos d-flex justify-content-xl-between justify-content-evenly redes-contacto titulo-pequeño-azul-bold">
+                  <li><a routerLink="/" class="me-3"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a routerLink="/" class="me-3"><i class="fab fa-instagram"></i></a></li>
+                  <li><a routerLink="/" class="me-3"><i class="fab fa-linkedin-in"></i></a></li>
+                  <li><a routerLink="/" class="me-3"><i class="fab fa-x-twitter"></i></a></li>
+                  <li><a routerLink="/" class="me-3"><i class="fab fa-youtube"></i></a></li>
+              </ul>
             </div>
             </div>
           </div>
       </div>
       <div class="col-lg-6">
         <form class=" formulario texto-formulario">
-          <div class="row col-lg-12">
-              <div class="col-lg-6">
-                <div class="form-group position-relative mb-2 mt-0">
+          <div class="row col-lg-12 mb-5">
+              <div class="col-lg-6 mb">
+                <div class="form-group position-relative mt-0">
                   <input type="text" id="nombre" class="custom-input" required placeholder=" ">
                   <label for="nombre" class="floating-label">NOMBRE:</label>
                 </div>
               </div>
               <div class="col-lg-6">
-                <div class="form-group position-relative mb-2 mt-0">
+                <div class="form-group position-relative mt-0">
                   <input type="text" id="apellido" class="custom-input" required placeholder=" ">
                   <label for="apellido" class="floating-label">APELLIDO:</label>
                 </div>
@@ -64,9 +64,19 @@
           </div>
          </div>
          <div class="col-lg-12">
-          <div class="select-container mb-5">
-            <select class="custom-select" id="custom-select" aria-label="Tema" required>
+          <div class="select-container select-wrapper mb-5">
+            <select class=" custom-select" id="custom-select" aria-label="Tema" required>
               <option value="">OPCIÓN TEMA DESPLEGABLE</option>
+              <option value="tema1">Tema 1</option>
+              <option value="tema2">Tema 2</option>
+            </select>
+
+          </div>
+         </div>
+         <div class="col-lg-12">
+          <div class="select-container select-wrapper mb-5">
+            <select class="custom-select" id="custom-select" aria-label="Tema" required>
+              <option value="">LOREM IPSUM</option>
               <option value="tema1">Tema 1</option>
               <option value="tema2">Tema 2</option>
             </select>
@@ -76,13 +86,13 @@
          <div class="col-lg-12">
 
 
-          <div class="form-group form-textarea mb-2">
-            <label for="mensaje">MENSAJE:</label>
-            <textarea id="mensaje" class="form form-control" rows="10" required></textarea>
+          <div class="form-group form-textarea mb-5">
+            <label for="mensaje" class="mb-3">MENSAJE:</label>
+            <textarea id="mensaje" class="form form-control custom-textarea" rows="15" required></textarea>
           </div>
 
          </div>
-         <button class="btn btn-primary">Enviar</button>
+         <button class="btn-enviar">Enviar</button>
         </form>
 
 
