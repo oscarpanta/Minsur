@@ -1,5 +1,5 @@
 <a [routerLink]="link"
-   class="btn-vermas2 arrow-reporte px-2 py-3 "
+   class="btn-vermas2 arrow-reporte px-2 py-3 " [ngClass]="{ 'active': isActive }"
    [style.--arrow-border-color]="defaultBorderColor"
 
    [style.--arrow-stroke-color]="defaultStrokeColor"

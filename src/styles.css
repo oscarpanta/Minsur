@@ -648,7 +648,9 @@ header.scrolled .navbar-nav .nav-link:focus, .nav-link:hover {
   letter-spacing: -1.15;
   text-align: left;
 }
-
+.news-title:hover {
+  text-decoration: underline;
+}
 .news-image {
   display: flex;
   align-items: end;
@@ -3180,30 +3182,30 @@ max-height: 550px;
 }
 
 /* Estado hover: se expande el contenedor y cambian colores */
-.btn-vermas2:hover .arrow-container {
+.btn-vermas2:hover .arrow-container,.btn-vermas2.active .arrow-container {
   width: 100px; /* Se alarga el contenedor */
   height: 30px;
   border-radius: 250px; /* Pasa a tener forma "pill" */
   background-color: var(--arrow-border-color);
   color: #fff;
 }
-.btn-vermas2.arrow-reporte:hover .arrow-container{
+.btn-vermas2.arrow-reporte:hover .arrow-container,.btn-vermas2.arrow-reporte.active .arrow-container{
 
   width: 50px; /* Se alarga el contenedor */
   /* height: 30px; */
   border-radius: 250px;
   background-color: var(--arrow-border-color);
   }
-.btn-vermas2.arrow-reporte:hover .listado {
+  .btn-vermas2.arrow-reporte:hover .listado,.btn-vermas2.arrow-reporte.active .listado {
   color: var(--unnamed-color-0063f9);
   }
 
 /* En hover, se expande solo el cuerpo de la flecha */
-.btn-vermas2:hover .arrow-body {
+.btn-vermas2:hover .arrow-body,.btn-vermas2.active  .arrow-body {
   width: 80px; /* El cuerpo se alarga */
   margin-left: 10px;
 }
-.btn-vermas2.arrow-reporte:hover .arrow-body {
+.btn-vermas2.arrow-reporte:hover .arrow-body,.btn-vermas2.arrow-reporte.active .arrow-body {
   width: 50px; /* El cuerpo se alarga */
   margin-left: 10px;
 }

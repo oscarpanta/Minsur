@@ -9,7 +9,7 @@ const routes: Routes = [
         { path: '', component: ContenidoComponent },
 
         { path: 'san-rafael', component: SanRafaelComponent,data:{breadcrumb:'San Rafael'} },
-        { path: 'pisco', component: PiscoComponent,data:{breadcrumb:'Fundicion Pisco'} },
+        { path: 'pisco', component: PiscoComponent,data:{breadcrumb:'Fundición Pisco'} },
 
         { path: 'pucamarca', component: PucamarcaComponent,data:{breadcrumb:'Pucamarca'} },
 

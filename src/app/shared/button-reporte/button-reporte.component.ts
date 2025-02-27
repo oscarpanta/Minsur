@@ -14,4 +14,5 @@ export class ButtonReporteComponent {
   @Input() hoverStrokeColor: string = '#ffffff';
   @Input() label: string = 'ver más';
   @Input() textColor: string = '#0063f9';
+  @Input() isActive: boolean = false;
 }
