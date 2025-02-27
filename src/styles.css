@@ -3871,7 +3871,7 @@ max-height: 550px;
   }
   .card4 {
     font-size: 16px;
-    line-height: 18px;
+    line-height: 30px;
   }
   .card-img-container {
     max-height: 200px;
@@ -4385,7 +4385,7 @@ max-height: 550px;
 
   }
   .card-img-container {
-    max-height: none;
+    max-height: 250px;
   }
   .section-background-3 {
     background: linear-gradient(to bottom, #e9eef4 30%, #fff 30%),
@@ -4473,6 +4473,9 @@ max-height: 550px;
   }
   .card11:hover .overlay {
   height: 100%;
+  }
+  .card5 .card-body{
+    min-height: 280px;
   }
 }
 @media (max-width: 992px) {
@@ -4694,6 +4697,9 @@ max-height: 550px;
     min-height: auto;
     max-height: max-content;
   }
+  .card5 .card-body{
+    min-height: auto;
+  }
 }
 
 /* Responsividad para pantallas más pequeñas (mayores a 768px) */
@@ -4845,6 +4851,7 @@ max-height: 550px;
     margin-bottom: 1rem;
   }
   .card-img-container{
+    max-height: 300px;
     height: auto;
   }
   .margin-titles {
