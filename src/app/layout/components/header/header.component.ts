@@ -15,12 +15,7 @@ export class HeaderComponent {
   constructor(private router: Router) {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
-        // Rutas donde el header debe tener fondo blanco desde el inicio
-        // const whiteBackgroundRoutes = ['/noticias', '/home/trabaja-con-nosotros','/home/contactanos'];
 
-        // this.forceWhiteBackground = whiteBackgroundRoutes.includes(event.url);
-        // Verificamos si la URL empieza con "/home/" o es una de las rutas específicas
-        // this.forceWhiteBackground = event.url.startsWith('/home/') || ['/noticias'].includes(event.url);
         this.forceWhiteBackground =
           event.url.startsWith('/home/') ||
           event.url.startsWith('/noticias/') ||
@@ -31,14 +26,13 @@ export class HeaderComponent {
           event.url.startsWith('/proveedores/') ||
           ['/noticias'].includes(event.url);
 
-        this.isScrolled = this.forceWhiteBackground; // Si la ruta coincide, aplicamos el fondo blanco
+        this.isScrolled = this.forceWhiteBackground;
       }
     });
   }
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    // this.isScrolled = window.scrollY > 50;
     if (!this.forceWhiteBackground) {
       this.isScrolled = window.scrollY > 50;
     }

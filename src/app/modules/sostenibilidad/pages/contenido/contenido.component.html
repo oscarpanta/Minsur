@@ -10,8 +10,8 @@
   [videoText]="'Conoce más sobre nuestras operaciones mineras'"
 >
 </app-imagen-view>
-<!-- section proposito -->
 
+<!-- section proposito -->
 <app-info-view-general
   [titulo1]="'Un compromiso transversal'"
   [titulo2]="'La sostenibilidad guía nuestras decisiones diarias.'"
@@ -19,8 +19,8 @@
     'Nuestra estrategia de sostenibilidad al 2030 que se basa en cuatro pilares: Seguridad y salud, Cuidado ambiental, Valor compartido, y Gobernanza responsable. Hemos establecido prioridades de trabajo y metas que involucran a todos los trabajadores y contamos con un comité especializado que supervisa su cumplimiento.'
   "
 ></app-info-view-general>
-
 <!-- fin section proposito -->
+
 <!-- section nuestra vision -->
 <section class="contenedor-section section-background-2">
   <div
@@ -32,7 +32,9 @@
   >
     <div class="container-fluid">
       <div class="row d-flex justify-content-end">
-        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 my-5 py-3 ps-xl-4 ps-lg-2 ps-0">
+        <div
+          class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 my-5 py-3 ps-xl-4 ps-lg-2 ps-0"
+        >
           <div class="contenido-flotante">
             <p class="titulo-realeway-grande mb-lg-4 mb-2 pb-lg-3 pb-0">
               Minería sostenible y fuente de bienestar para todos.
@@ -54,7 +56,7 @@
 </section>
 <!--  fin section vision -->
 <section class="contenedor-section section-background-2">
-  <div class="container-fluid  my-xxl-5 my-md-3">
+  <div class="container-fluid my-xxl-5 my-md-3">
     <div class="card9">
       <div class="row no-gutters">
         <div class="col-12 col-md-6 d-flex flex-column pe-md-5 pe-ms-0">
@@ -63,14 +65,14 @@
             alt="Imagen"
             class="img-fluid mb-3"
           />
-          <!-- Imagen -->
         </div>
 
-        <!-- Segunda sección: Título, texto y nombre -->
-        <div class="col-12 col-md-6  mb-xxl-5 mb-xl-4 mb-md-1">
-          <p class="titulo-seccion tit-interno mb-xxl-5 mb-xl-4 mb-md-1">Seguridad y salud  </p>
+        <div class="col-12 col-md-6 mb-xxl-5 mb-xl-4 mb-md-1">
+          <p class="titulo-seccion tit-interno mb-xxl-5 mb-xl-4 mb-md-1">
+            Seguridad y salud  
+          </p>
 
-          <p class="texto-seccion texto-base mb-xxl-5 mb-xl-4 mb-md-1 ">
+          <p class="texto-seccion texto-base mb-xxl-5 mb-xl-4 mb-md-1">
             Nuestros altos estándares se basan en poner a las personas en el
             centro de nuestras decisiones y acciones. Protegemos la vida y el
             bienestar mediante un sólido sistema de gestión y una cultura
@@ -88,7 +90,6 @@
             ></app-button>
           </div>
         </div>
-        <!-- Primera sección: Imagen y texto -->
       </div>
     </div>
   </div>
@@ -98,9 +99,10 @@
   <div class="container-fluid my-lg-5 my-md-0">
     <div class="card9">
       <div class="row no-gutters">
-        <!-- Segunda sección: Título, texto y nombre -->
         <div class="col-12 col-md-6 mb-xxl-5 mb-xl-4 mb-md-1 mb-2">
-          <p class="titulo-seccion tit-interno mb-xxl-5 mb-xl-4 mb-md-1 ">Cuidado ambiental</p>
+          <p class="titulo-seccion tit-interno mb-xxl-5 mb-xl-4 mb-md-1">
+            Cuidado ambiental
+          </p>
 
           <p class="texto-seccion texto-base mb-xl-5 mb-md-3">
             Tenemos un enfoque de reducción de nuestra huella ambiental, basado
@@ -120,14 +122,12 @@
             ></app-button>
           </div>
         </div>
-        <!-- Primera sección: Imagen y texto -->
         <div class="col-12 col-md-6 d-flex flex-column ps-md-5 ps-ms-0">
           <img
             src="../../../../../assets/images/proyecto_volar2.png"
             alt="Imagen"
             class="img-fluid mb-3"
           />
-          <!-- Imagen -->
         </div>
       </div>
     </div>
@@ -141,7 +141,7 @@
 
 <!-- section valor compartido  -->
 <section class="contenedor-section section-background-2">
-  <div class="container-fluid  my-xxl-5 my-md-3">
+  <div class="container-fluid my-xxl-5 my-md-3">
     <div class="card9">
       <div class="row no-gutters">
         <div class="col-12 col-md-6 d-flex flex-column pe-md-5 pe-ms-0">
@@ -150,12 +150,12 @@
             alt="Imagen"
             class="img-fluid mb-3"
           />
-          <!-- Imagen -->
         </div>
 
-        <!-- Segunda sección: Título, texto y nombre -->
         <div class="col-12 col-md-6 mb-xxl-5 mb-xl-4 mb-md-1 mb-2">
-          <p class="titulo-seccion tit-interno mb-xxl-5 mb-xl-4 mb-md-1">Valor Compartido</p>
+          <p class="titulo-seccion tit-interno mb-xxl-5 mb-xl-4 mb-md-1">
+            Valor Compartido
+          </p>
 
           <p class="texto-seccion texto-base mb-xxl-5 mb-xl-4 mb-md-1">
             Nuestro objetivo es generar un impacto positivo en nuestras áreas de
@@ -166,27 +166,26 @@
             nuestra cadena de valor.
           </p>
         </div>
-        <!-- Primera sección: Imagen y texto -->
       </div>
     </div>
     <div class="card-bolder-sostenibilidad">
       <app-card-sostenibilidad
-      [cards]="valorCompartido"
-    ></app-card-sostenibilidad>
+        [cards]="valorCompartido"
+      ></app-card-sostenibilidad>
     </div>
-
   </div>
 </section>
 <!-- fin section valor compartido -->
 
 <!-- section Gobernanza responsable -->
 <section class="contenedor-section section-background-1">
-  <div class="container-fluid  my-xxl-5 my-md-3">
+  <div class="container-fluid my-xxl-5 my-md-3">
     <div class="card9">
       <div class="row no-gutters">
-        <!-- Segunda sección: Título, texto y nombre -->
         <div class="col-12 col-md-6 mb-xxl-5 mb-xl-4 mb-md-1 mb-2">
-          <p class="titulo-seccion tit-interno mb-xl-5 mb-lg-4 mb-md-1">Gobernanza responsable</p>
+          <p class="titulo-seccion tit-interno mb-xl-5 mb-lg-4 mb-md-1">
+            Gobernanza responsable
+          </p>
 
           <p class="texto-seccion texto-base mb-xl-5 mb-lg-4 mb-md-1">
             Basamos nuestras prácticas de gobierno corporativo en una cultura
@@ -195,23 +194,6 @@
             permite operar con integridad, reforzando la confianza de nuestros
             grupos de interés.
           </p>
-          <!-- <a routerLink="/sostenibilidad/gobernanza-responsable" class="btn-vermas">
-            <span class="flecha-circular"
-              ><i class="fas fa-arrow-right flecha-ver-mas"></i
-            ></span>
-            ver más
-          </a> -->
-          <!-- <a routerLink="/sostenibilidad/gobernanza-responsable" class="btn-vermas2">
-            <span class="arrow-container">
-              <svg class="arrow-body" width="40" height="20" viewBox="0 0 40 20" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-                <line x1="0" y1="10" x2="40" y2="10" stroke="#0063f9" stroke-width="2" stroke-linecap="round" />
-              </svg>
-              <svg class="arrow-head" width="15" height="15" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <polyline points="0,0 10,10 0,20" stroke="#0063f9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
-              </svg>
-            </span>
-            ver más
-          </a> -->
 
           <div class="d-md-block d-flex justify-content-center">
             <app-button
@@ -225,30 +207,26 @@
             </app-button>
           </div>
         </div>
-        <!-- Primera sección: Imagen y texto -->
         <div class="col-12 col-md-6 d-flex flex-column ps-md-5 ps-ms-0">
           <img
             src="../../../../../assets/images/equipo_fundicion.png"
             alt="Imagen"
             class="img-fluid mb-3"
           />
-          <!-- Imagen -->
         </div>
       </div>
     </div>
     <div class="card-bolder-sostenibilidad">
       <app-card-sostenibilidad
-      [cards]="gobernanzaResponsable"
-    ></app-card-sostenibilidad>
-
+        [cards]="gobernanzaResponsable"
+      ></app-card-sostenibilidad>
     </div>
-
   </div>
 </section>
 <!-- Fin section Gobernanza responsable -->
 <!-- section Reportes -->
 <section class="contenedor-section section-background-2">
-  <div class="container-fluid  my-xxl-5 my-md-3">
+  <div class="container-fluid my-xxl-5 my-md-3">
     <div class="card9">
       <div class="row no-gutters">
         <div class="col-12 col-md-6 d-flex flex-column pe-md-5 pe-ms-0">
@@ -257,12 +235,12 @@
             alt="Imagen"
             class="img-fluid mb-3"
           />
-          <!-- Imagen -->
         </div>
 
-        <!-- Segunda sección: Título, texto y nombre -->
         <div class="col-12 col-md-6">
-          <p class="titulo-seccion tit-interno mb-xxl-5 mb-xl-4 mb-md-1">Reportes</p>
+          <p class="titulo-seccion tit-interno mb-xxl-5 mb-xl-4 mb-md-1">
+            Reportes
+          </p>
 
           <p class="texto-seccion texto-base mb-xxl-5 mb-xl-4 mb-md-1">
             Nuestros reportes anuales son una muestra de nuestro compromiso con
@@ -270,12 +248,10 @@
             avances y desafíos en materia social, ambiental y de gobernanza.
           </p>
         </div>
-        <!-- Primera sección: Imagen y texto -->
       </div>
     </div>
     <div class="my-5">
       <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
-        <!-- Card 1 -->
         <div class="col">
           <div class="card card-descargas h-100">
             <div class="card-body p-0">
@@ -284,7 +260,9 @@
                 <h5 class="card-title tit-pequeño">Memoria Anual 2023</h5>
               </div>
             </div>
-            <div class="card4-footer border-bottom pb-xxl-0 pb-xl-0 border-top pt-xxl-0 pt-xl-0">
+            <div
+              class="card4-footer border-bottom pb-xxl-0 pb-xl-0 border-top pt-xxl-0 pt-xl-0"
+            >
               <div
                 class="flex-grow-0 flex-lg-grow-1 d-flex align-items-center justify-content-end me-sm-0 ms-sm-0 me-lg-5 me-3"
               >
@@ -298,16 +276,7 @@
                 label="descargar"
                 textColor="#0063f9"
               ></app-button-descargar>
-              <!-- <a
-                routerLink="/"
-                class="btn-descargar me-sm-0 ms-sm-0 me-lg-5 ms-lg-0 p-xxl-1 p-xl-0"
-                download
-              >
-                Descargar
-                <span class="flecha-circular"
-                  ><i class="fas fa-arrow-down"></i
-                ></span>
-              </a> -->
+
               <a
                 routerLink="/"
                 class="btn-descargar btn-ver me-sm-0 ms-sm-0 me-lg-0 ms-lg-3 ms-3"
@@ -322,7 +291,6 @@
           </div>
         </div>
 
-        <!-- Card 2 -->
         <div class="col">
           <div class="card card-descargas h-100">
             <div class="card-body p-0">
@@ -333,22 +301,15 @@
                 </h5>
               </div>
             </div>
-            <div class="card4-footer border-bottom pb-xxl-0 pb-xl-0 border-top pt-xxl-0 pt-xl-0">
+            <div
+              class="card4-footer border-bottom pb-xxl-0 pb-xl-0 border-top pt-xxl-0 pt-xl-0"
+            >
               <div
                 class="flex-grow-0 flex-lg-grow-1 d-flex align-items-center justify-content-end me-sm-0 ms-sm-0 me-lg-5 me-3"
               >
                 <p class="m-0 card4-footer">PDF 12.5MB</p>
               </div>
-              <!-- <a
-                routerLink="/"
-                class="btn-descargar me-sm-0 ms-sm-0 me-lg-5 ms-lg-0 p-xxl-1 p-xl-0"
-                download
-              >
-                Descargar
-                <span class="flecha-circular"
-                  ><i class="fas fa-arrow-down"></i
-                ></span>
-              </a> -->
+
               <app-button-descargar
                 link="/"
                 defaultBorderColor="#0063f9"
@@ -371,7 +332,6 @@
           </div>
         </div>
 
-        <!-- Card 3 -->
         <div class="col">
           <div class="card card-descargas h-100">
             <div class="card-body p-0">
@@ -382,7 +342,9 @@
                 </h5>
               </div>
             </div>
-            <div class="card4-footer border-bottom pb-xxl-0 pb-xl-0 border-top pt-xxl-0 pt-xl-0">
+            <div
+              class="card4-footer border-bottom pb-xxl-0 pb-xl-0 border-top pt-xxl-0 pt-xl-0"
+            >
               <div
                 class="flex-grow-0 flex-lg-grow-1 d-flex align-items-center justify-content-end me-sm-0 ms-sm-0 me-lg-5 me-3"
               >
@@ -396,16 +358,7 @@
                 label="descargar"
                 textColor="#0063f9"
               ></app-button-descargar>
-              <!-- <a
-                routerLink="/"
-                class="btn-descargar me-sm-0 ms-sm-0 me-lg-5 ms-lg-0 p-xxl-1 p-xl-0"
-                download
-              >
-                Descargar
-                <span class="flecha-circular"
-                  ><i class="fas fa-arrow-down"></i
-                ></span>
-              </a> -->
+
               <a
                 routerLink="/"
                 class="btn-descargar btn-ver me-sm-0 ms-sm-0 me-lg-0 ms-lg-3 ms-3"
@@ -428,9 +381,8 @@
 
 <!-- section certificacione -->
 <section class="contenedor-section section-background-1">
-  <div class="container-fluid  my-xxl-5 my-md-3">
+  <div class="container-fluid my-xxl-5 my-md-3">
     <div class="row d-flex justify-content-between">
-      <!-- Columna 1 -->
       <div class="col-md-5 mb-3 card-adherencias">
         <p class="tit-interno">Adherencias</p>
         <p class="texto-base text-content-certificaciones">
@@ -440,7 +392,10 @@
           Reﬂejando dedicación a operaciones éticas, responsables y alineadas a
           Objetivos de Desarrollo Sostenible.
         </p>
-        <div class="row g-2 d-flex align-items-center justify-content-center justify-content-md-start" style="height: 150px">
+        <div
+          class="row g-2 d-flex align-items-center justify-content-center justify-content-md-start"
+          style="height: 150px"
+        >
           <div class="col-6 col-sm-4 col-md-6">
             <img
               src="../../../../../assets/images/adherencia2.png"
@@ -458,7 +413,6 @@
         </div>
       </div>
 
-      <!-- Columna 2 -->
       <div class="col-md-5 mb-3 card-certificaciones">
         <p class="tit-interno">Certificaciones</p>
         <p class="texto-base text-content-certificaciones">

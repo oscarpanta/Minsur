@@ -8,10 +8,8 @@
     'background-size': '120% 100%',
   }"
 >
-<!-- 'background-size': 'cover' -->
   <div class="container-fluid my-xxl-5 my-xl-5 my-md-2 my-sm-3 my-2">
     <div class="row">
-      <!-- Contenido a la izquierda -->
       <div class="col-md-6">
         <p class="title mb-xxl-5 mb-lg-4 " >{{ title }}</p>
         <p class="description">
@@ -22,7 +20,6 @@
 
     <div class="row justify-content-end">
       <div class="col-md-6 col-lg-5">
-        <!-- 🟢 Solo envuelve en <a> si es video -->
         <a
           *ngIf="mode === 'video'"
           [href]="videoLink"

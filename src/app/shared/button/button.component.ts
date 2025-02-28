@@ -9,7 +9,6 @@ import { Component, Input } from '@angular/core';
 export class ButtonComponent {
   @Input() link: string = '/';
   @Input() defaultBorderColor: string = '#0063f9';
-  // @Input() hoverBorderColor: string = '#7df900';
   @Input() defaultStrokeColor: string = '#0063f9';
   @Input() hoverStrokeColor: string = '#ffffff';
   @Input() label: string = 'ver más';

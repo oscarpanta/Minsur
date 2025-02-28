@@ -7,6 +7,6 @@ import { Component, Input } from '@angular/core';
 })
 export class CardProduccionResponsableComponent {
   @Input()
-  descripcion: boolean = true; // Imagen de fondo
+  descripcion: boolean = true;
   cardRadius: string = "";
 }

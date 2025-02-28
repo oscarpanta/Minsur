@@ -3,10 +3,8 @@
   <div class="container-fluid py-sm-4 py-1">
 
     <div class="d-flex flex-lg-row flex-column justify-content-between align-items-lg-end align-items-center col-12 mb-2 mb-sm-3 mb-lg-5">
-      <!-- Título -->
       <div class="col-12 col-lg-4 title text-lg-start text-center mb-3 mb-lg-0">Ultimas Noticias</div>
 
-      <!-- Selector -->
       <div class="d-flex flex-column col-12 col-lg-4">
         <span class="text-end text-lg-end mb-3">Ordenar por</span>
         <div class="custom-select-listados">
@@ -30,7 +28,6 @@
     <div
       class="row align-items-stretch info_noticias_general py-lg-4 py-sm-3 py-2"
     >
-      <!-- Sección de Datos -->
       <div
         class="col-md-5 bg-white p-lg-5 p-lg-4 p-3 d-flex flex-column justify-content-between"
       >
@@ -51,15 +48,9 @@
             textColor="#0063f9"
           >
           </app-button>
-        <!-- <a routerLink="detalle/1" class="btn-vermas" style="max-width: max-content">
-          <span class="flecha-circular">
-            <i class="fas fa-arrow-right flecha-ver-mas"></i>
-          </span>
-          Ver más
-        </a> -->
+
       </div>
 
-      <!-- Sección de Imagen -->
       <div class="col-md-7 news-image px-0">
         <img
           src="assets/images/noticia_principal.png"
@@ -97,7 +88,6 @@
           data-bs-ride="carousel"
         >
           <div class="carousel-inner">
-            <!-- Item 1 -->
             <div class="carousel-item active">
               <div class="carousel-content">
                 <img
@@ -116,7 +106,6 @@
               </div>
             </div>
 
-            <!-- Item 2 -->
             <div class="carousel-item">
               <div class="carousel-content">
                 <img
@@ -142,7 +131,6 @@
             data-bs-target="#galleryCarousel"
             data-bs-slide="prev"
           >
-            <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
             <img
               src="assets/icons/left-arrow.svg"
               class="custom-arrow"
@@ -155,7 +143,6 @@
             data-bs-target="#galleryCarousel"
             data-bs-slide="next"
           >
-            <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
             <img
               src="assets/icons/right-arrow.svg"
               class="custom-arrow"
@@ -190,7 +177,6 @@
             </swiper-slide>
           </swiper-container>
 
-          <!-- Flecha de la derecha -->
           <button class="mini-slider-next ms-md-3 ms-0" (click)="moverDerecha()">
             <img
               src="assets/icons/Icon awesome-arrow-right.svg"
@@ -223,7 +209,6 @@
                 />
                 <span class="video-duration">{{ video.duration }}</span>
                 <span class="video-play">
-                  <!-- <img src="assets/icons/play.svg" alt="Play" /> -->
                   <i class="fas fa-play"></i>
                 </span>
               </div>
