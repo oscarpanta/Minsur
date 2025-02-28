@@ -10,7 +10,7 @@ export class EmisionesNetasComponent {
     {
       title: 'B2',
       text: 'La industria minera tiene la gran responsabilidad de conducir la producción sostenible de minerales que permitan la transición hacia una economía baja en carbono.',
-      image: 'assets/images/localizacion.png',
+      image: 'assets/images/icon-globe.png',
       route: '/sostenibilidad/etica-cumplimiento'
 
     },
