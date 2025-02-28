@@ -56,7 +56,7 @@ export class ContenidoComponent {
     {
       title: 'Ética y cumplimiento',
       text: 'Impulsamos una conducta ética y transparente en todas nuestras decisiones a través de sistemas de control que aseguran su cumplimiento, más allá de la legislación.',
-      image: 'assets/images/icon_globe.png',
+      image: 'assets/images/icon-globe.png',
       route: '/sostenibilidad/etica-cumplimiento'
 
     },

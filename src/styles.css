@@ -571,6 +571,7 @@ header.scrolled .navbar-nav .nav-link:focus, .nav-link:hover {
   letter-spacing: 0;
   text-align: left;
   text-transform: uppercase;
+  padding: 10px 0;
 }
 /* ESTILOS NOTICIAS */
 .blue-line {
@@ -962,7 +963,7 @@ header.scrolled .navbar-nav .nav-link:focus, .nav-link:hover {
   border: 2px solid #0063f9; /* Borde del círculo */
   border-radius: 50%; /* Asegura que el contenedor sea un círculo */
   transition: all 0.3s ease; /* Animación para agrandar el círculo */
-  margin-right: 0.5rem;
+  /* margin-right: 0.5rem; */
 }
 .compartir_container span i {
   width: 20px;
@@ -1938,7 +1939,7 @@ footer .list-unstyled.section-canal  li{
   border: 2px solid #0063f9; /* Borde del círculo */
   border-radius: 50%; /* Asegura que el contenedor sea un círculo */
   transition: all 0.3s ease; /* Animación para agrandar el círculo */
-  margin-right: 0.5rem;
+  /* margin-right: 0.5rem; */
 }
 .flecha-circular-verde {
   display: inline-flex;
@@ -1950,7 +1951,7 @@ footer .list-unstyled.section-canal  li{
   border: 2px solid #7df900; /* Borde del círculo */
   border-radius: 50%; /* Asegura que el contenedor sea un círculo */
   transition: all 0.3s ease; /* Animación para agrandar el círculo */
-  margin-right: 0.5rem;
+  /* margin-right: 0.5rem; */
 }
 .flecha-circular-blanco {
   display: inline-flex;
