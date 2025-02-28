@@ -3382,7 +3382,14 @@ max-height: 550px;
 .container-fluid .card.card12 .card-text{
   min-height: 200px;
 }
-
+.container-fluid .descripcion-produccion .card.card12 .card-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-height: auto;
+}
 /* Responsividad para pantallas grandes (mayores a 1400px) */
 .card-title-sostenibilidad{
   font-size: var(--unnamed-font-size-32);
@@ -5359,6 +5366,10 @@ max-height: 550px;
   .listado.estados{
     font-size: 15px;
     line-height: 24px;
+}
+.container-fluid .descripcion-produccion .card.card12 .card-text {
+
+  -webkit-line-clamp: none;
 }
 }
 /* Responsividad para móviles pequeños (menos de 480px) */
