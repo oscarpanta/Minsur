@@ -159,6 +159,9 @@ header {
 header .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
+header.menu-open .navbar-toggler-icon,header.scrolled.menu-open .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='black' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M6 6L24 24M6 24L24 6'/%3E%3C/svg%3E");
+}
 /* --- Logo alineado a la izquierda y centrado verticalmente --- */
 .logo-container {
   display: flex;
@@ -244,8 +247,14 @@ header .navbar-toggler-icon {
 
 /* --- Cuando se hace scroll --- */
 header.menu-open {
-  background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro semitransparente */
-  transition: background-color 0.3s ease-in-out;
+  /* background-color: rgba(0, 0, 0, 0.8);
+  transition: background-color 0.3s ease-in-out; */
+  background-color: blue;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
 }
 header.scrolled {
   background-color: white;
@@ -282,6 +291,7 @@ header.scrolled .logo {
 header.scrolled .navbar-nav .nav-link:focus, .nav-link:hover {
   color: #004891;
 }
+
 /* COMUNICADO HEADER */
 .p-cinta {
   width: 100%;
@@ -5370,6 +5380,9 @@ max-height: 550px;
 .container-fluid .descripcion-produccion .card.card12 .card-text {
 
   -webkit-line-clamp: none;
+}
+header {
+  background-color: #fff;
 }
 }
 /* Responsividad para móviles pequeños (menos de 480px) */
