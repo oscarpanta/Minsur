@@ -249,7 +249,7 @@ header.menu-open .navbar-toggler-icon,header.scrolled.menu-open .navbar-toggler-
 header.menu-open {
   /* background-color: rgba(0, 0, 0, 0.8);
   transition: background-color 0.3s ease-in-out; */
-  background-color: blue;
+  background-color: #004891;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -4718,6 +4718,60 @@ max-height: 550px;
   .card5 .card-body{
     min-height: auto;
   }
+  header {
+    background-color: #fff;
+  }
+  header .logo {
+    content: url("assets/images/Logo/LogoMinsurScroll.png");
+  }
+
+  header .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0, 72, 145, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+
+  }
+  .nav-item .nav-link {
+    text-align: left;
+  }
+  .mobile_nav{
+    padding: 4rem 0rem;
+  }
+  .nav-item .nav-link {
+    font-size: 25pt;
+    color: #CCE7FF;
+}
+.mobile_nav ul{
+  gap: 10px;
+}
+.top-bar-mobile a, .top-bar-mobile span{
+  font-size: 16pt ;
+  font-family: var(--unnamed-font-family-raleway);
+  font-weight: 600;
+  line-height: var(--unnamed-font-size-34);
+  letter-spacing: -0.56px;
+  color: var(--unnamed-color-CCE7FF);
+  text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.bottom-bar-mobile p{
+  font-size: 14pt ;
+  font-family: var(--unnamed-font-family-raleway);
+  font-weight: 500;
+  line-height: var(--unnamed-font-size-20);
+  letter-spacing: 0px;
+  color: var(--unnamed-color-CCE7FF);
+  text-align: left;
+  text-decoration: none;
+}
+.bottom-bar-mobile ul{
+  list-style: none;
+}
+.bottom-bar-mobile ul a{
+  text-decoration: none;
+  transition: color 0.3sease;
+  color: var(--unnamed-color-CCE7FF);
+
+}
 }
 
 /* Responsividad para pantallas más pequeñas (mayores a 768px) */
@@ -5381,17 +5435,8 @@ max-height: 550px;
 
   -webkit-line-clamp: none;
 }
-header {
-  background-color: #fff;
-}
-header .logo {
-  content: url("assets/images/Logo/LogoMinsurScroll.png");
-}
 
-header .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0, 72, 145, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 
-}
 
 
 }

@@ -1,13 +1,17 @@
-
-
-
-<header [class.scrolled]="isScrolled || forceWhiteBackground" [class.menu-open]="isMenuOpen" [class.absolute-header]="forceWhiteBackground">
-  <div class="p-cinta py-2 d-xl-block d-none">
-    <div class="d-flex justify-content-between align-items-center container-fluid">
+<header
+  [class.scrolled]="isScrolled || forceWhiteBackground"
+  [class.menu-open]="isMenuOpen"
+  [class.absolute-header]="forceWhiteBackground"
+>
+  <div class="p-cinta py-2 d-lg-block d-none">
+    <div
+      class="d-flex justify-content-between align-items-center container-fluid"
+    >
       <span class="">
-        <span><strong>COMUNICADO:</strong> </span> Minsur es la primera empresa peruana en ser
-        reconocida por.Minsur es la primera empresa peruana en ser reconocida
-        por Minsur es la primera empresa peruana en ser reconocida.</span
+        <span><strong>COMUNICADO:</strong> </span> Minsur es la primera empresa
+        peruana en ser reconocida por.Minsur es la primera empresa peruana en
+        ser reconocida por Minsur es la primera empresa peruana en ser
+        reconocida.</span
       >
       <button
         (click)="eliminarCinta()"
@@ -21,14 +25,18 @@
 
   <div class="container-fluid">
     <div
-      class="header-content d-xl-flex d-block justify-content-between align-items-center"
+      class="header-content d-lg-flex d-block justify-content-between align-items-center"
     >
-      <a class="navbar-brand logo-container d-xl-block d-none mb-xl-4" routerLink="/" style="margin-bottom: 1.25rem;" >
+      <a
+        class="navbar-brand logo-container d-lg-block d-none mb-lg-4"
+        routerLink="/"
+        style="margin-bottom: 1.25rem"
+      >
         <img src="assets/images/Logo/LogoMinsur.png" alt="Logo" class="logo" />
       </a>
 
       <div class="right-content d-flex flex-column">
-        <div class="top-bar d-none d-xl-flex justify-content-end">
+        <div class="top-bar d-none d-lg-flex justify-content-end">
           <a routerLink="home/contactanos" class="top-link">CONTÁCTANOS</a>
           <a routerLink="home/trabaja-con-nosotros" class="top-link"
             >TRABAJA CON NOSOTROS</a
@@ -42,8 +50,8 @@
           </span>
         </div>
 
-        <nav class="navbar navbar-expand-xl">
-          <a class="navbar-brand d-block d-xl-none" routerLink="/">
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand d-block d-lg-none" routerLink="/">
             <img
               src="assets/images/Logo/LogoMinsur.png"
               alt="Logo"
@@ -55,58 +63,126 @@
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"   (click)="toggleMenu()"
+            data-bs-target="#navbarNav"
+            (click)="toggleMenu()"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div
-            class="collapse navbar-collapse justify-content-end"
+            class="collapse navbar-collapse justify-content-end mobile_nav"
             id="navbarNav"
           >
-            <ul class="navbar-nav">
+            <ul class="navbar-nav py-lg-0 py-4">
               <li class="nav-item">
-                <a class="nav-link" routerLink="/quienes-somos" (click)="closeMenu()"
+                <a
+                  class="nav-link"
+                  routerLink="/quienes-somos"
+                  (click)="closeMenu()"
                   >Quiénes Somos</a
                 >
               </li>
-              <li class="nav-item ">
-                <a class="nav-link" routerLink="/que-hacemos" (click)="closeMenu()">Qué Hacemos</a>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  routerLink="/que-hacemos"
+                  (click)="closeMenu()"
+                  >Qué Hacemos</a
+                >
               </li>
-              <li class="nav-item ">
-                <a class="nav-link" routerLink="/sostenibilidad" (click)="closeMenu()"
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  routerLink="/sostenibilidad"
+                  (click)="closeMenu()"
                   >Sostenibilidad</a
                 >
               </li>
-              <li class="nav-item ">
-                <a class="nav-link" routerLink="/inversiones-reportes" (click)="closeMenu()"
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  routerLink="/inversiones-reportes"
+                  (click)="closeMenu()"
                   >Inversionistas y Reportes</a
                 >
               </li>
-              <li class="nav-item ">
-                <a class="nav-link" routerLink="/proveedores" (click)="closeMenu()">Proveedores</a>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  routerLink="/proveedores"
+                  (click)="closeMenu()"
+                  >Proveedores</a
+                >
               </li>
 
-              <li class="nav-item ">
-                <a class="nav-link" routerLink="/noticias" (click)="closeMenu()">Noticias</a>
-              </li>
-              <li class="nav-item  d-xl-none">
-                <a class="nav-link" routerLink="/home/trabaja-con-nosotros" (click)="closeMenu()">Trabaja con Nosotros</a>
-              </li>
-              <li class="nav-item  d-xl-none">
-                <a class="nav-link" routerLink="home/contactanos" (click)="closeMenu()">Contáctanos</a>
-              </li>
-              <div class="d-xl-none d-flex flex-column">
-                <a routerLink="home/contactanos">Contactanos</a>
-                <a routerLink="/home/trabaja-con-nosotros">Trabaja con Nosotros</a>
-                <span class="top-link_idioma"
-                ><a class="me-2 top-link active" routerLink="/">ESPAÑOL</a>|<a
-                  class="ms-2 top-link"
-                  routerLink="/"
-                  >ENGLISH</a
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/noticias" (click)="closeMenu()"
+                  >Noticias</a
                 >
-              </span>
-              </div>
+              </li>
+              <li class="nav-item d-lg-none">
+                <a
+                  class="nav-link"
+                  routerLink="/home/trabaja-con-nosotros"
+                  (click)="closeMenu()"
+                  >Trabaja con Nosotros</a
+                >
+              </li>
+              <!-- <li class="nav-item  d-lg-none">
+                <a class="nav-link" routerLink="home/contactanos" (click)="closeMenu()">Contáctanos</a>
+              </li> -->
             </ul>
+
+            <div class="d-lg-none">
+              <div class="d-flex flex-column top-bar-mobile py-4">
+                <a routerLink="home/contactanos" class=""
+                  >CONTÁCTANOS</a
+                >
+                <a routerLink="/home/trabaja-con-nosotros"
+                  >Trabaja con Nosotros</a
+                >
+                <span
+                  ><a class="me-2 active" routerLink="/">ESPAÑOL</a><span>|</span><a
+                    class="ms-2"
+                    routerLink="/"
+                    >ENGLISH</a
+                  >
+                </span>
+              </div>
+              <div class="pt-4 bottom-bar-mobile">
+                <p>
+                  Mantente al día en nuestras redes
+                </p>
+                <ul
+                  class="d-flex"
+                >
+                  <li>
+                    <a routerLink="/" class="me-3"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a routerLink="/" class="me-3"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a routerLink="/" class="me-3"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a routerLink="/" class="me-3"
+                      ><i class="fab fa-x-twitter"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a routerLink="/" class="me-3"
+                      ><i class="fab fa-youtube"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </nav>
       </div>
