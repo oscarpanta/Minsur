@@ -3460,6 +3460,16 @@ max-height: 550px;
 footer .footer-iconos i{
   /* font-size: 30px; */
 }
+.noticias-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+/* Para cada tarjeta en pantallas grandes */
+.noticia-card {
+  flex: 0 0 calc(33.33% - 16px); /* 3 columnas en desktop */
+}
 /* .w-xl-auto {
   width: auto !important;
 } */
@@ -3765,7 +3775,7 @@ footer .footer-iconos i{
 
   .card2-title {
     font-size: var(--unnamed-font-size-22);
-    line-height: 1.4;
+    line-height: 22px;
   }
   .card-text {
     font-size: var(--unnamed-font-size-16);
@@ -4379,7 +4389,7 @@ footer .footer-iconos i{
   }
   .card2-title {
     font-size: var(--unnamed-font-size-22);
-    line-height: 1.3;
+    line-height: 22px;
   }
 
   .card3 {
@@ -5504,6 +5514,25 @@ footer .container-fluid{
 
   .contenido-sustinable {
     order: 0; /* Asegura que el contenido quede arriba */
+  }
+  .noticias-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto; /* Scroll manual horizontal */
+    scroll-snap-type: x mandatory; /* Mejora la experiencia de desplazamiento */
+    padding: 10px 0;
+    gap: 16px;
+  }
+
+  /* Cada tarjeta ocupa el 80% del ancho para mostrar parte de la siguiente */
+  .noticia-card {
+    flex: 0 0 80%;
+    scroll-snap-align: start;
+  }
+
+  /* Ocultar barra de desplazamiento en navegadores modernos */
+  .noticias-container::-webkit-scrollbar {
+    display: none;
   }
 }
 /* Responsividad para móviles pequeños (menos de 480px) */
