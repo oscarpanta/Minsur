@@ -5977,6 +5977,13 @@ body.menu-open {
   .logo {
     height: 35px;
   }
+  header.menu-open .navbar-toggler-icon,
+  header.scrolled.menu-open .navbar-toggler-icon,
+  header .navbar-toggler-icon {
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+  }
 }
 /* Pantallas de 360px */
 @media (max-width: 360px) {
