@@ -11,6 +11,9 @@ export class CardNoticiasComponent {
 
   @Input() hoverClass: string = 'hover-card-underline';
 
+  @Input() overflowClass: string = '';
+
+
   @Input() noticias: Noticia[] = [];
 
   @Input() displayCount: number = 3;

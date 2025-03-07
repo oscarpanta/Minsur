@@ -593,7 +593,7 @@ header.scrolled .navbar-nav .nav-link:focus, .nav-link:hover {
   transition: top 0.3s ease-in-out;
 }
 .section_noticias_inicio {
-  background-color: #f0f0f0;
+  background-color: #E9EEF4;
 }
 .section_noticias_inicio .title {
   font-family: var(--unnamed-font-family-merriweather);
@@ -1896,7 +1896,7 @@ footer .list-unstyled.section-canal  li{
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  min-height: 720px;
+  /* min-height: 720px; */
   box-shadow: 6px 6px 10px #00000029;
   transition: box-shadow 0.3s ease-in-out;
   background: #fff;
@@ -2378,6 +2378,7 @@ section .card-sustinable .col-lg-7 img {
 .card9 .img-fluid {
   max-width: 900px;
   max-height: 530px;
+  border-radius: 20px;
 }
 .card9.card-img-2 .img-fluid {
   max-height: 600px;
@@ -3774,8 +3775,8 @@ footer .footer-iconos i{
   }
 
   .card2-title {
-    font-size: var(--unnamed-font-size-22);
-    line-height: 22px;
+    font-size: var(--unnamed-font-size-26);
+    line-height: 30px;
   }
   .card-text {
     font-size: var(--unnamed-font-size-16);
@@ -3908,7 +3909,7 @@ footer .footer-iconos i{
     height: 42rem;
   }
   .card3 {
-    min-height: 550px;
+    /* min-height: 550px; */
   }
   .text-fecha {
     font-size: 15px;
@@ -4322,7 +4323,7 @@ footer .footer-iconos i{
     line-height: 28px;
   }
   .titulo-grande {
-    font-size: 36px;
+    font-size: 32px;
     line-height: 45px;
   }
   .titulo-grande-azul-marino {
@@ -4330,7 +4331,7 @@ footer .footer-iconos i{
     line-height: 45px;
   }
   .footer-minimo {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 36px;
   }
   .titulo-grande-verde {
@@ -4393,7 +4394,8 @@ footer .footer-iconos i{
   }
 
   .card3 {
-    min-height: 600px; /* Ajuste de altura para tablets */
+    /* min-height: 600px;  */
+    /* Ajuste de altura para tablets */
   }
   .card4 {
     font-size: 17px; /* Tamaño para pantallas medianas */
@@ -4578,7 +4580,7 @@ footer .footer-iconos i{
     line-height: 26px;
   }
   .titulo-grande {
-    font-size: 34px;
+    font-size: 30px;
     line-height: 40px;
   }
   .titulo-grande-azul-marino {
@@ -4586,7 +4588,7 @@ footer .footer-iconos i{
     line-height: 40px;
   }
   .footer-minimo {
-    font-size: 17px;
+    font-size: 16px;
     line-height: 34px;
   }
   .titulo-grande-verde {
@@ -4875,8 +4877,8 @@ footer .container-fluid{
     line-height: 24px;
   }
   .titulo-grande {
-    font-size: 32px;
-    line-height: 35px;
+    font-size: 25px;
+    line-height: 30px;
   }
   .titulo-grande-azul-marino {
     font-size: 32px;
@@ -4884,11 +4886,13 @@ footer .container-fluid{
   }
   .footer-minimo {
     font-size: 16px;
-    line-height: 32px;
+    line-height: 44px;
+    letter-spacing: -0.35px;
+    margin: 0;
   }
   .titulo-grande-verde {
-    font-size: 28px;
-    line-height: 35px;
+    font-size: 25px;
+    line-height: 30px;
   }
   .til-semi-pequenio {
     font-size: 18px;
@@ -4935,8 +4939,8 @@ footer .container-fluid{
     padding: 0;
   }
   .title-interna-index {
-    font-size: 24px;
-    line-height: 46px;
+    font-size: 25px;
+    line-height: 30px;
   }
 
   .card:hover .overlay {
@@ -5030,31 +5034,27 @@ footer .container-fluid{
     font-size: var(--unnamed-font-size-14);
   }
 
-  .titulo-grande {
-    font-size: var(--unnamed-font-size-24);
-  }
+
   .titulo-grande-azul-marino {
     font-size: var(--unnamed-font-size-24);
   }
-  .footer-minimo {
-    font-size: var(--unnamed-font-size-16);
-  }
+
   /* La imagen no debe salirse de la fila y debe ir debajo del texto */
-  section .card-sustinable .col-lg-7 {
-    position: relative; /* Vuelve a un comportamiento normal */
-    width: 100%; /* Asegura que la imagen ocupe todo el ancho disponible */
-    top: auto; /* Restablece la posición vertical */
-    left: 0; /* Restablece el desplazamiento */
+  /* section .card-sustinable .col-lg-7 {
+    position: relative;
+    width: 100%;
+    top: auto;
+    left: 0;
   }
 
   section .card-sustinable.col-lg-7 img {
-    height: auto; /* La imagen se ajusta a su tamaño original sin forzarla a ocupar toda la altura */
-  }
+    height: auto;
+  } */
 
-  section .card-sustinable .row {
+  /* section .card-sustinable .row {
     display: flex;
-    flex-direction: column-reverse; /* Esto asegura que la imagen se mueva debajo del contenido en pantallas pequeñas */
-  }
+    flex-direction: column-reverse;
+  } */
   .carousel-caption {
     align-items: center;
   }
@@ -5342,7 +5342,7 @@ footer .container-fluid{
     line-height: normal;
   }
   .card3 {
-    min-height: 500px;
+    /* min-height: auto; */
   }
   .section_noticias_inicio .title {
     font-size: 30px;
@@ -5546,6 +5546,54 @@ footer .container-fluid{
   .noticias-container::-webkit-scrollbar {
     display: none;
   }
+  .noticias-container.noticias-container-2 {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: auto; /* Scroll manual horizontal */
+    scroll-snap-type: x mandatory; /* Mejora la experiencia de desplazamiento */
+    padding: 10px 0;
+    gap: 16px;
+  }
+
+  /* Cada tarjeta ocupa el 80% del ancho para mostrar parte de la siguiente */
+  .noticias-container-2 .noticia-card {
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+  }
+  .card-footer a{
+    font-size: 13px;
+    letter-spacing: -0.13px;
+    font-weight: 600;
+  }
+  .blue-line{
+    height: 10px;
+  }
+  .card9 .img-fluid {
+    border-radius: 5px;
+  }
+  .icono-imagen {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+  }
+  .listado-operaciones{
+    padding-left: 1rem;
+  }
+  ul.font-color-blue li i {
+    font-size: 12px;
+    margin-right: 0.5rem;
+    color: var(--unnamed-color-5A9CFF);
+  }
+  ul.font-color-green li i {
+    font-size: 12px;
+    margin-right: 0.5rem;
+    color: var(--unnamed-color-7DF900);
+  }
+  ul.font-color-orange li i {
+     font-size: 12px;
+    margin-right: 0.5rem;
+    color: var(--unnamed-color-F98600);
+  }
 }
 /* Responsividad para móviles pequeños (menos de 480px) */
 @media (max-width: 480px) {
@@ -5594,12 +5642,12 @@ footer .container-fluid{
     line-height: 20px;
   }
   .texto-minimo {
-    font-size: 6px;
+    font-size: 12px;
     line-height: 14px;
   }
   .titulo-grande {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 25px;
+    line-height: 30px;
   }
   .titulo-grande-azul-marino {
     font-size: 24px;
@@ -5610,11 +5658,11 @@ footer .container-fluid{
   }
   .footer-minimo {
     font-size: 14px;
-    line-height: 16px;
+    line-height: 44px;
   }
   .titulo-grande-verde {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 25px;
+
   }
   .til-semi-pequenio {
     font-size: 18px;
@@ -5649,8 +5697,8 @@ footer .container-fluid{
     line-height: 38px;
   }
   .title-interna-index {
-    font-size: 24px;
-    line-height: 40px;
+    font-size: 25px;
+    line-height: 30px;
   }
   .card {
     max-height: 300px; /* Ajuste para pantallas móviles */
@@ -5677,8 +5725,16 @@ footer .container-fluid{
     margin-right: 1rem;
   }
   .card2-title {
+    font-size: var(--unnamed-font-size-16);
+
+  }
+  .card3 .card2-title {
+    font-size: var(--unnamed-font-size-18);
+
+  }
+  .card5 .card2-title {
     font-size: var(--unnamed-font-size-20);
-    line-height: 1.2;
+
   }
   .card-text {
     font-size:  var(--unnamed-font-size-14);
@@ -5687,9 +5743,7 @@ footer .container-fluid{
   /* .card-2 {
       max-height: 500px;
   } */
-  .card3 {
-    min-height: 450px;
-  }
+
   .card4 {
     font-size: 17px; /* Tamaño para pantallas pequeñas */
   }
@@ -5883,7 +5937,7 @@ footer .container-fluid{
   max-height: 35px;
 }
 .card-img-container{
-  height: 230px;
+  height: 220px;
   /* max-height: 250px; */
   /* height: auto; */
 }
@@ -5939,8 +5993,8 @@ footer .container-fluid{
     line-height: 14px;
   }
   .titulo-grande {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 22px;
+    line-height: 30px;
   }
   .titulo-grande-azul-marino {
     font-size: 24px;
@@ -5951,11 +6005,11 @@ footer .container-fluid{
   }
   .footer-minimo {
     font-size: 14px;
-    line-height: 16px;
+
   }
   .titulo-grande-verde {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 22px;
+
   }
   .til-semi-pequenio {
     font-size: 18px;
@@ -5990,8 +6044,8 @@ footer .container-fluid{
     line-height: 38px;
   }
   .title-interna-index {
-    font-size: 24px;
-    line-height: 40px;
+    font-size: 22px;
+    line-height: 30px;
   }
   .card {
     max-height: 300px; /* Ajuste para pantallas móviles */
@@ -6023,15 +6077,13 @@ footer .container-fluid{
 
   }
   .card-text {
-    font-size:  var(--unnamed-font-size-12);
+    font-size:  var(--unnamed-font-size-14);
     min-height: auto;
   }
   /* .card-2 {
       max-height: 500px;
   } */
-  .card3 {
-    min-height: 450px;
-  }
+
   .card4 {
     font-size: 16px; /* Tamaño para pantallas pequeñas */
   }
