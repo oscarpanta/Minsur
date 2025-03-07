@@ -1780,7 +1780,7 @@ footer .list-unstyled.section-canal  li{
 }
 
 .card:hover .overlay {
-  height: 70%;
+  height: 60%;
 }
 
 .card:hover .descripcion {
@@ -3619,7 +3619,7 @@ footer .footer-iconos i{
     min-height: auto;
   }
   .card:hover .overlay {
-    height: 65%;
+    height: 50%;
   }
   .card11:hover .overlay {
     height: 100%;
@@ -3760,14 +3760,14 @@ footer .footer-iconos i{
     min-height: 400px;
   }
   .card:hover .overlay {
-    height: 60%;
+    height: 50%;
   }
   .card11:hover .overlay {
     height: 100%;
   }
   .texto-base-blanco {
     font-size: var(--unnamed-font-size-16); /* Tamaño ligeramente menor */
-    line-height: var(--unnamed-line-spacing-28); /* Ajuste para línea */
+    line-height: 28px; /* Ajuste para línea */
   }
   .texto-titulo-blanco {
     font-size: var(--unnamed-font-size-24); /* Tamaño ligeramente menor */
@@ -3872,7 +3872,7 @@ footer .footer-iconos i{
     line-height: 24px;
   }
   .btn-descargar {
-    font-size: 10px;
+    font-size: 14px;
   }
   .btn-descargar {
     padding: 0;
@@ -3964,11 +3964,11 @@ footer .footer-iconos i{
     font-size: 16px;
   }
   .container-fluid .card {
-    /* min-height: 300px; */
-    min-height: 480px;
+
+    min-height: 500px;
   }
   .container-fluid .card img {
-    /* min-height: 300px; */
+
     min-height: 400px;
   }
   .container-fluid .card.card12{
@@ -4056,7 +4056,7 @@ footer .footer-iconos i{
     font-size: 16px;
   }
   .descripcion{
-    margin-left: 2rem;
+    margin-left: 1.8rem;
   }
   .card11 .descripcion {
     margin: 0;
@@ -4308,7 +4308,7 @@ footer .footer-iconos i{
   }
   .texto-base-blanco {
     font-size: 16px;
-    line-height: 30px;
+    line-height: 24px;
   }
   .titulo-sustinable {
     font-size: 20px;
@@ -4381,7 +4381,7 @@ footer .footer-iconos i{
     min-height: 500px;
   }
   .card:hover .overlay {
-    height: 50%; /* Overlay al 100% en hover */
+    height: 60%; /* Overlay al 100% en hover */
   }
 
   .texto-titulo-blanco {
@@ -4507,7 +4507,7 @@ footer .footer-iconos i{
     line-height: 32px;
   }
   .container-fluid .card {
-    min-height: 480px;
+    min-height: 460px;
   }
   .container-fluid .card.card11{
     min-height: 450px;
@@ -4565,7 +4565,7 @@ footer .footer-iconos i{
   }
   .texto-base-blanco {
     font-size: 16px;
-    line-height: 28px;
+    line-height: 24px;
   }
   .titulo-sustinable {
     font-size: 20px;
@@ -4716,17 +4716,17 @@ footer .footer-iconos i{
     min-height: 400px;
   }
   .card:hover .overlay {
-    height: 70%;
+    height: 60%;
   }
   .container-fluid .card img{
-    min-height: 400px;
+    min-height: 350px;
   }
   .container-fluid .card.card11{
     min-height: auto;
 
   }
   .container-fluid .card {
-    min-height: 480px;
+    min-height: 400px;
   }
   .container-fluid .card.card11{
     min-height: 450px;
@@ -4815,12 +4815,18 @@ footer .footer-iconos i{
 footer .container-fluid{
   width: 100%;
 }
+.descripcion{
+  margin: 0rem 0.5rem 0 1.8rem;
+}
+.overlay{
+  height: 50px;
+}
 }
 
 /* Responsividad para pantallas más pequeñas (mayores a 768px) */
 @media (max-width: 768px) {
   .tit-pequeño,.card12 .tit-pequeño {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 32px;
   }
   .tit-pequeño-blanco {
@@ -4839,10 +4845,10 @@ footer .container-fluid{
     font-size: 18px;
     line-height: 24px;
   }
-  .listado {
+  /* .listado {
     font-size: 16px;
     line-height: 24px;
-  }
+  } */
   .tit-interno {
     font-size: 24px;
     line-height: 36px;
@@ -4861,23 +4867,20 @@ footer .container-fluid{
     line-height: 26px;
   }
   .texto-base-blanco {
-    font-size: 14px;
-    line-height: 26px;
+    font-size: 16px;
+    line-height: 22px;
   }
   .titulo-sustinable {
-    font-size: 25px;
+    font-size: 27px;
     line-height: 30px;
   }
-  .texto-sustinable {
-    font-size: 14px;
-    line-height: 20px;
-  }
+
   .texto-minimo {
     font-size: 14px;
     line-height: 24px;
   }
   .titulo-grande {
-    font-size: 25px;
+    font-size: 27px;
     line-height: 30px;
   }
   .titulo-grande-azul-marino {
@@ -4891,16 +4894,16 @@ footer .container-fluid{
     margin: 0;
   }
   .titulo-grande-verde {
-    font-size: 25px;
+    font-size: 27px;
     line-height: 30px;
   }
   .til-semi-pequenio {
     font-size: 18px;
-    line-height: 26px;
+    line-height: 20px;
   }
   .til-grande-azul {
-    font-size: 35px;
-    line-height: 50px;
+    font-size: 34px;
+    line-height: 35px;
   }
   .titulo-realeway-grande {
     font-size: 30px;
@@ -4908,11 +4911,11 @@ footer .container-fluid{
   }
   .til-mediano-azul {
     font-size: 20px;
-    line-height: 48px;
+    line-height: 66px;
   }
   .til-pequenio-azul {
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 18px;
+    line-height: 40px;
   }
   .til-semipequenio-azul {
     font-size: 18px;
@@ -4939,12 +4942,12 @@ footer .container-fluid{
     padding: 0;
   }
   .title-interna-index {
-    font-size: 25px;
+    font-size: 27px;
     line-height: 30px;
   }
 
   .card:hover .overlay {
-    height: 100%; /* Overlay al 100% en hover */
+    height: 60%; /* Overlay al 100% en hover */
   }
 
   /* .texto-base-blanco {
@@ -4955,7 +4958,8 @@ footer .container-fluid{
   } */
   .texto-titulo-blanco {
     font-size: var(--unnamed-font-size-22); /* Tamaño de fuente más pequeño */
-    line-height: var(--unnamed-line-spacing-24); /* Ajuste de línea */
+    line-height: 24px; /* Ajuste de línea */
+    letter-spacing: -0.45px;
   }
   .card2-title {
     font-size: var(--unnamed-font-size-20);
@@ -4964,7 +4968,7 @@ footer .container-fluid{
   }
 
   .card4 {
-    font-size: 17px; /* Tamaño para pantallas más pequeñas */
+    font-size: 19px; /* Tamaño para pantallas más pequeñas */
     height: auto;
     margin-bottom: 1rem;
     line-height: 20px;
@@ -5031,7 +5035,8 @@ footer .container-fluid{
     font-size: 24px;
   }
   .texto-sustinable {
-    font-size: var(--unnamed-font-size-14);
+    font-size: var(--unnamed-font-size-16);
+    line-height: 20px;
   }
 
 
@@ -5119,7 +5124,7 @@ footer .container-fluid{
     font-size: 14px;
   }
   .btn-descargar {
-    font-size: 14px;
+    font-size: 13px;
   }
   .btn-vermas {
     font-size: 14px;
@@ -5406,7 +5411,7 @@ footer .container-fluid{
     font-size: 24px;
   }
   .text-fecha {
-    font-size: 16px;
+    font-size: 14px;
   }
   .info-container .info-item {
     border: 0;
@@ -5492,7 +5497,7 @@ footer .container-fluid{
   line-height: 38px;
 }
 .card-text{
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
   letter-spacing: -0.14px;
 }
@@ -5594,12 +5599,31 @@ footer .container-fluid{
     margin-right: 0.5rem;
     color: var(--unnamed-color-F98600);
   }
+  .flecha {
+    font-size: 12px;
+  }
+  .container-fluid .card{
+    min-height: 380px;
+  }
+  .container-fluid .card img{
+    min-height: 300px;
+  }
+  .overlay {
+    height: 80px;
+  }
+  .descripcion{
+    margin-left: 1.5rem;
+  }
+  .container-fluid .card{
+    border-radius: 5px 5px 0 0;
+  }
 }
 /* Responsividad para móviles pequeños (menos de 480px) */
 @media (max-width: 480px) {
   .tit-pequeño,.card12 .tit-pequeño {
     font-size: 16px;
     line-height: 24px;
+    letter-spacing: -0.4px;
   }
   .tit-pequeño-blanco {
     font-size: 16px;
@@ -5614,7 +5638,7 @@ footer .container-fluid{
     line-height: 32px;
   }
   .listado {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 20px;
   }
   .listado-pequeño {
@@ -5630,8 +5654,8 @@ footer .container-fluid{
     line-height: 22px;
   }
   .texto-base-blanco {
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 12px;
+    line-height: 18px;
   }
   .titulo-sustinable {
     font-size: 25px;
@@ -5665,23 +5689,24 @@ footer .container-fluid{
 
   }
   .til-semi-pequenio {
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 14px;
+    line-height: 20px;
   }
   .til-grande-azul {
     font-size: 30px;
-    line-height: 40px;
+    line-height: 35px;
   }
   .titulo-realeway-grande {
     font-size: 24px;
     line-height: 38px;
   }
   .til-mediano-azul {
-    font-size: 24px;
-    line-height: 38px;
+    font-size: 18px;
+    line-height: 66px;
+    letter-spacing: 0;
   }
   .til-pequenio-azul {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
   }
   .til-semipequenio-azul {
@@ -5707,22 +5732,20 @@ footer .container-fluid{
     height: 50px;
   }
   .card:hover .overlay {
-    height: 100%; /* Overlay al 100% en hover */
+    height: 60%; /* Overlay al 100% en hover */
   }
 
   .texto-base-blanco {
-    font-size: var(--unnamed-font-size-16); /* Tamaño aún más pequeño */
-    line-height: var(--unnamed-line-spacing-26); /* Ajuste de altura de línea */
+    font-size: var(--unnamed-font-size-12); /* Tamaño aún más pequeño */
+    line-height: 18px; /* Ajuste de altura de línea */
   }
   .texto-titulo-blanco {
-    font-size: var(
-      --unnamed-font-size-16
-    ); /* Tamaño más pequeño para móviles */
-    line-height: var(--unnamed-line-spacing-22); /* Ajuste en altura de línea */
+    font-size: var( --unnamed-font-size-18 ); /* Tamaño más pequeño para móviles */
+    line-height: 20px; /* Ajuste en altura de línea */
   }
   .descripcion {
     margin-left: 1.5rem;
-    margin-right: 1rem;
+    margin-right: 0.5rem;
   }
   .card2-title {
     font-size: var(--unnamed-font-size-16);
@@ -5908,10 +5931,10 @@ footer .container-fluid{
     font-size: 20px;
   }
   .container-fluid .card{
-    min-height: 400px;
+    min-height: 300px;
   }
   .container-fluid .card img{
-    min-height: 350px;
+    min-height: 250px;
   }
   .container-fluid .card.card11{
     min-height: 500px;
@@ -5941,6 +5964,16 @@ footer .container-fluid{
   /* max-height: 250px; */
   /* height: auto; */
 }
+.text-fecha {
+  font-size: 12px;
+}
+.content-directorio p {
+  padding-bottom: 0.5rem;
+}
+.descarga-espacio{
+  margin-left: 1rem !important;
+  margin-right: 2.5rem !important;
+}
 }
 /* Pantallas de 360px */
 @media (max-width: 360px) {
@@ -5961,7 +5994,7 @@ footer .container-fluid{
     line-height: 32px;
   }
   .listado {
-    font-size: 18px;
+    font-size: 14px;
     line-height: 20px;
   }
   .listado-pequeño {
@@ -5977,8 +6010,8 @@ footer .container-fluid{
     line-height: 22px;
   }
   .texto-base-blanco {
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 12px;
+    line-height: 18px;
   }
   .titulo-sustinable {
     font-size: 23px;
@@ -6024,11 +6057,11 @@ footer .container-fluid{
     line-height: 38px;
   }
   .til-mediano-azul {
-    font-size: 24px;
-    line-height: 38px;
+    font-size: 16px;
+
   }
   .til-pequenio-azul {
-    font-size: 18px;
+    font-size: 14px;
     line-height: 24px;
   }
   .til-semipequenio-azul {
@@ -6054,18 +6087,13 @@ footer .container-fluid{
     height: 50px;
   }
   .card:hover .overlay {
-    height: 100%; /* Overlay al 100% en hover */
+    height: 60%; /* Overlay al 100% en hover */
   }
 
-  .texto-base-blanco {
-    font-size: var(--unnamed-font-size-16); /* Tamaño aún más pequeño */
-    line-height: var(--unnamed-line-spacing-26); /* Ajuste de altura de línea */
-  }
+
   .texto-titulo-blanco {
-    font-size: var(
-      --unnamed-font-size-16
-    ); /* Tamaño más pequeño para móviles */
-    line-height: var(--unnamed-line-spacing-22); /* Ajuste en altura de línea */
+    font-size: var(--unnamed-font-size-16); /* Tamaño más pequeño para móviles */
+    line-height: 20px; /* Ajuste en altura de línea */
   }
   .descripcion {
     margin-left: 1.5rem;
@@ -6248,10 +6276,10 @@ footer .container-fluid{
     font-size: 20px;
   }
   .container-fluid .card{
-    min-height: 400px;
+    min-height: 300px;
   }
   .container-fluid .card img{
-    min-height: 350px;
+    min-height: 250px;
   }
   .container-fluid .card.card11{
     min-height: 500px;
@@ -6279,5 +6307,12 @@ footer .container-fluid{
 }
 footer .footer-auxiliar{
   font-size: 12px;
+}
+.text-fecha {
+  font-size: 10px;
+}
+.descarga-espacio{
+  margin-left: 1rem !important;
+  margin-right: 1rem !important;
 }
 }
