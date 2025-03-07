@@ -40,6 +40,11 @@ export class HeaderComponent {
 
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
+    if (this.isMenuOpen) {
+      document.body.classList.add('menu-open');
+    } else {
+      document.body.classList.remove('menu-open');
+    }
   }
 
   eliminarCinta() {
@@ -53,6 +58,7 @@ export class HeaderComponent {
     const navbarCollapse = document.getElementById('navbarNav');
     if (navbarCollapse) {
       navbarCollapse.classList.remove('show');
+      document.body.classList.remove('menu-open');
     }
   }
 }
