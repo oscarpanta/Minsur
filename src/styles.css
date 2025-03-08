@@ -1732,7 +1732,7 @@ footer .list-unstyled.section-canal li {
 .card-img {
   width: 100%;
   height: auto;
-  object-fit: cover;
+  object-fit: fill;
   transition: transform 0.3s ease;
 }
 
@@ -4818,6 +4818,7 @@ body.menu-open {
   .card12 .tit-pequeño {
     font-size: 20px;
     line-height: 32px;
+    font-weight: 400;
   }
   .tit-pequeño-blanco {
     font-size: 18px;
@@ -4840,21 +4841,24 @@ body.menu-open {
     line-height: 24px;
   } */
   .tit-interno {
-    font-size: 24px;
-    line-height: 36px;
-    text-align: center;
+    font-size: 27px;
+    line-height: 30px;
+    letter-spacing: -0.63px;
+    font-weight: 400;
   }
   .tit-interno-subtitulo {
-    font-size: 24px;
-    line-height: 36px;
-    text-align: center;
+    font-size: 27px;
+    line-height: 30px;
+    letter-spacing: -0.63px;
+    font-weight: 400;
   }
   .titulo-semi-pequeño-azul-marino {
     font-size: 24px;
   }
   .texto-base {
-    font-size: 14px;
-    line-height: 26px;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.14px;
   }
   .texto-base-blanco {
     font-size: 16px;
@@ -4888,8 +4892,9 @@ body.menu-open {
     line-height: 30px;
   }
   .til-semi-pequenio {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 20px;
+    letter-spacing: -0.16px;
   }
   .til-grande-azul {
     font-size: 34px;
@@ -4912,12 +4917,13 @@ body.menu-open {
     line-height: 32px;
   }
   .til-semigrande-azul {
-    font-size: 34px;
-    line-height: 48px;
+    font-size: 27px;
+    line-height: 66px;
   }
   .til-semigrande-azul-marino {
-    font-size: 34px;
-    line-height: 48px;
+    font-size: 20px;
+    line-height: 20px;
+    color: var(--unnamed-color-0063f9);
   }
   section .container-fluid {
     max-width: 100%;
@@ -4934,6 +4940,7 @@ body.menu-open {
   .title-interna-index {
     font-size: 27px;
     line-height: 30px;
+    font-weight: 400;
   }
 
   .card:hover .overlay {
@@ -5087,7 +5094,7 @@ body.menu-open {
     border-bottom-right-radius: 20px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 20px;
-    padding: 2rem;
+    padding: 1.5rem;
   }
   .container-fluid .custom-card .card-body {
     min-height: auto;
@@ -5105,7 +5112,7 @@ body.menu-open {
     margin: 0 auto;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 0px;
-    border-top-left-radius: 20px;
+    border-top-left-radius: 0px;
     border-bottom-left-radius: 0;
     border: 0;
   }
@@ -5166,8 +5173,9 @@ body.menu-open {
     line-height: 38px;
   }
   .til-semigrande-azul-marino {
-    font-size: 34px;
-    line-height: 42px;
+    font-size: 18px;
+
+
   }
   .titulo-realeway-mediano {
     font-size: 18px;
@@ -5610,6 +5618,31 @@ body.menu-open {
   .logo {
     height: 40px;
   }
+  .seccion-fondo{
+    height: 30vh;
+  }
+  .section-background-6{
+    background: #fff;
+  }
+  .card11 .overlay{
+    height :80px;
+  }
+  .section-background-4{
+    padding: 0;
+  }
+  .card-bolder-sostenibilidad .card12 .tit-pequeño{
+    font-weight: 400;
+  }
+  /* .container-fluid .card.card12{
+    min-height: 400px;
+  } */
+  .card12 .tit-pequeño{
+    font-size: 17px;
+  }
+  /* .container-fluid .card.card12 .card-text{
+    min-height: 400px;
+    max-height: 400px;
+  } */
 }
 /* Responsividad para móviles pequeños (menos de 480px) */
 @media (max-width: 480px) {
@@ -5640,12 +5673,12 @@ body.menu-open {
     line-height: 20px;
   }
   .tit-interno {
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 25px;
+
   }
   .texto-base {
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 14px;
+    line-height: 20px;
   }
   .texto-base-blanco {
     font-size: 12px;
@@ -5683,7 +5716,7 @@ body.menu-open {
   }
   .til-semi-pequenio {
     font-size: 14px;
-    line-height: 20px;
+
   }
   .til-grande-azul {
     font-size: 30px;
@@ -5707,13 +5740,10 @@ body.menu-open {
     line-height: 24px;
   }
   .til-semigrande-azul {
-    font-size: 30px;
-    line-height: 38px;
+    font-size: 25px;
+
   }
-  .til-semigrande-azul-marino {
-    font-size: 36px;
-    line-height: 38px;
-  }
+
   .title-interna-index {
     font-size: 25px;
     line-height: 30px;
@@ -5821,8 +5851,8 @@ body.menu-open {
     line-height: 34px;
   }
   .til-semigrande-azul-marino {
-    font-size: 36px;
-    line-height: 38px;
+    font-size: 18px;
+
   }
   .titulo-realeway-mediano {
     font-size: 16px;
@@ -5928,10 +5958,12 @@ body.menu-open {
     min-height: 250px;
   }
   .container-fluid .card.card11 {
-    min-height: 500px;
+    min-height: 400px;
   }
   .container-fluid .card.card11 img {
-    min-height: 500px;
+    min-height: 350px;
+    border-radius: 5px 5px 0px 0px;
+
   }
   .card11:hover .overlay {
     height: 100%;
@@ -5984,6 +6016,12 @@ body.menu-open {
     height: 24px;
     background-size: contain;
   }
+  .tit-interno-subtitulo{
+    font-size: 25px;
+  }
+  .card12 .tit-pequeño{
+    font-size: 15px;
+  }
 }
 /* Pantallas de 360px */
 @media (max-width: 360px) {
@@ -6013,12 +6051,12 @@ body.menu-open {
     line-height: 20px;
   }
   .tit-interno {
-    font-size: 20px;
-    line-height: 32px;
+    font-size: 23px;
+
   }
   .texto-base {
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 12px;
+
   }
   .texto-base-blanco {
     font-size: 12px;
@@ -6054,8 +6092,8 @@ body.menu-open {
     font-size: 22px;
   }
   .til-semi-pequenio {
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 12px;
+
   }
   .til-grande-azul {
     font-size: 30px;
@@ -6077,12 +6115,12 @@ body.menu-open {
     line-height: 24px;
   }
   .til-semigrande-azul {
-    font-size: 30px;
-    line-height: 38px;
+    font-size: 23px;
+
   }
   .til-semigrande-azul-marino {
-    font-size: 36px;
-    line-height: 38px;
+    font-size: 16px;
+
   }
   .title-interna-index {
     font-size: 22px;
@@ -6181,10 +6219,7 @@ body.menu-open {
     font-size: 46px;
     line-height: 34px;
   }
-  .til-semigrande-azul-marino {
-    font-size: 36px;
-    line-height: 38px;
-  }
+
   .titulo-realeway-mediano {
     font-size: 16px;
     line-height: 26px;
@@ -6288,12 +6323,8 @@ body.menu-open {
   .container-fluid .card img {
     min-height: 250px;
   }
-  .container-fluid .card.card11 {
-    min-height: 500px;
-  }
-  .container-fluid .card.card11 img {
-    min-height: 500px;
-  }
+
+
   .card11:hover .overlay {
     height: 100%;
     color: var(--unnamed-color-ffffff);
@@ -6329,5 +6360,8 @@ body.menu-open {
   .top-bar-mobile a,
   .top-bar-mobile span {
     font-size: 13px;
+  }
+  .tit-interno-subtitulo{
+    font-size: 23px;
   }
 }

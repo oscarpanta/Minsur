@@ -23,35 +23,35 @@
 
 <!-- section nuestra vision -->
 <section class="contenedor-section section-background-2">
-  <div class="container-fluid my-xxl-5 my-md-3">
+  <div class="container-fluid my-xxl-5 my-md-3 d-none d-sm-block">
     <p class="mb-5 title-interna-index">Nuestra visión del futuro</p>
   </div>
   <div
-    class="seccion-fondo"
+    class="seccion-fondo "
     style="
       background: url('../../../../../assets/images/breca.png') center/cover
         no-repeat;
     "
   >
-    <div class="container-fluid">
+    <div class=" container-fluid  d-none d-md-block">
       <div class="row d-flex justify-content-end">
         <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 my-5 py-3">
-          <div class="contenido-flotante mx-lg-3">
+          <div class="contenido-flotante mx-lg-3 texto-base">
             <p class="titulo-realeway-grande mb-xxl-5 mb-xl-3 mb-md-2">
               Para un futuro mejor, lo mejor de nosotros.
             </p>
-            <p class="texto-base">
+            <p >
               En Minsur, integramos prácticas y enfoques sostenibles en nuestra
               estrategia de negocios y en todas las etapas de nuestros proyectos
               y operaciones. .
             </p>
-            <p class="texto-base">
+            <p >
               Por eso, adoptamos tecnologías limpias y nos comprometemos a
               alcanzar cero emisiones netas en nuestras operaciones para 2050.
               También desarrollamos proyectos para un crecimiento continuo,
               optimizando recursos y buscando nuevas oportunidades de inversión.
             </p>
-            <p class="texto-base">
+            <p>
               Nuestro compromiso con la generación de valor compartido incluye
               la salud y seguridad de nuestros trabajadores y el fortalecimiento
               de los vínculos con socios estratégicos y la comunidad
@@ -60,7 +60,41 @@
         </div>
       </div>
     </div>
+
   </div>
+  <div class="section-background-1 d-block d-md-none">
+    <div class="container-fluid pt-5 pb-3">
+      <p class="title-interna-index">Nuestra visión del futuro</p>
+    </div>
+    <div class="container-fluid pb-5">
+      <div class="col-12 ">
+        <div class="mx-lg-3 texto-base">
+          <p class="mb-xxl-5 mb-xl-3 mb-md-2">
+            <strong>Para un futuro mejor, lo mejor de nosotros.</strong>
+          </p>
+          <p >
+            En Minsur, integramos prácticas y enfoques sostenibles en nuestra
+            estrategia de negocios y en todas las etapas de nuestros proyectos
+            y operaciones. .
+          </p>
+          <p >
+            Por eso, adoptamos tecnologías limpias y nos comprometemos a
+            alcanzar cero emisiones netas en nuestras operaciones para 2050.
+            También desarrollamos proyectos para un crecimiento continuo,
+            optimizando recursos y buscando nuevas oportunidades de inversión.
+          </p>
+          <p>
+            Nuestro compromiso con la generación de valor compartido incluye
+            la salud y seguridad de nuestros trabajadores y el fortalecimiento
+            de los vínculos con socios estratégicos y la comunidad
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+
 </section>
 <!--  fin section vision -->
 <!-- section Gobierno Corporativo -->
@@ -360,23 +394,138 @@
           </div>
         </div>
         <div class="pt-xxl-0 pt-xl-0">
-          <div
-            class="d-flex align-items-center mb-xxl-4 mb-xl-2 mb-sm-5 mb-5 content-listado flex-column flex-md-row justify-content-md-between justify-content-center"
-          >
-            <div class="col-12 col-md-6 d-flex align-items-center">
+          <div class="d-flex align-items-center mb-xxl-4 mb-xl-2 mb-sm-5 mb-5 content-listado flex-column flex-md-row justify-content-md-between justify-content-center" >
+            <div class="col-12 col-md-7 col-xl-8 d-flex align-items-center">
               <i class="fas fa-arrow-right flecha-blue me-3"></i>
               <p class="mb-0 listado">Código de Ética y Conducta</p>
             </div>
-            <div
-              class="col-12 col-md-6  d-flex align-items-center  justify-content-end mt-2 mt-md-0 p-0"
-            >
-              <div class="card4-footer">
-                <div
-                  class="btn-descargar btn-ver me-sm-0 ms-sm-0 me-lg-3 ms-lg-3 ms-3 me-2"
-                >
+            <div class="col-12 col-md-5 col-xl-4 d-flex align-items-center mt-2 mt-md-0 p-0">
+              <div class="card4-footer w-100 d-flex align-items-center justify-content-md-between justify-content-sm-end justify-content-between gap-xxl-4 gap-xl-2 gap-sm-5 gap-2 ms-3 ms-md-0">
+
+                <!-- Grupo PDF y Descargar con mayor separación -->
+                <div class="d-flex align-items-center gap-xxl-5 gap-xl-3 gap-md-2 gap-sm-3 gap-3">
+                  <div class="btn-descargar btn-ver">
+                    <p class="m-0 card4-footer">PDF 12.5MB</p>
+                  </div>
+
+                  <div>
+                    <app-button-descargar
+                      link="/"
+                      defaultBorderColor="#0063f9"
+                      defaultStrokeColor="#0063f9"
+                      hoverStrokeColor="#ffffff"
+                      label="descargar"
+                      textColor="#0063f9"
+                    ></app-button-descargar>
+                  </div>
+                </div>
+
+                <!-- Reducimos la distancia entre "descargar" y "ver" -->
+                <a routerLink="/" class="btn-descargar btn-ver" download>
+                  ver
+                  <span class="flecha-circular"><i class="fas fa-arrow-right"></i></span>
+                </a>
+
+              </div>
+            </div>
+
+
+
+
+          </div>
+          <div class="d-flex align-items-center mb-xxl-4 mb-xl-2 mb-sm-5 mb-5 content-listado flex-column flex-md-row justify-content-md-between justify-content-center">
+            <div class="col-12 col-md-7 col-xl-8 d-flex align-items-center">
+              <i class="fas fa-arrow-right flecha-blue me-3"></i>
+              <p class="mb-0 listado">Política Corporativa de Sostenibilidad</p>
+            </div>
+            <div class="col-12 col-md-5 col-xl-4 d-flex align-items-center mt-2 mt-md-0 p-0">
+              <div class="card4-footer w-100 d-flex align-items-center justify-content-md-between justify-content-sm-end justify-content-between gap-xxl-4 gap-xl-2 gap-sm-5 gap-2 ms-3 ms-md-0">
+
+                <!-- Grupo PDF y Descargar con mayor separación -->
+                <div class="d-flex align-items-center gap-xxl-5 gap-xl-3 gap-md-2 gap-sm-3 gap-3">
+                  <div class="btn-descargar btn-ver">
+                    <p class="m-0 card4-footer">PDF 12.5MB</p>
+                  </div>
+
+                  <div>
+                    <app-button-descargar
+                      link="/"
+                      defaultBorderColor="#0063f9"
+                      defaultStrokeColor="#0063f9"
+                      hoverStrokeColor="#ffffff"
+                      label="descargar"
+                      textColor="#0063f9"
+                    ></app-button-descargar>
+                  </div>
+                </div>
+
+                <!-- Reducimos la distancia entre "descargar" y "ver" -->
+                <a routerLink="/" class="btn-descargar btn-ver" download>
+                  ver
+                  <span class="flecha-circular"><i class="fas fa-arrow-right"></i></span>
+                </a>
+
+              </div>
+            </div>
+
+
+
+
+        </div>
+        <div class="d-flex align-items-center mb-xxl-4 mb-xl-2 mb-sm-5 mb-5 content-listado flex-column flex-md-row justify-content-md-between justify-content-center">
+        <div class="col-12 col-md-7 col-xl-8 d-flex align-items-center">
+          <i class="fas fa-arrow-right flecha-blue me-3"></i>
+          <p class="mb-0 listado">Política de Derechos Humanos</p>
+        </div>
+        <div class="col-12 col-md-5 col-xl-4 d-flex align-items-center mt-2 mt-md-0 p-0">
+          <div class="card4-footer w-100 d-flex align-items-center justify-content-md-between justify-content-sm-end justify-content-between gap-xxl-4 gap-xl-2 gap-sm-5 gap-2 ms-3 ms-md-0">
+
+            <!-- Grupo PDF y Descargar con mayor separación -->
+            <div class="d-flex align-items-center gap-xxl-5 gap-xl-3 gap-md-2 gap-sm-3 gap-3">
+              <div class="btn-descargar btn-ver">
+                <p class="m-0 card4-footer">PDF 12.5MB</p>
+              </div>
+
+              <div>
+                <app-button-descargar
+                  link="/"
+                  defaultBorderColor="#0063f9"
+                  defaultStrokeColor="#0063f9"
+                  hoverStrokeColor="#ffffff"
+                  label="descargar"
+                  textColor="#0063f9"
+                ></app-button-descargar>
+              </div>
+            </div>
+
+            <!-- Reducimos la distancia entre "descargar" y "ver" -->
+            <a routerLink="/" class="btn-descargar btn-ver" download>
+              ver
+              <span class="flecha-circular"><i class="fas fa-arrow-right"></i></span>
+            </a>
+
+          </div>
+        </div>
+
+
+
+
+      </div>
+      <div class="d-flex align-items-center mb-xxl-4 mb-xl-2 mb-sm-5 mb-5 content-listado flex-column flex-md-row justify-content-md-between justify-content-center" >
+          <div class="col-12 col-md-7 col-xl-8 d-flex align-items-center">
+            <i class="fas fa-arrow-right flecha-blue me-3"></i>
+            <p class="mb-0 listado"> Política Corporativa de Diversidad e Inclusión </p>
+          </div>
+          <div class="col-12 col-md-5 col-xl-4 d-flex align-items-center mt-2 mt-md-0 p-0">
+            <div class="card4-footer w-100 d-flex align-items-center justify-content-md-between justify-content-sm-end justify-content-between gap-xxl-4 gap-xl-2 gap-sm-5 gap-2 ms-3 ms-md-0">
+
+              <!-- Grupo PDF y Descargar con mayor separación -->
+              <div class="d-flex align-items-center gap-xxl-5 gap-xl-3 gap-md-2 gap-sm-3 gap-3">
+                <div class="btn-descargar btn-ver">
                   <p class="m-0 card4-footer">PDF 12.5MB</p>
                 </div>
-                <div class="me-md-0 ms-md-0 me-sm-5 ms-sm-3 descarga-espacio">
+
+                <div>
                   <app-button-descargar
                     link="/"
                     defaultBorderColor="#0063f9"
@@ -385,143 +534,23 @@
                     label="descargar"
                     textColor="#0063f9"
                   ></app-button-descargar>
-                  </div>
-                <a
-                  routerLink="/"
-                  class="btn-descargar btn-ver me-sm-0 ms-sm-0 me-lg-0 ms-xxl-5 ms-xl-3 ms-3"
-                  download
-                >
-                  ver
-                  <span class="flecha-circular"
-                    ><i class="fas fa-arrow-right"></i
-                  ></span>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div
-            class="d-flex align-items-center mb-xxl-4 mb-xl-2 mb-sm-5 mb-5 content-listado flex-column flex-md-row justify-content-md-between justify-content-center"
-          >
-            <div class="col-12 col-md-6 d-flex align-items-center">
-              <i class="fas fa-arrow-right flecha-blue me-3"></i>
-              <p class="mb-0 listado">Política Corporativa de Sostenibilidad</p>
-            </div>
-            <div
-              class="col-12 col-md-4 d-flex align-items-center justify-content-end mt-2 mt-md-0 p-0"
-            >
-            <div class="card4-footer">
-              <div
-                class="btn-descargar btn-ver me-sm-0 ms-sm-0 me-lg-3 ms-lg-3 ms-3 me-2"
-              >
-                <p class="m-0 card4-footer">PDF 12.5MB</p>
-              </div>
-              <div class="me-md-0 ms-md-0 descarga-espacio">
-                <app-button-descargar
-                  link="/"
-                  defaultBorderColor="#0063f9"
-                  defaultStrokeColor="#0063f9"
-                  hoverStrokeColor="#ffffff"
-                  label="descargar"
-                  textColor="#0063f9"
-                ></app-button-descargar>
                 </div>
-              <a
-                routerLink="/"
-                class="btn-descargar btn-ver me-sm-0 ms-sm-0 me-lg-0 ms-xxl-5 ms-xl-3 ms-3"
-                download
-              >
-                ver
-                <span class="flecha-circular"
-                  ><i class="fas fa-arrow-right"></i
-                ></span>
-              </a>
-            </div>
-          </div>
-          </div>
-
-          <div
-            class="d-flex align-items-center mb-xxl-4 mb-xl-2 mb-sm-5 mb-5 content-listado flex-column flex-md-row justify-content-md-between justify-content-center"
-          >
-            <div class="col-12  col-md-6 d-flex align-items-center">
-              <i class="fas fa-arrow-right flecha-blue me-3"></i>
-              <p class="mb-0 listado">Política de Derechos Humanos</p>
-            </div>
-            <div
-              class="col-12 col-md-6 d-flex align-items-center justify-content-end mt-2 mt-md-0 p-0"
-            >
-            <div class="card4-footer">
-              <div
-                class="btn-descargar btn-ver me-sm-0 ms-sm-0 me-lg-3 ms-lg-3 ms-3 me-2"
-              >
-                <p class="m-0 card4-footer">PDF 12.5MB</p>
               </div>
-              <div class="me-md-0 ms-md-0 descarga-espacio">
-                <app-button-descargar
-                  link="/"
-                  defaultBorderColor="#0063f9"
-                  defaultStrokeColor="#0063f9"
-                  hoverStrokeColor="#ffffff"
-                  label="descargar"
-                  textColor="#0063f9"
-                ></app-button-descargar>
-                </div>
-              <a
-                routerLink="/"
-                class="btn-descargar btn-ver me-sm-0 ms-sm-0 me-lg-0 ms-xxl-5 ms-xl-3 ms-3"
-                download
-              >
-                ver
-                <span class="flecha-circular"
-                  ><i class="fas fa-arrow-right"></i
-                ></span>
-              </a>
-            </div>
-            </div>
-          </div>
 
-          <div
-            class="d-flex align-items-center mb-xxl-4 mb-xl-2 mb-sm-5 mb-5 content-listado flex-column flex-md-row justify-content-md-between justify-content-center"
-          >
-            <div class="col-12  col-md-6 d-flex align-items-center">
-              <i class="fas fa-arrow-right flecha-blue me-3"></i>
-              <p class="mb-0 listado">
-                Política Corporativa de Diversidad e Inclusión
-              </p>
-            </div>
-            <div
-              class="col-12 col-md-6 d-flex align-items-center  justify-content-end mt-2 mt-md-0 p-0"
-            >
-            <div class="card4-footer">
-              <div
-                class="btn-descargar btn-ver me-sm-0 ms-sm-0 me-lg-3 ms-lg-3 ms-3 me-2"
-              >
-                <p class="m-0 card4-footer">PDF 12.5MB</p>
-              </div>
-              <div class="me-md-0 ms-md-0 descarga-espacio">
-                <app-button-descargar
-                  link="/"
-                  defaultBorderColor="#0063f9"
-                  defaultStrokeColor="#0063f9"
-                  hoverStrokeColor="#ffffff"
-                  label="descargar"
-                  textColor="#0063f9"
-                ></app-button-descargar>
-                </div>
-              <a
-                routerLink="/"
-                class="btn-descargar btn-ver me-sm-0 ms-sm-0 me-lg-0 ms-xxl-5 ms-xl-3 ms-3"
-                download
-              >
+              <!-- Reducimos la distancia entre "descargar" y "ver" -->
+              <a routerLink="/" class="btn-descargar btn-ver" download>
                 ver
-                <span class="flecha-circular"
-                  ><i class="fas fa-arrow-right"></i
-                ></span>
+                <span class="flecha-circular"><i class="fas fa-arrow-right"></i></span>
               </a>
-            </div>
 
             </div>
           </div>
+
+
+
+
+      </div>
+
         </div>
       </div>
     </div>
