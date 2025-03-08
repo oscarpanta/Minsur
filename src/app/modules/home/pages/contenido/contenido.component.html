@@ -118,7 +118,7 @@
         class="carousel-indicators-container d-flex mx-auto justify-content-center"
       >
         <div class="carousel-indicators container-fluid mb-lg-4 mb-2">
-          <div class="col-4 slide_index" (click)="goToSlide(0)">
+          <div class="col-md-4 col-1 slide_index" (click)="goToSlide(0)">
             <div class="carousel-indicator-group d-flex flex-column pe-2">
               <button
                 type="button"
@@ -126,10 +126,12 @@
                 data-bs-slide-to="0"
                 class="active order-1"
               ></button>
-              <div class="indicator-title">Quiénes Somos</div>
+              <div class="indicator-title d-md-block d-none">Quiénes Somos</div>
+              <div class="indicator-title d-block d-md-none text-center">1</div>
+
             </div>
           </div>
-          <div class="col-4 slide_index" (click)="goToSlide(1)">
+          <div class="col-md-4 col-1 slide_index" (click)="goToSlide(1)">
             <div class="carousel-indicator-group d-flex flex-column pe-2">
               <button
                 type="button"
@@ -137,10 +139,11 @@
                 data-bs-slide-to="1"
                 class="order-1"
               ></button>
-              <div class="indicator-title">Qué Producimos</div>
+              <div class="indicator-title d-md-block d-none">Qué Producimos</div>
+              <div class="indicator-title d-block d-md-none text-center">2</div>
             </div>
           </div>
-          <div class="col-4 slide_index" (click)="goToSlide(2)">
+          <div class="col-md-4 col-1 slide_index" (click)="goToSlide(2)">
             <div class="carousel-indicator-group d-flex flex-column pe-2">
               <button
                 type="button"
@@ -148,7 +151,9 @@
                 data-bs-slide-to="2"
                 class="order-1"
               ></button>
-              <div class="indicator-title">Visión del Futuro</div>
+              <div class="indicator-title d-md-block d-none">Visión del Futuro</div>
+              <div class="indicator-title d-block d-md-none text-center">3</div>
+
             </div>
           </div>
         </div>
