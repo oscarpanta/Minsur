@@ -5070,8 +5070,8 @@ body.menu-open {
   }
 
   .carousel-caption p {
-    font-size: var(--unnamed-font-size-22);
-    text-align: center;
+    font-size: 20px;
+    text-align: left;
   }
   /* .carousel-inner .carousel-caption {
     text-align: center;
@@ -5079,7 +5079,7 @@ body.menu-open {
     left: 0%;
   } */
   .carousel-inner .carousel-caption div {
-    text-align: center;
+    /* text-align: center; */
     width: 100%;
     left: 0%;
   }
@@ -5163,10 +5163,10 @@ body.menu-open {
     height: 50rem;
   }
   .quienes-somos-section .title {
-    font-size: 50px;
+    font-size: 45px;
   }
   .extra-fondo .quienes-somos-section .title {
-    font-size: 48;
+    font-size: 48px;
   }
   .numero-semi-grande {
     font-size: 54px;
@@ -5371,6 +5371,8 @@ body.menu-open {
   .indicator-title {
     font-size: 16px;
     line-height: normal;
+  opacity: 1;
+
   }
   .card-img {
     min-height: 300px;
@@ -5422,7 +5424,8 @@ body.menu-open {
     line-height: 30px;
   }
   .carousel-caption .subtitulo-carousel {
-    text-align: center;
+    font-size: 20px;
+    text-align: left;
   }
   .card8 {
     margin: 0rem;
@@ -5618,6 +5621,28 @@ body.menu-open {
   .logo {
     height: 40px;
   }
+  .carousel-indicators-container .carousel-indicators {
+    justify-content: normal;
+    padding-left: 0px;
+}
+.carousel-indicator-group button.active ~ .indicator-title{
+  color: #0063F9;
+}
+.carousel-indicators-container .carousel-indicators .active{
+  background-color: #0063F9;
+}
+
+.slide_index .indicator-title:hover,
+.slide_index button {
+  color: #0063F9;
+}
+.quienes-somos-section .small-section{
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.carousel-item {
+  background-position: 60% center;
+}
   .seccion-fondo{
     height: 30vh;
   }
@@ -5814,7 +5839,7 @@ body.menu-open {
   }
 
   .carousel-caption p {
-    font-size: var(--unnamed-font-size-22);
+    font-size: 16px;
     line-height: normal;
   }
 
@@ -5828,8 +5853,9 @@ body.menu-open {
   }
   .quienes-somos-section .description {
     line-height: normal;
-    font-size: var(--unnamed-font-size-24);
-  }
+    font-size: 15px;
+    width: 70%;
+    }
   .quienes-somos-section .video-info h5 {
     font-size: 12px;
     line-height: normal;
@@ -5843,7 +5869,7 @@ body.menu-open {
     font-size: 12px;
   }
   .quienes-somos-section .title {
-    font-size: 44px;
+    font-size: 30px;
     line-height: 46px;
   }
   .numero-semi-grande {
@@ -5872,16 +5898,22 @@ body.menu-open {
   }
   .quienes-somos-section {
     /* height: 100vh; */
-    height: 50rem;
+    /* height: 50rem; */
+    height: 30rem;
+    align-items: end;
+
   }
   .carousel-style {
-    height: 50rem;
+    /* height: 50rem; */
+    height: 30rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
   .carousel-style-item {
-    height: 50rem;
+    /* height: 50rem; */
+    height: 30rem;
+
   }
   .titulo-super-grande-blanco {
     font-size: 34px;
@@ -6015,12 +6047,6 @@ body.menu-open {
     width: 24px;
     height: 24px;
     background-size: contain;
-  }
-  .tit-interno-subtitulo{
-    font-size: 25px;
-  }
-  .card12 .tit-pequeño{
-    font-size: 15px;
   }
 }
 /* Pantallas de 360px */
@@ -6182,10 +6208,7 @@ body.menu-open {
     line-height: 40px;
   }
 
-  .carousel-caption p {
-    font-size: var(--unnamed-font-size-22);
-    line-height: normal;
-  }
+
 
   .p-cinta span,
   .p-cinta button {
@@ -6197,7 +6220,7 @@ body.menu-open {
   }
   .quienes-somos-section .description {
     line-height: normal;
-    font-size: var(--unnamed-font-size-24);
+    /* font-size: var(--unnamed-font-size-24); */
   }
   .quienes-somos-section .video-info h5 {
     font-size: 12px;
@@ -6212,7 +6235,6 @@ body.menu-open {
     font-size: 12px;
   }
   .quienes-somos-section .title {
-    font-size: 44px;
     line-height: 46px;
   }
   .numero-semi-grande {
@@ -6238,16 +6260,22 @@ body.menu-open {
   }
   .quienes-somos-section {
     /* height: 100vh; */
-    height: 50rem;
+    /* height: 50rem; */
+    height: 30rem;
+
   }
   .carousel-style {
-    height: 50rem;
+    /* height: 50rem; */
+    height: 30rem;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
   .carousel-style-item {
-    height: 50rem;
+    /* height: 50rem; */
+    height: 30rem;
+
   }
   .titulo-super-grande-blanco {
     font-size: 34px;
@@ -6360,8 +6388,5 @@ body.menu-open {
   .top-bar-mobile a,
   .top-bar-mobile span {
     font-size: 13px;
-  }
-  .tit-interno-subtitulo{
-    font-size: 23px;
   }
 }
