@@ -25,6 +25,25 @@
       </div>
     </div>
   </div>
+  <!-- <div *ngIf="paginacionActiva" class="pagination-container d-flex justify-content-center mt-4">
+    <button class="btn btn-primary mx-2" (click)="prevPage()" [disabled]="currentPage === 1">Anterior</button>
+    <span class="align-self-center">Página {{ currentPage }} de {{ totalPages }}</span>
+    <button class="btn btn-primary mx-2" (click)="nextPage()" [disabled]="currentPage === totalPages">Siguiente</button>
+  </div> -->
+  <div *ngIf="paginacionActiva" class="pagination-container d-flex justify-content-center mt-4">
+    <button class="btn btn-pagination mx-2" (click)="prevPage()" [disabled]="currentPage === 1">&lt;</button>
+
+    <ng-container *ngFor="let page of pages">
+      <button
+        class="btn mx-1 btn-pagination"
+        [ngClass]="{'btn-page': currentPage === page, 'btn-page-unselect': currentPage !== page}"
+        (click)="goToPage(page)">
+        {{ page }}
+      </button>
+    </ng-container>
+
+    <button class="btn btn-pagination mx-2" (click)="nextPage()" [disabled]="currentPage === totalPages">&gt;</button>
+  </div>
 </div>
   <!-- <div class="row g-4 justify-content-center justify-content-md-between">
     <div

@@ -1,0 +1,10 @@
+.btn-pagination{
+  color: #0063F9;
+  border: none;
+}
+.btn-page{
+  font-weight: 800;
+}
+.btn-page-unselect{
+  font-weight: 600;
+}
