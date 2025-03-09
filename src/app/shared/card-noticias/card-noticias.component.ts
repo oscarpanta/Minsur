@@ -18,7 +18,7 @@ export class CardNoticiasComponent {
 
   @Input() displayCount: number = 3;
   @Input() paginacionActiva: boolean = false;
-  @Input() itemsPorPagina: number = 2;
+  @Input() itemsPorPagina: number = 6;
   currentPage: number = 1;
 
   get totalPages(): number {
