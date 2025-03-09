@@ -35,7 +35,7 @@
 
     <ng-container *ngFor="let page of pages">
       <button
-        class="btn mx-1 btn-pagination"
+        class="btn px-0 mx-1 btn-pagination"
         [ngClass]="{'btn-page': currentPage === page, 'btn-page-unselect': currentPage !== page}"
         (click)="goToPage(page)">
         {{ page }}
