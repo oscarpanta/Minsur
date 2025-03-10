@@ -278,7 +278,7 @@ header.scrolled .nav-link {
 
 header.scrolled .nav-item .nav-link:hover {
   /* color: blue; */
-  color: var(--unnamed-color-004891);
+  /* color: var(--unnamed-color-004891); */
 }
 
 header.scrolled .top-link,
