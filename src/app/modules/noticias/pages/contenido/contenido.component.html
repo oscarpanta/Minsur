@@ -162,11 +162,16 @@
             loop="true"
             pagination="false"
             navigation="false"
-            [breakpoints]="{
-              '0': { slidesPerView: 2 },
-              '768': { slidesPerView: 4 }
+
+             [breakpoints]="{
+              '0': { slidesPerView: 1.5, centeredSlides: false },
+              '768': { slidesPerView: 4, centeredSlides: false }
             }"
           >
+          <!-- [breakpoints]="{
+            '0': { slidesPerView: 2 },
+            '768': { slidesPerView: 4 }
+          }" -->
             <swiper-slide *ngFor="let item of noticias">
               <div class="mini-slider-item">
                 <img
@@ -179,7 +184,7 @@
             </swiper-slide>
           </swiper-container>
 
-          <button class="mini-slider-next ms-md-3 ms-0" (click)="moverDerecha()">
+          <button class="mini-slider-next ms-md-3 ms-0 d-none d-md-block" (click)="moverDerecha()">
             <img
               src="assets/icons/Icon awesome-arrow-right.svg"
               class="mini-slider-arrow"
