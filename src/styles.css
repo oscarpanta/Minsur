@@ -2559,7 +2559,9 @@ select.selector-listado {
 }
 .container-fluid .card12 {
   background: none;
-  min-height: 200px;
+  height: auto;
+  min-height: auto;
+  max-height: auto;
 }
 .card12 .card-body {
   flex: 0 1 auto;
@@ -3386,11 +3388,13 @@ select.selector-listado {
 /* Estilos apra overlay */
 
 .container-fluid .card.card.card-descargas {
-  min-height: 200px;
+  min-height: unset;
+  max-height: unset;
+  height: auto;
 }
 
 .card-certificaciones .img_certificaciones {
-  height: 150px;
+  height: auto;
 }
 .card-alta-gerencia {
   background: #fff;
@@ -3399,7 +3403,8 @@ select.selector-listado {
   margin-bottom: 0.1rem;
 }
 .container-fluid .card.card12 .card-text {
-  min-height: 200px;
+  min-height: auto;
+  /* min-height: 200px; */
 }
 .container-fluid .descripcion-produccion .card.card12 .card-text {
   display: -webkit-box;
@@ -3474,6 +3479,10 @@ footer .footer-iconos i {
 }
 body.menu-open {
   overflow: hidden;
+}
+.card-reportes-sostenibilidad{
+  border-top: 1px solid #9FB5C9;
+  border-bottom: 1px solid #9FB5C9;
 }
 /* .w-xl-auto {
   width: auto !important;
@@ -3868,8 +3877,8 @@ body.menu-open {
     font-size: 15px;
   }
   .card4.cards-reporte .card4-title {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 25px;
+    line-height: 36px;
   }
   .btn-descargar {
     font-size: 14px;
@@ -3970,7 +3979,9 @@ body.menu-open {
     min-height: 400px;
   }
   .container-fluid .card.card12 {
-    min-height: auto;
+    min-height: unset;
+    max-height: unset;
+    height: auto;
   }
   .container-fluid .card.card11 {
     min-height: 450px;
@@ -3982,7 +3993,7 @@ body.menu-open {
     min-height: 300px;
   }
   .container-fluid .card.card.card-descargas {
-    min-height: 180px;
+    /* min-height: 180px; */
   }
   .text-content-certificaciones {
     min-height: 150px;
@@ -4074,10 +4085,7 @@ body.menu-open {
 
     /* padding: 0; */
   }
-  .container-fluid .card.card12 {
-    min-height: none;
-    height: auto;
-  }
+
   .container-fluid .card.card10 .card-body {
     min-height: 150px;
   }
@@ -4175,8 +4183,9 @@ body.menu-open {
     font-size: 16px;
   }
   .container-fluid .card.card12 .card-text {
-    min-height: 100px;
-    max-height: 100px;
+    min-height: auto;
+    /* min-height: 100px;
+    max-height: 100px; */
   }
   /* .arrow-head{
     width: 10px;
@@ -4258,6 +4267,9 @@ body.menu-open {
     font-size: 50px;
     letter-spacing: normal;
     line-height: 60px;
+  }
+  .title-interna-index-blanco {
+    font-size: 34px;
   }
 }
 
@@ -4512,6 +4524,19 @@ body.menu-open {
   .card5 .card-body {
     min-height: 280px;
   }
+  .title-interna-index-blanco {
+    font-size: 32px;
+  }
+  .card4.cards-reporte {
+    align-items: start;
+  }
+  .card4.cards-reporte .card-img-top {
+    max-height: unset;
+    height: auto;
+  }
+  .card4.cards-reporte .card-img-container{
+    height: auto;
+  }
 }
 @media (max-width: 992px) {
   .tit-pequeño,
@@ -4728,7 +4753,7 @@ body.menu-open {
   }
   .container-fluid .card.card12 .card-text {
     min-height: auto;
-    max-height: max-content;
+   
   }
   .card5 .card-body {
     min-height: auto;
@@ -4810,6 +4835,9 @@ body.menu-open {
   .overlay {
     height: 50px;
   }
+  .title-interna-index-blanco {
+    font-size: 30px;
+  }
 }
 
 /* Responsividad para pantallas más pequeñas (mayores a 768px) */
@@ -4860,10 +4888,7 @@ body.menu-open {
     line-height: 20px;
     letter-spacing: -0.14px;
   }
-  .texto-base-blanco {
-    font-size: 16px;
-    line-height: 22px;
-  }
+ 
   .titulo-sustinable {
     font-size: 27px;
     line-height: 30px;
@@ -5169,8 +5194,8 @@ body.menu-open {
     font-size: 48px;
   }
   .numero-semi-grande {
-    font-size: 54px;
-    line-height: 38px;
+    font-size: 44px;
+    line-height: 58px;
   }
   .til-semigrande-azul-marino {
     font-size: 18px;
@@ -5179,7 +5204,7 @@ body.menu-open {
   }
   .titulo-realeway-mediano {
     font-size: 18px;
-    line-height: 28px;
+    line-height: 38px;
   }
   .titulo-azul-mediano {
     font-size: 18px;
@@ -5197,20 +5222,26 @@ body.menu-open {
   }
   .calendario .table td {
     font-size: 18px;
-    line-height: normal;
-    /* background-color: white !important; */
+    line-height: 20px;
+    letter-spacing: -0.4px;
+    font-weight: 400;
+    padding-bottom: 2rem;
   }
+  
   .calendario .table th {
     font-size: 16px;
-    line-height: normal;
+    line-height: 38px;
+    letter-spacing: -0.14px;
   }
   .titulo-pequeño-azul-marino {
-    font-size: 12px;
-    line-height: 12px;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.21px;
   }
   .titulo-pequeño-azul-marino-bold {
-    font-size: 18px;
-    line-height: 32px;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.21px;
   }
   .text-content {
     min-height: auto;
@@ -5387,7 +5418,10 @@ body.menu-open {
     line-height: normal;
   }
   .titulo-mediano-verde {
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: -0.4px;
+    font-weight: 400;
   }
   .titulo-pequeño-semi-azul {
     font-size: 16px;
@@ -5400,6 +5434,8 @@ body.menu-open {
   }
   .titulo-pequeño-azul-bold {
     font-size: 16px;
+    line-height: 38px;
+    letter-spacing: -0.14px;
   }
   .card4.cards-reporte .card4-title {
     font-size: 24px;
@@ -5435,7 +5471,7 @@ body.menu-open {
     font-size: 15px;
   }
   .card-certificaciones .img_certificaciones {
-    height: 200px;
+    /* height: 200px; */
   }
   .section_noticias_inicio .news-image img {
     height: 100%;
@@ -5450,11 +5486,11 @@ body.menu-open {
     max-height: 400px;
   }
   .card-adherencias img {
-    max-width: 120px;
+    max-width: 150px;
   }
   .container-fluid .card.card.card-descargas {
-    min-height: 150px;
-    max-height: 150px;
+    /* min-height: 150px;
+    max-height: 150px; */
   }
   .container-fluid .custom-img {
     margin-left: 0rem;
@@ -5664,10 +5700,34 @@ body.menu-open {
   .card12 .tit-pequeño{
     font-size: 17px;
   }
-  /* .container-fluid .card.card12 .card-text{
-    min-height: 400px;
-    max-height: 400px;
-  } */
+  .card-reportes-sostenibilidad{
+    border-top: none;
+  }
+  .card-certificaciones img {
+    max-width: 80px;
+  }
+  .title-interna-index-blanco{
+    font-size: 27px;
+    line-height: 30px;
+    letter-spacing: -0.63px;
+    font-weight: 400;
+  }
+  .title-index-mobile{
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.4px;
+  }
+  .card4.cards-reporte {
+    align-items: start;
+  }
+  .card4.cards-reporte .card4-title.card4-title-mobile{
+    font-size: 18px;
+    font-family: var(--unnamed-font-family-merriweather);
+    line-height: 20px;
+    letter-spacing: -0.4px;
+    color: var(--unnamed-color-004891);
+    font-weight: 400;
+  }
 }
 /* Responsividad para móviles pequeños (menos de 480px) */
 @media (max-width: 480px) {
@@ -5705,10 +5765,7 @@ body.menu-open {
     font-size: 14px;
     line-height: 20px;
   }
-  .texto-base-blanco {
-    font-size: 12px;
-    line-height: 18px;
-  }
+
   .titulo-sustinable {
     font-size: 25px;
     line-height: 30px;
@@ -5784,7 +5841,7 @@ body.menu-open {
   }
 
   .texto-base-blanco {
-    font-size: var(--unnamed-font-size-12); /* Tamaño aún más pequeño */
+    font-size: 13px; /* Tamaño aún más pequeño */
     line-height: 18px; /* Ajuste de altura de línea */
   }
   .texto-titulo-blanco {
@@ -5873,28 +5930,28 @@ body.menu-open {
     line-height: 46px;
   }
   .numero-semi-grande {
-    font-size: 46px;
-    line-height: 34px;
+    font-size: 40px;
+   
   }
   .til-semigrande-azul-marino {
     font-size: 18px;
 
   }
   .titulo-realeway-mediano {
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 15px;
+   
   }
   .titulo-azul-mediano {
     font-size: 16px;
     line-height: 26px;
   }
   .titulo-pequeño-azul-marino {
-    font-size: 12px;
-    line-height: 12px;
+    font-size: 14px;
+   
   }
   .titulo-pequeño-azul-marino-bold {
-    font-size: 16px;
-    line-height: 30px;
+    font-size: 14px;
+   
   }
   .quienes-somos-section {
     /* height: 100vh; */
@@ -5935,7 +5992,7 @@ body.menu-open {
     line-height: 28px;
   }
   .titulo-pequeño-azul-bold {
-    font-size: 16px;
+    font-size: 14px;
   }
   .container_detalle_noticia .news_date_detalle,
   .container_alta_gerencia .news_date_detalle {
@@ -6047,6 +6104,35 @@ body.menu-open {
     width: 24px;
     height: 24px;
     background-size: contain;
+  }
+  .tit-interno-subtitulo {
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: -0.63px;
+    font-weight: 400;
+  }
+  .title-interna-index-blanco{
+    font-size: 25px;
+  }
+  .titulo-mediano-verde {
+    font-size: 16px;
+  }
+  .calendario .table td {
+    font-size: 16px;
+  }
+  .title-index-mobile{
+    font-size: 14px;
+   
+  }
+  .calendario .table th{
+    font-size: 14px;
+  }
+  .card4-title-mobile{
+    font-size: 16px;
+  }
+  .card4.cards-reporte .card4-title.card4-title-mobile{
+    font-size: 17px;
+   
   }
 }
 /* Pantallas de 360px */
@@ -6177,7 +6263,7 @@ body.menu-open {
     line-height: 18px;
   }
   .card-text {
-    font-size: var(--unnamed-font-size-14);
+    font-size: var(--unnamed-font-size-12);
     min-height: auto;
   }
   /* .card-2 {
@@ -6238,13 +6324,13 @@ body.menu-open {
     line-height: 46px;
   }
   .numero-semi-grande {
-    font-size: 46px;
-    line-height: 34px;
+    font-size: 38px;
+   
   }
 
   .titulo-realeway-mediano {
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 13px;
+    
   }
   .titulo-azul-mediano {
     font-size: 16px;
@@ -6252,11 +6338,11 @@ body.menu-open {
   }
   .titulo-pequeño-azul-marino {
     font-size: 12px;
-    line-height: 12px;
+  
   }
   .titulo-pequeño-azul-marino-bold {
-    font-size: 16px;
-    line-height: 30px;
+    font-size: 12px;
+   
   }
   .quienes-somos-section {
     /* height: 100vh; */
@@ -6297,7 +6383,7 @@ body.menu-open {
     line-height: 28px;
   }
   .titulo-pequeño-azul-bold {
-    font-size: 16px;
+    font-size: 12px;
   }
   .container_detalle_noticia .news_date_detalle,
   .container_alta_gerencia .news_date_detalle {
@@ -6388,5 +6474,28 @@ body.menu-open {
   .top-bar-mobile a,
   .top-bar-mobile span {
     font-size: 13px;
+  }
+  .tit-interno-subtitulo {
+    font-size: 23px;
+    
+  }
+  .title-interna-index-blanco{
+    font-size: 23px;
+  }
+  .titulo-mediano-verde {
+    font-size: 14px;
+  }
+  .calendario .table td {
+    font-size: 14px;
+  }
+  .title-index-mobile{
+    font-size: 12px;
+   
+  }
+  .calendario .table th{
+    font-size: 12px;
+  }
+  .card4.cards-reporte .card4-title.card4-title-mobile{
+    font-size: 14px;
   }
 }
