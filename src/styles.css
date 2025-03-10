@@ -5099,7 +5099,7 @@ body.menu-open {
     line-height: 20px;
   }
 
- 
+
 
   /* La imagen no debe salirse de la fila y debe ir debajo del texto */
   /* section .card-sustinable .col-lg-7 {
@@ -5821,7 +5821,7 @@ body.menu-open {
     letter-spacing: -0.4px;
     font-weight: 400;
     color: var(--unnamed-color-004891);
-  } 
+  }
   .custom-input{
     font-size: 12px;
     line-height: 14px;
@@ -5847,6 +5847,28 @@ body.menu-open {
   .btn-enviar{
     font-size: 16px;
   }
+  .seccion-no-right .container-fluid.no-right{
+    width: 100%;
+    padding-left: calc(5%);
+}
+.mini-slider-container swiper-container {
+  flex: 0 0 100%;
+}
+.section_multimedia .carousel_galeria, .video_multimedia,.galerias,.videos{
+	padding-right: calc(5%);
+}
+.section_multimedia .carousel-control-next, .section_multimedia .carousel-control-prev {
+  width: 20%;
+}
+ .carousel-control-next img,.carousel-control-prev img{
+  width: 30px;
+}
+.section_noticias_inicio {
+  background-color: #E7F2FC;
+}
+.section_noticias_inicio .custom-select-listados{
+  width: 70%;
+}
 }
 /* Responsividad para móviles pequeños (menos de 480px) */
 @media (max-width: 480px) {
@@ -5903,7 +5925,7 @@ body.menu-open {
   }
   .titulo-grande-azul-marino {
     font-size: 25px;
-   
+
   }
   footer {
     padding: 1rem;
@@ -6272,19 +6294,19 @@ body.menu-open {
   }
   .listado-pequeño-blanco {
     font-size: 16px;
-   
+
   }
   .listado-pequeno-mobile{
     font-size: 16px;
-   
-  } 
+
+  }
   .titulo-realeway-mediano-grande {
     font-size: 25px;
-   
+
   }
   .custom-input{
     font-size: 10px;
-    
+
 
   }
   .floating-label {
@@ -6292,7 +6314,7 @@ body.menu-open {
   }
   .custom-select{
     font-size: 10px;
-   
+
   }
   .texto-formulario{
     font-size: 10px;
@@ -6358,7 +6380,7 @@ body.menu-open {
   }
   .titulo-grande-azul-marino {
     font-size: 23px;
-    
+
   }
   footer {
     padding: 12px;
@@ -6680,14 +6702,14 @@ body.menu-open {
   }
   .listado-pequeño-blanco {
     font-size: 14px;
-   
+
   }
   .listado-pequeno-mobile{
     font-size: 14px;
-   
+
   }
   .titulo-realeway-mediano-grande {
     font-size: 23px;
-   
-  } 
+
+  }
 }

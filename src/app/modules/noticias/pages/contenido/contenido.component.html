@@ -6,7 +6,7 @@
       <div class="col-12 col-lg-4 title text-lg-start text-center mb-3 mb-lg-0">Ultimas Noticias</div>
 
       <div class="d-flex flex-column col-12 col-lg-4">
-        <span class="text-end text-lg-end mb-3">Ordenar por</span>
+        <span class="text-start text-md-end mb-3">Ordenar por</span>
         <div class="custom-select-listados">
           <div class="custom-select">
             <div class="select-trigger">Más Recientes</div>
@@ -29,7 +29,7 @@
       class="row align-items-stretch info_noticias_general py-lg-4 py-sm-3 py-2"
     >
       <div
-        class="col-md-5 bg-white p-lg-5 p-lg-4 p-3 d-flex flex-column justify-content-between"
+        class="col-md-5 bg-white p-lg-5 p-lg-4 p-3 d-flex flex-column justify-content-between order-md-1 order-2"
       >
         <div>
           <p class="news-date mb-lg-4 mb-lg-4 mb-2">Mayo, 2024</p>
@@ -51,7 +51,7 @@
 
       </div>
 
-      <div class="col-md-7 news-image px-0">
+      <div class="col-md-7 news-image px-0 order-md-2 order-1">
         <img
           src="assets/images/noticia_principal.png"
           alt="Noticia"
@@ -84,7 +84,8 @@
             <span class="flecha-circular"><i class="fas fa-plus"></i></span>
           </a>
         </div>
-        <div
+        <div class="carousel_galeria mb-4 mb-lg-3">
+          <div
           id="galleryCarousel"
           class="carousel slide py-lg-4 py-2"
           data-bs-ride="carousel"
@@ -139,8 +140,22 @@
               alt="Prev"
             />
           </button>
+          <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#galleryCarousel"
+          data-bs-slide="next"
+        >
+          <img
+            src="assets/icons/right-arrow.svg"
+            class="custom-arrow"
+            alt="Next"
+          />
+        </button>
 
         </div>
+        </div>
+
 
         <div class="mini-slider-container">
           <!-- Swiper -->
@@ -182,8 +197,8 @@
           </button>
         </div>
       </div>
-      <div class="col-lg-4 ps-lg-5 ps-sm-3 ps-0 video_multimedia pe-0">
-        <div class="d-flex justify-content-between">
+      <div class="col-lg-4 ps-lg-5 ps-2 video_multimedia pe-0 mt-5 mt-sm-3 mt-md-0">
+        <div class="d-flex justify-content-between videos">
           <span class="title_galerias">Videos</span>
           <a routerLink="/" class="btn-descargar btn-ver">
             ver todos
