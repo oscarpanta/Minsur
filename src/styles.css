@@ -5399,6 +5399,7 @@ body.menu-open {
 
   .container_alta_gerencia .text_ceo {
     font-size: var(--unnamed-font-size-24);
+    line-height: 30px;
   }
   .news-title {
     /* font-size: 28px;
@@ -5882,6 +5883,10 @@ body.menu-open {
 }
 .compartir_container a {
   font-size: 20px;
+}
+.container_alta_gerencia .news-image img{
+  height: 100%;
+  border-bottom-left-radius: 0px;
 }
 }
 /* Responsividad para móviles pequeños (menos de 480px) */
