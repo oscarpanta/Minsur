@@ -5775,7 +5775,7 @@ body.menu-open {
   }
   .info-container .info-item:first-child {
     padding-left: calc(var(--bs-gutter-x)* .5);
-  
+
     /* padding-right: 1.2rem !important; */
   }
   .info-container .info-item:nth-child(even) {
@@ -5812,7 +5812,7 @@ body.menu-open {
   }
   .numero-grande {
     font-size: 40px;
-    
+
   }
   .numero-grande-2 {
     font-size: 70px;
@@ -6215,7 +6215,7 @@ body.menu-open {
   }
   .dividendos{
     font-size: 14px;
-  
+
   }
 }
 /* Pantallas de 360px */
@@ -6231,7 +6231,7 @@ body.menu-open {
   }
   .numero-grande {
     font-size: 30px;
-    
+
   }
   .numero-grande-2 {
     font-size: 70px;
@@ -6590,6 +6590,6 @@ body.menu-open {
   }
   .dividendos{
     font-size: 12px;
-  
+
   }
 }
