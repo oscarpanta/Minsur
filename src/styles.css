@@ -726,7 +726,6 @@ header.scrolled .navbar-nav .nav-link:focus,
   font-size: var(--unnamed-font-size-32);
   line-height: 24px;
   color: var(--unnamed-color-ffffff);
-  margin-bottom: 1.5rem;
   letter-spacing: 0;
   text-align: left;
 }
@@ -4723,15 +4722,14 @@ body.menu-open {
   }
 
   .text-compartir {
-    text-align: center;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     margin-right: 2rem;
   }
   .container_detalle_noticia .compartir_container,
   .container_alta_gerencia .compartir_container {
-    align-items: center !important;
+    align-items: start !important;
   }
   .btn-vermas.listado {
     font-size: 24px;
@@ -5403,8 +5401,13 @@ body.menu-open {
     font-size: var(--unnamed-font-size-24);
   }
   .news-title {
-    font-size: 28px;
-    line-height: normal;
+    /* font-size: 28px;
+    line-height: normal; */
+    font-size: var(--unnamed-font-size-20);
+    line-height: 24px;
+    letter-spacing: -0.5px;
+    font-weight: bold;
+
   }
   .card3 {
     /* min-height: auto; */
@@ -5428,8 +5431,9 @@ body.menu-open {
     line-height: normal;
   }
   .section_multimedia .carousel .carousel-text p {
-    font-size: 16px;
+    font-size: 12px;
     line-height: normal;
+    -webkit-line-clamp: 4;
   }
 
   .video_multimedia .video-info .video-description {
@@ -5863,11 +5867,21 @@ body.menu-open {
  .carousel-control-next img,.carousel-control-prev img{
   width: 30px;
 }
-.section_noticias_inicio {
+.section_noticias_inicio,.section-presentaciones {
   background-color: #E7F2FC;
 }
 .section_noticias_inicio .custom-select-listados{
   width: 70%;
+}
+.video_multimedia .video-container
+{
+  padding-right: calc(5%);
+}
+.container_detalle_noticia{
+  border-radius: 0;
+}
+.compartir_container a {
+  font-size: 20px;
 }
 }
 /* Responsividad para móviles pequeños (menos de 480px) */
@@ -6141,14 +6155,14 @@ body.menu-open {
   }
   .container_detalle_noticia .news_title_detalle,
   .container_alta_gerencia .news_title_detalle {
-    font-size: var(--unnamed-font-size-36);
-    line-height: 50px;
+    font-size: var(--unnamed-font-size-26);
+    line-height: 32px;
   }
 
   .container_detalle_noticia .detalle_texto p,
   .container_alta_gerencia .detalle_texto p {
-    font-size: var(--unnamed-font-size-16);
-    line-height: 30px;
+    font-size: var(--unnamed-font-size-15);
+    line-height: 22px;
   }
 
   .container_detalle_noticia .presentacion_corporativa .presentacion_text {
@@ -6175,7 +6189,7 @@ body.menu-open {
     font-size: var(--unnamed-font-size-20);
   }
   .news-title {
-    font-size: 26px;
+    font-size: 18px;
     line-height: normal;
   }
   .card4.cards-reporte .card4-title {
@@ -6322,6 +6336,15 @@ body.menu-open {
   .btn-enviar{
     font-size: 14px;
   }
+  .video_multimedia .video-info .video-description{
+    font-size: 12px;
+  }
+
+
+  .section_multimedia .carousel .carousel-text h5 {
+    font-size: 15px;
+}
+
 }
 /* Pantallas de 360px */
 @media (max-width: 360px) {
@@ -6579,14 +6602,14 @@ body.menu-open {
   }
   .container_detalle_noticia .news_title_detalle,
   .container_alta_gerencia .news_title_detalle {
-    font-size: var(--unnamed-font-size-36);
-    line-height: 50px;
+    font-size: var(--unnamed-font-size-24);
+    line-height: 30px;
   }
 
   .container_detalle_noticia .detalle_texto p,
   .container_alta_gerencia .detalle_texto p {
-    font-size: var(--unnamed-font-size-16);
-    line-height: 30px;
+    font-size: var(--unnamed-font-size-14);
+    line-height: 18px;
   }
 
   .container_detalle_noticia .presentacion_corporativa .presentacion_text {
@@ -6612,10 +6635,10 @@ body.menu-open {
   .container_alta_gerencia .text_ceo {
     font-size: var(--unnamed-font-size-20);
   }
-  .news-title {
+  /* .news-title {
     font-size: 26px;
     line-height: normal;
-  }
+  } */
   .card4.cards-reporte .card4-title {
     font-size: 20px;
   }
@@ -6711,5 +6734,8 @@ body.menu-open {
   .titulo-realeway-mediano-grande {
     font-size: 23px;
 
+  }
+  .video_multimedia .video-info .video-description{
+    font-size: 11px;
   }
 }
