@@ -17,8 +17,43 @@ export class CardNoticiasComponent {
   @Input() noticias: Noticia[] = [];
 
   @Input() displayCount: number = 3;
+  @Input() paginacionActiva: boolean = false;
+  @Input() itemsPorPagina: number = 6;
+  currentPage: number = 1;
 
+  get totalPages(): number {
+    if (this.paginacionActiva) {
+      return Math.ceil(this.noticias.length / this.itemsPorPagina);
+    }
+    return 1;
+  }
+  get pages(): number[] {
+    return Array.from({ length: this.totalPages }, (_, i) => i + 1);
+  }
+  // get displayedNoticias(): Noticia[] {
+  //   return this.noticias.slice(0, this.displayCount);
+  // }
   get displayedNoticias(): Noticia[] {
-    return this.noticias.slice(0, this.displayCount);
+    if (!this.paginacionActiva) {
+      return this.noticias.slice(0, this.displayCount);
+    }
+
+    const startIndex = (this.currentPage - 1) * this.itemsPorPagina;
+    return this.noticias.slice(startIndex, startIndex + this.itemsPorPagina);
+  }
+
+  nextPage() {
+    if (this.currentPage < this.totalPages) {
+      this.currentPage++;
+    }
+  }
+
+  prevPage() {
+    if (this.currentPage > 1) {
+      this.currentPage--;
+    }
+  }
+  goToPage(page: number) {
+    this.currentPage = page;
   }
 }

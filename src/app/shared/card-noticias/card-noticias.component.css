@@ -1,0 +1,12 @@
+.btn-pagination{
+  color: #0063F9;
+  border: none;
+  font-family: var(--unnamed-font-family-raleway);
+
+}
+.btn-page{
+  font-weight: 800;
+}
+.btn-page-unselect{
+  font-weight: 600;
+}
