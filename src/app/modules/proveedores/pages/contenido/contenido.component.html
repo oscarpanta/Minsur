@@ -20,11 +20,11 @@
 
   <div class="container-fluid my-lg-5 my-md-0 section_documentos">
     <div class="row align-items-center pb-2 d-flex justify-content-between">
-      <div class="col-md-6 mb-3 mb-md-0">
+      <div class="col-12 col-lg-8 mb-3 mb-md-0">
         <p class="tit-interno mb-0">Biblioteca de documentos</p>
       </div>
-      <div class="d-flex flex-column col-12 col-lg-4">
-        <span class="text-end text-lg-end mb-3">Filtrar:</span>
+      <div class="d-flex flex-column col-10 col-lg-4">
+        <span class="text-end text-lg-end mb-3 d-none d-md-block">Filtrar:</span>
         <div class="custom-select-listados">
           <div class="custom-select">
             <div class="select-trigger">Políticas Corporativas</div>
@@ -45,150 +45,225 @@
 
     </div>
     <div class="pt-5">
-       <div class="d-flex align-items-center mb-5 mb-xxl-2 mb-xl-2 mb-sm-3 content-listado flex-column flex-md-row justify-content-md-between justify-content-center">
-        <div class="col-12 col-md-8 d-flex align-items-center">
+      <!-- nuevos -->
+      <div class="d-flex align-items-center mb-xxl-4 mb-xl-2 mb-sm-5 mb-5 content-listado flex-column flex-md-row justify-content-md-between justify-content-center">
+        <div class="col-12 col-md-8 col-xl-9 d-flex align-items-center">
           <i class="fas fa-arrow-right flecha-blue me-3"></i>
-          <p class="mb-0 listado">Política Corporativa de Sostenibilidad </p>
+          <p class="mb-0 listado">Política Corporativa de Sostenibilidad</p>
         </div>
-        <div class="col-12 col-md-4 d-flex align-items-center justify-content-center justify-content-md-end mt-2 mt-md-0 p-0">
+        <div class="col-12 col-md-4 col-xl-3 d-flex align-items-center mt-2 mt-md-0 p-0">
+          <div class="card4-footer w-100 d-flex align-items-center justify-content-md-between justify-content-sm-end justify-content-between gap-xxl-4 gap-xl-2 gap-sm-5 gap-2 ms-3 ms-md-0">
 
-          <div class="card4-footer">
-            <div
-              class="flex-grow-0 flex-lg-grow-1 d-flex align-items-center justify-content-end me-sm-0 ms-sm-0 me-lg-5 me-3"
-            >
-            <p class="m-0 card4-footer">PDF 12.5MB</p>
-          </div>
-          <app-button-descargar
-                link="/"
-                defaultBorderColor="#0063f9"
-                defaultStrokeColor="#0063f9"
-                hoverStrokeColor="#ffffff"
-                label="descargar"
-                textColor="#0063f9"
-              ></app-button-descargar>
+            <!-- Grupo PDF y Descargar con mayor separación -->
+            <div class="d-flex align-items-center gap-xxl-5 gap-xl-3 gap-md-2 gap-sm-3 gap-3">
+              <div class="btn-descargar btn-ver">
+                <p class="m-0 card4-footer">PDF 12.5MB</p>
+              </div>
 
-          <a
-            routerLink="/"
-            class="btn-descargar btn-ver me-sm-0 ms-sm-0 me-lg-0 ms-lg-3 ms-3 ms-3"
-            download
-          >
-            ver
-            <span class="flecha-circular"
-              ><i class="fas fa-arrow-right"></i
-            ></span>
-          </a>
+              <div>
+                <app-button-descargar
+                  link="/"
+                  defaultBorderColor="#0063f9"
+                  defaultStrokeColor="#0063f9"
+                  hoverStrokeColor="#ffffff"
+                  label="descargar"
+                  textColor="#0063f9"
+                ></app-button-descargar>
+              </div>
+            </div>
+
+            <!-- Reducimos la distancia entre "descargar" y "ver" -->
+            <a routerLink="/" class="btn-descargar btn-ver" download>
+              ver
+              <span class="flecha-circular"><i class="fas fa-arrow-right"></i></span>
+            </a>
+
           </div>
         </div>
+
       </div>
-
-
-      <div class="d-flex align-items-center mb-5 mb-xxl-2 mb-xl-2 mb-sm-3 content-listado flex-column flex-md-row justify-content-md-between justify-content-center">
-        <div class="col-12 col-md-8 d-flex align-items-center">
+      <div class="d-flex align-items-center mb-xxl-4 mb-xl-2 mb-sm-5 mb-5 content-listado flex-column flex-md-row justify-content-md-between justify-content-center">
+        <div class="col-12 col-md-8 col-xl-9 d-flex align-items-center">
           <i class="fas fa-arrow-right flecha-blue me-3"></i>
-          <p class="mb-0 listado">Política Corporativa de Sostenibilidad </p>
+          <p class="mb-0 listado">Política Corporativa de Sostenibilidad</p>
         </div>
-        <div class="col-12 col-md-4 d-flex align-items-center justify-content-center justify-content-md-end mt-2 mt-md-0 p-0">
+        <div class="col-12 col-md-4 col-xl-3 d-flex align-items-center mt-2 mt-md-0 p-0">
+          <div class="card4-footer w-100 d-flex align-items-center justify-content-md-between justify-content-sm-end justify-content-between gap-xxl-4 gap-xl-2 gap-sm-5 gap-2 ms-3 ms-md-0">
 
-          <div class="card4-footer">
-            <div
-              class="flex-grow-0 flex-lg-grow-1 d-flex align-items-center justify-content-end me-sm-0 ms-sm-0 me-lg-5 me-3"
-            >
-            <p class="m-0 card4-footer">PDF 12.5MB</p>
-          </div>
-          <app-button-descargar
-                link="/"
-                defaultBorderColor="#0063f9"
-                defaultStrokeColor="#0063f9"
-                hoverStrokeColor="#ffffff"
-                label="descargar"
-                textColor="#0063f9"
-              ></app-button-descargar>
+            <!-- Grupo PDF y Descargar con mayor separación -->
+            <div class="d-flex align-items-center gap-xxl-5 gap-xl-3 gap-md-2 gap-sm-3 gap-3">
+              <div class="btn-descargar btn-ver">
+                <p class="m-0 card4-footer">PDF 12.5MB</p>
+              </div>
 
-          <a
-            routerLink="/"
-            class="btn-descargar btn-ver me-sm-0 ms-sm-0 me-lg-0 ms-lg-3 ms-3"
-            download
-          >
-            ver
-            <span class="flecha-circular"
-              ><i class="fas fa-arrow-right"></i
-            ></span>
-          </a>
+              <div>
+                <app-button-descargar
+                  link="/"
+                  defaultBorderColor="#0063f9"
+                  defaultStrokeColor="#0063f9"
+                  hoverStrokeColor="#ffffff"
+                  label="descargar"
+                  textColor="#0063f9"
+                ></app-button-descargar>
+              </div>
+            </div>
+
+            <!-- Reducimos la distancia entre "descargar" y "ver" -->
+            <a routerLink="/" class="btn-descargar btn-ver" download>
+              ver
+              <span class="flecha-circular"><i class="fas fa-arrow-right"></i></span>
+            </a>
+
           </div>
         </div>
+
       </div>
-
-      <div class="d-flex align-items-center mb-5 mb-xxl-2 mb-xl-2 mb-sm-3 content-listado flex-column flex-md-row justify-content-md-between justify-content-center">
-        <div class="col-12 col-md-8 d-flex align-items-center">
+      <div class="d-flex align-items-center mb-xxl-4 mb-xl-2 mb-sm-5 mb-5 content-listado flex-column flex-md-row justify-content-md-between justify-content-center">
+        <div class="col-12 col-md-8 col-xl-9 d-flex align-items-center">
           <i class="fas fa-arrow-right flecha-blue me-3"></i>
-          <p class="mb-0 listado">Política Corporativa de Sostenibilidad </p>
+          <p class="mb-0 listado">Política Corporativa de Sostenibilidad</p>
         </div>
-        <div class="col-12 col-md-4 d-flex align-items-center justify-content-center justify-content-md-end mt-2 mt-md-0 p-0">
+        <div class="col-12 col-md-4 col-xl-3 d-flex align-items-center mt-2 mt-md-0 p-0">
+          <div class="card4-footer w-100 d-flex align-items-center justify-content-md-between justify-content-sm-end justify-content-between gap-xxl-4 gap-xl-2 gap-sm-5 gap-2 ms-3 ms-md-0">
 
-          <div class="card4-footer">
-            <div
-              class="flex-grow-0 flex-lg-grow-1 d-flex align-items-center justify-content-end me-sm-0 ms-sm-0 me-lg-5 me-3"
-            >
-            <p class="m-0 card4-footer">PDF 12.5MB</p>
-          </div>
-          <app-button-descargar
-                link="/"
-                defaultBorderColor="#0063f9"
-                defaultStrokeColor="#0063f9"
-                hoverStrokeColor="#ffffff"
-                label="descargar"
-                textColor="#0063f9"
-              ></app-button-descargar>
+            <!-- Grupo PDF y Descargar con mayor separación -->
+            <div class="d-flex align-items-center gap-xxl-5 gap-xl-3 gap-md-2 gap-sm-3 gap-3">
+              <div class="btn-descargar btn-ver">
+                <p class="m-0 card4-footer">PDF 12.5MB</p>
+              </div>
 
-          <a
-            routerLink="/"
-            class="btn-descargar btn-ver me-sm-0 ms-sm-0 me-lg-0 ms-lg-3 ms-3"
-            download
-          >
-            ver
-            <span class="flecha-circular"
-              ><i class="fas fa-arrow-right"></i
-            ></span>
-          </a>
+              <div>
+                <app-button-descargar
+                  link="/"
+                  defaultBorderColor="#0063f9"
+                  defaultStrokeColor="#0063f9"
+                  hoverStrokeColor="#ffffff"
+                  label="descargar"
+                  textColor="#0063f9"
+                ></app-button-descargar>
+              </div>
+            </div>
+
+            <!-- Reducimos la distancia entre "descargar" y "ver" -->
+            <a routerLink="/" class="btn-descargar btn-ver" download>
+              ver
+              <span class="flecha-circular"><i class="fas fa-arrow-right"></i></span>
+            </a>
+
           </div>
         </div>
+
       </div>
-
-      <div class="d-flex align-items-center mb-5 mb-xxl-2 mb-xl-2 mb-sm-3 content-listado flex-column flex-md-row justify-content-md-between justify-content-center">
-        <div class="col-12 col-md-8 d-flex align-items-center">
+      <div class="d-flex align-items-center mb-xxl-4 mb-xl-2 mb-sm-5 mb-5 content-listado flex-column flex-md-row justify-content-md-between justify-content-center">
+        <div class="col-12 col-md-8 col-xl-9 d-flex align-items-center">
           <i class="fas fa-arrow-right flecha-blue me-3"></i>
-          <p class="mb-0 listado">Política Corporativa de Sostenibilidad </p>
+          <p class="mb-0 listado">Política Corporativa de Sostenibilidad</p>
         </div>
-        <div class="col-12 col-md-4 d-flex align-items-center justify-content-center justify-content-md-end mt-2 mt-md-0 p-0">
+        <div class="col-12 col-md-4 col-xl-3 d-flex align-items-center mt-2 mt-md-0 p-0">
+          <div class="card4-footer w-100 d-flex align-items-center justify-content-md-between justify-content-sm-end justify-content-between gap-xxl-4 gap-xl-2 gap-sm-5 gap-2 ms-3 ms-md-0">
 
-          <div class="card4-footer">
-            <div
-              class="flex-grow-0 flex-lg-grow-1 d-flex align-items-center justify-content-end me-sm-0 ms-sm-0 me-lg-5 me-3"
-            >
-            <p class="m-0 card4-footer">PDF 12.5MB</p>
-          </div>
-          <app-button-descargar
-                link="/"
-                defaultBorderColor="#0063f9"
-                defaultStrokeColor="#0063f9"
-                hoverStrokeColor="#ffffff"
-                label="descargar"
-                textColor="#0063f9"
-              ></app-button-descargar>
+            <!-- Grupo PDF y Descargar con mayor separación -->
+            <div class="d-flex align-items-center gap-xxl-5 gap-xl-3 gap-md-2 gap-sm-3 gap-3">
+              <div class="btn-descargar btn-ver">
+                <p class="m-0 card4-footer">PDF 12.5MB</p>
+              </div>
 
-          <a
-            routerLink="/"
-            class="btn-descargar btn-ver me-sm-0 ms-sm-0 me-lg-0 ms-lg-3 ms-3"
-            download
-          >
-            ver
-            <span class="flecha-circular"
-              ><i class="fas fa-arrow-right"></i
-            ></span>
-          </a>
+              <div>
+                <app-button-descargar
+                  link="/"
+                  defaultBorderColor="#0063f9"
+                  defaultStrokeColor="#0063f9"
+                  hoverStrokeColor="#ffffff"
+                  label="descargar"
+                  textColor="#0063f9"
+                ></app-button-descargar>
+              </div>
+            </div>
+
+            <!-- Reducimos la distancia entre "descargar" y "ver" -->
+            <a routerLink="/" class="btn-descargar btn-ver" download>
+              ver
+              <span class="flecha-circular"><i class="fas fa-arrow-right"></i></span>
+            </a>
+
           </div>
         </div>
+
       </div>
+      <div class="d-flex align-items-center mb-xxl-4 mb-xl-2 mb-sm-5 mb-5 content-listado flex-column flex-md-row justify-content-md-between justify-content-center">
+        <div class="col-12 col-md-8 col-xl-9 d-flex align-items-center">
+          <i class="fas fa-arrow-right flecha-blue me-3"></i>
+          <p class="mb-0 listado">Política Corporativa de Sostenibilidad</p>
+        </div>
+        <div class="col-12 col-md-4 col-xl-3 d-flex align-items-center mt-2 mt-md-0 p-0">
+          <div class="card4-footer w-100 d-flex align-items-center justify-content-md-between justify-content-sm-end justify-content-between gap-xxl-4 gap-xl-2 gap-sm-5 gap-2 ms-3 ms-md-0">
+
+            <!-- Grupo PDF y Descargar con mayor separación -->
+            <div class="d-flex align-items-center gap-xxl-5 gap-xl-3 gap-md-2 gap-sm-3 gap-3">
+              <div class="btn-descargar btn-ver">
+                <p class="m-0 card4-footer">PDF 12.5MB</p>
+              </div>
+
+              <div>
+                <app-button-descargar
+                  link="/"
+                  defaultBorderColor="#0063f9"
+                  defaultStrokeColor="#0063f9"
+                  hoverStrokeColor="#ffffff"
+                  label="descargar"
+                  textColor="#0063f9"
+                ></app-button-descargar>
+              </div>
+            </div>
+
+            <!-- Reducimos la distancia entre "descargar" y "ver" -->
+            <a routerLink="/" class="btn-descargar btn-ver" download>
+              ver
+              <span class="flecha-circular"><i class="fas fa-arrow-right"></i></span>
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+      <div class="d-flex align-items-center mb-xxl-4 mb-xl-2 mb-sm-5 mb-5 content-listado flex-column flex-md-row justify-content-md-between justify-content-center">
+        <div class="col-12 col-md-8 col-xl-9 d-flex align-items-center">
+          <i class="fas fa-arrow-right flecha-blue me-3"></i>
+          <p class="mb-0 listado">Política Corporativa de Sostenibilidad</p>
+        </div>
+        <div class="col-12 col-md-4 col-xl-3 d-flex align-items-center mt-2 mt-md-0 p-0">
+          <div class="card4-footer w-100 d-flex align-items-center justify-content-md-between justify-content-sm-end justify-content-between gap-xxl-4 gap-xl-2 gap-sm-5 gap-2 ms-3 ms-md-0">
+
+            <!-- Grupo PDF y Descargar con mayor separación -->
+            <div class="d-flex align-items-center gap-xxl-5 gap-xl-3 gap-md-2 gap-sm-3 gap-3">
+              <div class="btn-descargar btn-ver">
+                <p class="m-0 card4-footer">PDF 12.5MB</p>
+              </div>
+
+              <div>
+                <app-button-descargar
+                  link="/"
+                  defaultBorderColor="#0063f9"
+                  defaultStrokeColor="#0063f9"
+                  hoverStrokeColor="#ffffff"
+                  label="descargar"
+                  textColor="#0063f9"
+                ></app-button-descargar>
+              </div>
+            </div>
+
+            <!-- Reducimos la distancia entre "descargar" y "ver" -->
+            <a routerLink="/" class="btn-descargar btn-ver" download>
+              ver
+              <span class="flecha-circular"><i class="fas fa-arrow-right"></i></span>
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+      <!-- fin nuevos -->
+       
     </div>
 
   </div>
@@ -198,8 +273,8 @@
   <div class="container-fluid my-lg-5 my-md-0">
     <div class="card9 mb-3 mb-xxl-0 mb-md-2">
         <div class="row d-flex align-items-center justify-content-center">
-          <div class="row col-lg-11">
-            <div class="col-12 col-md-5 d-flex flex-column pe-md-5 pe-ms-0">
+          <div class="row col-lg-10  p-md-0 p-2">
+            <div class="col-12 col-md-5 d-flex flex-column pe-md-5 pe-ms-0  p-0">
               <img
                 src="../../../../../assets/images/portal_proveedores.png"
                 alt="Imagen"
@@ -207,7 +282,7 @@
               />
             </div>
 
-            <div class="col-12 col-md-7 ">
+            <div class="col-12 col-md-7  p-0 mb-md-1 mb-2 py-4 py-md-0">
               <p class="titulo-seccion titulo-grande mb-xxl-5 mb-xl-4 mb-md-1">Portal de Proveedores</p>
 
               <p class="texto-seccion texto-base texto-base-blanco mb-xxl-5 mb-xl-4 mb-md-1">
@@ -231,52 +306,51 @@
       </div>
     </div>
     <div class="row  align-items-center justify-content-center">
-      <div class="col-lg-11 mt-xxl-5 mt-xl-2">
+      <div class="col-lg-10 mt-xxl-5 mt-xl-2">
 
         <div class="row justify-content-center justify-content-md-between content-listado-2 listado-pequeño-blanco">
 
-          <div class="col-12 col-md-5 p-0">
-            <div class="d-flex align-items-center flex-column flex-md-row mb-4 justify-content-between">
+          <div class="row col-lg-6 pb-lg-0 pb-4 mb-3 content-listado-3">
+            <div class="col-8 col-lg-9 p-0">
               <div class="d-flex align-items-center">
                 <i class="fas fa-arrow-right flecha-blanco me-3"></i>
                 <p class="mb-0">Manual de Usuario o Proveedor</p>
               </div>
-
-              <div class="mt-2 mt-md-0 text-center">
+            </div>
+          
+            <div class="col-4 col-lg-3 p-0">
+              <div class="mt-2 mt-lg-0 text-center">
                 <app-button-descargar
-
                   link="/"
                   defaultBorderColor="#ffff"
                   defaultStrokeColor="#ffff"
                   hoverStrokeColor="#0063f9"
-                  label="descargar"
+                  label="Descargar"
                   textColor="#ffff"
                 >
                 </app-button-descargar>
-
               </div>
             </div>
           </div>
-
-          <div class="col-12 col-md-5 p-0">
-            <div class="d-flex align-items-center flex-column flex-md-row mb-4 justify-content-between">
+          <div class="row col-lg-6 pb-lg-0 pb-4  mb-3">
+            <div class="col-8 col-lg-9 p-0">
               <div class="d-flex align-items-center">
                 <i class="fas fa-arrow-right flecha-blanco me-3"></i>
                 <p class="mb-0">Manual de Usuario o Proveedor</p>
               </div>
-
-              <div class="mt-2 mt-md-0 text-center">
+            </div>
+          
+            <div class="col-4 col-lg-3 p-0">
+              <div class="mt-2 mt-lg-0 text-center">
                 <app-button-descargar
-
                   link="/"
                   defaultBorderColor="#ffff"
                   defaultStrokeColor="#ffff"
                   hoverStrokeColor="#0063f9"
-                  label="descargar"
+                  label="Descargar"
                   textColor="#ffff"
                 >
                 </app-button-descargar>
-
               </div>
             </div>
           </div>
@@ -292,9 +366,9 @@
   <div class="container-fluid my-lg-5 my-md-0">
     <div class="card9 mb-3 mb-xxl-0 mb-md-2">
 
-        <div class="row d-flex align-items-center justify-content-center">
-          <div class="row col-lg-11">
-            <div class="col-12 col-md-5 my-2 ">
+        <div class="row d-flex align-items-center justify-content-center ">
+          <div class="row col-lg-10 p-md-0 p-2 d-flex flex-column-reverse flex-md-row">
+            <div class="col-12 col-md-7 my-2 p-0 mb-md-1 mb-2 py-4 py-md-0">
               <p class="titulo-seccion tit-interno mb-xxl-5 mb-xl-4 mb-md-1">Portal Intelecta</p>
 
               <p class="texto-seccion texto-base mb-xxl-5 mb-xl-4 mb-md-1">
@@ -312,11 +386,12 @@
               </app-button>
 
             </div>
-            <div class="col-12 col-md-7 d-flex flex-column ps-md-5 ps-ms-0">
+            <div class="col-12 col-md-5 d-flex flex-column ps-md-5 ps-ms-0  p-0">
               <img
                 src="../../../../../assets/images/portal_intelectual.png"
                 alt="Imagen"
-                class="img-fluid mb-3"
+                class="img-fluid mb-3 w-100"
+                style="height: 100%; object-fit: cover;"
               />
             </div>
           </div>
@@ -324,54 +399,55 @@
       </div>
     </div>
     <div class="row  align-items-center justify-content-center">
-      <div class="col-lg-11  mt-xxl-5 mt-xl-2">
+      <div class="col-lg-10  mt-xxl-5 mt-xl-2">
 
-          <div class="row justify-content-center justify-content-md-between content-listado-2 listado-pequeño">
+         
+          <div class="row justify-content-center justify-content-md-between content-listado-2 listado-pequeño listado-pequeno-mobile">
 
-            <div class="col-12 col-md-5 p-0">
-              <div class="d-flex align-items-center flex-column flex-md-row mb-4 justify-content-between">
+            <div class="row col-lg-6 pb-lg-0 pb-4  mb-3 content-listado-3">
+              <div class="col-8 col-lg-9 p-0">
                 <div class="d-flex align-items-center">
                   <i class="fas fa-arrow-right flecha-blue me-3"></i>
                   <p class="mb-0">Manual de Usuario o Proveedor</p>
                 </div>
-
-                <div class="mt-2 mt-md-0 text-center">
+              </div>
+            
+              <div class="col-4 col-lg-3 p-0">
+                <div class="mt-2 mt-lg-0 text-center">
                   <app-button-descargar
-                    link="/"
-                    defaultBorderColor="#0063f9"
-                    defaultStrokeColor="#0063f9"
-                    hoverStrokeColor="#ffffff"
-                    label="descargar"
-                    textColor="#0063f9"
-                  ></app-button-descargar>
-
+                  link="/"
+                  defaultBorderColor="#0063f9"
+                  defaultStrokeColor="#0063f9"
+                  hoverStrokeColor="#ffffff"
+                  label="descargar"
+                  textColor="#0063f9"
+                ></app-button-descargar>
                 </div>
               </div>
             </div>
-
-            <div class="col-12 col-md-5 p-0">
-              <div class="d-flex align-items-center flex-column flex-md-row mb-4 justify-content-between">
+            <div class="row col-lg-6 pb-lg-0 pb-4  mb-3">
+              <div class="col-8 col-lg-9 p-0">
                 <div class="d-flex align-items-center">
                   <i class="fas fa-arrow-right flecha-blue me-3"></i>
                   <p class="mb-0">Manual de Usuario o Proveedor</p>
                 </div>
-
-                <div class="mt-2 mt-md-0 text-center">
+              </div>
+            
+              <div class="col-4 col-lg-3 p-0">
+                <div class="mt-2 mt-lg-0 text-center">
                   <app-button-descargar
-              link="/"
-              defaultBorderColor="#0063f9"
-              defaultStrokeColor="#0063f9"
-              hoverStrokeColor="#ffffff"
-              label="descargar"
-              textColor="#0063f9"
-            ></app-button-descargar>
-
+                  link="/"
+                  defaultBorderColor="#0063f9"
+                  defaultStrokeColor="#0063f9"
+                  hoverStrokeColor="#ffffff"
+                  label="descargar"
+                  textColor="#0063f9"
+                ></app-button-descargar>
                 </div>
               </div>
             </div>
-
+  
           </div>
-
 
       </div>
     </div>
@@ -391,10 +467,10 @@
   <div class="my-lg-5 my-md-0">
     <div class="container-fluid">
       <div class="row align-items-center pb-5 d-flex justify-content-between">
-          <div class="col-md-6 mb-3 mb-md-0">
+          <div class=" col-12 col-lg-8 mb-3 mb-md-0">
             <p class="tit-interno mb-0">Preguntas frecuentes</p>
           </div>
-          <div class="col-md-4">
+          <div class="col-10 col-lg-4">
             <div class="custom-select-listados">
               <div class="custom-select">
                 <div class="select-trigger">Políticas Corporativas</div>
@@ -419,8 +495,8 @@
           </div>
       </div>
       <div>
-        <div class="content-listado my-3">
-          <div class="d-flex align-items-center flex-column flex-md-row justify-content-between">
+        <div class="content-listado my-4">
+          <!-- <div class="d-flex align-items-center flex-column flex-md-row justify-content-between">
 
             <div class="d-flex align-items-center flex-grow-1">
               <i class="fas fa-arrow-right flecha-blue me-3"></i>
@@ -431,11 +507,22 @@
               <button class="toggle-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false">
               </button>
             </div>
+          </div> -->
+          <div class="row">
+            <div class="col-9 col-lg-11 d-flex align-items-center">
+              <i class="fas fa-arrow-right flecha-blue me-3"></i>
+              <p class="mb-3 listado flex-grow-1">¿Pregunta frecuente sobre tema 1 de relevancia para la empresa y su comunidad?</p>
+            </div>
+          
+            <div class="col-3 col-lg-1 mt-2 mt-lg-0 text-end">
+              <button class="toggle-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false">
+              </button>
+            </div>
           </div>
-
+          
           <div id="collapseOne" class="collapse content-expand">
             <div class="row d-flex justify-content-start p-xxl-5 p-xl-4 p-sm-1">
-              <div class="col-lg-10">
+              <div class="col-lg-11">
                 <div class="texto-base">
                   Lorem ipsum dolor sit amet consectetur adipiscing elit per rutrum libero, primis penatibus inceptos praesent dui curae laoreet platea. Laoreet mi platea felis arcu penatibus vehicula, montes ligula aenean turpis rutrum neque, dignissim sagittis phasellus cras euismod. Curae potenti duis porta blandit magnis integer, feugiat id mi dapibus etiam facilisis senectus, velit gravida sollicitudin sodales aliquam venenatis, phasellus litora facilisi convallis vitae.
                 </div>
@@ -445,22 +532,21 @@
         </div>
 
         <div class="content-listado my-4">
-          <div class="d-flex align-items-center flex-column flex-md-row justify-content-between">
-
-            <div class="d-flex align-items-center flex-grow-1">
+          <div class="row">
+            <div class="col-9 col-lg-11 d-flex align-items-center">
               <i class="fas fa-arrow-right flecha-blue me-3"></i>
-              <p class="mb-0 listado flex-grow-1">¿Pregunta frecuente sobre tema 1 de relevancia para la empresa y su comunidad?</p>
+              <p class="mb-3 listado flex-grow-1">¿Pregunta frecuente sobre tema 1 de relevancia para la empresa y su comunidad?</p>
             </div>
-
-            <div class="mt-2 mt-md-0 text-center">
-              <button class="toggle-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"><i class="fa-light fa-circle-plus"></i>
+          
+            <div class="col-3 col-lg-1 mt-2 mt-lg-0 text-end">
+              <button class="toggle-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false">
               </button>
             </div>
           </div>
 
           <div id="collapseTwo" class="collapse content-expand">
             <div class="row d-flex justify-content-start p-xxl-5 p-xl-4 p-sm-1">
-              <div class="col-lg-10">
+              <div class="col-lg-11">
                 <div class="texto-base">
                   Lorem ipsum dolor sit amet consectetur adipiscing elit per rutrum libero, primis penatibus inceptos praesent dui curae laoreet platea. Laoreet mi platea felis arcu penatibus vehicula, montes ligula aenean turpis rutrum neque, dignissim sagittis phasellus cras euismod. Curae potenti duis porta blandit magnis integer, feugiat id mi dapibus etiam facilisis senectus, velit gravida sollicitudin sodales aliquam venenatis, phasellus litora facilisi convallis vitae.
                 </div>
@@ -469,14 +555,13 @@
           </div>
         </div>
         <div class="content-listado my-4">
-          <div class="d-flex align-items-center flex-column flex-md-row justify-content-between">
-
-            <div class="d-flex align-items-center flex-grow-1">
+          <div class="row">
+            <div class="col-9 col-lg-11 d-flex align-items-start">
               <i class="fas fa-arrow-right flecha-blue me-3"></i>
-              <p class="mb-0 listado flex-grow-1">¿Pregunta frecuente sobre tema 1 de relevancia para la empresa y su comunidad?</p>
+              <p class="mb-3 listado flex-grow-1">¿Pregunta frecuente sobre tema 1 de relevancia para la empresa y su comunidad?</p>
             </div>
-
-            <div class="mt-2 mt-md-0 text-center">
+          
+            <div class="col-3 col-lg-1 mt-2 mt-lg-0 text-end">
               <button class="toggle-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTree" aria-expanded="false">
               </button>
             </div>
@@ -484,7 +569,7 @@
 
           <div id="collapseTree" class="collapse content-expand">
             <div class="row d-flex justify-content-start p-xxl-5 p-xl-4 p-sm-1">
-              <div class="col-lg-10">
+              <div class="col-lg-11">
                 <div class="texto-base">
                   Lorem ipsum dolor sit amet consectetur adipiscing elit per rutrum libero, primis penatibus inceptos praesent dui curae laoreet platea. Laoreet mi platea felis arcu penatibus vehicula, montes ligula aenean turpis rutrum neque, dignissim sagittis phasellus cras euismod. Curae potenti duis porta blandit magnis integer, feugiat id mi dapibus etiam facilisis senectus, velit gravida sollicitudin sodales aliquam venenatis, phasellus litora facilisi convallis vitae.
                 </div>
@@ -493,22 +578,20 @@
           </div>
         </div>
         <div class="content-listado my-4">
-          <div class="d-flex align-items-center flex-column flex-md-row justify-content-between">
-
-            <div class="d-flex align-items-center flex-grow-1">
+          <div class="row">
+            <div class="col-9 col-lg-11 d-flex align-items-start">
               <i class="fas fa-arrow-right flecha-blue me-3"></i>
-              <p class="mb-0 listado flex-grow-1">¿Pregunta frecuente sobre tema 1 de relevancia para la empresa y su comunidad?</p>
+              <p class="mb-3 listado flex-grow-1">¿Pregunta frecuente sobre tema 1 de relevancia para la empresa y su comunidad?</p>
             </div>
-
-            <div class="mt-2 mt-md-0 text-center">
+          
+            <div class="col-3 col-lg-1 mt-2 mt-lg-0 text-end">
               <button class="toggle-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false">
               </button>
             </div>
           </div>
-
           <div id="collapseFour" class="collapse content-expand">
             <div class="row d-flex justify-content-start p-xxl-5 p-xl-4 p-sm-1">
-              <div class="col-lg-10">
+              <div class="col-lg-11">
                 <div class="texto-base">
                   Lorem ipsum dolor sit amet consectetur adipiscing elit per rutrum libero, primis penatibus inceptos praesent dui curae laoreet platea. Laoreet mi platea felis arcu penatibus vehicula, montes ligula aenean turpis rutrum neque, dignissim sagittis phasellus cras euismod. Curae potenti duis porta blandit magnis integer, feugiat id mi dapibus etiam facilisis senectus, velit gravida sollicitudin sodales aliquam venenatis, phasellus litora facilisi convallis vitae.
                 </div>
@@ -517,14 +600,13 @@
           </div>
         </div>
         <div class="content-listado my-4">
-          <div class="d-flex align-items-center flex-column flex-md-row justify-content-between">
-
-            <div class="d-flex align-items-center flex-grow-1">
+          <div class="row">
+            <div class="col-9 col-lg-11 d-flex align-items-start">
               <i class="fas fa-arrow-right flecha-blue me-3"></i>
-              <p class="mb-0 listado flex-grow-1">¿Pregunta frecuente sobre tema 1 de relevancia para la empresa y su comunidad?</p>
+              <p class="mb-3 listado flex-grow-1">¿Pregunta frecuente sobre tema 1 de relevancia para la empresa y su comunidad?</p>
             </div>
-
-            <div class="mt-2 mt-md-0 text-center">
+          
+            <div class="col-3 col-lg-1 mt-2 mt-lg-0 text-end">
               <button class="toggle-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false">
               </button>
             </div>
@@ -532,7 +614,7 @@
 
           <div id="collapseFive" class="collapse content-expand">
             <div class="row d-flex justify-content-start p-xxl-5 p-xl-4 p-sm-1">
-              <div class="col-lg-10">
+              <div class="col-lg-11">
                 <div class="texto-base">
                   Lorem ipsum dolor sit amet consectetur adipiscing elit per rutrum libero, primis penatibus inceptos praesent dui curae laoreet platea. Laoreet mi platea felis arcu penatibus vehicula, montes ligula aenean turpis rutrum neque, dignissim sagittis phasellus cras euismod. Curae potenti duis porta blandit magnis integer, feugiat id mi dapibus etiam facilisis senectus, velit gravida sollicitudin sodales aliquam venenatis, phasellus litora facilisi convallis vitae.
                 </div>
@@ -541,14 +623,13 @@
           </div>
         </div>
         <div class="content-listado my-4">
-          <div class="d-flex align-items-center flex-column flex-md-row justify-content-between">
-
-            <div class="d-flex align-items-center flex-grow-1">
+          <div class="row">
+            <div class="col-9 col-lg-11 d-flex align-items-start">
               <i class="fas fa-arrow-right flecha-blue me-3"></i>
-              <p class="mb-0 listado flex-grow-1">¿Pregunta frecuente sobre tema 1 de relevancia para la empresa y su comunidad?</p>
+              <p class="mb-3 listado flex-grow-1">¿Pregunta frecuente sobre tema 1 de relevancia para la empresa y su comunidad?</p>
             </div>
-
-            <div class="mt-2 mt-md-0 text-center">
+          
+            <div class="col-3 col-lg-1 mt-2 mt-lg-0 text-end">
               <button class="toggle-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false">
               </button>
             </div>
@@ -556,7 +637,7 @@
 
           <div id="collapseSix" class="collapse content-expand">
             <div class="row d-flex justify-content-start p-xxl-5 p-xl-4 p-sm-1">
-              <div class="col-lg-10">
+              <div class="col-lg-11">
                 <div class="texto-base">
                   Lorem ipsum dolor sit amet consectetur adipiscing elit per rutrum libero, primis penatibus inceptos praesent dui curae laoreet platea. Laoreet mi platea felis arcu penatibus vehicula, montes ligula aenean turpis rutrum neque, dignissim sagittis phasellus cras euismod. Curae potenti duis porta blandit magnis integer, feugiat id mi dapibus etiam facilisis senectus, velit gravida sollicitudin sodales aliquam venenatis, phasellus litora facilisi convallis vitae.
                 </div>
