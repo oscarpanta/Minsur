@@ -4145,7 +4145,7 @@ body.menu-open {
     max-width: 120px;
   }
   section .container-fluid{
-   
+
     width: 90%;
   }
   footer .container-fluid{
@@ -4162,7 +4162,7 @@ body.menu-open {
   }
   .titulo-descargas-produccion{
     font-size: 20px;
-    
+
   }
 }
 
@@ -4859,7 +4859,7 @@ body.menu-open {
   }
   section .container-fluid {
     max-width: 100%;
-   
+
     padding: 0;
   }
   footer .container-fluid {
@@ -5200,7 +5200,7 @@ body.menu-open {
     height: 40vh;
     background-size: cover !important;
     background-position: center !important;
-   
+
   }
   .fondo-section-regular-2 {
     height: 40vh;
@@ -5419,7 +5419,7 @@ body.menu-open {
     min-height: unset;
     max-height: unset;
     height: auto;
-    
+
   }
   .card-adherencias img {
     max-width: 150px;
@@ -5848,7 +5848,7 @@ body.menu-open {
   }
   .numero-grande-2 {
     font-size: 75px;
-    
+
   }
   .listado {
     font-size: 16px;
@@ -5943,7 +5943,7 @@ body.menu-open {
 
   .texto-base-blanco {
     font-size: 14px; /* Tamaño aún más pequeño */
-   
+
   }
   .texto-titulo-blanco {
     font-size: var(
@@ -6044,7 +6044,7 @@ body.menu-open {
   }
   .titulo-azul-mediano {
     font-size: 20px;
-   
+
   }
   .titulo-pequeño-azul-marino {
     font-size: 14px;
@@ -6081,11 +6081,11 @@ body.menu-open {
   }
   .titulo-super-grande-blanco {
     font-size: 25px;
-   
+
   }
   .extra-fondo .quienes-somos-section .title {
     font-size: 25px;
-    
+
   }
   .titulo-super-grande-azul {
     font-size: 34px;
@@ -6214,7 +6214,7 @@ body.menu-open {
   }
   .tit-interno-subtitulo {
     font-size: 25px;
-   
+
   }
   .title-interna-index-blanco{
     font-size: 25px;
@@ -6296,8 +6296,8 @@ body.menu-open {
 }
 .tit-super-grande-blanco {
   font-size: 23px;
-  
-  
+
+
 
 }
   .texto-base-blanco-bold {
@@ -6305,22 +6305,22 @@ body.menu-open {
   }
   .tit-card-trabaja{
     font-size: 20px;
-   
+
   }
   .subtit-card-trabaja{
     font-size: 20px;
-   
+
   }
   .titulo-descargas-produccion{
     font-size: 16px;
-    
+
   }
   .container-fluid .card.card10 img {
     min-height: auto;
   }
   .section_noticias_inicio .title {
     font-size: 25px;
-    
+
   }
 }
 /* Pantallas de 360px */
@@ -6340,7 +6340,7 @@ body.menu-open {
   }
   .numero-grande-2 {
     font-size: 73px;
-    
+
   }
   .listado {
     font-size: 14px;
@@ -6522,7 +6522,7 @@ body.menu-open {
   }
   .titulo-azul-mediano {
     font-size: 18px;
-   
+
   }
   .titulo-pequeño-azul-marino {
     font-size: 12px;
@@ -6553,11 +6553,11 @@ body.menu-open {
   }
   .titulo-super-grande-blanco {
     font-size: 23px;
-   
+
   }
   .extra-fondo .quienes-somos-section .title {
     font-size: 23px;
-    
+
   }
   .titulo-super-grande-azul {
     font-size: 34px;
@@ -6717,25 +6717,25 @@ body.menu-open {
   }
   .tit-super-grande-blanco {
     font-size: 22px;
-  
+
   }
   .texto-base-blanco-bold {
     font-size: 12px;
   }
   .tit-card-trabaja{
     font-size: 18px;
-   
+
   }
   .subtit-card-trabaja{
     font-size: 18px;
-   
+
   }
   .titulo-descargas-produccion{
     font-size: 14px;
-    
+
   }
   .section_noticias_inicio .title {
     font-size: 23px;
-    
+
   }
 }
