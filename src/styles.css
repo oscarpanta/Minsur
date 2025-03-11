@@ -4435,6 +4435,10 @@ body.menu-open {
     color: var(--unnamed-color-004891);
     font-weight: 400;
   }
+  .tit-super-grande-blanco {
+    font-size: 46px;
+    line-height: 45px;
+  }
 }
 @media (max-width: 992px) {
   .tit-pequeño,
@@ -5803,7 +5807,7 @@ body.menu-open {
   font-weight: 700;
 }
 .section-background-9 {
-  color: var(--unnamed-color-E7F2FC);
+  background-color: var(--unnamed-color-E7F2FC);
 }
 .titulo-descargas-produccion{
   font-size: 18px;
@@ -5828,6 +5832,16 @@ body.menu-open {
   height: 30rem;
   align-items: end;
 
+}
+.arrow-head{
+  height: 10px;
+}
+.arrow-body{
+  height: 10px;
+}
+.btn-vermas2:hover .arrow-container {
+  width: 70px;
+  height: 25px;
 }
 }
 /* Responsividad para móviles pequeños (menos de 480px) */
