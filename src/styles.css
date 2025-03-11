@@ -127,16 +127,25 @@
   font-style: normal;
 }
 section .container-fluid {
-  width: 85%;
-  max-width: 1920px;
+  /* width: 85%;
+  max-width: 1920px; */
+  max-width: 85vw;
+  width: 1920px;
+  margin: 0 auto;
 }
 header .container-fluid {
-  width: 85%;
-  max-width: 1900px;
+  /* width: 85%;
+  max-width: 1900px; */
+  max-width: 85vw;
+  width: 1920px;
+  margin: 0 auto;
 }
 footer .container-fluid {
-  width: 85%;
-  max-width: 1900px;
+  /* width: 85%;
+  max-width: 1900px; */
+  max-width: 85vw;
+  width: 1920px;
+  margin: 0 auto;
 }
 
 /* --- Contenedor principal --- */
@@ -2836,6 +2845,7 @@ select.selector-listado {
   appearance: none;
   font-size: 16px;
   outline: none;
+  color: #36404e;
   border-bottom: 1px solid #36404e;
 }
 /* Triángulo personalizado */
@@ -3508,175 +3518,8 @@ body.menu-open {
 /* .w-xl-auto {
   width: auto !important;
 } */
+
 @media (max-width: 1700px) {
-  .tit-pequeño,
-  .card12 .tit-pequeño {
-    font-size: 28px;
-    line-height: 38px;
-  }
-  .numero-grande {
-    font-size: 120px;
-    line-height: 50px;
-  }
-  .numero-grande-2 {
-    font-size: 120px;
-    line-height: 50px;
-  }
-  .listado {
-    font-size: 26px;
-    line-height: 30px;
-  }
-  .listado-pequeño {
-    font-size: 22px;
-    line-height: 30px;
-  }
-  .tit-interno {
-    font-size: 38px;
-    line-height: 52px;
-  }
-  .tit-interno-subtitulo {
-    font-size: 38px;
-    line-height: 52px;
-  }
-  .titulo-semi-pequeño-azul-marino {
-    font-size: 30px;
-  }
-  .texto-base {
-    font-size: 22px;
-    line-height: 34px;
-  }
-  .texto-base-blanco {
-    font-size: 22px;
-    line-height: 34px;
-  }
-  .titulo-sustinable {
-    font-size: 24px;
-    line-height: 38px;
-  }
-  .texto-sustinable {
-    font-size: 18px;
-    line-height: 30px;
-  }
-  .texto-minimo {
-    font-size: 16px;
-    line-height: 28px;
-  }
-  .titulo-grande {
-    font-size: 36px;
-    line-height: 52px;
-  }
-  .titulo-grande-azul-marino {
-    font-size: 36px;
-    line-height: 52px;
-  }
-  .footer-minimo {
-    font-size: 18px;
-    line-height: 38px;
-  }
-  .titulo-grande-verde {
-    font-size: 34px;
-    line-height: 50px;
-  }
-  .til-semi-pequenio {
-    font-size: 30px;
-    line-height: 48px;
-  }
-  .til-grande-azul {
-    font-size: 70px;
-    line-height: 72px;
-  }
-  .titulo-realeway-grande {
-    font-size: 48px;
-    line-height: 60px;
-  }
-  .til-mediano-azul {
-    font-size: 38px;
-    line-height: 60px;
-  }
-  .til-pequenio-azul {
-    font-size: 28px;
-    line-height: 38px;
-  }
-  .til-semipequenio-azul {
-    font-size: 30px;
-    line-height: 38px;
-  }
-  .til-semigrande-azul {
-    font-size: 50px;
-    line-height: 60px;
-  }
-  .til-semigrande-azul-marino {
-    font-size: 50px;
-    line-height: 60px;
-  }
-  section .container-fluid {
-    width: 90%;
-  }
-  footer .container-fluid {
-    width: 90%;
-  }
-  header .container-fluid {
-    width: 90%;
-  }
-  section .card-sustinable .col-lg-7 {
-    left: calc(50% - 3%); /* Reduce 2% cuando la pantalla sea menor a 1024px */
-  }
-  .card4 .card4-title {
-    /* min-height: 75px; */
-  }
-  .numero-semi-grande {
-    font-size: 90px;
-    line-height: 56px;
-  }
-  .til-semigrande-azul-marino {
-    font-size: 50px;
-    line-height: 62px;
-  }
-  .title-interna-index-blanco {
-    font-size: 38px;
-    line-height: 50px;
-  }
-  .titulo-pequeño-azul-marino {
-    font-size: 28px;
-    line-height: 42px;
-  }
-  .titulo-pequeño-azul-marino-bold {
-    font-size: 28px;
-    line-height: 42px;
-  }
-  .container-fluid .card {
-    min-height: 560px;
-  }
-  .container-fluid .card img {
-    min-height: 400px;
-  }
-  .container-fluid .card.card10 img {
-    min-height: auto;
-  }
-  .card:hover .overlay {
-    height: 50%;
-  }
-  .card11:hover .overlay {
-    height: 100%;
-  }
-  .container-fluid .card.card12 {
-    min-height: 300px;
-  }
-  .section-background-6 {
-    background: linear-gradient(
-      to bottom,
-      #fff 30%,
-      /* 30% blanco */ #e9eef4 30% 84%,
-      /* 60% azul, desde el 30% hasta el 90% */ #fff 84% 100%
-        /* 10% blanco, desde el 90% hasta el 100% */
-    );
-  }
-  .listado.estados {
-    font-size: 22px;
-    line-height: 30px;
-  }
-}
-@media (max-width: 1400px) {
   .tit-pequeño,
   .card12 .tit-pequeño {
     font-size: 20px;
@@ -4856,7 +4699,9 @@ body.menu-open {
     color: var(--unnamed-color-CCE7FF);
   }
   footer .container-fluid {
-    width: 100%;
+    max-width: 100vw;
+    /* width: 1920px;
+    margin: 0 auto; */
   }
   .descripcion {
     margin: 0rem 0.5rem 0 1.8rem;
@@ -4987,15 +4832,16 @@ body.menu-open {
     color: var(--unnamed-color-0063f9);
   }
   section .container-fluid {
-    max-width: 100%;
+    max-width: 100vw;
+   
     padding: 0;
   }
   footer .container-fluid {
-    max-width: 100%;
+    max-width: 100vw;
     padding: 0;
   }
   header .container-fluid {
-    max-width: 100%;
+    max-width: 100vw;
     padding: 0;
   }
   .title-interna-index {
