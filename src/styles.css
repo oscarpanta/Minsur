@@ -2145,6 +2145,14 @@ footer .list-unstyled.section-canal li {
   line-height: 58pt; /* Establece el interlineado a 58 pt */
   color: #004891; /* Establece el color del texto a #004891 */
 }
+.title-interna-mediano-index {
+  font-family: var(--unnamed-font-family-merriweather);
+  font-weight: var(--unnamed-font-weight-bold);
+  letter-spacing: var(--unnamed-character-spacing--1-05);
+  font-size: 32px; /* Establece el tamaño de la fuente a 48 pt */
+  line-height: 58pt; /* Establece el interlineado a 58 pt */
+  color: #004891; /* Establece el color del texto a #004891 */
+}
 /* Estilo de las flechas */
 .flecha {
   margin-right: 0.5rem;
@@ -3835,6 +3843,12 @@ body.menu-open {
     letter-spacing: normal;
     line-height: 40px;
   }
+  .title-interna-mediano-index {
+    
+    font-size: 24px; /* Establece el tamaño de la fuente a 48 pt */
+    line-height: 40px; /* Establece el interlineado a 58 pt */
+   
+  }
   .responsive-line {
     /* margin: 0; */
   }
@@ -4879,7 +4893,7 @@ body.menu-open {
     line-height: 30px;
     font-weight: 400;
   }
-
+  
   .card:hover .overlay {
     height: 60%; /* Overlay al 100% en hover */
   }
@@ -6245,7 +6259,7 @@ body.menu-open {
     font-size: 16px;
   }
   .title-index-mobile{
-    font-size: 14px;
+    font-size: 16px;
 
   }
   .calendario .table th{
