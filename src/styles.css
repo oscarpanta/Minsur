@@ -4759,8 +4759,9 @@ body.menu-open {
     color: var(--unnamed-color-CCE7FF);
   }
   .numero-grande-2 {
-    font-size: 74px;
-    line-height: 35px;
+    font-size: 78px;
+    line-height: 58px;
+    letter-spacing: -1.88px;
   }
   .listado {
     font-size: 18px;
@@ -5213,7 +5214,9 @@ body.menu-open {
     letter-spacing: -0.63px;
   }
   .extra-fondo .quienes-somos-section .title {
-    font-size: 36px;
+    font-size: 28px;
+    line-height: 30px;
+    letter-spacing: -0.63px;
   }
   .titulo-super-grande-azul {
     font-size: 36px;
@@ -5288,7 +5291,9 @@ body.menu-open {
     /* min-height: auto; */
   }
   .section_noticias_inicio .title {
-    font-size: 30px;
+    font-size: 28px;
+    line-height: 30px;
+    letter-spacing: -0.63px;
   }
   .news-date {
     font-size: 18px;
@@ -5365,7 +5370,10 @@ body.menu-open {
     font-size: 24px;
   }
   .text-fecha {
-    font-size: 14px;
+    font-size: 16px;
+    line-height: 34px;
+    letter-spacing: -0.35px;
+    font-weight: 500;
   }
   .info-container .info-item {
     border: 0;
@@ -5809,6 +5817,18 @@ body.menu-open {
   font-size: 13px;
   padding: 0;
 }
+.quienes-somos-section {
+
+  height: 35rem;
+  align-items: end;
+
+}
+.extra-fondo .quienes-somos-section {
+
+  height: 30rem;
+  align-items: end;
+
+}
 }
 /* Responsividad para móviles pequeños (menos de 480px) */
 @media (max-width: 480px) {
@@ -5827,8 +5847,8 @@ body.menu-open {
 
   }
   .numero-grande-2 {
-    font-size: 70px;
-    line-height: 32px;
+    font-size: 75px;
+    
   }
   .listado {
     font-size: 16px;
@@ -6041,6 +6061,12 @@ body.menu-open {
     align-items: end;
 
   }
+  .extra-fondo .quienes-somos-section {
+
+    height: 25rem;
+    align-items: end;
+
+  }
   .carousel-style {
     /* height: 50rem; */
     height: 30rem;
@@ -6058,8 +6084,8 @@ body.menu-open {
    
   }
   .extra-fondo .quienes-somos-section .title {
-    font-size: 34px;
-    line-height: normal;
+    font-size: 25px;
+    
   }
   .titulo-super-grande-azul {
     font-size: 34px;
@@ -6157,7 +6183,7 @@ body.menu-open {
     /* height: auto; */
   }
   .text-fecha {
-    font-size: 12px;
+    font-size: 14px;
   }
   .content-directorio p {
     padding-bottom: 0.5rem;
@@ -6289,6 +6315,13 @@ body.menu-open {
     font-size: 16px;
     
   }
+  .container-fluid .card.card10 img {
+    min-height: auto;
+  }
+  .section_noticias_inicio .title {
+    font-size: 25px;
+    
+  }
 }
 /* Pantallas de 360px */
 @media (max-width: 360px) {
@@ -6306,8 +6339,8 @@ body.menu-open {
 
   }
   .numero-grande-2 {
-    font-size: 70px;
-    line-height: 32px;
+    font-size: 73px;
+    
   }
   .listado {
     font-size: 14px;
@@ -6523,8 +6556,8 @@ body.menu-open {
    
   }
   .extra-fondo .quienes-somos-section .title {
-    font-size: 34px;
-    line-height: normal;
+    font-size: 23px;
+    
   }
   .titulo-super-grande-azul {
     font-size: 34px;
@@ -6616,7 +6649,7 @@ body.menu-open {
     font-size: 12px;
   }
   .text-fecha {
-    font-size: 10px;
+    font-size: 12px;
   }
   .descarga-espacio {
     margin-left: 1rem !important;
@@ -6699,6 +6732,10 @@ body.menu-open {
   }
   .titulo-descargas-produccion{
     font-size: 14px;
+    
+  }
+  .section_noticias_inicio .title {
+    font-size: 23px;
     
   }
 }

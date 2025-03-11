@@ -1,11 +1,11 @@
 <section class="contenedor-section section-background-9">
-  <div class="my-lg-5 my-md-0">
+  <div class="container-fluid my-lg-5 my-3">
     <div class="container-fluid">
       <p class="mb-5 tit-interno">Reportes</p>
     </div>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-lg-4 ">
+        <div class="col-lg-4 d-none d-lg-block">
           <ul class="list-unstyled  link-list">
             <li class="mb-2 ">
 
@@ -83,7 +83,25 @@
         </div>
         <div class="col-lg-8">
           <div class="row mb-5">
-            <div class="col-lg-6">
+            <div class="col-lg-6 col-10 d-block d-lg-none mb-3 mb-lg-0">
+              <div class="custom-select-listados">
+                <div class="custom-select">
+                  <div class="select-trigger">Estados financieros</div>
+                  <ul class="options">
+                    <li data-value="estados_financieros">Estados financieros</li>
+                    <li data-value="analisis_gerencial">Análisis de Gerencia</li>
+                    <li data-value="memoria_anuak">Memoria anual</li>
+                    <li data-value="reporte_anual">Reporte anual</li>
+                    <li data-value="presentacion_coporativa">Presentación corporativa</li>
+                    <li data-value="otros">Otros</li>
+
+                  </ul>
+                </div>
+
+
+              </div>
+            </div>
+            <div class="col-lg-6 col-10 mb-3 mb-lg-0">
               <div class="custom-select-listados">
                 <div class="custom-select">
                   <div class="select-trigger">Individual</div>
@@ -97,7 +115,7 @@
 
               </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6  col-10 mb-3 mb-lg-0">
               <div class="custom-select-listados">
                 <div class="custom-select">
                   <div class="select-trigger">Año</div>
@@ -127,35 +145,34 @@
                 <p class="mb-0 listado estados">Estado financiero 2024-1</p>
               </div>
 
-              <div class="col-12 col-md-4 d-flex align-items-center justify-content-center justify-content-md-end mt-2 mt-md-0 p-0">
-
-                <div class="card4-footer">
-                  <div
-                    class="flex-grow-0 flex-lg-grow-1 d-flex align-items-center justify-content-end me-sm-0 ms-sm-0 me-lg-5 me-3"
-                  >
-                  <p class="m-0 card4-footer">PDF 12.5MB</p>
+              <div class="col-12 col-md-5 col-xl-4 d-flex align-items-center mt-2 mt-md-0 p-0">
+                <div class="card4-footer w-100 d-flex align-items-center justify-content-md-between justify-content-sm-end justify-content-between gap-xxl-4 gap-xl-2 gap-sm-5 gap-2 ms-3 ms-md-0">
+    
+                  <!-- Grupo PDF y Descargar con mayor separación -->
+                  <div class="d-flex align-items-center gap-xxl-5 gap-xl-3 gap-md-2 gap-sm-3 gap-3">
+                    <div class="btn-descargar btn-ver">
+                      <p class="m-0 card4-footer">PDF 12.5MB</p>
+                    </div>
+    
+                    <div>
+                      <app-button-descargar
+                        link="/"
+                        defaultBorderColor="#0063f9"
+                        defaultStrokeColor="#0063f9"
+                        hoverStrokeColor="#ffffff"
+                        label="descargar"
+                        textColor="#0063f9"
+                      ></app-button-descargar>
+                    </div>
+                  </div>
+    
+                  <!-- Reducimos la distancia entre "descargar" y "ver" -->
+                  <a routerLink="/" class="btn-descargar btn-ver" download>
+                    ver
+                    <span class="flecha-circular"><i class="fas fa-arrow-right"></i></span>
+                  </a>
+    
                 </div>
-                <app-button-descargar
-                      link="/"
-                      defaultBorderColor="#0063f9"
-                      defaultStrokeColor="#0063f9"
-                      hoverStrokeColor="#ffffff"
-                      label="descargar"
-                      textColor="#0063f9"
-                    ></app-button-descargar>
-
-                <a
-                  routerLink="/"
-                  class="btn-descargar btn-ver me-sm-0 ms-sm-0 me-lg-0 ms-lg-3 ms-3 ms-3"
-                  download
-                >
-                  ver
-                  <span class="flecha-circular"
-                    ><i class="fas fa-arrow-right"></i
-                  ></span>
-                </a>
-                </div>
-
               </div>
 
             </div>
@@ -167,33 +184,33 @@
                 <p class="mb-0 listado estados">Estado financiero 2024-2</p>
               </div>
 
-              <div class="col-12 col-md-4 d-flex align-items-center justify-content-center justify-content-md-end mt-2 mt-md-0 p-0">
-
-                <div class="card4-footer">
-                  <div
-                    class="flex-grow-0 flex-lg-grow-1 d-flex align-items-center justify-content-end me-sm-0 ms-sm-0 me-lg-5 me-3"
-                  >
-                  <p class="m-0 card4-footer">PDF 12.5MB</p>
-                </div>
-                <app-button-descargar
-                      link="/"
-                      defaultBorderColor="#0063f9"
-                      defaultStrokeColor="#0063f9"
-                      hoverStrokeColor="#ffffff"
-                      label="descargar"
-                      textColor="#0063f9"
-                    ></app-button-descargar>
-
-                <a
-                  routerLink="/"
-                  class="btn-descargar btn-ver me-sm-0 ms-sm-0 me-lg-0 ms-lg-3 ms-3 ms-3"
-                  download
-                >
-                  ver
-                  <span class="flecha-circular"
-                    ><i class="fas fa-arrow-right"></i
-                  ></span>
-                </a>
+              <div class="col-12 col-md-5 col-xl-4 d-flex align-items-center mt-2 mt-md-0 p-0">
+                <div class="card4-footer w-100 d-flex align-items-center justify-content-md-between justify-content-sm-end justify-content-between gap-xxl-4 gap-xl-2 gap-sm-5 gap-2 ms-3 ms-md-0">
+    
+                  <!-- Grupo PDF y Descargar con mayor separación -->
+                  <div class="d-flex align-items-center gap-xxl-5 gap-xl-3 gap-md-2 gap-sm-3 gap-3">
+                    <div class="btn-descargar btn-ver">
+                      <p class="m-0 card4-footer">PDF 12.5MB</p>
+                    </div>
+    
+                    <div>
+                      <app-button-descargar
+                        link="/"
+                        defaultBorderColor="#0063f9"
+                        defaultStrokeColor="#0063f9"
+                        hoverStrokeColor="#ffffff"
+                        label="descargar"
+                        textColor="#0063f9"
+                      ></app-button-descargar>
+                    </div>
+                  </div>
+    
+                  <!-- Reducimos la distancia entre "descargar" y "ver" -->
+                  <a routerLink="/" class="btn-descargar btn-ver" download>
+                    ver
+                    <span class="flecha-circular"><i class="fas fa-arrow-right"></i></span>
+                  </a>
+    
                 </div>
               </div>
 
@@ -205,33 +222,33 @@
                 <p class="mb-0 listado estados">Estado financiero 2024-3</p>
               </div>
 
-              <div class="col-12 col-md-4 d-flex align-items-center justify-content-center justify-content-md-end mt-2 mt-md-0 p-0">
-
-                <div class="card4-footer">
-                  <div
-                    class="flex-grow-0 flex-lg-grow-1 d-flex align-items-center justify-content-end me-sm-0 ms-sm-0 me-lg-5 me-3"
-                  >
-                  <p class="m-0 card4-footer">PDF 12.5MB</p>
-                </div>
-                <app-button-descargar
-                      link="/"
-                      defaultBorderColor="#0063f9"
-                      defaultStrokeColor="#0063f9"
-                      hoverStrokeColor="#ffffff"
-                      label="descargar"
-                      textColor="#0063f9"
-                    ></app-button-descargar>
-
-                <a
-                  routerLink="/"
-                  class="btn-descargar btn-ver me-sm-0 ms-sm-0 me-lg-0 ms-lg-3 ms-3 ms-3"
-                  download
-                >
-                  ver
-                  <span class="flecha-circular"
-                    ><i class="fas fa-arrow-right"></i
-                  ></span>
-                </a>
+              <div class="col-12 col-md-5 col-xl-4 d-flex align-items-center mt-2 mt-md-0 p-0">
+                <div class="card4-footer w-100 d-flex align-items-center justify-content-md-between justify-content-sm-end justify-content-between gap-xxl-4 gap-xl-2 gap-sm-5 gap-2 ms-3 ms-md-0">
+    
+                  <!-- Grupo PDF y Descargar con mayor separación -->
+                  <div class="d-flex align-items-center gap-xxl-5 gap-xl-3 gap-md-2 gap-sm-3 gap-3">
+                    <div class="btn-descargar btn-ver">
+                      <p class="m-0 card4-footer">PDF 12.5MB</p>
+                    </div>
+    
+                    <div>
+                      <app-button-descargar
+                        link="/"
+                        defaultBorderColor="#0063f9"
+                        defaultStrokeColor="#0063f9"
+                        hoverStrokeColor="#ffffff"
+                        label="descargar"
+                        textColor="#0063f9"
+                      ></app-button-descargar>
+                    </div>
+                  </div>
+    
+                  <!-- Reducimos la distancia entre "descargar" y "ver" -->
+                  <a routerLink="/" class="btn-descargar btn-ver" download>
+                    ver
+                    <span class="flecha-circular"><i class="fas fa-arrow-right"></i></span>
+                  </a>
+    
                 </div>
               </div>
 
@@ -242,33 +259,33 @@
                 <p class="mb-0 listado estados">Estado financiero 2024-4</p>
               </div>
 
-              <div class="col-12 col-md-4 d-flex align-items-center justify-content-center justify-content-md-end mt-2 mt-md-0 p-0">
-
-                <div class="card4-footer">
-                  <div
-                    class="flex-grow-0 flex-lg-grow-1 d-flex align-items-center justify-content-end me-sm-0 ms-sm-0 me-lg-5 me-3"
-                  >
-                  <p class="m-0 card4-footer">PDF 12.5MB</p>
-                </div>
-                <app-button-descargar
-                      link="/"
-                      defaultBorderColor="#0063f9"
-                      defaultStrokeColor="#0063f9"
-                      hoverStrokeColor="#ffffff"
-                      label="descargar"
-                      textColor="#0063f9"
-                    ></app-button-descargar>
-
-                <a
-                  routerLink="/"
-                  class="btn-descargar btn-ver me-sm-0 ms-sm-0 me-lg-0 ms-lg-3 ms-3 ms-3"
-                  download
-                >
-                  ver
-                  <span class="flecha-circular"
-                    ><i class="fas fa-arrow-right"></i
-                  ></span>
-                </a>
+              <div class="col-12 col-md-5 col-xl-4 d-flex align-items-center mt-2 mt-md-0 p-0">
+                <div class="card4-footer w-100 d-flex align-items-center justify-content-md-between justify-content-sm-end justify-content-between gap-xxl-4 gap-xl-2 gap-sm-5 gap-2 ms-3 ms-md-0">
+    
+                  <!-- Grupo PDF y Descargar con mayor separación -->
+                  <div class="d-flex align-items-center gap-xxl-5 gap-xl-3 gap-md-2 gap-sm-3 gap-3">
+                    <div class="btn-descargar btn-ver">
+                      <p class="m-0 card4-footer">PDF 12.5MB</p>
+                    </div>
+    
+                    <div>
+                      <app-button-descargar
+                        link="/"
+                        defaultBorderColor="#0063f9"
+                        defaultStrokeColor="#0063f9"
+                        hoverStrokeColor="#ffffff"
+                        label="descargar"
+                        textColor="#0063f9"
+                      ></app-button-descargar>
+                    </div>
+                  </div>
+    
+                  <!-- Reducimos la distancia entre "descargar" y "ver" -->
+                  <a routerLink="/" class="btn-descargar btn-ver" download>
+                    ver
+                    <span class="flecha-circular"><i class="fas fa-arrow-right"></i></span>
+                  </a>
+    
                 </div>
               </div>
 
