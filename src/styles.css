@@ -476,6 +476,9 @@ header.scrolled .navbar-nav .nav-link:focus,
   /* flex-direction: column;
   justify-content: center; */
   width: 100%;
+  background-position: 100% center;
+  background-repeat: no-repeat;
+  background-size: 120% 100%;
 }
 .quienes-somos-section .container {
   /* height: 120vh; */
@@ -6118,19 +6121,20 @@ body.menu-open {
   .quienes-somos-section {
     /* height: 100vh; */
     /* height: 50rem; */
-    height: 30rem;
+    height: 25rem;
     align-items: end;
-
+    background-position: left center;
+    background-size: 140% 100%;
   }
   .extra-fondo .quienes-somos-section {
 
-    height: 25rem;
+    height: 22rem;
     align-items: end;
 
   }
   .carousel-style {
     /* height: 50rem; */
-    height: 25rem;
+    height: 22rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -6591,12 +6595,12 @@ body.menu-open {
   .quienes-somos-section {
     /* height: 100vh; */
     /* height: 50rem; */
-    height: 30rem;
+    height: 24rem;
 
   }
   .carousel-style {
     /* height: 50rem; */
-    height: 25rem;
+    height: 24rem;
 
     display: flex;
     flex-direction: column;
