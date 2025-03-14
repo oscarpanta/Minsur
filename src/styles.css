@@ -6398,6 +6398,21 @@ body.menu-open {
     font-size: 26px;
     margin-bottom: 1rem;
 }
+.bg-que-hacemos .quienes-somos-section{
+  background-size: 200% 100%;
+  background-position: 58% center;
+}
+.bg-sostenibilidad .quienes-somos-section{
+  background-size: 180% 100%;
+}
+.bg-inversiones .quienes-somos-section{
+  background-size: 210% 100%;
+  background-position: center;
+}
+.bg-proveedores .quienes-somos-section{
+  background-size: 200% 100%;
+  background-position: 75% center;
+}
 }
 /* Pantallas de 360px */
 @media (max-width: 360px) {
@@ -6823,7 +6838,7 @@ body.menu-open {
   font-size: 14px;
 }
 .quienes-somos-section .small-section{
-  padding-top: 5px;
+  padding-top: 10px;
   padding-bottom: 5px;
 }
 }
