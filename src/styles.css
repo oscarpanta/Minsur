@@ -6385,6 +6385,18 @@ body.menu-open {
     font-size: 25px;
 
   }
+  .indicator-title{
+    font-size: 13px;
+  }
+  .carousel-caption .subtitulo-carousel {
+    font-size: 16px;
+    text-align: left;
+    line-height: 18px;
+  }
+  .carousel-caption h3 {
+    font-size: 26px;
+    margin-bottom: 1rem;
+}
 }
 /* Pantallas de 360px */
 @media (max-width: 360px) {
@@ -6599,12 +6611,12 @@ body.menu-open {
   .quienes-somos-section {
     /* height: 100vh; */
     /* height: 50rem; */
-    height: 24rem;
+    height: 20rem;
 
   }
   .carousel-style {
     /* height: 50rem; */
-    height: 24rem;
+    height: 20rem;
 
     display: flex;
     flex-direction: column;
@@ -6796,4 +6808,15 @@ body.menu-open {
     font-size: 23px;
 
   }
+  .carousel-caption .subtitulo-carousel {
+    font-size: 16px;
+    text-align: left;
+  }
+  .carousel-caption h3 {
+    font-size: 24px;
+    line-height: 28px;
+}
+.carousel-caption p {
+  font-size: 14px;
+}
 }
