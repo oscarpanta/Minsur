@@ -3544,6 +3544,9 @@ body.menu-open {
     font-size: 20px;
     line-height: 34px;
   }
+  section .card-sustinable .col-lg-7 {
+    left: calc(50% - 3%); /* Reduce 2% cuando la pantalla sea menor a 1024px */
+  }
   .tit-pequeño-blanco {
     font-size: 20px;
     line-height: 34px;
