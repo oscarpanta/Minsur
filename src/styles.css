@@ -2853,7 +2853,7 @@ select.selector-listado {
 /* Estilo del select */
 .custom-select {
   width: 100%;
-  padding: 10px 10px 10px 10px;
+  padding: 0px 15px 15px 0px;
   border: 0;
   background-color: transparent;
   appearance: none;
@@ -2876,7 +2876,7 @@ select.selector-listado {
 /* Etiqueta flotante */
 .floating-label {
   position: absolute;
-  left: 10px;
+  left: 0px;
   top: 12px; /* Ajustar la posición para que no quede en el medio */
   transform: translateY(0);
   color: #36404e;
@@ -5879,6 +5879,14 @@ body.menu-open {
 .carousel-inner .bg-carousel{
     background-size: 150% 100%;  /* Ajusta el tamaño de la imagen */
     background-position: center;
+}
+.fondo-centro-hacemos{
+  background-size: auto 100% !important;
+  background-position-x: right  !important;
+}
+.fondo-centro-hacemos-2{
+  background-size: auto 100% !important;
+  background-position-x: left !important;
 }
 }
 /* Responsividad para móviles pequeños (menos de 480px) */
