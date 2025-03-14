@@ -4767,6 +4767,10 @@ body.menu-open {
   .title-interna-index-blanco {
     font-size: 30px;
   }
+  .card8 {
+        margin: 0rem;
+        padding: 3rem 0.5rem 0rem 0.5rem;
+  }
 }
 
 /* Responsividad para pantallas más pequeñas (mayores a 768px) */
