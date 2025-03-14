@@ -6095,8 +6095,9 @@ body.menu-open {
     font-size: 12px;
   }
   .quienes-somos-section .title {
-    font-size: 30px;
-    line-height: 46px;
+    /* font-size: 30px; */
+    font-size: 26px;
+    line-height: 30px;
   }
   .numero-semi-grande {
     font-size: 40px;
@@ -6570,6 +6571,7 @@ body.menu-open {
   }
   .quienes-somos-section .description {
     line-height: normal;
+    font-size: 14px ;
     /* font-size: var(--unnamed-font-size-24); */
   }
   .quienes-somos-section .video-info h5 {
@@ -6585,7 +6587,8 @@ body.menu-open {
     font-size: 12px;
   }
   .quienes-somos-section .title {
-    line-height: 46px;
+    font-size: 24px;
+    line-height: 26px;
   }
   .numero-semi-grande {
     font-size: 38px;
@@ -6818,5 +6821,9 @@ body.menu-open {
 }
 .carousel-caption p {
   font-size: 14px;
+}
+.quienes-somos-section .small-section{
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 }
