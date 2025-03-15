@@ -3876,6 +3876,10 @@ body.menu-open {
   .container-fluid .card img {
     min-height: 400px;
   }
+  .container-fluid .card.card10 img {
+    min-height: unset;
+    height: auto;
+  }
   .container-fluid .card.card12 {
     min-height: unset;
     max-height: unset;
