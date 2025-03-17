@@ -1,38 +1,8 @@
-<!-- <div class="my-xxl-5 my-xl-2">
-  <div class="row row-cols-2 row-cols-md-3 g-4">
-    <div *ngFor="let card of cards" class="col px-0">
-      <div class="card card12 h-100">
-        <div class="card-body  text-md-start pb-0">
-          <img
-            [src]="card.image"
-            class="card-img-top"
-            style="max-width: 32px; max-height: 35px; min-height: 35px;"
-            [alt]="card.title"
-          />
-        </div>
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title  text-md-start tit-pequeño">{{ card.title }}</h5>
-          <p class="card-text texto_base card-body-sostenibilidad flex-grow-0 flex-lg-grow-1 mb-0 mb-md-3">
-            {{ card.text }}
-          </p>
-          <hr class="my-xxl-3 my-xl-3" />
-          <div class="d-md-block">
-
-            <app-button link="{{ card.route }}"> </app-button>
-
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</div> -->
-
 <div class="my-xxl-5 my-xl-2">
   <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 g-4">
     <div *ngFor="let card of cards" class="col px-0">
       <div class="card card12 d-flex flex-column h-100">
-        
+
         <div class="card-body text-md-start pb-0">
           <img
             [src]="card.image"
@@ -42,23 +12,18 @@
           />
         </div>
 
-        <!-- Contenedor flexible para el contenido de la tarjeta -->
         <div class="card-body d-flex flex-column align-items-start" style="flex: 1;">
-          <!-- Título de la tarjeta con altura mínima fija -->
           <h5 class="card-title text-md-start tit-pequeño d-flex align-items-center mb-xxl-3 mb-xl-2 mb-2" style="min-height: 50px;">
             {{ card.title }}
           </h5>
-          
-          <!-- Texto de la tarjeta con un padding ajustado para evitar que se estire demasiado -->
-          <p class="card-text texto_base card-body-sostenibilidad d-flex align-items-start mb-0" 
+
+          <p class="card-text texto_base card-body-sostenibilidad d-flex align-items-start mb-0"
              style="flex-grow: 1; display: flex; align-items: flex-start; padding-bottom: 10px; overflow: hidden; text-overflow: ellipsis;">
             {{ card.text }}
           </p>
 
-          <!-- Línea divisoria -->
           <hr class="w-100 mt-xxl-5 mb-xxl-3  mt-xl-4 mb-xl-2  mt-3 mb-2" />
 
-          <!-- Botón -->
           <div class="d-md-block mt-auto">
             <app-button link="{{ card.route }}"></app-button>
           </div>

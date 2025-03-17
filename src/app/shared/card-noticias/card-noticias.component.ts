@@ -30,9 +30,7 @@ export class CardNoticiasComponent {
   get pages(): number[] {
     return Array.from({ length: this.totalPages }, (_, i) => i + 1);
   }
-  // get displayedNoticias(): Noticia[] {
-  //   return this.noticias.slice(0, this.displayCount);
-  // }
+
   get displayedNoticias(): Noticia[] {
     if (!this.paginacionActiva) {
       return this.noticias.slice(0, this.displayCount);

@@ -46,7 +46,6 @@ export class ContenidoComponent implements AfterViewInit{
        title: 'Minsur es la primera empresa peruana en ser reconocida por el prestigioso Shingo Institute',
        link: '/noticias/detalle/3'
      },
-     // ...más noticias
    ];
 
   noticias = [

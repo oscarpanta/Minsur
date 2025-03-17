@@ -4,7 +4,6 @@ import { ContenidoComponent } from './pages/contenido/contenido.component';
 
 const routes: Routes = [
         { path: '', component: ContenidoComponent },
-
 ];
 
 @NgModule({
