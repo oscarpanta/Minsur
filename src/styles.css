@@ -6747,7 +6747,7 @@ body.menu-open {
   }
 
   .carousel-caption p {
-    font-size: 16px;
+    font-size: 14px;
     line-height: normal;
   }
 
@@ -6761,7 +6761,7 @@ body.menu-open {
   }
   .quienes-somos-section .description {
     line-height: normal;
-    font-size: 15px;
+    font-size: 12px;
     width: 70%;
     }
   .quienes-somos-section .video-info h5 {
@@ -6770,16 +6770,15 @@ body.menu-open {
   }
 
   .quienes-somos-section .video-info p {
-    font-size: var(--unnamed-font-size-14);
+    font-size: 13px;
     line-height: normal;
   }
   .quienes-somos-section .btn_seccion_imagen {
     font-size: 12px;
   }
   .quienes-somos-section .title {
-    /* font-size: 30px; */
-    font-size: 26px;
-    line-height: 30px;
+    font-size: 22px;
+    line-height: 26px;
   }
   .numero-semi-grande {
     font-size: 40px;
@@ -7075,9 +7074,11 @@ body.menu-open {
     font-size: 16px;
     text-align: left;
     line-height: 18px;
+    margin-bottom: 0.5rem;
   }
   .carousel-caption h3 {
-    font-size: 26px;
+    font-size: 24px;
+    line-height: 25px;
     margin-bottom: 0.5rem;
 }
 .bg-que-hacemos .quienes-somos-section{
@@ -7268,7 +7269,7 @@ body.menu-open {
   }
   .quienes-somos-section .description {
     line-height: normal;
-    font-size: 14px ;
+    font-size: 12px ;
     /* font-size: var(--unnamed-font-size-24); */
   }
   .quienes-somos-section .video-info h5 {
@@ -7277,14 +7278,14 @@ body.menu-open {
   }
 
   .quienes-somos-section .video-info p {
-    font-size: var(--unnamed-font-size-14);
+    font-size: 13px;
     line-height: normal;
   }
   .quienes-somos-section .btn_seccion_imagen {
     font-size: 12px;
   }
   .quienes-somos-section .title {
-    font-size: 24px;
+    font-size: 22px;
     line-height: 26px;
   }
   .numero-semi-grande {
