@@ -6814,8 +6814,10 @@ body.menu-open {
   }
   .extra-fondo .quienes-somos-section {
 
-    height: 22rem;
+    height: 18.4rem;
     align-items: end;
+    background-position: left center;
+    background-size: 140% 100%;
 
   }
   .carousel-style {
@@ -7095,6 +7097,17 @@ body.menu-open {
 .bg-proveedores .quienes-somos-section{
   background-size: 200% 100%;
   background-position: 75% center;
+}
+.fondo-section-regular {
+  height: 18.4vh;
+  background-size: cover !important;
+  background-position: center !important;
+
+}
+.fondo-section-regular-2 {
+  height: 18.4vh;
+  background-size: cover !important;
+  background-position: center !important;
 }
 }
 /* Pantallas de 360px */
