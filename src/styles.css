@@ -5907,7 +5907,7 @@ body.menu-open {
     padding: 1.5rem;
   }
   .carousel-style {
-    height: 50rem;
+    height: 35rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
