@@ -5741,9 +5741,9 @@ body.menu-open {
   /* Agregado */
   .container-fluid .custom-card {
     border-top-right-radius: 0;
-    border-bottom-right-radius: 20px;
+    border-bottom-right-radius: 10px;
     border-top-left-radius: 0;
-    border-bottom-left-radius: 20px;
+    border-bottom-left-radius: 10px;
     padding: 1.5rem;
   }
   .container-fluid .custom-card .card-body {
@@ -6200,7 +6200,7 @@ body.menu-open {
     line-height: 38px;
   }
   .contenedor-section {
-    padding: 2rem 0 2rem 0;
+    padding: 3rem 0 4rem 0;
   }
   .section-background-1 {
     background-color: var(--unnamed-color-E7F2FC);
@@ -6337,7 +6337,7 @@ body.menu-open {
   background-position: 60% center;
 }
   .seccion-fondo{
-    height: 30vh;
+    height: 28vh;
   }
   .section-background-6{
     background: #fff;
@@ -6373,6 +6373,7 @@ body.menu-open {
     font-size: 18px;
     line-height: 20px;
     letter-spacing: -0.4px;
+    font-weight: 400;
   }
   .card4.cards-reporte {
     align-items: start;
@@ -6577,14 +6578,27 @@ body.menu-open {
   background-size: auto 100% !important;
   background-position-x: left !important;
 }
+.contenedor-section-extra{
+  padding: 0em 0 3em 0;
+}
+.contenedor-section-extra-2{
+  padding: 1.5em 0 1.5em 0;
+}
+.contenedor-section-extra-3{
+  padding: 4em 0 0em 0;
+}
+.contenedor-section-extra-4{
+  padding: 2.5em 0 2em 0;
+}
 }
 /* Responsividad para móviles pequeños (menos de 480px) */
 @media (max-width: 480px) {
   .tit-pequeño,
   .card12 .tit-pequeño {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
     letter-spacing: -0.4px;
+    font-weight: 400;
   }
   .tit-pequeño-blanco {
     font-size: 16px;
@@ -6652,7 +6666,7 @@ body.menu-open {
 
   }
   .til-grande-azul {
-    font-size: 30px;
+    font-size: 30.5px;
     line-height: 35px;
   }
   .titulo-realeway-grande {
@@ -6901,7 +6915,7 @@ body.menu-open {
     min-height: 250px;
   }
   .container-fluid .card.card11 {
-    min-height: 400px;
+    min-height: 380px;
   }
   .container-fluid .card.card11 img {
     min-height: 350px;
@@ -6933,7 +6947,10 @@ body.menu-open {
     font-size: 14px;
   }
   .content-directorio p {
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.3rem;
+  }
+  .content-directorio-header p{
+    margin: 0rem;
   }
   .descarga-espacio {
     margin-left: 1rem !important;
@@ -7099,7 +7116,7 @@ body.menu-open {
   background-position: 75% center;
 }
 .fondo-section-regular {
-  height: 18.4vh;
+  height: 30vh;
   background-size: cover !important;
   background-position: center !important;
 
@@ -7109,6 +7126,11 @@ body.menu-open {
   background-size: cover !important;
   background-position: center !important;
 }
+.card11 .overlay .my-xxl-2-5 {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+
 }
 /* Pantallas de 360px */
 @media (max-width: 360px) {
@@ -7184,7 +7206,7 @@ body.menu-open {
 
   }
   .til-grande-azul {
-    font-size: 30px;
+    font-size: 30.5px;
     line-height: 40px;
   }
   .titulo-realeway-grande {
