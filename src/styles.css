@@ -6590,6 +6590,9 @@ body.menu-open {
 .contenedor-section-extra-4{
   padding: 2.5em 0 2em 0;
 }
+.contenedor-section-extra-5{
+  padding: 1.5em 0 3em 0;
+}
 }
 /* Responsividad para móviles pequeños (menos de 480px) */
 @media (max-width: 480px) {
