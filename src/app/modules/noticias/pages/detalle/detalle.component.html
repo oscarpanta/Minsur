@@ -1,5 +1,5 @@
 <section class="seccion_detalle_noticia pb-5">
-  <div class="container-fluid">
+  <div class="container-fluid mb-md-4 mb-5">
     <div class="py-lg-5 py-sm-3 py-2">
       <div class="mb-sm-5 mb-2">
         <app-button-left
@@ -16,12 +16,10 @@
         <div class="container_detalle_noticia">
           <div class="col-12 row mx-auto">
             <div
-              class="col-md-6 p-lg-5 p-3 d-flex flex-column justify-content-center order-md-1 order-2"
+              class="col-md-6 p-lg-5 p-4 d-flex flex-column justify-content-center order-md-1 order-2"
             >
               <div>
-                <p class="mb-lg-4 mb-2 news_date_detalle">
-                  Junio, 2024
-                </p>
+                <p class="mb-lg-4 mb-2 news_date_detalle">Junio, 2024</p>
                 <h4 class="pe-lg-5 pe-0 news_title_detalle">
                   Clínica móvil Minsur ha realizado más de 2,500 atenciones en
                   Antauta y Ajoyani
@@ -37,7 +35,9 @@
               />
             </div>
           </div>
-          <div class="col-12 row px-lg-5 px-sm-4 px-3 pt-lg-5 pt-sm-4 pt-3 mx-auto">
+          <div
+            class="col-12 row px-lg-5 px-sm-4 px-4 pt-lg-5 pt-sm-4 pt-3 mx-auto"
+          >
             <div
               class="col-lg-10 pb-lg-4 pb-2 detalle_texto order-2 order-md-1 px-0"
             >
@@ -83,7 +83,8 @@
               </p>
             </div>
             <div
-              class="col-lg-2 d-flex align-items-end flex-column compartir_container order-1 order-md-2 mb-md-0 mb-5"
+              class="col-lg-2 d-flex align-items-end flex-column
+              compartir_container order-1 order-md-2 mb-md-0 mb-4 px-md-4 px-0"
             >
               <div class="d-flex flex-column">
                 <span class="text-compartir mb-2">COMPARTIR</span>
@@ -93,44 +94,45 @@
                       ><i
                         class="fas fa-share-square me-4 me-md-2 py-lg-3 py-2"
                       ></i>
-                    <span class="d-none d-md-block">EMAIL</span></span
+                      <span class="d-none d-md-block">EMAIL</span></span
                     >
-                    </a
-                  >
+                  </a>
                   <a href=""
                     ><span class="d-flex align-items-center"
                       ><i
                         class="fa-brands fa-x-twitter me-4 me-md-2 py-lg-3 py-2"
                       ></i>
                       <span class="d-none d-md-block">TWITTER</span>
-                      </span
-                    > </a
-                  >
+                    </span>
+                  </a>
                   <a href=""
                     ><span class="d-flex align-items-center"
                       ><i
                         class="fa-brands fa-facebook-f me-4 me-md-2 py-lg-3 py-2"
-                      ></i><span class="d-none d-md-block">FACEBOOK</span></span></a
+                      ></i
+                      ><span class="d-none d-md-block">FACEBOOK</span></span
+                    ></a
                   >
                   <a href=""
                     ><span class="d-flex align-items-center"
                       ><i
                         class="fa-brands fa-linkedin-in me-4 me-md-2 py-lg-3 py-2"
-                      ></i><span class="d-none d-md-block">LINKEDIN</span></span></a
+                      ></i
+                      ><span class="d-none d-md-block">LINKEDIN</span></span
+                    ></a
                   >
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="row">
-            <div class="col-xxl-10 col-lg-8 col-md-12">
-              <div class="py-5 col-12 row mx-auto ps-lg-5 ps-sm-3 ps-2">
+          <div class="col-12 row px-lg-5 px-sm-4 px-4 pt-3 mx-auto">
+            <div class="col-lg-10 col-12 px-0">
                 <div
-                  class="d-flex align-items-center mb-4 flex-row justify-content-between gap-2"
+                  class="d-flex align-items-center mb-5 flex-row justify-content-between gap-2"
                 >
                   <div class="d-flex align-items-center flex-grow-1">
-                    <i class="fas fa-arrow-right flecha-blue me-3"></i>
+                    <i class="fas fa-arrow-right flecha-blue me-2 me-md-3"></i>
                     <p class="mb-0 listado">Presentación Corporativa</p>
                   </div>
                   <div class="text-center">
@@ -142,7 +144,6 @@
                     </a>
                   </div>
                 </div>
-              </div>
             </div>
           </div>
         </div>
@@ -152,6 +153,6 @@
   <app-card-noticias
     [noticias]="noticias"
     [displayCount]="3"
-    overflowClass ="noticias-container-2"
+    overflowClass="noticias-container-2"
   ></app-card-noticias>
 </section>
