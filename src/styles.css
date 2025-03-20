@@ -5819,7 +5819,7 @@ font-weight: 500;
     height: 50rem;
   }
   .quienes-somos-section .title {
-    font-size: 45px;
+    font-size: 40px;
   }
   .extra-fondo .quienes-somos-section .title {
     font-size: 48px;
@@ -6801,7 +6801,10 @@ background-color: #E7F2FC;
   .quienes-somos-section .description {
     line-height: normal;
     font-size: 12px;
-    width: 70%;
+    width: 66%;
+    }
+    .sub-tit{
+      height: 110px;
     }
   .quienes-somos-section .video-info h5 {
     font-size: 12px;
@@ -6814,6 +6817,7 @@ background-color: #E7F2FC;
   }
   .quienes-somos-section .btn_seccion_imagen {
     font-size: 12px;
+    padding: 0px;
   }
   .quienes-somos-section .title {
     font-size: 22px;
@@ -7174,6 +7178,12 @@ background-color: #E7F2FC;
     font-size: 14px;
     border-bottom: none;
   }
+  .quienes-somos-section .small-section{
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 5px;
+  }
+
 }
 /* Pantallas de 360px */
 @media (max-width: 360px) {
@@ -7599,8 +7609,8 @@ background-color: #E7F2FC;
 .carousel-caption p {
   font-size: 14px;
 }
-.quienes-somos-section .small-section{
-  padding-top: 10px;
-  padding-bottom: 5px;
+
+.sub-tit {
+  height: 100px;
 }
 }
