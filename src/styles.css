@@ -6579,6 +6579,7 @@ font-weight: 500;
 .arrow-body{
   height: 10px;
 }
+
 .btn-vermas2:hover .arrow-container {
   width: 70px;
   height: 25px;
@@ -7204,6 +7205,25 @@ background-color: #E7F2FC;
     padding-bottom: 5px;
   }
 
+  .arrow-container {
+    height: 20px;
+    width: 20px;
+  }
+  .btn-descargar2 .arrow-container{
+    height: 20px;
+    width: 20px;
+  }
+  .btn-descargar2 .arrow-body{
+
+    height: 10px;
+    margin-right: -13.5px;
+    margin-left: 2px;
+    margin-top: 2px;
+  }
+  .btn-descargar2 .arrow-head {
+    margin-top:6px;
+    margin-right: 1.5px;
+  }
 }
 /* Pantallas de 360px */
 @media (max-width: 360px) {
