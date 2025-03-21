@@ -3576,6 +3576,9 @@ font-weight: 500;
 /* .w-xl-auto {
   width: auto !important;
 } */
+.listado-pequeño-blanco .flecha-circular{
+  border: 2px solid #fff;
+}
 @media (max-width: 1600px) {
   .tit-pequeño,
   .card12 .tit-pequeño {
@@ -6763,7 +6766,7 @@ font-weight: 500;
   }
   .til-semi-pequenio-semibold {
     font-size: 14px;
-   
+
   }
   .til-grande-azul {
     font-size: 30.5px;
@@ -7364,7 +7367,7 @@ font-weight: 500;
   }
   .til-semi-pequenio-semibold {
     font-size: 13px;
-   
+
   }
   .til-grande-azul {
     font-size: 28px;
