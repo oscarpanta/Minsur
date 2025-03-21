@@ -3357,7 +3357,9 @@ select.selector-listado {
 .comunicado_flecha .btn-vermas2.arrow-left-btn:hover .arrow-container  {
   width: 40px;
 }
-
+.comunicado_flecha_azul .btn-vermas2.arrow-left-btn:hover .btn-label {
+  color: #0063f9;
+}
 
 .btn-vermas2.arrow-left-btn:hover .arrow-container .arrow-body-left {
   width: 55px; /* El cuerpo se alarga */
