@@ -3301,6 +3301,18 @@ select.selector-listado {
   left: 0;
   top: 0;
 }
+.btn-descargar:hover .comunicados-label {
+  visibility: hidden; /* Oculta el texto original */
+  position: relative;
+}
+.btn-descargar:hover .comunicados-label::after {
+  content: "VER TODAS"; /* Nuevo texto */
+  visibility: visible;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
 
 /* En hover, se cambia el color del trazo de la flecha */
 .btn-vermas2:hover .arrow-body line,
