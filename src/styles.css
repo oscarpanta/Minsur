@@ -476,9 +476,11 @@ header.scrolled .navbar-nav .nav-link:focus,
   /* flex-direction: column;
   justify-content: center; */
   width: 100%;
-  background-position: 100% center;
+  /* background-position: 100% center; */
   background-repeat: no-repeat;
-  background-size: 120% 100%;
+  /* background-size: 120% 100%; */
+  /* background-position: center; */
+  background-size: cover;
 }
 .quienes-somos-section .container {
   /* height: 120vh; */
@@ -6851,9 +6853,9 @@ background-color: #E7F2FC;
     /* height: 100vh; */
     /* height: 50rem; */
     height: 18.4rem;
-    align-items: end;
+    /* align-items: end;
     background-position: left center;
-    background-size: 140% 100%;
+    background-size: 140% 100%; */
   }
   .extra-fondo .quienes-somos-section {
 
@@ -7132,7 +7134,7 @@ background-color: #E7F2FC;
     line-height: 25px;
     margin-bottom: 0.5rem;
 }
-.bg-que-hacemos .quienes-somos-section{
+/* .bg-que-hacemos .quienes-somos-section{
   background-size: 200% 100%;
   background-position: 58% center;
 }
@@ -7146,7 +7148,7 @@ background-color: #E7F2FC;
 .bg-proveedores .quienes-somos-section{
   background-size: 200% 100%;
   background-position: 75% center;
-}
+} */
 .fondo-section-regular {
   height: 30vh;
   background-size: cover !important;
