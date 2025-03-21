@@ -3297,7 +3297,9 @@ select.selector-listado {
 
 /* En hover, se cambia el color del trazo de la flecha */
 .btn-vermas2:hover .arrow-body line,
-.btn-vermas2:hover .arrow-head polyline {
+.btn-vermas2:hover .arrow-head polyline,
+.btn-vermas2:hover .arrow-head-left polyline,
+.btn-vermas2:hover .arrow-body-left line {
   stroke: var(--arrow-hover-stroke-color);
   transition: stroke 0.3s ease;
 }
@@ -3321,7 +3323,15 @@ select.selector-listado {
   border-radius: 250px; /* Pasa a tener forma "pill" */
   background-color: var(--arrow-background-color);
   color: #fff;
+  border: 2px solid var(--arrow-border-color);
 }
+.comunicado_flecha .btn-vermas2.arrow-left-btn:hover .btn-label {
+  color: #7df900;
+}
+.comunicado_flecha .btn-vermas2.arrow-left-btn:hover .arrow-container  {
+  width: 40px;
+}
+
 
 .btn-vermas2.arrow-left-btn:hover .arrow-container .arrow-body-left {
   width: 55px; /* El cuerpo se alarga */
