@@ -6638,10 +6638,11 @@ font-weight: 500;
   max-height: 100px;
   min-height: unset;
 }
-}
 .seccion_detalle_noticia{
-background-color: #E7F2FC;
+  background-color: #E7F2FC;
+  }
 }
+
 /* Responsividad para móviles pequeños (menos de 480px) */
 @media (max-width: 480px) {
   .tit-pequeño,
