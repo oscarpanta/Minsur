@@ -2104,11 +2104,16 @@ footer .list-unstyled.section-canal li {
 .btn-descargar:hover .flecha-circular {
   background-color: var(--unnamed-color-0063f9);
   color: #fff;
-  transform: scaleY(1.04); /* Aumenta la longitud de la flecha */
-  transition: transform 0.3s ease; /* Animación de alargado */
+  /* transform: scaleY(1.04);
+  transition: transform 0.3s ease;  */
   font-size: var(--unnamed-font-size-14);
   /* transform: matrix(0, 1, -1, 0, 0, 0); */
 }
+.btn-descargar:hover .flecha-circular .fa-arrow-down{
+  transform: scaleY(1.2);
+  transition: transform 0.3s ease;
+}
+
 /* Cuando el botón es hover, el círculo se agranda para ajustarse */
 .btn-descargar .btn-ver:hover .flecha-circular {
   background-color: var(--unnamed-color-0063f9);

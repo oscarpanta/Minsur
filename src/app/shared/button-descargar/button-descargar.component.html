@@ -1,4 +1,4 @@
-<a [routerLink]="link"
+<!-- <a [routerLink]="link"
    class="btn-descargar2 me-sm-0 ms-sm-0 me-xxl-3 me-md-1  ms-xxl-0 ms-md-1 p-xxl-1 p-xl-0 p-0"
    [style.--arrow-border-color]="defaultBorderColor"
    [style.--arrow-stroke-color]="defaultStrokeColor"
@@ -15,5 +15,15 @@
 </span>
 
 
+
+</a> -->
+<a [routerLink]="link" class="btn-descargar"    [style.--arrow-border-color]="defaultBorderColor"
+[style.--arrow-stroke-color]="defaultStrokeColor"
+[style.--arrow-hover-stroke-color]="hoverStrokeColor"
+[style.color]="textColor">
+<span class="btn-label me-2">{{ label }}</span>
+  <span class="flecha-circular ms-0 me-1">
+    <i class="fas fa-arrow-down"></i>
+  </span>
 
 </a>
