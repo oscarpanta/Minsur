@@ -1346,7 +1346,14 @@ header.scrolled .navbar-nav .nav-link:focus,
   line-height: var(--unnamed-line-spacing-52);
   color: var(--unnamed-color-36404e);
 }
-
+.til-semi-pequenio-semibold {
+  font-family: var(--unnamed-font-family-raleway);
+  font-style: var(--unnamed-font-style-normal);
+  font-weight: var(--unnamed-font-weight-600);
+  font-size: var(--unnamed-font-size-32);
+  line-height: var(--unnamed-line-spacing-52);
+  color: var(--unnamed-color-36404e);
+}
 .til-grande-azul {
   font-family: var(--unnamed-font-family-raleway);
   font-style: var(--unnamed-font-style-normal);
@@ -1564,7 +1571,7 @@ header.scrolled .navbar-nav .nav-link:focus,
   color: var(--unnamed-color-004891);
 }
 .titulo-super-grande-azul-normal {
-  font-family: var(--unnamed-font-family-merriweather);
+  font-family: var(--unnamed-font-family-raleway);
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-500);
   font-size: var(--unnamed-font-size-72);
@@ -2079,7 +2086,7 @@ footer .list-unstyled.section-canal li {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 8px 0px;
+  padding: 0px 0px;
   background-color: inherit;
   border-radius: 25px;
   transition: all 0.3s ease;
@@ -2092,13 +2099,13 @@ footer .list-unstyled.section-canal li {
   width: 25px; /* Tamaño inicial del círculo */
   height: 25px; /* Tamaño inicial del círculo */
   margin-left: 0.5rem;
-  font-size: 12px;
+  font-size: 14px;
 }
 .btn-descargar .flecha-circular-blanco {
   width: 25px; /* Tamaño inicial del círculo */
   height: 25px; /* Tamaño inicial del círculo */
   margin-left: 0.5rem;
-  font-size: 12px;
+  font-size: 14px;
 }
 /* Cuando el botón es hover, el círculo se agranda para ajustarse */
 .btn-descargar:hover .flecha-circular {
@@ -2106,7 +2113,7 @@ footer .list-unstyled.section-canal li {
   color: #fff;
   /* transform: scaleY(1.04);
   transition: transform 0.3s ease;  */
-  font-size: var(--unnamed-font-size-14);
+  font-size: var(--unnamed-font-size-16);
   /* transform: matrix(0, 1, -1, 0, 0, 0); */
 }
 .btn-descargar:hover .flecha-circular .fa-arrow-down{
@@ -2508,7 +2515,7 @@ ul.font-color-orange li i {
 .style-comunicados .content-listado {
   border-top: 1px solid #9fb5c9;
   border-bottom: 0;
-  padding-top: 1rem;
+  padding-top: 3rem;
 }
 
 select.selector-listado {
@@ -3640,6 +3647,10 @@ font-weight: 500;
     font-size: 20px;
     line-height: 28px;
   }
+  .til-semi-pequenio-semibold {
+    font-size: 20px;
+    line-height: 28px;
+  }
   .til-grande-azul {
     font-size: 45px;
     line-height: 55px;
@@ -4232,6 +4243,11 @@ font-weight: 500;
     max-height: 100px;
     min-height: unset;
   }
+  .style-comunicados .content-listado {
+    border-top: 1px solid #9fb5c9;
+    border-bottom: 0;
+    padding-top: 2rem;
+  }
 }
 
 
@@ -4313,6 +4329,10 @@ font-weight: 500;
     line-height: 46px;
   }
   .til-semi-pequenio {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .til-semi-pequenio-semibold {
     font-size: 20px;
     line-height: 28px;
   }
@@ -4973,6 +4993,10 @@ font-weight: 500;
     font-size: 20px;
     line-height: 28px;
   }
+  .til-semi-pequenio-semibold {
+    font-size: 20px;
+    line-height: 28px;
+  }
   .til-grande-azul {
     font-size: 42px;
     line-height: 55px;
@@ -5246,6 +5270,10 @@ font-weight: 500;
     line-height: 40px;
   }
   .til-semi-pequenio {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .til-semi-pequenio-semibold {
     font-size: 20px;
     line-height: 28px;
   }
@@ -5565,6 +5593,11 @@ font-weight: 500;
     line-height: 30px;
   }
   .til-semi-pequenio {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.16px;
+  }
+  .til-semi-pequenio-semibold {
     font-size: 16px;
     line-height: 20px;
     letter-spacing: -0.16px;
@@ -6638,6 +6671,23 @@ font-weight: 500;
   max-height: 100px;
   min-height: unset;
 }
+.btn-descargar .flecha-circular {
+  width: 20px; /* Tamaño inicial del círculo */
+  height: 20px; /* Tamaño inicial del círculo */
+  margin-left: 0.5rem;
+  font-size: 12px;
+}
+.btn-descargar .flecha-circular-blanco {
+  width: 20px; /* Tamaño inicial del círculo */
+  height: 20px; /* Tamaño inicial del círculo */
+  margin-left: 0.5rem;
+  font-size: 12px;
+}
+.style-comunicados .content-listado {
+  border-top: 1px solid #9fb5c9;
+  border-bottom: 0;
+  padding-top: 1rem;
+}
 }
 .seccion_detalle_noticia{
 background-color: #E7F2FC;
@@ -6715,6 +6765,10 @@ background-color: #E7F2FC;
   .til-semi-pequenio {
     font-size: 14px;
 
+  }
+  .til-semi-pequenio-semibold {
+    font-size: 14px;
+   
   }
   .til-grande-azul {
     font-size: 30.5px;
@@ -7312,6 +7366,10 @@ background-color: #E7F2FC;
   .til-semi-pequenio {
     font-size: 13px;
 
+  }
+  .til-semi-pequenio-semibold {
+    font-size: 13px;
+   
   }
   .til-grande-azul {
     font-size: 28px;
