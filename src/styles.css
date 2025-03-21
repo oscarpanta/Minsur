@@ -3312,6 +3312,13 @@ select.selector-listado {
   left: 0;
   top: 0;
 }
+.btn-descargar.btn-ver-comunicado {
+  font-weight: 400;
+}
+.btn-descargar.btn-ver-comunicado:hover .btn-label {
+  text-decoration: underline;
+  font-weight: bold;
+}
 
 
 /* En hover, se cambia el color del trazo de la flecha */
