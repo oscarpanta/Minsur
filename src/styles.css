@@ -7224,6 +7224,16 @@ background-color: #E7F2FC;
     margin-top:6px;
     margin-right: 1.5px;
   }
+  .arrow-container.arrow-left .arrow-head-left {
+    margin-left: 5px;
+    height: 10px;
+    width: 10px;
+  }
+  .arrow-container.arrow-left .arrow-body-left {
+    width: 10px;
+    height: 10px;
+    margin-left: -11px;
+  }
 }
 /* Pantallas de 360px */
 @media (max-width: 360px) {
