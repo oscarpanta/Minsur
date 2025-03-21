@@ -4,12 +4,12 @@
     <div class="noticia-card mt-xxl-5 mt-sm-3 mt-3" *ngFor="let item of displayedNoticias">
       <div class="card3 h-100">
         <img [src]="item.image" class="card-img-top" alt="Imagen de noticia" />
-        <div class="card-body d-flex flex-column justify-content-between m-4 mx-sm-4 mx-lg-4 mx-xl-4 my-sm-3 my-lg-4">
+        <div class="card-body d-flex flex-column justify-content-between mt-2 mb-3 mx-3 mx-sm-4 mx-lg-4 mx-xl-4 my-sm-3 my-lg-4">
           <div class="mb-4 mb-md-0">
-            <div class="mb-3 mb-md-3 text-fecha">
+            <div class="mb-1 mb-md-3 text-fecha">
               {{ item.date }}
             </div>
-            <p class="card2-title" [ngClass]="hoverClass">{{ item.title }}</p>
+            <p class="card2-title mb-4 mb-xl-5" [ngClass]="hoverClass">{{ item.title }}</p>
           </div>
           <div class="mt-md-5 mb-md-3  my-1">
             <app-button
