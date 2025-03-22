@@ -3605,13 +3605,13 @@ font-weight: 500;
   background-size: cover !important;
   background-position: right !important;
   background-repeat: no-repeat !important;
-  height: 95vh;
+  height: 100vh;
 }
 .fondo-centro-hacemos-2{
   background-size: cover !important;
   background-position: left !important;
   background-repeat: no-repeat !important;
-  height: 95vh;
+  height: 100vh;
 }
 
 @media (max-width: 1600px) {
