@@ -5581,6 +5581,13 @@ font-weight: 500;
         margin: 0rem;
         padding: 3rem 0.5rem 0rem 0.5rem;
   }
+  .fondo-centro-hacemos{
+   
+    height: 60vh;
+  }
+  .fondo-centro-hacemos-2{
+    height: 60vh;
+  }
 }
 
 /* Responsividad para pantallas más pequeñas (mayores a 768px) */
