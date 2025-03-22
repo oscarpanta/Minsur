@@ -5193,13 +5193,13 @@ font-weight: 500;
   }
   .fondo-section-regular {
     height: 60vh;
-    background-size: 150% 100% !important;
-    background-position: 80% center !important;
+    /* background-size: 150% 100% !important;
+    background-position: 80% center !important; */
   }
   .fondo-section-regular-2 {
     height: 60vh;
-    background-size: 150% 100% !important;
-    background-position: 80% center !important;
+    /* background-size: 150% 100% !important;
+    background-position: 80% center !important; */
   }
   .container_detalle_noticia .news_date_detalle {
     font-size: var(--unnamed-font-size-22);
