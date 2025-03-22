@@ -4973,10 +4973,10 @@ font-weight: 500;
   }
   .fondo-centro-hacemos{
    
-    height: 85vh;
+    height: 120vh;
   }
   .fondo-centro-hacemos-2{
-    height: 85vh;
+    height: 120vh;
   }
   .tit-super-grande-blanco {
     font-size: 43px;
@@ -5264,13 +5264,13 @@ font-weight: 500;
     font-size: 40px;
     line-height: 45px;
   }
-  .fondo-centro-hacemos{
+  /* .fondo-centro-hacemos{
    
     height: 60vh;
   }
   .fondo-centro-hacemos-2{
     height: 60vh;
-  }
+  } */
 }
 @media (max-width: 992px) {
   .tit-pequeño,
