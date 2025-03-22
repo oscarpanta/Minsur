@@ -3605,13 +3605,13 @@ font-weight: 500;
   background-size: cover !important;
   background-position: right !important;
   background-repeat: no-repeat !important;
-  height: 100vh;
+  height: 60.75rem;
 }
 .fondo-centro-hacemos-2{
   background-size: cover !important;
   background-position: left !important;
   background-repeat: no-repeat !important;
-  height: 100vh;
+  height: 60.75rem;;
 }
 
 @media (max-width: 1600px) {
@@ -4298,10 +4298,10 @@ font-weight: 500;
   }
   .fondo-centro-hacemos{
 
-    height: 90vh;
+    height: 45rem;
   }
   .fondo-centro-hacemos-2{
-    height: 90vh;
+    height: 45rem;
   }
 }
 
@@ -4973,10 +4973,10 @@ font-weight: 500;
   }
   .fondo-centro-hacemos{
    
-    height: 120vh;
+    height: 45rem;
   }
   .fondo-centro-hacemos-2{
-    height: 120vh;
+    height: 45rem;
   }
   .tit-super-grande-blanco {
     font-size: 43px;
@@ -5264,13 +5264,13 @@ font-weight: 500;
     font-size: 40px;
     line-height: 45px;
   }
-  /* .fondo-centro-hacemos{
+  .fondo-centro-hacemos{
    
-    height: 60vh;
+    height: 35rem;
   }
   .fondo-centro-hacemos-2{
-    height: 60vh;
-  } */
+    height: 35rem;
+  }
 }
 @media (max-width: 992px) {
   .tit-pequeño,
@@ -5583,10 +5583,10 @@ font-weight: 500;
   }
   .fondo-centro-hacemos{
    
-    height: 60vh;
+    height: 30rem;
   }
   .fondo-centro-hacemos-2{
-    height: 60vh;
+    height: 30rem;
   }
 }
 
