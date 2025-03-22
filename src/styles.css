@@ -4297,7 +4297,7 @@ font-weight: 500;
     padding-top: 2rem;
   }
   .fondo-centro-hacemos{
-   
+
     height: 80vh;
   }
   .fondo-centro-hacemos-2{
@@ -4973,10 +4973,17 @@ font-weight: 500;
   }
   .fondo-centro-hacemos{
    
-    height: 90vh;
+    height: 75vh;
   }
   .fondo-centro-hacemos-2{
     height: 90vh;
+  }
+  .tit-super-grande-blanco {
+    font-size: 43px;
+    line-height: 48px;
+  }
+  .tit-card-trabaja{
+    letter-spacing: -0.3px;
   }
 }
 
@@ -5254,12 +5261,12 @@ font-weight: 500;
     font-weight: 400;
   }
   .tit-super-grande-blanco {
-    font-size: 46px;
+    font-size: 40px;
     line-height: 45px;
   }
   .fondo-centro-hacemos{
    
-    height: 90vh;
+    height: 60vh;
   }
   .fondo-centro-hacemos-2{
     height: 90vh;
