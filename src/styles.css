@@ -1613,6 +1613,7 @@ footer {
 }
 .section-background-4 {
   background-color: black;
+  padding: 1rem 0;
   padding-bottom: 0;
   /* padding: 0; */
 }
@@ -3600,6 +3601,19 @@ font-weight: 500;
 .listado-pequeño-blanco .flecha-circular{
   border: 2px solid #fff;
 }
+.fondo-centro-hacemos{
+  background-size: cover !important;
+  background-position: right !important;
+  background-repeat: no-repeat !important;
+  height: 110vh;
+}
+.fondo-centro-hacemos-2{
+  background-size: cover !important;
+  background-position: left !important;
+  background-repeat: no-repeat !important;
+  height: 110vh;
+}
+
 @media (max-width: 1600px) {
   .tit-pequeño,
   .card12 .tit-pequeño {
@@ -4282,6 +4296,13 @@ font-weight: 500;
     border-bottom: 0;
     padding-top: 2rem;
   }
+  .fondo-centro-hacemos{
+   
+    height: 90vh;
+  }
+  .fondo-centro-hacemos-2{
+    height: 90vh;
+  }
 }
 
 
@@ -4950,7 +4971,13 @@ font-weight: 500;
   .titulo-unidades{
     margin-top: 0 !important;
   }
-
+  .fondo-centro-hacemos{
+   
+    height: 75vh;
+  }
+  .fondo-centro-hacemos-2{
+    height: 75vh;
+  }
 }
 
 /* Responsividad para pantallas medianas (mayores a 1024px) */
@@ -5229,6 +5256,13 @@ font-weight: 500;
   .tit-super-grande-blanco {
     font-size: 46px;
     line-height: 45px;
+  }
+  .fondo-centro-hacemos{
+   
+    height: 60vh;
+  }
+  .fondo-centro-hacemos-2{
+    height: 60vh;
   }
 }
 @media (max-width: 992px) {
@@ -6666,10 +6700,12 @@ font-weight: 500;
     background-position: center;
 }
 .fondo-centro-hacemos{
+  padding: 0;
   background-size: auto 100% !important;
   background-position-x: right  !important;
 }
 .fondo-centro-hacemos-2{
+  padding: 0;
   background-size: auto 100% !important;
   background-position-x: left !important;
 }
