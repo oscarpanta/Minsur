@@ -1863,7 +1863,7 @@ footer .list-unstyled.section-canal li {
   letter-spacing: var(--unnamed-character-spacing--0-8);
   color: var(--unnamed-color-36404e);
   /* max-height: 205px; */
-  max-height: 222px;
+  max-height: 220px;
   margin: 0;
 
   display: -webkit-box;
@@ -2337,6 +2337,9 @@ footer .list-unstyled.section-canal li {
   min-height: 250px;
 }
 .card5 .card2-title {
+  min-height: 230px;
+}
+.card3 .card2-title{
   min-height: 230px;
 }
 .card5 .hover-card-underline:hover {
