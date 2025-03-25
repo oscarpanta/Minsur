@@ -3938,7 +3938,9 @@ font-weight: 500;
   .card5 .card2-title {
     min-height: 210px;
   }
-
+  .card3 .card2-title {
+    min-height: 210px;
+  }
   .card6 .card-footer a {
     font-size: 16px;
   }
