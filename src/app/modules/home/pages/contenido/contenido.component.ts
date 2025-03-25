@@ -13,7 +13,7 @@ export class ContenidoComponent implements AfterViewInit{
     {
       image: 'assets/images/noticia1.png',
       date: 'Junio, 2024',
-      title: 'Clínica móvil Minsur ha realizado más de 2,500 atenciones en Antauta y Ajoyani',
+      title: 'Clínica móvil Minsur ha realizado más de 2,500 atenciones en Antauta y Ajoyani Clínica móvil Minsur ha realizado más de 2,500 atenciones en Antauta y Ajoyani',
       link: '/noticias/detalle/1'
     },
     {

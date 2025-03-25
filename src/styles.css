@@ -1852,11 +1852,17 @@ footer .list-unstyled.section-canal li {
   color: var(--unnamed-color-36404e);
   max-height: 205px;
   margin: 0;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 /* Esto es para el hover del titulo */
 .hover-card-underline,
 .hover-card-underline2 {
-  display: inline-block;
+  /* display: inline-block; */
   cursor: pointer;
   text-decoration: none; /* Asegura que no haya subrayado por defecto */
   position: relative;
@@ -4972,7 +4978,7 @@ font-weight: 500;
     margin-top: 0 !important;
   }
   .fondo-centro-hacemos{
-   
+
     height: 45rem;
   }
   .fondo-centro-hacemos-2{
@@ -5265,7 +5271,7 @@ font-weight: 500;
     line-height: 45px;
   }
   .fondo-centro-hacemos{
-   
+
     height: 35rem;
   }
   .fondo-centro-hacemos-2{
@@ -5582,7 +5588,7 @@ font-weight: 500;
         padding: 3rem 0.5rem 0rem 0.5rem;
   }
   .fondo-centro-hacemos{
-   
+
     height: 30rem;
   }
   .fondo-centro-hacemos-2{
@@ -7793,11 +7799,15 @@ font-weight: 500;
 }
 
 .sub-tit {
-  height: 100px;
+  height: 105px;
 }
 .card8 .img-fluid {
   max-width: 130px;
   max-height: 100px;
   min-height: unset;
 }
+.quienes-somos-section .description {
+
+  width: 71%;
+  }
 }
