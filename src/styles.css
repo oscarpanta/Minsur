@@ -1862,7 +1862,8 @@ footer .list-unstyled.section-canal li {
     var(--unnamed-font-family-merriweather);
   letter-spacing: var(--unnamed-character-spacing--0-8);
   color: var(--unnamed-color-36404e);
-  max-height: 205px;
+  /* max-height: 205px; */
+  max-height: 222px;
   margin: 0;
 
   display: -webkit-box;
