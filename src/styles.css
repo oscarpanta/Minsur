@@ -1899,10 +1899,10 @@ footer .list-unstyled.section-canal li {
   text-decoration: underline;
   text-decoration-color: currentColor; /* Establece el color del subrayado */
   text-decoration-thickness: 2px; /* Hace que el subrayado sea más grueso */
-  line-height: calc(1.4em + 2px); /* Aumenta el line-height en 2px con efecto */
+  line-height: calc(1.4em + 1px); /* Aumenta el line-height en 2px con efecto */
 }
 .hover-card-underline2:hover {
-  line-height: calc(1.4em + 2px); /* Aumenta el line-height en 2px con efecto */
+  line-height: calc(1.4em + 1px); /* Aumenta el line-height en 2px con efecto */
   color: var(--unnamed-color-0063f9);
 }
 /* Estilos para card con texto sin efecto
@@ -2339,9 +2339,9 @@ footer .list-unstyled.section-canal li {
 .card5 .card2-title {
   min-height: 230px;
 }
-/* .card3 .card2-title{
-  min-height: 240px;
-} */
+.card3 .card_contain_text .card2-title {
+  min-height: unset;
+}
 .card5 .hover-card-underline:hover {
   color: var(--unnamed-color-004891);
 }
@@ -3643,7 +3643,7 @@ font-weight: 500;
   text-overflow: ellipsis;
 }
 .card_contain_text{
-    min-height: 240px;
+    min-height: 270px;
 }
 @media (max-width: 1600px) {
   .tit-pequeño,
@@ -3941,9 +3941,9 @@ font-weight: 500;
   .card5 .card2-title {
     min-height: 210px;
   }
-  /* .card3 .card2-title {
-    min-height: 190px;
-  } */
+  .card3 .card_contain_text .card2-title {
+    min-height: unset;
+  }
   .card_contain_text{
     min-height: 190px;
   }
@@ -4638,9 +4638,9 @@ font-weight: 500;
   .card5 .card2-title {
     min-height: 210px;
   }
-  /* .card3 .card2-title {
-    min-height: 190px;
-  } */
+  .card3 .card2-title {
+    min-height: unset;
+  }
   .card6 .card-footer a {
     font-size: 16px;
   }
