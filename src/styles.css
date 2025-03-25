@@ -839,6 +839,12 @@ header.scrolled .navbar-nav .nav-link:focus,
 
   letter-spacing: 0;
   text-align: left;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* estilos Video Multimedia */
@@ -947,6 +953,12 @@ header.scrolled .navbar-nav .nav-link:focus,
 
   letter-spacing: -0.55px;
   text-align: left;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .section-presentaciones .pdf {
   font-family: var(--unnamed-font-family-raleway);
@@ -3619,7 +3631,13 @@ font-weight: 500;
   background-repeat: no-repeat !important;
   height: 60.75rem;;
 }
-
+.card-body-sostenibilidad {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 @media (max-width: 1600px) {
   .tit-pequeño,
   .card12 .tit-pequeño {
