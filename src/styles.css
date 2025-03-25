@@ -2340,7 +2340,7 @@ footer .list-unstyled.section-canal li {
   min-height: 230px;
 }
 .card3 .card2-title{
-  min-height: 230px;
+  min-height: 240px;
 }
 .card5 .hover-card-underline:hover {
   color: var(--unnamed-color-004891);
@@ -3939,7 +3939,7 @@ font-weight: 500;
     min-height: 210px;
   }
   .card3 .card2-title {
-    min-height: 160px;
+    min-height: 190px;
   }
   .card6 .card-footer a {
     font-size: 16px;
@@ -4633,7 +4633,7 @@ font-weight: 500;
     min-height: 210px;
   }
   .card3 .card2-title {
-    min-height: 160px;
+    min-height: 190px;
   }
   .card6 .card-footer a {
     font-size: 16px;
