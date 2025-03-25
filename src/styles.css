@@ -6358,6 +6358,9 @@ font-weight: 500;
   .card5 .card2-title {
     min-height: auto;
   }
+  .card3 .card2-title {
+    min-height: auto;
+  }
   .card6 img {
     border-radius: 5px;
   }
