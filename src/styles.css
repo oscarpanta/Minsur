@@ -1742,7 +1742,7 @@ footer .list-unstyled.section-canal li {
 .responsive-line {
   border: 0;
   border-top: 2px solid #1e385d;
-  width: 99vw; /* Ocupa todo el ancho de la ventana */
+  width: 100%; /* Ocupa todo el ancho de la ventana */
   margin: 20px 0;
   position: relative;
   left: 50%;
@@ -4678,7 +4678,7 @@ font-weight: 500;
     min-height: 500px;
   }
   .container-fluid .card img {
-    min-height: 400px;
+    min-height: 420px;
   }
   .container-fluid .card.card10 img {
     min-height: unset;
